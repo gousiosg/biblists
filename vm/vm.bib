@@ -1,0 +1,843 @@
+
+%% Created for Georgios Gousios at 2010-09-02 12:50:27 +0300 
+
+
+%% Saved with string encoding Unicode (UTF-8) 
+
+
+
+@inproceedings{Gousi07,
+	Author = {Georgios Gousios},
+	Booktitle = {Companion to the 23rd OOPSLA (Doctoral Symposium)},
+	Date-Added = {2007-09-13 10:33:47 +0300},
+	Date-Modified = {2007-09-13 10:38:31 +0300},
+	Location = {Montreal, Canada},
+	Month = {Oct 21-24},
+	Note = {(to appear)},
+	Title = {The {J}ikes{X}en {J}ava Server Platform},
+	Year = {2007}}
+
+@misc{Palac06,
+	Author = {Krzysztof Palacz},
+	Date-Added = {2007-09-13 09:37:37 +0300},
+	Date-Modified = {2010-09-02 12:49:49 +0300},
+	Howpublished = {Java Community Process},
+	Month = {Jun},
+	Title = {{JSR} 121: Application Isolation {API} Specification},
+	Year = {2006},
+	Bdsk-Url-1 = {http://jcp.org/aboutJava/communityprocess/final/jsr121/index.html}}
+
+@misc{Dahl06,
+	Author = {Joakim Dahlstedt},
+	Date-Added = {2007-09-12 21:00:20 +0300},
+	Date-Modified = {2010-09-02 12:49:49 +0300},
+	Title = {Bare Metal - Speeding up Java Technology in a Virtualized Environment},
+	Year = {2006},
+	Bdsk-Url-1 = {http://dev2dev.bea.com/pub/e/950}}
+
+@inproceedings{Ammon07,
+	Address = {New York, NY, USA},
+	Author = {Glenn Ammons and Jonathan Appavoo and Maria Butrico and Dilma Da Silva and David Grove and Kiyokuni Kawachiya and Orran Krieger and Bryan Rosenburg and Eric Van Hensbergen and Robert W. Wisniewski},
+	Booktitle = {VEE '07: Proceedings of the 3rd international conference on Virtual execution environments},
+	Date-Added = {2007-07-20 16:39:51 +0300},
+	Date-Modified = {2010-09-02 12:49:49 +0300},
+	Isbn = {978-1-59593-630-1},
+	Location = {San Diego, California, USA},
+	Pages = {44--54},
+	Publisher = {ACM Press},
+	Title = {Libra: a library operating system for a {JVM} in a virtualized execution environment},
+	Year = {2007},
+	Abstract = {If the operating system could be specialized for every application, many applications would run faster. For example, Java virtual machines (JVMs) provide their own threading model and memory protection, so general-purpose operating system implementations of these abstractions are redundant. However, traditional means of transforming existing systems into specialized systems are difficult to adopt because they require replacing the entire operating system. This paper describes Libra, an execution environment specialized for IBM's J9 JVM. Libra does not replace the entire operating system. Instead, Libra and J9 form a single statically-linked image that runs in a hypervisor partition. Libra provides the services necessary to achieve good performance for the Java workloads of interest but relies on an instance of Linux in another hypervisor partition to provide a networking stack, a filesystem, and other services. The expense of remote calls is offset by the fact that Libra's services can be customized for a particular workload; for example, on the Nutch search engine, we show that two simple customizations improve application throughput by a factor of 2.7.},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1254810.1254817}}
+
+@inproceedings{Frase04,
+	Author = {K. Fraser and S. Hand and R. Neugebauer and I. Pratt and A. Warfield and M. Williams.},
+	Booktitle = {Workshop on Operating System and Architectural Support for the on demand IT InfraStructure},
+	Date-Added = {2007-04-25 22:27:32 +0300},
+	Date-Modified = {2007-04-25 22:31:14 +0300},
+	Local-Url = {file://localhost/Users/gousiosg/Documents/PhD/papers/VirtualMachines/Safe%20Hardware%20Access%20with%20the%20Xen%20Virtual%20Machine%20Monitor.pdf},
+	Title = {Safe hardware access with the Xen virtual machine monitor},
+	Year = {2004},
+	Abstract = {The Xen virtual machine monitor allows multiple operating systems to execute concurrently on commodity x86 hardware, providing a solution for server consolidation and utility computing. In our initial design, Xen itself contained device-driver code and provided safe shared virtual device access. In this paper we present our new Safe Hardware Interface, an isolation architecture used within the latest release of Xen which allows unmodified device drivers to be shared across isolated operating system instances, while protecting individual OSs, and the system as a whole, from driver failure. }}
+
+@inproceedings{Clark04,
+	Address = {Boston, MA, USA},
+	Author = {Bryan Clark and Todd Deshane and Eli Dow and Stephen Evanchik and Matthew Finlayson and Jason Herne and Jeanna Neefe Matthews},
+	Booktitle = {Proceedings of the FREENIX Track: 2004 USENIX Annual Technical Conference},
+	Date-Added = {2007-04-25 22:09:13 +0300},
+	Date-Modified = {2007-04-25 22:21:26 +0300},
+	Local-Url = {file://localhost/Users/gousiosg/Documents/PhD/papers/VirtualMachines/Xen%20and%20the%20Art%20of%20Repeated%20Research.pdf},
+	Month = {July},
+	Organization = {USENIX},
+	Title = {Xen and the Art of Repeated Research},
+	Year = {2004},
+	Abstract = {Xen is an x86 virtual machine monitor produced by the University of Cambridge Computer Laboratory and released under the GNU General Public License. Performance results comparing XenoLinux (Linux running in a Xen virtual machine) to native Linux as well as to other virtualization tools such as User Mode Linux (UML) were recently published in the paper ``Xen and the Art of Virtualization'' at the Symposium on Operating Systems Principles (October 2003). In this study, we repeat this performance analysis of Xen. We also extend the analysis in several ways, including comparing XenoLinux on x86 to an IBM zServer. We use this study as an example of repeated research. We argue that this model of research, which is enabled by open source software, is an important step in transferring the results of computer science research into production environments.   
+}}
+
+@article{Gu99,
+	Address = {New York, NY, USA},
+	Author = {Yan Gu and B. S. Lee and Wentong Cai},
+	Date-Added = {2007-01-14 11:40:04 +0200},
+	Date-Modified = {2010-09-02 12:49:49 +0300},
+	Issn = {0163-5980},
+	Journal = {SIGOPS Oper. Syst. Rev.},
+	Local-Url = {file://localhost/Users/gousiosg/Documents/PhD/papers/VirtualMachines/Evaluation%20of%20Java%20thread%20performance%20on%20two%20different%20multithreaded%20kernels.pdf},
+	Number = {1},
+	Pages = {34--46},
+	Publisher = {ACM Press},
+	Title = {Evaluation of Java thread performance on two different multithreaded kernels},
+	Volume = {33},
+	Year = {1999},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/309829.309841}}
+
+@techreport{Czajk01a,
+	Address = {Mountain View, CA, USA},
+	Author = {Grzegorz Czajkowski and Laurent Daynes and Mario Wolczko},
+	Date-Added = {2006-11-06 11:42:46 +0200},
+	Date-Modified = {2010-09-02 12:49:49 +0300},
+	Publisher = {Sun Microsystems, Inc.},
+	Title = {Automated and Portable Native Code Isolation},
+	Year = {2001},
+	Abstract = {The coexistence of programs written in a safe language with user-supplied unsafe (native) code is convenient (it enables direct access to hardware and operating system resources and can improve application performance), but at the same time it is problematic (it leads to undesirable interference with the language runtime, decreases overall reliability, and lowers debuggability). This work aims at retaining most of the benefits of interfacing a safe language with native code while addressing its problems. It is carried out in the context of the Java[tm] Native Interface (JNI). Our approach is to execute the native code in an operating system process different from that of the safe language application. A technique presented in this paper accomplishes this transparently, automatically, and without sacrificing any of the JNI functionality. No changes to the Java virtual machine (JVM[tm]) or its runtime are necessary. The resulting prototype does not depend on a particular implementation of the JVM, and is highly portable across hardware architectures and operating systems. This approach can readily be used to improve reliability of applications consisting of a mix of safe and native code; to enable the execution of user-supplied native code in multitasking systems based on safe languages and in embedded virtual machines; and to facilitate mixed-mode debugging, without the need to re-implement any of the components of the language runtime. The design and implementation of a prototype system, performance implications, and the potential of this architecture are discussed in the paper.},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAhAAAAAAAhAAAgAABUZpbGVzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMa+JWNIKwAAAAFDIx9BdXRvbWF0ZWQgYW5kIFBvcnRhYmwjMTQ2NEIucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUZLw6Po8AAAAAAAAAAAAAIABAAACQAAAAAAAAAAAAAAAAAAAAAPVmlydHVhbE1hY2hpbmVzAAAQAAgAAMa9+zMAAAARAAgAAMOjzNAAAAABABAAAUMjAAFAyQABPi4AAL8TAAIASkZpbGVzOkRvY3VtZW50czpQaEQ6cGFwZXJzOlZpcnR1YWxNYWNoaW5lczpBdXRvbWF0ZWQgYW5kIFBvcnRhYmwjMTQ2NEIucGRmAA4AYgAwAEEAdQB0AG8AbQBhAHQAZQBkACAAYQBuAGQAIABQAG8AcgB0AGEAYgBsAGUAIABOAGEAdABpAHYAZQAgAEMAbwBkAGUAIABJAHMAbwBsAGEAdABpAG8AbgAuAHAAZABmAA8ADAAFAEYAaQBsAGUAcwASAFYvRG9jdW1lbnRzL1BoRC9wYXBlcnMvVmlydHVhbE1hY2hpbmVzL0F1dG9tYXRlZCBhbmQgUG9ydGFibGUgTmF0aXZlIENvZGUgSXNvbGF0aW9uLnBkZgATAA4vVm9sdW1lcy9GaWxlcwAVAAIADv//AACABdIcHR4fWCRjbGFzc2VzWiRjbGFzc25hbWWjHyAhXU5TTXV0YWJsZURhdGFWTlNEYXRhWE5TT2JqZWN0XxBRLi4vLi4vUGhEL3BhcGVycy9WaXJ0dWFsTWFjaGluZXMvQXV0b21hdGVkIGFuZCBQb3J0YWJsZSBOYXRpdmUgQ29kZSBJc29sYXRpb24ucGRm0hwdJCWiJSFcTlNEaWN0aW9uYXJ5EgABhqBfEA9OU0tleWVkQXJjaGl2ZXIACAARABYAHwAoADIANQA6ADwARQBLAFIAXQBlAGwAbwBxAHMAdgB4AHoAfACGAJMAmACgArQCtgK7AsQCzwLTAuEC6ALxA0UDSgNNA1oDXwAAAAAAAAIBAAAAAAAAACgAAAAAAAAAAAAAAAAAAANx}}
+
+@inproceedings{Liu06,
+	Author = {Jiuxing Liu and Wei Huang and Bulent Abali and Dhabaleswar K. Panda},
+	Booktitle = {Proceedings of the 2006 USENIX Annual Technical Conference},
+	Date-Added = {2006-11-02 14:49:30 +0200},
+	Date-Modified = {2010-09-02 12:49:49 +0300},
+	Pages = {29--42},
+	Title = {High Performance VMM-Bypass I/O in Virtual Machines},
+	Year = {2006},
+	Abstract = {Currently, I/O device virtualization models in virtual machine (VM) environments require involvement of a virtual machine monitor (VMM) and/or a privileged VM for each I/O operation, which may turn out to be a performance bottleneck for systems with high I/O demands, especially those equipped with modern high speed interconnects such as InfiniBand.
+
+In this paper, we propose a new device virtualization model called VMM-bypass I/O, which extends the idea of OS-bypass originated from user-level communication. Essentially, VMM-bypass allows time-critical I/O operations to be carried out directly in guest VMs without involvement of the VMM and/or a privileged VM. By exploiting the intelligence found in modern high speed network interfaces, VMM-bypass can significantly improve I/O and communication performance for VMs without sacrificing safety or isolation.
+
+To demonstrate the idea of VMM-bypass, we have developed a prototype called Xen-IB, which offers InfiniBand virtualization support in the Xen 3.0 VM environment. Xen-IB runs with current InfiniBand hardware and does not require modifications to existing user-level applications or kernel-level drivers that use InfiniBand. Our performance measurements show that Xen-IB is able to achieve nearly the same raw performance as the original InfiniBand driver running in a non-virtualized environment.},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAigAAAAAAigAAgAABUZpbGVzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMa+JWNIKwAAAAFDIx9IaWdoIFBlcmZvcm1hbmNlIFZNTS0jMTQ2OTcucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUaXw6Po8AAAAAAAAAAAAAIABAAACQAAAAAAAAAAAAAAAAAAAAAPVmlydHVhbE1hY2hpbmVzAAAQAAgAAMa9+zMAAAARAAgAAMOjzNAAAAABABAAAUMjAAFAyQABPi4AAL8TAAIASkZpbGVzOkRvY3VtZW50czpQaEQ6cGFwZXJzOlZpcnR1YWxNYWNoaW5lczpIaWdoIFBlcmZvcm1hbmNlIFZNTS0jMTQ2OTcucGRmAA4AcgA4AEgAaQBnAGgAIABQAGUAcgBmAG8AcgBtAGEAbgBjAGUAIABWAE0ATQAtAEIAeQBwAGEAcwBzACAASQAtAE8AIABpAG4AIABWAGkAcgB0AHUAYQBsACAATQBhAGMAaABpAG4AZQBzACAALgBwAGQAZgAPAAwABQBGAGkAbABlAHMAEgBeL0RvY3VtZW50cy9QaEQvcGFwZXJzL1ZpcnR1YWxNYWNoaW5lcy9IaWdoIFBlcmZvcm1hbmNlIFZNTS1CeXBhc3MgSS1PIGluIFZpcnR1YWwgTWFjaGluZXMgLnBkZgATAA4vVm9sdW1lcy9GaWxlcwAVAAIADv//AACABdIcHR4fWCRjbGFzc2VzWiRjbGFzc25hbWWjHyAhXU5TTXV0YWJsZURhdGFWTlNEYXRhWE5TT2JqZWN0XxBZLi4vLi4vUGhEL3BhcGVycy9WaXJ0dWFsTWFjaGluZXMvSGlnaCBQZXJmb3JtYW5jZSBWTU0tQnlwYXNzIEktTyBpbiBWaXJ0dWFsIE1hY2hpbmVzIC5wZGbSHB0kJaIlIVxOU0RpY3Rpb25hcnkSAAGGoF8QD05TS2V5ZWRBcmNoaXZlcgAIABEAFgAfACgAMgA1ADoAPABFAEsAUgBdAGUAbABvAHEAcwB2AHgAegB8AIYAkwCYAKACzALOAtMC3ALnAusC+QMAAwkDZQNqA20DegN/AAAAAAAAAgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAAA5E=}}
+
+@inproceedings{Menon06,
+	Author = {Aravind Menon and Alan L. Cox and Willy Zwaenepoel},
+	Booktitle = {Proceedings of the 2006 USENIX Annual Technical Conference},
+	Date-Added = {2006-11-02 14:45:22 +0200},
+	Date-Modified = {2010-09-02 12:49:49 +0300},
+	Month = {May},
+	Pages = {15--28},
+	Title = {Optimizing Network Virtualization in Xen},
+	Year = {2006},
+	Abstract = {n this paper, we propose and evaluate three techniques for optimizing network performance in the Xen virtualized environment. Our techniques retain the basic Xen architecture of locating device drivers in a privileged `driver' domain with access to I/O devices, and providing network access to unprivileged `guest' domains through virtualized network interfaces.
+First, we redefine the virtual network interfaces of guest domains to incorporate high-level network offfload features available in most modern network cards. We demonstrate the performance benefits of high-level offload functionality in the virtual interface, even when such functionality is not supported in the underlying physical interface. Second, we optimize the implementation of the data transfer path between guest and driver domains. The optimization avoids expensive data remapping operations on the transmit path, and replaces page remapping by data copying on the receive path. Finally, we provide support for guest operating systems to effectively utilize advanced virtual memory features such as superpages and global page mappings.
+
+The overall impact of these optimizations is an improvement in transmit performance of guest domains by a factor of 4.4. The receive performance of the driver domain is improved by 35% and reaches within 7% of native Linux performance. The receive performance in guest domains improves by 18%, but still trails the native Linux performance by 61%. We analyse the performance improvements in detail, and quantify the contribution of each optimization to the overall performance.},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAggAAAAAAggAAgAABUZpbGVzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMa+JWNIKwAAAAFDIx9PcHRpbWl6aW5nIE5ldHdvcmsgVmkjMTQ2QTAucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUagw6Po7wAAAAAAAAAAAAIABAAACQAAAAAAAAAAAAAAAAAAAAAPVmlydHVhbE1hY2hpbmVzAAAQAAgAAMa9+zMAAAARAAgAAMOjzM8AAAABABAAAUMjAAFAyQABPi4AAL8TAAIASkZpbGVzOkRvY3VtZW50czpQaEQ6cGFwZXJzOlZpcnR1YWxNYWNoaW5lczpPcHRpbWl6aW5nIE5ldHdvcmsgVmkjMTQ2QTAucGRmAA4AXAAtAE8AcAB0AGkAbQBpAHoAaQBuAGcAIABOAGUAdAB3AG8AcgBrACAAVgBpAHIAdAB1AGEAbABpAHoAYQB0AGkAbwBuACAAaQBuACAAWABlAG4AIAAuAHAAZABmAA8ADAAFAEYAaQBsAGUAcwASAFMvRG9jdW1lbnRzL1BoRC9wYXBlcnMvVmlydHVhbE1hY2hpbmVzL09wdGltaXppbmcgTmV0d29yayBWaXJ0dWFsaXphdGlvbiBpbiBYZW4gLnBkZgAAEwAOL1ZvbHVtZXMvRmlsZXMAFQACAA7//wAAgAXSHB0eH1gkY2xhc3Nlc1okY2xhc3NuYW1lox8gIV1OU011dGFibGVEYXRhVk5TRGF0YVhOU09iamVjdF8QTi4uLy4uL1BoRC9wYXBlcnMvVmlydHVhbE1hY2hpbmVzL09wdGltaXppbmcgTmV0d29yayBWaXJ0dWFsaXphdGlvbiBpbiBYZW4gLnBkZtIcHSQloiUhXE5TRGljdGlvbmFyeRIAAYagXxAPTlNLZXllZEFyY2hpdmVyAAgAEQAWAB8AKAAyADUAOgA8AEUASwBSAF0AZQBsAG8AcQBzAHYAeAB6AHwAhgCTAJgAoAKsAq4CswK8AscCywLZAuAC6QM6Az8DQgNPA1QAAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAADZg==}}
+
+@inproceedings{Jones06,
+	Author = {Stephen T. Jones and Andrea C. Arpaci-Dusseau and Remzi H. Arpaci-Dusseau},
+	Booktitle = {Proceedings of the 2006 USENIX Annual Technical Conference},
+	Date-Added = {2006-11-02 14:40:41 +0200},
+	Date-Modified = {2010-09-02 12:49:49 +0300},
+	Month = {May},
+	Organization = {USENIX Association},
+	Pages = {1--14},
+	Title = {Antfarm: Tracking Processes in a Virtual Machine Environment},
+	Year = {2006},
+	Abstract = {In a virtualized environment, the VMM is the system's primary resource manager. Some services usually implemented at the OS layer, like I/O scheduling or certain kinds of security monitoring, are therefore more naturally implemented inside the VMM. Implementing such services at the VMM layer can be complicated by the lack of OS and application-level knowledge within a VMM. This paper describes techniques that can be used by a VMM to independently overcome part of the "semantic gap" separating it from the guest operating systems it supports. These techniques enable the VMM to track the existence and activities of operating system processes. Antfarm is an implementation of these techniques that works without detailed knowledge of a guest's internal architecture or implementation. An evaluation of Antfarm for two virtualization environments and two operating systems shows that it can accurately infer process events while incurring only a small 2.5% runtime overhead in the worst case. To demonstrate the practical benefits of process information in a VMM we implement an anticipatory disk scheduler at the VMM level. This case study shows that significant disk throughput improvements are possible in a virtualized environment by exploiting process information within a VMM.},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAkAAAAAAAkAAAgAABUZpbGVzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMa+JWNIKwAAAAFDIx9BbnRmYXJtLSBUcmFja2luZyBQcm8jMTQ2NDgucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUZIw6Po8AAAAAAAAAAAAAIABAAACQAAAAAAAAAAAAAAAAAAAAAPVmlydHVhbE1hY2hpbmVzAAAQAAgAAMa9+zMAAAARAAgAAMOjzNAAAAABABAAAUMjAAFAyQABPi4AAL8TAAIASkZpbGVzOkRvY3VtZW50czpQaEQ6cGFwZXJzOlZpcnR1YWxNYWNoaW5lczpBbnRmYXJtLSBUcmFja2luZyBQcm8jMTQ2NDgucGRmAA4AggBAAEEAbgB0AGYAYQByAG0ALQAgAFQAcgBhAGMAawBpAG4AZwAgAFAAcgBvAGMAZQBzAHMAZQBzACAAaQBuACAAYQAgAFYAaQByAHQAdQBhAGwAIABNAGEAYwBoAGkAbgBlACAARQBuAHYAaQByAG8AbgBtAGUAbgB0AC4AcABkAGYADwAMAAUARgBpAGwAZQBzABIAZi9Eb2N1bWVudHMvUGhEL3BhcGVycy9WaXJ0dWFsTWFjaGluZXMvQW50ZmFybS0gVHJhY2tpbmcgUHJvY2Vzc2VzIGluIGEgVmlydHVhbCBNYWNoaW5lIEVudmlyb25tZW50LnBkZgATAA4vVm9sdW1lcy9GaWxlcwAVAAIADv//AACABdIcHR4fWCRjbGFzc2VzWiRjbGFzc25hbWWjHyAhXU5TTXV0YWJsZURhdGFWTlNEYXRhWE5TT2JqZWN0XxBhLi4vLi4vUGhEL3BhcGVycy9WaXJ0dWFsTWFjaGluZXMvQW50ZmFybS0gVHJhY2tpbmcgUHJvY2Vzc2VzIGluIGEgVmlydHVhbCBNYWNoaW5lIEVudmlyb25tZW50LnBkZtIcHSQloiUhXE5TRGljdGlvbmFyeRIAAYagXxAPTlNLZXllZEFyY2hpdmVyAAgAEQAWAB8AKAAyADUAOgA8AEUASwBSAF0AZQBsAG8AcQBzAHYAeAB6AHwAhgCTAJgAoALkAuYC6wL0Av8DAwMRAxgDIQOFA4oDjQOaA58AAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAADsQ==}}
+
+@article{Heise06,
+	Address = {New York, NY, USA},
+	Author = {Gernot Heiser and Volkmar Uhlig and Joshua LeVasseur},
+	Date-Added = {2006-09-21 17:15:56 +0300},
+	Date-Modified = {2010-09-02 12:49:49 +0300},
+	Issn = {0163-5980},
+	Journal = {SIGOPS Oper. Syst. Rev.},
+	Number = {1},
+	Pages = {95--99},
+	Publisher = {ACM Press},
+	Title = {Are virtual-machine monitors microkernels done right?},
+	Volume = {40},
+	Year = {2006},
+	Abstract = {A paper by Hand et al. at the recent HotOS workshop re-examined microkernels and contrasted them to virtual-machine monitors (VMMs). It found that the two kinds of systems share architectural commonalities but also have a number of technical differences which the paper examined. It concluded that VMMs are a special case of microkernels, "microkernels done right".A closer examination of that paper shows that it contains a number of statements which are poorly justified or even refuted by the literature. While we believe that it is indeed timely to reexamine the merits and issues of microkernels, such an examination needs to be based on facts.},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAigAAAAAAigAAgAABUZpbGVzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMa+JWNIKwAAAAFDIx9BcmUgVmlydHVhbC1NYWNoaW5lIE0jMTQ2NEEucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUZKw6Po7wAAAAAAAAAAAAIABAAACQAAAAAAAAAAAAAAAAAAAAAPVmlydHVhbE1hY2hpbmVzAAAQAAgAAMa9+zMAAAARAAgAAMOjzM8AAAABABAAAUMjAAFAyQABPi4AAL8TAAIASkZpbGVzOkRvY3VtZW50czpQaEQ6cGFwZXJzOlZpcnR1YWxNYWNoaW5lczpBcmUgVmlydHVhbC1NYWNoaW5lIE0jMTQ2NEEucGRmAA4AcgA4AEEAcgBlACAAVgBpAHIAdAB1AGEAbAAtAE0AYQBjAGgAaQBuAGUAIABNAG8AbgBpAHQAbwByAHMAIABNAGkAYwByAG8AawBlAHIAbgBlAGwAcwAgAEQAbwBuAGUAIABSAGkAZwBoAHQALgBwAGQAZgAPAAwABQBGAGkAbABlAHMAEgBeL0RvY3VtZW50cy9QaEQvcGFwZXJzL1ZpcnR1YWxNYWNoaW5lcy9BcmUgVmlydHVhbC1NYWNoaW5lIE1vbml0b3JzIE1pY3Jva2VybmVscyBEb25lIFJpZ2h0LnBkZgATAA4vVm9sdW1lcy9GaWxlcwAVAAIADv//AACABdIcHR4fWCRjbGFzc2VzWiRjbGFzc25hbWWjHyAhXU5TTXV0YWJsZURhdGFWTlNEYXRhWE5TT2JqZWN0XxBZLi4vLi4vUGhEL3BhcGVycy9WaXJ0dWFsTWFjaGluZXMvQXJlIFZpcnR1YWwtTWFjaGluZSBNb25pdG9ycyBNaWNyb2tlcm5lbHMgRG9uZSBSaWdodC5wZGbSHB0kJaIlIVxOU0RpY3Rpb25hcnkSAAGGoF8QD05TS2V5ZWRBcmNoaXZlcgAIABEAFgAfACgAMgA1ADoAPABFAEsAUgBdAGUAbABvAHEAcwB2AHgAegB8AIYAkwCYAKACzALOAtMC3ALnAusC+QMAAwkDZQNqA20DegN/AAAAAAAAAgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAAA5E=},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1113361.1113363}}
+
+@article{Belog05,
+	Address = {New York, NY, USA},
+	Author = {Simon Beloglavec and Marjan Heri\&\#269;ko and Matja\&\#382; B. Juri\&\#269; and Ivan Rozman},
+	Date-Added = {2006-09-21 16:47:17 +0300},
+	Date-Modified = {2010-09-02 12:49:49 +0300},
+	Issn = {0362-1340},
+	Journal = {SIGPLAN Not.},
+	Number = {4},
+	Pages = {20--28},
+	Publisher = {ACM Press},
+	Title = {Analysis of the limitations of multiple client handling in a Java server environment},
+	Volume = {40},
+	Year = {2005},
+	Abstract = {A server infrastructure in web servers, message servers and other parallel systems use a variation of two software architectures for providing concurrency: threaded or event-driven. This paper analyzes the performance limitations of concurrent applications implemented in Java. Both architectures have been evaluated and compared with various design patterns, which combine the best practices from both architectures. For each architecture the suitability for handling a large volume of client requests, the efficient management of a server load, the influence of client request structures, and the physical size of a client request, have been studied. The discussed Java APIs are core technologies for high-level APIs, used in developing web and distributed applications. The research also includes performance comparison on various platforms and discusses performance variation on various versions of a Java runtime. The paper contributes to the understanding of Java-based server architecture capabilities. Core server software architectures and required Java libraries are compared, the reasons for the limitations are identified and guidelines for choosing proper combinations are given.},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAogAAAAAAogAAgAABUZpbGVzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMa+JWNIKwAAAAFDIx9BbmFseXNpcyBvZiB0aGUgbGltaXQjMTQ2NDcucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUZHw6Po8AAAAAAAAAAAAAIABAAACQAAAAAAAAAAAAAAAAAAAAAPVmlydHVhbE1hY2hpbmVzAAAQAAgAAMa9+zMAAAARAAgAAMOjzNAAAAABABAAAUMjAAFAyQABPi4AAL8TAAIASkZpbGVzOkRvY3VtZW50czpQaEQ6cGFwZXJzOlZpcnR1YWxNYWNoaW5lczpBbmFseXNpcyBvZiB0aGUgbGltaXQjMTQ2NDcucGRmAA4AsgBYAEEAbgBhAGwAeQBzAGkAcwAgAG8AZgAgAHQAaABlACAAbABpAG0AaQB0AGEAdABpAG8AbgBzACAAbwBmACAAbQB1AGwAdABpAHAAbABlACAAYwBsAGkAZQBuAHQAIABoAGEAbgBkAGwAaQBuAGcAIABpAG4AIABhACAASgBhAHYAYQAgAHMAZQByAHYAZQByACAAZQBuAHYAaQByAG8AbgBtAGUAbgB0AC4AcABkAGYADwAMAAUARgBpAGwAZQBzABIAfi9Eb2N1bWVudHMvUGhEL3BhcGVycy9WaXJ0dWFsTWFjaGluZXMvQW5hbHlzaXMgb2YgdGhlIGxpbWl0YXRpb25zIG9mIG11bHRpcGxlIGNsaWVudCBoYW5kbGluZyBpbiBhIEphdmEgc2VydmVyIGVudmlyb25tZW50LnBkZgATAA4vVm9sdW1lcy9GaWxlcwAVAAIADv//AACABdIcHR4fWCRjbGFzc2VzWiRjbGFzc25hbWWjHyAhXU5TTXV0YWJsZURhdGFWTlNEYXRhWE5TT2JqZWN0XxB5Li4vLi4vUGhEL3BhcGVycy9WaXJ0dWFsTWFjaGluZXMvQW5hbHlzaXMgb2YgdGhlIGxpbWl0YXRpb25zIG9mIG11bHRpcGxlIGNsaWVudCBoYW5kbGluZyBpbiBhIEphdmEgc2VydmVyIGVudmlyb25tZW50LnBkZtIcHSQloiUhXE5TRGljdGlvbmFyeRIAAYagXxAPTlNLZXllZEFyY2hpdmVyAAgAEQAWAB8AKAAyADUAOgA8AEUASwBSAF0AZQBsAG8AcQBzAHYAeAB6AHwAhgCTAJgAoAMsAy4DMwM8A0cDSwNZA2ADaQPlA+oD7QP6A/8AAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAAEEQ==},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1064165.1064170}}
+
+@article{Alper00,
+	Author = {Bowen Alpern and C. R. Attanasio and John J. Burton},
+	Date-Added = {2006-05-28 17:29:23 +0300},
+	Date-Modified = {2006-05-28 17:29:55 +0300},
+	Journal = {IBM Systems Journal},
+	Key = {Ba00},
+	Number = {1},
+	Title = {The {J}alape\~{n}o virtual machine},
+	Volume = {39},
+	Year = {2000}}
+
+@techreport{Palac05,
+	Author = {Krzysztof Palacz	},
+	Date-Added = {2006-05-26 14:37:17 +0300},
+	Date-Modified = {2007-01-10 21:39:56 +0200},
+	Institution = {Java Community Process},
+	Number = {121},
+	Title = {Application Isolation {API} Specification},
+	Type = {Java Specification Requests},
+	Year = {2005},
+	Abstract = {An API for initiating and controlling computations isolated from each other to varying degrees. Some API semantics are similar to those of ThreadGroup.}}
+
+@inproceedings{Hawbl02,
+	Address = {New York, NY, USA},
+	Author = {Chris Hawblitzel and Thorsten von Eicken},
+	Booktitle = {OSDI '02: Proceedings of the 5th symposium on Operating systems design and implementation},
+	Date-Added = {2006-05-24 10:49:12 +0300},
+	Date-Modified = {2010-09-02 12:49:49 +0300},
+	Location = {Boston, Massachusetts},
+	Pages = {391--401},
+	Publisher = {ACM Press},
+	Title = {Luna: a flexible {J}ava protection system},
+	Year = {2002},
+	Abstract = {Extensible Java systems face a difficult trade-off between sharing and protection. On one hand, Java's ability to run different protection domains in a single virtual machine enables domains to share data easily and communicate without address space switches. On the other hand, unrestricted sharing blurs the boundaries between protection domains, making it difficult to terminate domains and enforce restrictions on resource usage. Existing solutions to these problems restrict sharing in an ad-hoc fashion, ruling out many desirable programming styles.This paper presents an extension to Java's type system that systematically addresses the issues of data sharing, revocation, thread control, and resource control. Multiple tasks running in a single virtual machines share data using special remote pointers, which have different types from local pointers. The distinction between local and remote pointers allows the Java runtime system to mediate the communication between tasks without slowing down operations on ordinary pointers. The extensions to Java are implemented by a system called Luna, based on the Guavac and Marmot compilers, extended with special optimizations to support both fast inter-task communication and dynamic access control. The paper describes two applications written in Luna: a simple extensible web server, and an extension of the Squid web cache to support dynamic content generation.},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAf4AAAAAAf4AAgAABUZpbGVzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMa+JWNIKwAAAAFDIx9MdW5hLWEgZmxleGlibGUgSmF2YSAjMTQ2OUMucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUacw6Po7wAAAAAAAAAAAAIABAAACQAAAAAAAAAAAAAAAAAAAAAPVmlydHVhbE1hY2hpbmVzAAAQAAgAAMa9+zMAAAARAAgAAMOjzM8AAAABABAAAUMjAAFAyQABPi4AAL8TAAIASkZpbGVzOkRvY3VtZW50czpQaEQ6cGFwZXJzOlZpcnR1YWxNYWNoaW5lczpMdW5hLWEgZmxleGlibGUgSmF2YSAjMTQ2OUMucGRmAA4AVgAqAEwAdQBuAGEALQBhACAAZgBsAGUAeABpAGIAbABlACAASgBhAHYAYQAgAHAAcgBvAHQAZQBjAHQAaQBvAG4AIABzAHkAcwB0AGUAbQAuAHAAZABmAA8ADAAFAEYAaQBsAGUAcwASAFAvRG9jdW1lbnRzL1BoRC9wYXBlcnMvVmlydHVhbE1hY2hpbmVzL0x1bmEtYSBmbGV4aWJsZSBKYXZhIHByb3RlY3Rpb24gc3lzdGVtLnBkZgATAA4vVm9sdW1lcy9GaWxlcwAVAAIADv//AACABdIcHR4fWCRjbGFzc2VzWiRjbGFzc25hbWWjHyAhXU5TTXV0YWJsZURhdGFWTlNEYXRhWE5TT2JqZWN0XxBLLi4vLi4vUGhEL3BhcGVycy9WaXJ0dWFsTWFjaGluZXMvTHVuYS1hIGZsZXhpYmxlIEphdmEgcHJvdGVjdGlvbiBzeXN0ZW0ucGRm0hwdJCWiJSFcTlNEaWN0aW9uYXJ5EgABhqBfEA9OU0tleWVkQXJjaGl2ZXIACAARABYAHwAoADIANQA6ADwARQBLAFIAXQBlAGwAbwBxAHMAdgB4AHoAfACGAJMAmACgAqICpAKpArICvQLBAs8C1gLfAy0DMgM1A0IDRwAAAAAAAAIBAAAAAAAAACgAAAAAAAAAAAAAAAAAAANZ},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1060289.1060325}}
+
+@article{Welsh00,
+	Author = {Matt Welsh and David Culler},
+	Date-Added = {2006-05-23 17:02:54 +0300},
+	Date-Modified = {2006-05-28 23:59:39 +0300},
+	Journal = {Concurrency: Practice and Experience},
+	Month = {Aug},
+	Number = {7},
+	Pages = {519--538},
+	Title = {Jaguar: enabling efficient communication and {I/O} in {J}ava},
+	Volume = {12},
+	Year = {2000},
+	Abstract = {Implementing efficient communication and I/O mechanisms in Java requires both fast access to low-level system resources (such as network and raw disk interfaces) and direct manipulation of memory regions external to the Java heap (such as communication and I/O buffers). Java native methods are too expensive to perform these operations and raise serious protection concerns. We present Jaguar, a new mechanism that provides Java applications with efficient access to system resources while retaining the protection of the Java environment. This is accomplished through compile-time translation of certain Java bytecodes to inlined machine code segments. We demonstrate the use of Jaguar through a Java interface to the VIA fast communications layer, which achieves nearly identical performance to that of C, and Pre-Serialized Objects, a mechanism which greatly reduces the cost of Java object serialization}}
+
+@misc{Reinh02,
+	Author = {Mark Reinhold},
+	Date-Added = {2006-05-22 15:18:54 +0300},
+	Date-Modified = {2010-09-02 12:49:49 +0300},
+	Howpublished = {Java Specification Request},
+	Institution = {Sun {M}icrosystems},
+	Month = {May},
+	Number = {51},
+	Title = {{JSR} 51: New {I/O} {API}s for the {J}ava Platform},
+	Year = {2002},
+	Bdsk-Url-1 = {http://jcp.org/en/jsr/detail?id=51}}
+
+@inproceedings{Bonac00,
+	Address = {New York, NY, USA},
+	Author = {Dan Bonachea},
+	Booktitle = {JAVA '00: Proceedings of the ACM 2000 conference on Java Grande},
+	Date-Added = {2006-05-22 15:11:08 +0300},
+	Date-Modified = {2010-09-02 12:49:49 +0300},
+	Isbn = {1-58113-288-3},
+	Location = {San Francisco, California, United States},
+	Pages = {16--25},
+	Publisher = {ACM Press},
+	Title = {Bulk file {I/O} extensions to {J}ava},
+	Year = {2000},
+	Abstract = {The file I/O classes present in Java have proven too inefficient to  meet the demands of high-performance applications that perform large amounts of I/O. The inefficiencies stem primarily from the library interface which requires programs to read arrays a single 
+element at a time. We present two extensions to the Java I/O libraries which alleviate this  problem. The first adds bulk (array) I/O operations to the existing libraries, removing much of the overhead currently associated with array I/O. The second is a new library that adds direct support for asynchronous I/O to enable masking I/O latency with overlapped computation. The extensions were implemented in Titanium, a high-performance, parallel dialect of Java. We present experimental results that compare the performance of the extensions with the existing I/O libraries on a simple, external merge sort application. The results demonstrate that our extensions deliver vastly superior I/O performance for this array-based application. },
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAewAAAAAAewAAgAABUZpbGVzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMa+JWNIKwAAAAFDIx9CdWxrIGZpbGUgSS1PIGV4dGVuc2kjMTQ2NEQucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUZNw6Po7wAAAAAAAAAAAAIABAAACQAAAAAAAAAAAAAAAAAAAAAPVmlydHVhbE1hY2hpbmVzAAAQAAgAAMa9+zMAAAARAAgAAMOjzM8AAAABABAAAUMjAAFAyQABPi4AAL8TAAIASkZpbGVzOkRvY3VtZW50czpQaEQ6cGFwZXJzOlZpcnR1YWxNYWNoaW5lczpCdWxrIGZpbGUgSS1PIGV4dGVuc2kjMTQ2NEQucGRmAA4ASgAkAEIAdQBsAGsAIABmAGkAbABlACAASQAtAE8AIABlAHgAdABlAG4AcwBpAG8AbgBzACAAdABvACAASgBhAHYAYQAuAHAAZABmAA8ADAAFAEYAaQBsAGUAcwASAEovRG9jdW1lbnRzL1BoRC9wYXBlcnMvVmlydHVhbE1hY2hpbmVzL0J1bGsgZmlsZSBJLU8gZXh0ZW5zaW9ucyB0byBKYXZhLnBkZgATAA4vVm9sdW1lcy9GaWxlcwAVAAIADv//AACABdIcHR4fWCRjbGFzc2VzWiRjbGFzc25hbWWjHyAhXU5TTXV0YWJsZURhdGFWTlNEYXRhWE5TT2JqZWN0XxBFLi4vLi4vUGhEL3BhcGVycy9WaXJ0dWFsTWFjaGluZXMvQnVsayBmaWxlIEktTyBleHRlbnNpb25zIHRvIEphdmEucGRm0hwdJCWiJSFcTlNEaWN0aW9uYXJ5EgABhqBfEA9OU0tleWVkQXJjaGl2ZXIACAARABYAHwAoADIANQA6ADwARQBLAFIAXQBlAGwAbwBxAHMAdgB4AHoAfACGAJMAmACgApACkgKXAqACqwKvAr0CxALNAxUDGgMdAyoDLwAAAAAAAAIBAAAAAAAAACgAAAAAAAAAAAAAAAAAAANB},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/337449.337459}}
+
+@inproceedings{Dicke00,
+	Address = {New York, NY, USA},
+	Author = {Phillip M. Dickens and Rajeev Thakur},
+	Booktitle = {JAVA '00: Proceedings of the ACM 2000 conference on Java Grande},
+	Date-Added = {2006-05-22 14:56:23 +0300},
+	Date-Modified = {2010-09-02 12:49:49 +0300},
+	Isbn = {1-58113-288-3},
+	Location = {San Francisco, California, United States},
+	Pages = {26--35},
+	Publisher = {ACM Press},
+	Title = {An evaluation of {J}ava's {I/O} capabilities for high-performance computing},
+	Year = {2000},
+	Abstract = {Java is quickly becoming the preferred language for writing distributed applications because of its inherent support for programming on distributed platforms. In particular, 
+Java provides compile-time and run-time security, automatic garbage collection, inherent support for multithreading, support for persistent objects and object migration, and porta- 
+bility. Given these significant advantages of Java, there is a growing interest in using Java for high-performance computing applications. To be successful in the high-performance 
+computing domain, however, Java must have the capability to efficiently handle the significant I/O requirements commouly found in high-performance computing applications. 
+While there has been significant research in high-performance I/O using languages such as C, C++, and Fortran, there has been relatively little research into the I/O capabilities of Java.
+ 
+In this paper, we evaluate the I/O capabilities of Java for high-performance computing. We examine several approaches that attempt to provide high-performance I/O -- many of which are not obvious at first glance-- and investigate their performance in both parallel and multithreaded environments. We also provide suggestions for expanding the I/O capabilities of Java to better support the needs of high-performance computing applications. 
+
+
+},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAmIAAAAAAmIAAgAABUZpbGVzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMa+JWNIKwAAAAFDIx9BbiBldmFsdWF0aW9uIG9mIEphdmEjMTQ2NDUucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUZFw6Po7wAAAAAAAAAAAAIABAAACQAAAAAAAAAAAAAAAAAAAAAPVmlydHVhbE1hY2hpbmVzAAAQAAgAAMa9+zMAAAARAAgAAMOjzM8AAAABABAAAUMjAAFAyQABPi4AAL8TAAIASkZpbGVzOkRvY3VtZW50czpQaEQ6cGFwZXJzOlZpcnR1YWxNYWNoaW5lczpBbiBldmFsdWF0aW9uIG9mIEphdmEjMTQ2NDUucGRmAA4AmABLAEEAbgAgAGUAdgBhAGwAdQBhAHQAaQBvAG4AIABvAGYAIABKAGEAdgBhACAAcwAgAEkALQBPACAAYwBhAHAAYQBiAGkAbABpAHQAaQBlAHMAIABmAG8AcgAgAGgAaQBnAGgALQBwAGUAcgBmAG8AcgBtAGEAbgBjAGUAIABjAG8AbQBwAHUAdABpAG4AZwAuAHAAZABmAA8ADAAFAEYAaQBsAGUAcwASAHEvRG9jdW1lbnRzL1BoRC9wYXBlcnMvVmlydHVhbE1hY2hpbmVzL0FuIGV2YWx1YXRpb24gb2YgSmF2YSBzIEktTyBjYXBhYmlsaXRpZXMgZm9yIGhpZ2gtcGVyZm9ybWFuY2UgY29tcHV0aW5nLnBkZgAAEwAOL1ZvbHVtZXMvRmlsZXMAFQACAA7//wAAgAXSHB0eH1gkY2xhc3Nlc1okY2xhc3NuYW1lox8gIV1OU011dGFibGVEYXRhVk5TRGF0YVhOU09iamVjdF8QbC4uLy4uL1BoRC9wYXBlcnMvVmlydHVhbE1hY2hpbmVzL0FuIGV2YWx1YXRpb24gb2YgSmF2YSBzIEktTyBjYXBhYmlsaXRpZXMgZm9yIGhpZ2gtcGVyZm9ybWFuY2UgY29tcHV0aW5nLnBkZtIcHSQloiUhXE5TRGljdGlvbmFyeRIAAYagXxAPTlNLZXllZEFyY2hpdmVyAAgAEQAWAB8AKAAyADUAOgA8AEUASwBSAF0AZQBsAG8AcQBzAHYAeAB6AHwAhgCTAJgAoAMGAwgDDQMWAyEDJQMzAzoDQwOyA7cDugPHA8wAAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAAD3g==},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/337449.337462}}
+
+@inproceedings{Palac02,
+	Address = {New York, NY, USA},
+	Author = {Krzysztof Palacz and Jan Vitek and Grzegorz Czajkowski and Laurent Daynas},
+	Booktitle = {OOPSLA '02: Proceedings of the 17th ACM SIGPLAN conference on Object-oriented programming, systems, languages, and applications},
+	Date-Added = {2006-05-15 15:02:40 +0300},
+	Date-Modified = {2010-09-02 12:49:49 +0300},
+	Isbn = {1-58113-471-1},
+	Location = {Seattle, Washington, USA},
+	Pages = {262--274},
+	Publisher = {ACM Press},
+	Title = {Incommunicado: efficient communication for isolates},
+	Year = {2002},
+	Abstract = {Executing computations in a single instance of safe language
+virtual machine can improve performance and overall plat-
+form scalability. It also poses various challenges. One of
+them is providing a fast inter-application communication
+mechanism. In addition to being e{\AE}cient, such amechanism
+should not violate any functional and non-functional prop-
+erties of its environment, and should also support enforce-
+ment of application-speci c security policies. This paper ex-
+plores the design and implementation of a communication
+substrate for applications executing within a single JavaTM
+virtual machine modi ed to enable safe and interference-free
+execution of isolated computations. Designing an e{\AE}cient
+extension that does not break isolation properties and at the
+same time pragmatically o ers an intuitive API has proven
+non-trivial. This paper demonstrates a set of techniques
+that lead to at least an eight-fold performance improvement
+over the in-process inter-application communication using
+standard mechanisms offered by the JavaTM platform.},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/582419.582444}}
+
+@inproceedings{Czajk00,
+	Address = {New York, NY, USA},
+	Author = {Grzegorz Czajkowski},
+	Booktitle = {OOPSLA '00: Proceedings of the 15th ACM SIGPLAN conference on Object-oriented programming, systems, languages, and applications},
+	Date-Added = {2006-05-08 13:04:29 +0300},
+	Date-Modified = {2010-09-02 12:49:49 +0300},
+	Isbn = {1-58113-200-X},
+	Location = {Minneapolis, Minnesota, United States},
+	Pages = {354--366},
+	Publisher = {ACM Press},
+	Title = {Application isolation in the {J}ava {V}irtual {M}achine},
+	Year = {2000},
+	Abstract = {To date, systems offering multitasking for the Java&trade; programming language either use one process or one class loader for each application. Both approaches are unsatisfactory. Using operating system processes is expensive, scales poorly and does not fully exploit the protection features inherent in a safe language. Class loaders replicate application code, obscure the type system, and non-uniformly treat 'trusted' and 'untrusted' classes, which leads to subtle, but nevertheless, potentially harmful forms of undesirable inter-application interaction.In this paper we propose a novel, simple yet powerful solution. The new model improves on existing designs in terms of resource utilization while offering strong isolation among applications. The approach is applicable both on high-end servers and on small devices. The main idea is to maintain only one copy of every class, regardless of how many applications use it. Classes are transparently and automatically modified, so that each application has a separate copy of its static fields. Two prototypes are described and selected performance data is analyzed. Various aspects of the proposed architectural changes to the Java Virtual Machine are discussed.},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAiIAAAAAAiIAAgAABUZpbGVzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMa+JWNIKwAAAAFDIx9BcHBsaWNhdGlvbiBJc29sYXRpb24jMTQ2NDkucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUZJw6Po8AAAAAAAAAAAAAIABAAACQAAAAAAAAAAAAAAAAAAAAAPVmlydHVhbE1hY2hpbmVzAAAQAAgAAMa9+zMAAAARAAgAAMOjzNAAAAABABAAAUMjAAFAyQABPi4AAL8TAAIASkZpbGVzOkRvY3VtZW50czpQaEQ6cGFwZXJzOlZpcnR1YWxNYWNoaW5lczpBcHBsaWNhdGlvbiBJc29sYXRpb24jMTQ2NDkucGRmAA4AbgA2AEEAcABwAGwAaQBjAGEAdABpAG8AbgAgAEkAcwBvAGwAYQB0AGkAbwBuACAAaQBuACAAdABoAGUAIABKAGEAdgBhACAAVgBpAHIAdAB1AGEAbAAgAE0AYQBjAGgAaQBuAGUAIAAuAHAAZABmAA8ADAAFAEYAaQBsAGUAcwASAFwvRG9jdW1lbnRzL1BoRC9wYXBlcnMvVmlydHVhbE1hY2hpbmVzL0FwcGxpY2F0aW9uIElzb2xhdGlvbiBpbiB0aGUgSmF2YSBWaXJ0dWFsIE1hY2hpbmUgLnBkZgATAA4vVm9sdW1lcy9GaWxlcwAVAAIADv//AACABdIcHR4fWCRjbGFzc2VzWiRjbGFzc25hbWWjHyAhXU5TTXV0YWJsZURhdGFWTlNEYXRhWE5TT2JqZWN0XxBXLi4vLi4vUGhEL3BhcGVycy9WaXJ0dWFsTWFjaGluZXMvQXBwbGljYXRpb24gSXNvbGF0aW9uIGluIHRoZSBKYXZhIFZpcnR1YWwgTWFjaGluZSAucGRm0hwdJCWiJSFcTlNEaWN0aW9uYXJ5EgABhqBfEA9OU0tleWVkQXJjaGl2ZXIACAARABYAHwAoADIANQA6ADwARQBLAFIAXQBlAGwAbwBxAHMAdgB4AHoAfACGAJMAmACgAsYCyALNAtYC4QLlAvMC+gMDA10DYgNlA3IDdwAAAAAAAAIBAAAAAAAAACgAAAAAAAAAAAAAAAAAAAOJ},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/353171.353195}}
+
+@inproceedings{Bryce00,
+	Address = {New York, NY, USA},
+	Author = {Ciar\&\#225;n Bryce and Chrislain Razafimahefa},
+	Booktitle = {OOPSLA '00: Proceedings of the 15th ACM SIGPLAN conference on Object-oriented programming, systems, languages, and applications},
+	Date-Added = {2006-05-08 12:57:10 +0300},
+	Date-Modified = {2010-09-02 12:49:49 +0300},
+	Isbn = {1-58113-200-X},
+	Location = {Minneapolis, Minnesota, United States},
+	Pages = {367--381},
+	Publisher = {ACM Press},
+	Title = {An approach to safe object sharing},
+	Year = {2000},
+	Abstract = {It is essential for security to be able to isolate mistrusting programs from one another, and to protect the host platform from programs. Isolation is difficult in object-oriented systems because objects can easily become aliased. Aliases that cross program boundaries can allow programs to exchange information without using a system provided interface that could control information exchange. In Java, mistrusting programs are placed in distinct loader spaces but uncontrolled sharing of system classes can still lead to aliases between programs. This paper presents the object spaces protection model for an object-oriented system. The model decomposes an application into a set of spaces, and each object is assigned to one space. All method calls between objects in different spaces are mediated by a security policy. An implementation of the model in Java is presented.},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAfIAAAAAAfIAAgAABUZpbGVzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMa+JWNIKwAAAAFDIx9BbiBhcHByb2FjaCB0byBzYWZlIG8jMTQ2NDQucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUZEw6Po8AAAAAAAAAAAAAIABAAACQAAAAAAAAAAAAAAAAAAAAAPVmlydHVhbE1hY2hpbmVzAAAQAAgAAMa9+zMAAAARAAgAAMOjzNAAAAABABAAAUMjAAFAyQABPi4AAL8TAAIASkZpbGVzOkRvY3VtZW50czpQaEQ6cGFwZXJzOlZpcnR1YWxNYWNoaW5lczpBbiBhcHByb2FjaCB0byBzYWZlIG8jMTQ2NDQucGRmAA4ATgAmAEEAbgAgAGEAcABwAHIAbwBhAGMAaAAgAHQAbwAgAHMAYQBmAGUAIABvAGIAagBlAGMAdAAgAHMAaABhAHIAaQBuAGcALgBwAGQAZgAPAAwABQBGAGkAbABlAHMAEgBML0RvY3VtZW50cy9QaEQvcGFwZXJzL1ZpcnR1YWxNYWNoaW5lcy9BbiBhcHByb2FjaCB0byBzYWZlIG9iamVjdCBzaGFyaW5nLnBkZgATAA4vVm9sdW1lcy9GaWxlcwAVAAIADv//AACABdIcHR4fWCRjbGFzc2VzWiRjbGFzc25hbWWjHyAhXU5TTXV0YWJsZURhdGFWTlNEYXRhWE5TT2JqZWN0XxBHLi4vLi4vUGhEL3BhcGVycy9WaXJ0dWFsTWFjaGluZXMvQW4gYXBwcm9hY2ggdG8gc2FmZSBvYmplY3Qgc2hhcmluZy5wZGbSHB0kJaIlIVxOU0RpY3Rpb25hcnkSAAGGoF8QD05TS2V5ZWRBcmNoaXZlcgAIABEAFgAfACgAMgA1ADoAPABFAEsAUgBdAGUAbABvAHEAcwB2AHgAegB8AIYAkwCYAKAClgKYAp0CpgKxArUCwwLKAtMDHQMiAyUDMgM3AAAAAAAAAgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAAA0k=},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/353171.353196}}
+
+@inproceedings{Back99,
+	Address = {Rio Rico, AZ},
+	Author = {G. V. Back and W. C. Hsieh.},
+	Booktitle = {Proceedings of the Seventh Workshop on Hot Topics in Operating Systems},
+	Date-Added = {2006-05-03 22:51:36 +0300},
+	Date-Modified = {2010-09-02 12:49:49 +0300},
+	Month = {March},
+	Organization = {IEEE Computer Society},
+	Title = {Drawing the red line in {J}ava.},
+	Year = {1999},
+	Abstract = {Software-based protection has become a viable alternative to hardware-based protection in systems based on languages such as Java, but the absence of hardware mechanisms for protection has been coupled with an absence of a user/kernel boundary. We show why such a ``red line'' must be present in order for a Java virtual machine to be as effective and as reliable as an operating system. We discuss how the red line can be implemented using software mechanisms, and explain the ones we use in the Java system that we are building.
+},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAeQAAAAAAeQAAgAABUZpbGVzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMa+JWNIKwAAAAFDIx9EcmF3aW5nIHRoZSBSZWQgTGluZSAjMTQ2OTQucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUaUw6Po7wAAAAAAAAAAAAIABAAACQAAAAAAAAAAAAAAAAAAAAAPVmlydHVhbE1hY2hpbmVzAAAQAAgAAMa9+zMAAAARAAgAAMOjzM8AAAABABAAAUMjAAFAyQABPi4AAL8TAAIASkZpbGVzOkRvY3VtZW50czpQaEQ6cGFwZXJzOlZpcnR1YWxNYWNoaW5lczpEcmF3aW5nIHRoZSBSZWQgTGluZSAjMTQ2OTQucGRmAA4ARAAhAEQAcgBhAHcAaQBuAGcAIAB0AGgAZQAgAFIAZQBkACAATABpAG4AZQAgAGkAbgAgAEoAYQB2AGEAIAAuAHAAZABmAA8ADAAFAEYAaQBsAGUAcwASAEcvRG9jdW1lbnRzL1BoRC9wYXBlcnMvVmlydHVhbE1hY2hpbmVzL0RyYXdpbmcgdGhlIFJlZCBMaW5lIGluIEphdmEgLnBkZgAAEwAOL1ZvbHVtZXMvRmlsZXMAFQACAA7//wAAgAXSHB0eH1gkY2xhc3Nlc1okY2xhc3NuYW1lox8gIV1OU011dGFibGVEYXRhVk5TRGF0YVhOU09iamVjdF8QQi4uLy4uL1BoRC9wYXBlcnMvVmlydHVhbE1hY2hpbmVzL0RyYXdpbmcgdGhlIFJlZCBMaW5lIGluIEphdmEgLnBkZtIcHSQloiUhXE5TRGljdGlvbmFyeRIAAYagXxAPTlNLZXllZEFyY2hpdmVyAAgAEQAWAB8AKAAyADUAOgA8AEUASwBSAF0AZQBsAG8AcQBzAHYAeAB6AHwAhgCTAJgAoAKIAooCjwKYAqMCpwK1ArwCxQMKAw8DEgMfAyQAAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAADNg==}}
+
+@inproceedings{Back00a,
+	Address = {San Diego, CA},
+	Author = {Godmar Back and Wilson C. Hsieh and Jay Lepreau},
+	Booktitle = {Proceedings of the 4th Symposium on Operating Systems Design and Implementation},
+	Date-Added = {2006-05-03 12:39:07 +0300},
+	Date-Modified = {2010-09-02 12:49:49 +0300},
+	Month = {Oct},
+	Organization = {USENIX},
+	Title = {Processes in {KaffeOS}: Isolation, Resource Management, and Sharing in {Java}},
+	Year = {2000},
+	Abstract = {Single-language runtime systems, in the form of Java virtual machines, are widely deployed platforms for executing untrusted mobile code. These runtimes provide some of the features that operating systems provide: inter-application memory protection and basic system services. They do not, however, provide the ability to isolate applications from each other, or limit their resource consumption. This paper describes KaffeOS, a Java runtime system that provides these features. The KaffeOS architecture takes many lessons from operating system design, such as the use of a user/kernel boundary, and employs garbage collection techniques, such as write barriers. The KaffeOS architecture supports the OS abstraction of a process in a Java virtual machine. Each process executes as if it were run in its own virtual machine, including separate garbage collection of its own heap. The difficulty in designing KaffeOS lay in balancing the goals of isolation and resource management against the goal of allowing direct sharing of objects. Overall, KaffeOS is no more than 11% slower than the freely available JVM on which it is based, which is an acceptable penalty for the safety that it provides. Because of its implementation base, KaffeOS is substantially slower than commercial JVMs for trusted code, but it clearly outperforms those JVMs in the presence of denial-of-service attacks or misbehaving code.},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAmoAAAAAAmoAAgAABUZpbGVzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMa+JWNIKwAAAAFDIx9Qcm9jZXNzZXMgaW4gS2FmZmVPUy0jMTQ2QTIucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUaiw6Po7wAAAAAAAAAAAAIABAAACQAAAAAAAAAAAAAAAAAAAAAPVmlydHVhbE1hY2hpbmVzAAAQAAgAAMa9+zMAAAARAAgAAMOjzM8AAAABABAAAUMjAAFAyQABPi4AAL8TAAIASkZpbGVzOkRvY3VtZW50czpQaEQ6cGFwZXJzOlZpcnR1YWxNYWNoaW5lczpQcm9jZXNzZXMgaW4gS2FmZmVPUy0jMTQ2QTIucGRmAA4AngBOAFAAcgBvAGMAZQBzAHMAZQBzACAAaQBuACAASwBhAGYAZgBlAE8AUwAtACAASQBzAG8AbABhAHQAaQBvAG4ALAAgAFIAZQBzAG8AdQByAGMAZQAgAE0AYQBuAGEAZwBlAG0AZQBuAHQALAAgAGEAbgBkACAAUwBoAGEAcgBpAG4AZwAgAGkAbgAgAEoAYQB2AGEAIAAuAHAAZABmAA8ADAAFAEYAaQBsAGUAcwASAHQvRG9jdW1lbnRzL1BoRC9wYXBlcnMvVmlydHVhbE1hY2hpbmVzL1Byb2Nlc3NlcyBpbiBLYWZmZU9TLSBJc29sYXRpb24sIFJlc291cmNlIE1hbmFnZW1lbnQsIGFuZCBTaGFyaW5nIGluIEphdmEgLnBkZgATAA4vVm9sdW1lcy9GaWxlcwAVAAIADv//AACABdIcHR4fWCRjbGFzc2VzWiRjbGFzc25hbWWjHyAhXU5TTXV0YWJsZURhdGFWTlNEYXRhWE5TT2JqZWN0XxBvLi4vLi4vUGhEL3BhcGVycy9WaXJ0dWFsTWFjaGluZXMvUHJvY2Vzc2VzIGluIEthZmZlT1MtIElzb2xhdGlvbiwgUmVzb3VyY2UgTWFuYWdlbWVudCwgYW5kIFNoYXJpbmcgaW4gSmF2YSAucGRm0hwdJCWiJSFcTlNEaWN0aW9uYXJ5EgABhqBfEA9OU0tleWVkQXJjaGl2ZXIACAARABYAHwAoADIANQA6ADwARQBLAFIAXQBlAGwAbwBxAHMAdgB4AHoAfACGAJMAmACgAw4DEAMVAx4DKQMtAzsDQgNLA70DwgPFA9ID1wAAAAAAAAIBAAAAAAAAACgAAAAAAAAAAAAAAAAAAAPp}}
+
+@mastersthesis{Tullm99,
+	Author = {P. Tullmann},
+	Date-Added = {2006-05-03 12:35:15 +0300},
+	Date-Modified = {2006-05-03 12:35:41 +0300},
+	School = {University of Utah},
+	Title = {The {A}lta operating system},
+	Year = {1999}}
+
+@inproceedings{Czajk01,
+	Address = {New York, NY, USA},
+	Author = {Grzegorz Czajkowski and Laurent Dayn\&\#233;s},
+	Booktitle = {OOPSLA '01: Proceedings of the 16th ACM SIGPLAN conference on Object oriented programming, systems, languages, and applications},
+	Date-Added = {2006-05-03 12:32:42 +0300},
+	Date-Modified = {2010-09-02 12:49:49 +0300},
+	Isbn = {1-58113-335-9},
+	Location = {Tampa Bay, FL, USA},
+	Pages = {125--138},
+	Publisher = {ACM Press},
+	Title = {Multitasking without comprimise: a virtual machine evolution},
+	Year = {2001},
+	Abstract = {The multitasking virtual machine (called from now on simply MVM) is a modification of the Java virtual machine. It enables safe, secure, and scalable multitasking. Safety is achieved by strict isolation of application from one another. Resource control augment security by preventing some denial-of-service attacks. Improved scalability results from an aggressive application of the main design principle of MVM: share as much of the runtime as possible among applications and replicate everything else. The system can be described as a 'no compromise'approach --- all the known APIs and mechanisms of the Java programming language are available to applications. MVM is implemented as a series of carefully tuned modifications to the Java HotSpot virtual machine, including the dynamic compiler. this paper presents the design of MVM, focusing on several novel and general techniques: an in-runtime design of lightweight isolation, an extension of a copying, generational garbage collector to provide best-effort management of a portion of the heap space, and a transparent and automated mechanism for safe execution of user-level native code. MVM demonstrates that multitasking in a safe language can be accomplished with a high degree of protection, without constraining the language, and and with competitive performance characteristics},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/504282.504292}}
+
+@inproceedings{Czajk03,
+	Address = {San Antonio, Texas, USA},
+	Author = {Grzegorz Czajkowski and Laurent Dayn{\`e}s and Ben Titzer},
+	Booktitle = {Proceedings of the General Track: 2003 USENIX Annual Technical Conference},
+	Date-Added = {2006-02-13 16:48:53 +0200},
+	Date-Modified = {2010-09-02 12:49:49 +0300},
+	Month = {June},
+	Organization = {USENIX},
+	Pages = {85--98},
+	Title = {A Multi-User Virtual Machine},
+	Year = {2003},
+	Abstract = {Recent efforts aimed at improving the scalability of the JavaTM platform have focused primarily on the safe collocation of multiple applications in the virtual machine. This is often beneficial for various performance metrics, but ultimately leads to a singleuser multitasking environment. The lack of multi-user capabilities forms a barrier to the scalability of multitasking virtual machines, as it requires one per user. In this paper we demonstrate how to enhance a multitasking virtual machine with multi-user support. In particular, users can securely manipulate their private files, load their own native libraries without endangering other computations, and use all standard APIs. Auxiliary processes are needed to provide multiple operating system resource and user contexts, but no modifications are needed to the operating system itself.},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAeAAAAAAAeAAAgAABUZpbGVzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMa+JWNIKwAAAAFDIx9BIE11bHRpLVVzZXIgVmlydHVhbCAjMTQ2NDAucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUZAw6Po8QAAAAAAAAAAAAIABAAACQAAAAAAAAAAAAAAAAAAAAAPVmlydHVhbE1hY2hpbmVzAAAQAAgAAMa9+zMAAAARAAgAAMOjzNEAAAABABAAAUMjAAFAyQABPi4AAL8TAAIASkZpbGVzOkRvY3VtZW50czpQaEQ6cGFwZXJzOlZpcnR1YWxNYWNoaW5lczpBIE11bHRpLVVzZXIgVmlydHVhbCAjMTQ2NDAucGRmAA4AQgAgAEEAIABNAHUAbAB0AGkALQBVAHMAZQByACAAVgBpAHIAdAB1AGEAbAAgAE0AYQBjAGgAaQBuAGUALgBwAGQAZgAPAAwABQBGAGkAbABlAHMAEgBGL0RvY3VtZW50cy9QaEQvcGFwZXJzL1ZpcnR1YWxNYWNoaW5lcy9BIE11bHRpLVVzZXIgVmlydHVhbCBNYWNoaW5lLnBkZgATAA4vVm9sdW1lcy9GaWxlcwAVAAIADv//AACABdIcHR4fWCRjbGFzc2VzWiRjbGFzc25hbWWjHyAhXU5TTXV0YWJsZURhdGFWTlNEYXRhWE5TT2JqZWN0XxBBLi4vLi4vUGhEL3BhcGVycy9WaXJ0dWFsTWFjaGluZXMvQSBNdWx0aS1Vc2VyIFZpcnR1YWwgTWFjaGluZS5wZGbSHB0kJaIlIVxOU0RpY3Rpb25hcnkSAAGGoF8QD05TS2V5ZWRBcmNoaXZlcgAIABEAFgAfACgAMgA1ADoAPABFAEsAUgBdAGUAbABvAHEAcwB2AHgAegB8AIYAkwCYAKAChAKGAosClAKfAqMCsQK4AsEDBQMKAw0DGgMfAAAAAAAAAgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAzE=}}
+
+@inproceedings{Duda99,
+	Address = {New York, NY, USA},
+	Author = {Kenneth J. Duda and David R. Cheriton},
+	Booktitle = {SOSP '99: Proceedings of the seventeenth ACM symposium on Operating systems principles},
+	Date-Added = {2006-02-02 15:14:50 +0200},
+	Date-Modified = {2010-09-02 12:49:49 +0300},
+	Isbn = {1-58113-140-2},
+	Location = {Charleston, South Carolina, United States},
+	Pages = {261--276},
+	Publisher = {ACM Press},
+	Title = {Borrowed-virtual-time ({BVT}) scheduling: supporting latency-sensitive threads in a general-purpose scheduler},
+	Year = {1999},
+	Abstract = {Systems need to run a larger and more diverse set of applications, from real-time to interactive to batch, on uniprocessor and multiprocessor platforms. However, most schedulers either do not address latency requirements or are specialized to complex real-time paradigms, limiting their applicability to general-purpose systems.In this paper, we present Borrowed-Virtual-Time (BVT) Scheduling, showing that it provides low-latency for real-time and interactive applications yet weighted sharing of the CPU across applications according to system policy, even with thread failure at the real-time level, all with a low-overhead implementation on multiprocessors as well as uniprocessors. It makes minimal demands on application developers, and can be used with a reservation or admission control module for hard real-time applications.},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAs4AAAAAAs4AAgAABUZpbGVzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMa+JWNIKwAAAAFDIx9Cb3Jyb3dlZC1WaXJ0dWFsLVRpbWUjMTQ2NEMucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUZMw6Po8AAAAAAAAAAAAAIABAAACQAAAAAAAAAAAAAAAAAAAAAPVmlydHVhbE1hY2hpbmVzAAAQAAgAAMa9+zMAAAARAAgAAMOjzNAAAAABABAAAUMjAAFAyQABPi4AAL8TAAIASkZpbGVzOkRvY3VtZW50czpQaEQ6cGFwZXJzOlZpcnR1YWxNYWNoaW5lczpCb3Jyb3dlZC1WaXJ0dWFsLVRpbWUjMTQ2NEMucGRmAA4A4ABvAEIAbwByAHIAbwB3AGUAZAAtAFYAaQByAHQAdQBhAGwALQBUAGkAbQBlACAAKABCAFYAVAApACAAcwBjAGgAZQBkAHUAbABpAG4AZwAtACAAcwB1AHAAcABvAHIAdABpAG4AZwAgAGwAYQB0AGUAbgBjAHkALQBzAGUAbgBzAGkAdABpAHYAZQAgAHQAaAByAGUAYQBkAHMAIABpAG4AIABhACAAZwBlAG4AZQByAGEAbAAtAHAAdQByAHAAbwBzAGUAIABzAGMAaABlAGQAdQBsAGUAcgAuAHAAZABmAA8ADAAFAEYAaQBsAGUAcwASAJUvRG9jdW1lbnRzL1BoRC9wYXBlcnMvVmlydHVhbE1hY2hpbmVzL0JvcnJvd2VkLVZpcnR1YWwtVGltZSAoQlZUKSBzY2hlZHVsaW5nLSBzdXBwb3J0aW5nIGxhdGVuY3ktc2Vuc2l0aXZlIHRocmVhZHMgaW4gYSBnZW5lcmFsLXB1cnBvc2Ugc2NoZWR1bGVyLnBkZgAAEwAOL1ZvbHVtZXMvRmlsZXMAFQACAA7//wAAgAXSHB0eH1gkY2xhc3Nlc1okY2xhc3NuYW1lox8gIV1OU011dGFibGVEYXRhVk5TRGF0YVhOU09iamVjdF8QkC4uLy4uL1BoRC9wYXBlcnMvVmlydHVhbE1hY2hpbmVzL0JvcnJvd2VkLVZpcnR1YWwtVGltZSAoQlZUKSBzY2hlZHVsaW5nLSBzdXBwb3J0aW5nIGxhdGVuY3ktc2Vuc2l0aXZlIHRocmVhZHMgaW4gYSBnZW5lcmFsLXB1cnBvc2Ugc2NoZWR1bGVyLnBkZtIcHSQloiUhXE5TRGljdGlvbmFyeRIAAYagXxAPTlNLZXllZEFyY2hpdmVyAAgAEQAWAB8AKAAyADUAOgA8AEUASwBSAF0AZQBsAG8AcQBzAHYAeAB6AHwAhgCTAJgAoANyA3QDeQOCA40DkQOfA6YDrwRCBEcESgRXBFwAAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAAEbg==},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/319151.319169}}
+
+@techreport{VMwar05,
+	Author = {VMware},
+	Date-Added = {2006-01-25 17:14:39 +0200},
+	Date-Modified = {2010-09-02 12:49:49 +0300},
+	Institution = {VMware},
+	Title = {VMware ESX Server 2: Architecture and Performance Implications},
+	Type = {VMware white paper},
+	Year = {2005},
+	Abstract = {ESX Server 2 is scalable, high-performance virtualization software that allows consolidation of multiple applications in virtual machines onto a single physical platform. While virtual machines are isolated from each other, the physical resources of the platform are shared between them based on the resource allocation policies set by the system administrator.
+This white paper uncovers ESX Server software architecture and provides insights into the
+techniques used for efficient resource control. You will also learn about advanced scheduling configuration options and performance tools for measuring system resource utilization.},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAkYAAAAAAkYAAgAABUZpbGVzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMa+JWNIKwAAAAFDIx9WTXdhcmUgRVNYIFNlcnZlciAyLSAjMTQ2QUQucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUatw6Po7wAAAAAAAAAAAAIABAAACQAAAAAAAAAAAAAAAAAAAAAPVmlydHVhbE1hY2hpbmVzAAAQAAgAAMa9+zMAAAARAAgAAMOjzM8AAAABABAAAUMjAAFAyQABPi4AAL8TAAIASkZpbGVzOkRvY3VtZW50czpQaEQ6cGFwZXJzOlZpcnR1YWxNYWNoaW5lczpWTXdhcmUgRVNYIFNlcnZlciAyLSAjMTQ2QUQucGRmAA4AhgBCAFYATQB3AGEAcgBlACAARQBTAFgAIABTAGUAcgB2AGUAcgAgADIALQAgAEEAcgBjAGgAaQB0AGUAYwB0AHUAcgBlACAAYQBuAGQAIABQAGUAcgBmAG8AcgBtAGEAbgBjAGUAIABJAG0AcABsAGkAYwBhAHQAaQBvAG4AcwAuAHAAZABmAA8ADAAFAEYAaQBsAGUAcwASAGgvRG9jdW1lbnRzL1BoRC9wYXBlcnMvVmlydHVhbE1hY2hpbmVzL1ZNd2FyZSBFU1ggU2VydmVyIDItIEFyY2hpdGVjdHVyZSBhbmQgUGVyZm9ybWFuY2UgSW1wbGljYXRpb25zLnBkZgATAA4vVm9sdW1lcy9GaWxlcwAVAAIADv//AACABdIcHR4fWCRjbGFzc2VzWiRjbGFzc25hbWWjHyAhXU5TTXV0YWJsZURhdGFWTlNEYXRhWE5TT2JqZWN0XxBjLi4vLi4vUGhEL3BhcGVycy9WaXJ0dWFsTWFjaGluZXMvVk13YXJlIEVTWCBTZXJ2ZXIgMi0gQXJjaGl0ZWN0dXJlIGFuZCBQZXJmb3JtYW5jZSBJbXBsaWNhdGlvbnMucGRm0hwdJCWiJSFcTlNEaWN0aW9uYXJ5EgABhqBfEA9OU0tleWVkQXJjaGl2ZXIACAARABYAHwAoADIANQA6ADwARQBLAFIAXQBlAGwAbwBxAHMAdgB4AHoAfACGAJMAmACgAuoC7ALxAvoDBQMJAxcDHgMnA40DkgOVA6IDpwAAAAAAAAIBAAAAAAAAACgAAAAAAAAAAAAAAAAAAAO5}}
+
+@inproceedings{King03,
+	Address = {San Antonio, Texas, USA},
+	Author = {Samuel T. King and George W. Dunlap and Peter M. Chen},
+	Booktitle = {Proceedings of the General Track:2003 USENIX Annual Technical Conference},
+	Date-Added = {2006-01-25 16:24:55 +0200},
+	Date-Modified = {2010-09-02 12:49:49 +0300},
+	Month = {June},
+	Organization = {USENIX},
+	Pages = {71--84},
+	Title = {Operating System Support for Virtual Machines},
+	Year = {2003},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAhQAAAAAAhQAAgAABUZpbGVzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMa+JWNIKwAAAAFDIx9PcGVyYXRpbmcgU3lzdGVtIFN1cHAjMTQ2OUYucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUafw6Po8AAAAAAAAAAAAAIABAAACQAAAAAAAAAAAAAAAAAAAAAPVmlydHVhbE1hY2hpbmVzAAAQAAgAAMa9+zMAAAARAAgAAMOjzNAAAAABABAAAUMjAAFAyQABPi4AAL8TAAIASkZpbGVzOkRvY3VtZW50czpQaEQ6cGFwZXJzOlZpcnR1YWxNYWNoaW5lczpPcGVyYXRpbmcgU3lzdGVtIFN1cHAjMTQ2OUYucGRmAA4AZAAxAE8AcABlAHIAYQB0AGkAbgBnACAAUwB5AHMAdABlAG0AIABTAHUAcABwAG8AcgB0ACAAZgBvAHIAIABWAGkAcgB0AHUAYQBsACAATQBhAGMAaABpAG4AZQBzAC4AcABkAGYADwAMAAUARgBpAGwAZQBzABIAVy9Eb2N1bWVudHMvUGhEL3BhcGVycy9WaXJ0dWFsTWFjaGluZXMvT3BlcmF0aW5nIFN5c3RlbSBTdXBwb3J0IGZvciBWaXJ0dWFsIE1hY2hpbmVzLnBkZgAAEwAOL1ZvbHVtZXMvRmlsZXMAFQACAA7//wAAgAXSHB0eH1gkY2xhc3Nlc1okY2xhc3NuYW1lox8gIV1OU011dGFibGVEYXRhVk5TRGF0YVhOU09iamVjdF8QUi4uLy4uL1BoRC9wYXBlcnMvVmlydHVhbE1hY2hpbmVzL09wZXJhdGluZyBTeXN0ZW0gU3VwcG9ydCBmb3IgVmlydHVhbCBNYWNoaW5lcy5wZGbSHB0kJaIlIVxOU0RpY3Rpb25hcnkSAAGGoF8QD05TS2V5ZWRBcmNoaXZlcgAIABEAFgAfACgAMgA1ADoAPABFAEsAUgBdAGUAbABvAHEAcwB2AHgAegB8AIYAkwCYAKACuAK6Ar8CyALTAtcC5QLsAvUDSgNPA1IDXwNkAAAAAAAAAgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAAA3Y=}}
+
+@inproceedings{Suger01,
+	Address = {Boston, Massachusetts, USA},
+	Author = {Jeremy Sugerman and Ganesh Venkitachalam and Beng-Hong Lim},
+	Booktitle = {Proceedings of the 2001 USENIX Annual Technical Conference},
+	Date-Added = {2006-01-24 16:44:40 +0200},
+	Date-Modified = {2006-01-24 16:49:00 +0200},
+	Local-Url = {file://localhost/Volumes/Files/Documents/PhD/papers/VirtualMachines/Virtualizing%20I-O%20Devices%20on%20VMware%20Workstation%E2%80%99s%20Hosted%20Virtual%20Machine%20Monitor.pdf},
+	Month = {June},
+	Organization = {USENIX},
+	Title = {Virtualizing I/O Devices on VMware Workstation's Hosted Virtual Machine Monitor},
+	Year = {2001}}
+
+@article{Whita02,
+	Address = {New York, NY, USA},
+	Author = {Andrew Whitaker and Marianne Shaw and Steven D. Gribble},
+	Date-Added = {2006-01-24 13:56:40 +0200},
+	Date-Modified = {2010-09-02 12:49:49 +0300},
+	Issn = {0163-5980},
+	Journal = {SIGOPS Oper. Syst. Rev.},
+	Number = {SI},
+	Pages = {195--209},
+	Publisher = {ACM Press},
+	Title = {Scale and performance in the {D}enali isolation kernel},
+	Volume = {36},
+	Year = {2002},
+	Abstract = {This paper describes the Denali isolation kernel, an operating system architecture that safely multiplexes a large number of untrusted Internet services on shared hardware. Denali's goal is to allow new Internet services to be "pushed" into third party infrastructure, relieving Internet service authors from the burden of acquiring and maintaining physical infrastructure. Our isolation kernel exposes a virtual machine abstraction, but unlike conventional virtual machine monitors, Denali does not attempt to emulate the underlying physical architecture precisely, and instead modifies the virtual architecture to gain scale, performance, and simplicity of implementation. In this paper, we first discuss design principles of isolation kernels, and then we describe the design and implementation of Denali. Following this, we present a detailed evaluation of Denali, demonstrating that the overhead of virtualization is small, that our architectural choices are warranted, and that we can successfully scale to more than 10,000 virtual machines on commodity hardware.},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/844128.844147}}
+
+@techreport{AMD05,
+	Author = {AMD},
+	Date-Added = {2006-01-24 13:15:49 +0200},
+	Date-Modified = {2006-01-24 13:20:07 +0200},
+	Institution = {AMD},
+	Number = {33047},
+	Title = {Secure Virtual Machine Architecture Reference Manual},
+	Year = {2005}}
+
+@article{Armst05,
+	Author = {W. J. Armstrong and R. L. Arndt and D. C. Boutcher and R. G. Kovacs and D. Larson and K. A. Lucke and N. Nayar and R. C. Swanberg},
+	Date-Added = {2006-01-24 12:49:08 +0200},
+	Date-Modified = {2006-01-24 19:05:25 +0200},
+	Journal = {IBM Journal of Research and Development},
+	Month = {July},
+	Number = {4},
+	Title = {Advanced virtualization capabilities of {POWER5} systems},
+	Volume = {49},
+	Year = {2005},
+	Abstract = {BM POWER5{\texttrademark} systems combine enhancements in the IBM PowerPC{\texttrademark} processor architecture with greatly enhanced firmware to significantly increase the virtualization capabilities of IBM POWER{\texttrademark} servers. The POWER hypervisor, the basis of the IBM Virtualization Engine{\texttrademark} technologies on POWER5 systems, delivers leading-edge mainframe virtualization technologies to the UNIX{\textregistered} marketplace. In addition to being able to create computing-intensive partitions with dedicated resources (processors, memory, and I/O adapters), customers can harness idle processor capacity to configure micropartitions with virtualized resources in order to consolidate many AIX{\texttrademark}, i5/OS{\texttrademark}, and Linux{\textregistered} servers onto a single platform. The POWER hypervisor provides support for virtualized processors, an IEEE virtual local area network (VLAN)-compatible virtual Ethernet switch, virtual small computer system interface (VSCSI) adapters, and virtual consoles. Many of these features are dependent upon, or take advantage of, the new facilities provided in the POWER5 processor, including the hypervisor decrementer, a fast page mover, and simultaneous multithreading support. The technology behind the virtualization capabilities that are available on the POWER5 servers, enabling customers to better utilize the industry-leading computing capacity of the POWER5 processor, is discussed in this paper.}}
+
+@article{Kalla04,
+	Author = {R. Kalla and B. Sinharoy and J. M. Tendler},
+	Date-Added = {2006-01-24 12:46:26 +0200},
+	Date-Modified = {2006-01-24 19:04:30 +0200},
+	Journal = {IEEE Micro},
+	Month = {March---April},
+	Number = {2},
+	Pages = {40--47},
+	Title = {{IBM} {POWER5} Chip: A Dual-Core Multithreaded Processor},
+	Volume = {24},
+	Year = {2004}}
+
+@inproceedings{Magen04,
+	Address = {San Jose, CA},
+	Author = {Daniel J. Magenheimer and Thomas W. Christian},
+	Booktitle = {Proceedings of the Third Virtual Machine Research and Technology Symposium},
+	Date-Added = {2006-01-24 11:38:53 +0200},
+	Date-Modified = {2010-09-02 12:49:49 +0300},
+	Month = {May},
+	Organization = {USENIX},
+	Pages = {73--82},
+	Title = {v{B}lades: Optimized Paravirtualization for the {I}tanium Processor Family},
+	Year = {2004},
+	Annote = {Virtualization of an "uncooperative" architecture often has severe performance consequences. Paravirtualization has recently been suggested as a solution to performance issues, but it introduces unacceptable supportability problems. The HP Labs  Blades project has identified a novel hybrid approach---which we call optimized aravirtualization. We examine methods for both virtualizing and paravirtualizing the Itanium processor, and then demonstrate optimized paravirtualization to maximize performance while simultaneously minimizing supportability concerns.},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAl4AAAAAAl4AAgAABUZpbGVzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMa+JWNIKwAAAAFDIx92QmxhZGVzLSBPcHRpbWl6ZWQgUGEjMTQ2QjMucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUazw6Po8AAAAAAAAAAAAAIABAAACQAAAAAAAAAAAAAAAAAAAAAPVmlydHVhbE1hY2hpbmVzAAAQAAgAAMa9+zMAAAARAAgAAMOjzNAAAAABABAAAUMjAAFAyQABPi4AAL8TAAIASkZpbGVzOkRvY3VtZW50czpQaEQ6cGFwZXJzOlZpcnR1YWxNYWNoaW5lczp2QmxhZGVzLSBPcHRpbWl6ZWQgUGEjMTQ2QjMucGRmAA4AlgBKAHYAQgBsAGEAZABlAHMALQAgAE8AcAB0AGkAbQBpAHoAZQBkACAAUABhAHIAYQB2AGkAcgB0AHUAYQBsAGkAegBhAHQAaQBvAG4AIABmAG8AcgAgAHQAaABlACAASQB0AGEAbgBpAHUAbQAgAFAAcgBvAGMAZQBzAHMAbwByACAARgBhAG0AaQBsAHkALgBwAGQAZgAPAAwABQBGAGkAbABlAHMAEgBwL0RvY3VtZW50cy9QaEQvcGFwZXJzL1ZpcnR1YWxNYWNoaW5lcy92QmxhZGVzLSBPcHRpbWl6ZWQgUGFyYXZpcnR1YWxpemF0aW9uIGZvciB0aGUgSXRhbml1bSBQcm9jZXNzb3IgRmFtaWx5LnBkZgATAA4vVm9sdW1lcy9GaWxlcwAVAAIADv//AACABdIcHR4fWCRjbGFzc2VzWiRjbGFzc25hbWWjHyAhXU5TTXV0YWJsZURhdGFWTlNEYXRhWE5TT2JqZWN0XxBrLi4vLi4vUGhEL3BhcGVycy9WaXJ0dWFsTWFjaGluZXMvdkJsYWRlcy0gT3B0aW1pemVkIFBhcmF2aXJ0dWFsaXphdGlvbiBmb3IgdGhlIEl0YW5pdW0gUHJvY2Vzc29yIEZhbWlseS5wZGbSHB0kJaIlIVxOU0RpY3Rpb25hcnkSAAGGoF8QD05TS2V5ZWRBcmNoaXZlcgAIABEAFgAfACgAMgA1ADoAPABFAEsAUgBdAGUAbABvAHEAcwB2AHgAegB8AIYAkwCYAKADAgMEAwkDEgMdAyEDLwM2Az8DrQOyA7UDwgPHAAAAAAAAAgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAAA9k=}}
+
+@inproceedings{Bugni97,
+	Address = {New York, NY, USA},
+	Author = {Edouard Bugnion and Scott Devine and Mendel Rosenblum},
+	Booktitle = {SOSP '97: Proceedings of the sixteenth ACM symposium on Operating systems principles},
+	Date-Added = {2006-01-23 16:26:01 +0200},
+	Date-Modified = {2010-09-02 12:49:49 +0300},
+	Isbn = {0-89791-916-5},
+	Location = {Saint Malo, France},
+	Pages = {143--156},
+	Publisher = {ACM Press},
+	Title = {{D}isco: running commodity operating systems on scalable multiprocessors},
+	Year = {1997},
+	Abstract = {In this paper we examine the problem of extending modem operating systems to run efficiently on large-scale shared memory multiprocessors without a large implementation effort. Our approach brings back an idea popular in the 197Os, virtual machine monitors. We use virtual machines to run multiple commodity operating systems on a scalable multiprocessor. This solution addresses many of the challenges facing the system software for these machines. We demonstrate our approach with a prototype called Disco that can
+run multiple copies of Silicon Graphics' IRIX operating system on a multiprocessor. Our experience shows that the overheads of the monitor are small and that the approach provides scalability as well as the ability to deal with the non-uniform memory access time of these systems. To reduce the memory overheads associated with running multiple operating systems, we have developed techniques where the virtual machines transparently share major data structures such as the program code and the file system buffer cache. We use the distributed system support of modem operating systems to export a partial single system image to the users. The overall solution achieves most of the benefits of operating systems customized for scalable multiprocessors yet it can be achieved with a significantly smaller implementation effort.},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAl4AAAAAAl4AAgAABUZpbGVzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMa+JWNIKwAAAAFDIx9EaXNjby0gUnVubmluZyBDb21tb2QjMTQ2OTMucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUaTw6Po8AAAAAAAAAAAAAIABAAACQAAAAAAAAAAAAAAAAAAAAAPVmlydHVhbE1hY2hpbmVzAAAQAAgAAMa9+zMAAAARAAgAAMOjzNAAAAABABAAAUMjAAFAyQABPi4AAL8TAAIASkZpbGVzOkRvY3VtZW50czpQaEQ6cGFwZXJzOlZpcnR1YWxNYWNoaW5lczpEaXNjby0gUnVubmluZyBDb21tb2QjMTQ2OTMucGRmAA4AlgBKAEQAaQBzAGMAbwAtACAAUgB1AG4AbgBpAG4AZwAgAEMAbwBtAG0AbwBkAGkAdAB5ACAATwBwAGUAcgBhAHQAaQBuAGcAIABTAHkAcwB0AGUAbQBzACAAbwBuACAAUwBjAGEAbABhAGIAbABlACAATQB1AGwAdABpAHAAcgBvAGMAZQBzAHMAbwByAHMALgBwAGQAZgAPAAwABQBGAGkAbABlAHMAEgBwL0RvY3VtZW50cy9QaEQvcGFwZXJzL1ZpcnR1YWxNYWNoaW5lcy9EaXNjby0gUnVubmluZyBDb21tb2RpdHkgT3BlcmF0aW5nIFN5c3RlbXMgb24gU2NhbGFibGUgTXVsdGlwcm9jZXNzb3JzLnBkZgATAA4vVm9sdW1lcy9GaWxlcwAVAAIADv//AACABdIcHR4fWCRjbGFzc2VzWiRjbGFzc25hbWWjHyAhXU5TTXV0YWJsZURhdGFWTlNEYXRhWE5TT2JqZWN0XxBrLi4vLi4vUGhEL3BhcGVycy9WaXJ0dWFsTWFjaGluZXMvRGlzY28tIFJ1bm5pbmcgQ29tbW9kaXR5IE9wZXJhdGluZyBTeXN0ZW1zIG9uIFNjYWxhYmxlIE11bHRpcHJvY2Vzc29ycy5wZGbSHB0kJaIlIVxOU0RpY3Rpb25hcnkSAAGGoF8QD05TS2V5ZWRBcmNoaXZlcgAIABEAFgAfACgAMgA1ADoAPABFAEsAUgBdAGUAbABvAHEAcwB2AHgAegB8AIYAkwCYAKADAgMEAwkDEgMdAyEDLwM2Az8DrQOyA7UDwgPHAAAAAAAAAgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAAA9k=},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/268998.266672}}
+
+@inproceedings{Menon05,
+	Address = {New York, NY, USA},
+	Author = {Aravind Menon and Jose Renato Santos and Yoshio Turner and G. (John) Janakiraman and Willy Zwaenepoel},
+	Booktitle = {VEE '05: Proceedings of the 1st ACM/USENIX international conference on Virtual execution environments},
+	Date-Added = {2006-01-23 14:37:52 +0200},
+	Date-Modified = {2010-09-02 12:49:49 +0300},
+	Isbn = {1-59593-047-7},
+	Location = {Chicago, IL, USA},
+	Pages = {13--23},
+	Publisher = {ACM Press},
+	Title = {Diagnosing performance overheads in the {Xen} virtual machine environment},
+	Year = {2005},
+	Abstract = {Virtual Machine (VM) environments (e.g., VMware and Xen) are experiencing a resurgence of interest for diverse uses including server consolidation and shared hosting. An application's performance in a virtual machine environment can differ markedly from its performance in a non-virtualized environment because of interactions with the underlying virtual machine monitor and other virtual machines. However, few tools are currently available to help debug performance problems in virtual machine environments.In this paper, we present Xenoprof, a system-wide statistical profiling toolkit implemented for the Xen virtual machine environment. The toolkit enables coordinated profiling of multiple VMs in a system to obtain the distribution of hardware events such as clock cycles and cache and TLB misses. The toolkit will facilitate a better understanding of performance characteristics of Xen's mechanisms allowing the community to optimize the Xen implementation.We use our toolkit to analyze performance overheads incurred by networking applications running in Xen VMs. We focus on networking applications since virtualizing network I/O devices is relatively expensive. Our experimental results quantify Xen's performance overheads for network I/O device virtualization in uni- and multi-processor systems. With certain Xen configurations, networking workloads in the Xen environment can suffer significant performance degradation. Our results identify the main sources of this overhead which should be the focus of Xen optimization efforts. We also show how our profiling toolkit was used to uncover and resolve performance bugs that we encountered in our experiments which caused unexpected application behavior.},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAmIAAAAAAmIAAgAABUZpbGVzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMa+JWNIKwAAAAFDIx9EaWFnbm9zaW5nIHBlcmZvcm1hbmMjMTQ2NUUucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUZew6Po8AAAAAAAAAAAAAIABAAACQAAAAAAAAAAAAAAAAAAAAAPVmlydHVhbE1hY2hpbmVzAAAQAAgAAMa9+zMAAAARAAgAAMOjzNAAAAABABAAAUMjAAFAyQABPi4AAL8TAAIASkZpbGVzOkRvY3VtZW50czpQaEQ6cGFwZXJzOlZpcnR1YWxNYWNoaW5lczpEaWFnbm9zaW5nIHBlcmZvcm1hbmMjMTQ2NUUucGRmAA4AmABLAEQAaQBhAGcAbgBvAHMAaQBuAGcAIABwAGUAcgBmAG8AcgBtAGEAbgBjAGUAIABvAHYAZQByAGgAZQBhAGQAcwAgAGkAbgAgAHQAaABlACAAeABlAG4AIAB2AGkAcgB0AHUAYQBsACAAbQBhAGMAaABpAG4AZQAgAGUAbgB2AGkAcgBvAG4AbQBlAG4AdAAuAHAAZABmAA8ADAAFAEYAaQBsAGUAcwASAHEvRG9jdW1lbnRzL1BoRC9wYXBlcnMvVmlydHVhbE1hY2hpbmVzL0RpYWdub3NpbmcgcGVyZm9ybWFuY2Ugb3ZlcmhlYWRzIGluIHRoZSB4ZW4gdmlydHVhbCBtYWNoaW5lIGVudmlyb25tZW50LnBkZgAAEwAOL1ZvbHVtZXMvRmlsZXMAFQACAA7//wAAgAXSHB0eH1gkY2xhc3Nlc1okY2xhc3NuYW1lox8gIV1OU011dGFibGVEYXRhVk5TRGF0YVhOU09iamVjdF8QbC4uLy4uL1BoRC9wYXBlcnMvVmlydHVhbE1hY2hpbmVzL0RpYWdub3NpbmcgcGVyZm9ybWFuY2Ugb3ZlcmhlYWRzIGluIHRoZSB4ZW4gdmlydHVhbCBtYWNoaW5lIGVudmlyb25tZW50LnBkZtIcHSQloiUhXE5TRGljdGlvbmFyeRIAAYagXxAPTlNLZXllZEFyY2hpdmVyAAgAEQAWAB8AKAAyADUAOgA8AEUASwBSAF0AZQBsAG8AcQBzAHYAeAB6AHwAhgCTAJgAoAMGAwgDDQMWAyEDJQMzAzoDQwOyA7cDugPHA8wAAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAAD3g==},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1064979.1064984}}
+
+@inproceedings{Doorn00,
+	Address = {Denver, CO, USA},
+	Author = {Leendert van Doorn},
+	Booktitle = {Proceedings of the 9th USENIX Security Symposium},
+	Date-Added = {2006-01-23 14:30:16 +0200},
+	Date-Modified = {2010-09-02 12:49:49 +0300},
+	Month = {August},
+	Organization = {USENIX},
+	Title = {A Secure Java Virtual Machine},
+	Year = {2000},
+	Abstract = {A virtual machine monitor (VMM) allows multiple operating systems to run concurrently on virtual machines (VMs) on a single hardware platform. Each VM can be treated as an independent operating system platform. A secure VMM would enforce an overarching security policy on its VMs.
+
+The potential benefits of a secure VMM for PCs include: a more secure environment, familiar COTS operating systems and applications, and enormous savings resulting from the elimination of the need for separate platforms when both high assurance policy enforcement, and COTS software are required.
+
+This paper addresses the problem of implementing secure VMMs on the Intel Pentium architecture. The requirements for various types of VMMs are reviewed. We report an analysis of the virtualizability of all of the approximately 250 instructions of the Intel Pentium platform and address its ability to support a VMM. Current "virtualization" techniques for the Intel Pentium architecture are examined and several security problems are identified. An approach to providing a virtualizable hardware base for a highly secure VMM is discussed.},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAeQAAAAAAeQAAgAABUZpbGVzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMa+JWNIKwAAAAFDIx9BIFNlY3VyZSBKYXZhIFZpcnR1YWwjMTQ2NDEucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUZBw6Po8AAAAAAAAAAAAAIABAAACQAAAAAAAAAAAAAAAAAAAAAPVmlydHVhbE1hY2hpbmVzAAAQAAgAAMa9+zMAAAARAAgAAMOjzNAAAAABABAAAUMjAAFAyQABPi4AAL8TAAIASkZpbGVzOkRvY3VtZW50czpQaEQ6cGFwZXJzOlZpcnR1YWxNYWNoaW5lczpBIFNlY3VyZSBKYXZhIFZpcnR1YWwjMTQ2NDEucGRmAA4ARAAhAEEAIABTAGUAYwB1AHIAZQAgAEoAYQB2AGEAIABWAGkAcgB0AHUAYQBsACAATQBhAGMAaABpAG4AZQAuAHAAZABmAA8ADAAFAEYAaQBsAGUAcwASAEcvRG9jdW1lbnRzL1BoRC9wYXBlcnMvVmlydHVhbE1hY2hpbmVzL0EgU2VjdXJlIEphdmEgVmlydHVhbCBNYWNoaW5lLnBkZgAAEwAOL1ZvbHVtZXMvRmlsZXMAFQACAA7//wAAgAXSHB0eH1gkY2xhc3Nlc1okY2xhc3NuYW1lox8gIV1OU011dGFibGVEYXRhVk5TRGF0YVhOU09iamVjdF8QQi4uLy4uL1BoRC9wYXBlcnMvVmlydHVhbE1hY2hpbmVzL0EgU2VjdXJlIEphdmEgVmlydHVhbCBNYWNoaW5lLnBkZtIcHSQloiUhXE5TRGljdGlvbmFyeRIAAYagXxAPTlNLZXllZEFyY2hpdmVyAAgAEQAWAB8AKAAyADUAOgA8AEUASwBSAF0AZQBsAG8AcQBzAHYAeAB6AHwAhgCTAJgAoAKIAooCjwKYAqMCpwK1ArwCxQMKAw8DEgMfAyQAAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAADNg==}}
+
+@inproceedings{Robin00,
+	Address = {Denver, CO, USA},
+	Author = {J. S. Robin and C. E. Irvine},
+	Booktitle = {Proceedings of the 9th USENIX Security Symposium},
+	Date-Added = {2006-01-23 14:30:16 +0200},
+	Date-Modified = {2006-01-24 19:02:00 +0200},
+	Local-Url = {file://localhost/Volumes/Files/Documents/PhD/papers/VirtualMachines/Analysis%20of%20the%20Intel%20Pentium%E2%80%99s%20Ability%20to%20Support%20a%20Secure%20Virtual%20Machine%20Monitor.pdf},
+	Month = {August},
+	Organization = {USENIX},
+	Pages = {129--144},
+	Title = {Analysis of the {I}ntel {P}entium's ability to support a secure virtual machine monitor},
+	Year = {2000},
+	Abstract = {A virtual machine monitor (VMM) allows multiple operating systems to run concurrently on virtual machines (VMs) on a single hardware platform. Each VM can be treated as an independent operating system platform. A secure VMM would enforce an overarching security policy on its VMs.
+
+The potential benefits of a secure VMM for PCs include: a more secure environment, familiar COTS operating systems and applications, and enormous savings resulting from the elimination of the need for separate platforms when both high assurance policy enforcement, and COTS software are required.
+
+This paper addresses the problem of implementing secure VMMs on the Intel Pentium architecture. The requirements for various types of VMMs are reviewed. We report an analysis of the virtualizability of all of the approximately 250 instructions of the Intel Pentium platform and address its ability to support a VMM. Current "virtualization" techniques for the Intel Pentium architecture are examined and several security problems are identified. An approach to providing a virtualizable hardware base for a highly secure VMM is discussed.},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAnwAAAAAAnwAAgAABUZpbGVzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMa+JWNIKwAAACkCOx9BbmFseXNpcyBvZiB0aGUgSW50ZSMyOTA1MDIucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKQUCw6Po7wAAAAAAAAAAAAEAAgAACQAAAAAAAAAAAAAAAAAAAAAPVmlydHVhbE1hY2hpbmVzAAAQAAgAAMa9+zMAAAARAAgAAMOjzM8AAAABAAwAKQI7ACkCLQAAvxMAAgBGRmlsZXM6RG9jdW1lbnRzOnBhcGVyczpWaXJ0dWFsTWFjaGluZXM6QW5hbHlzaXMgb2YgdGhlIEludGUjMjkwNTAyLnBkZgAOALIAWABBAG4AYQBsAHkAcwBpAHMAIABvAGYAIAB0AGgAZQAgAEkAbgB0AGUAbAAgAFAAZQBuAHQAaQB1AG0AJwBzACAAYQBiAGkAbABpAHQAeQAgAHQAbwAgAHMAdQBwAHAAbwByAHQAIABhACAAcwBlAGMAdQByAGUAIAB2AGkAcgB0AHUAYQBsACAAbQBhAGMAaABpAG4AZQAgAG0AbwBuAGkAdABvAHIAMAAuAHAAZABmAA8ADAAFAEYAaQBsAGUAcwASAHovRG9jdW1lbnRzL3BhcGVycy9WaXJ0dWFsTWFjaGluZXMvQW5hbHlzaXMgb2YgdGhlIEludGVsIFBlbnRpdW0ncyBhYmlsaXR5IHRvIHN1cHBvcnQgYSBzZWN1cmUgdmlydHVhbCBtYWNoaW5lIG1vbml0b3IwLnBkZgATAA4vVm9sdW1lcy9GaWxlcwAVAAIADv//AACABdIcHR4fWCRjbGFzc2VzWiRjbGFzc25hbWWjHyAhXU5TTXV0YWJsZURhdGFWTlNEYXRhWE5TT2JqZWN0XxBYQW5hbHlzaXMgb2YgdGhlIEludGVsIFBlbnRpdW0ncyBhYmlsaXR5IHRvIHN1cHBvcnQgYSBzZWN1cmUgdmlydHVhbCBtYWNoaW5lIG1vbml0b3IwLnBkZtIcHSQloiUhXE5TRGljdGlvbmFyeRIAAYagXxAPTlNLZXllZEFyY2hpdmVyAAgAEQAWAB8AKAAyADUAOgA8AEUASwBSAF0AZQBsAG8AcQBzAHYAeAB6AHwAhgCTAJgAoAMgAyIDJwMwAzsDPwNNA1QDXQO4A70DwAPNA9IAAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAAD5A==}}
+
+@inbook{Smith04,
+	Author = {James E. Smith and Ravi Nair},
+	Date-Added = {2006-01-13 17:18:09 +0200},
+	Date-Modified = {2006-01-13 17:20:55 +0200},
+	Publisher = {Morgan Kaufmann Publishers},
+	Title = {An Overview of Virtual Machine Architectures},
+	Year = {2004}}
+
+@article{Seawr79,
+	Author = {L. H. Seawright and R. A. MacKinnon},
+	Date-Added = {2006-01-13 17:10:39 +0200},
+	Date-Modified = {2006-05-29 00:06:52 +0300},
+	Journal = {IBM Systems Journal},
+	Number = {1},
+	Pages = {4--17},
+	Title = {{VM}/370-a study of multiplicity and usefulness},
+	Volume = {18},
+	Year = {1979},
+	Abstract = {This paper is an overview of IBM'S Virtual Machine Facility/370. It describes the virtual machine concept and its capabilities and implementation in VM/370. Two components of VMl370 are discussed the control program and the Conversational Monitor
+System. The usefulness o VM/370 in multiple and diverse environments is covered. New developments in VM/370 from hardware assists to system extensions, networking, and handshaking are briefly described as an introduction to the rest of the papers in this issue.}}
+
+@article{Gum83,
+	Author = {P. H. Gum},
+	Date-Added = {2006-01-13 17:04:25 +0200},
+	Date-Modified = {2010-09-02 12:49:49 +0300},
+	Journal = {Journal of Research and Development},
+	Number = {6},
+	Title = {System/370 Extended Architecture: Facilities for Virtual Machines},
+	Volume = {27},
+	Year = {1983},
+	Abstract = {This paper describes the evolution of facilities forv irtual machines on IBM System/370 computers, and presents the elements of a new architectural facility designed for the virtual machine environment. Assists that have been added to various Systern/370 models to support the use of virtual machines are summarized, and a general facility forth is purpose which was introduced with the System/370 Extended Architecture (370-XA) is described. A new instruction of the 370-XA architecture places the machine in a specific mode in which several special capabilities are enabled. These allow the machine to provide execution in the virtual-machine environment of most of the instructions (including many privileged instructions) and most of the facilities (such as dynamic address translation) of both the System/370 and the 370-XA architectures. The major features of this new facility are individually discussed and summarized.},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAlAAAAAAAlAAAgAABUZpbGVzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMa+JWNIKwAAAAFDIx9TeXN0ZW0tMzcwIEV4dGVuZGVkIEEjMTQ2QTgucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUaow6Po7wAAAAAAAAAAAAIABAAACQAAAAAAAAAAAAAAAAAAAAAPVmlydHVhbE1hY2hpbmVzAAAQAAgAAMa9+zMAAAARAAgAAMOjzM8AAAABABAAAUMjAAFAyQABPi4AAL8TAAIASkZpbGVzOkRvY3VtZW50czpQaEQ6cGFwZXJzOlZpcnR1YWxNYWNoaW5lczpTeXN0ZW0tMzcwIEV4dGVuZGVkIEEjMTQ2QTgucGRmAA4AjABFAFMAeQBzAHQAZQBtAC0AMwA3ADAAIABFAHgAdABlAG4AZABlAGQAIABBAHIAYwBoAGkAdABlAGMAdAB1AHIAZQAtACAARgBhAGMAaQBsAGkAdABpAGUAcwAgAGYAbwByACAAVgBpAHIAdAB1AGEAbAAgAE0AYQBjAGgAaQBuAGUAcwAuAHAAZABmAA8ADAAFAEYAaQBsAGUAcwASAGsvRG9jdW1lbnRzL1BoRC9wYXBlcnMvVmlydHVhbE1hY2hpbmVzL1N5c3RlbS0zNzAgRXh0ZW5kZWQgQXJjaGl0ZWN0dXJlLSBGYWNpbGl0aWVzIGZvciBWaXJ0dWFsIE1hY2hpbmVzLnBkZgAAEwAOL1ZvbHVtZXMvRmlsZXMAFQACAA7//wAAgAXSHB0eH1gkY2xhc3Nlc1okY2xhc3NuYW1lox8gIV1OU011dGFibGVEYXRhVk5TRGF0YVhOU09iamVjdF8QZi4uLy4uL1BoRC9wYXBlcnMvVmlydHVhbE1hY2hpbmVzL1N5c3RlbS0zNzAgRXh0ZW5kZWQgQXJjaGl0ZWN0dXJlLSBGYWNpbGl0aWVzIGZvciBWaXJ0dWFsIE1hY2hpbmVzLnBkZtIcHSQloiUhXE5TRGljdGlvbmFyeRIAAYagXxAPTlNLZXllZEFyY2hpdmVyAAgAEQAWAB8AKAAyADUAOgA8AEUASwBSAF0AZQBsAG8AcQBzAHYAeAB6AHwAhgCTAJgAoAL0AvYC+wMEAw8DEwMhAygDMQOaA58DogOvA7QAAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAADxg==}}
+
+@inproceedings{Govil99,
+	Address = {New York, NY, USA},
+	Author = {Kinshuk Govil and Dan Teodosiu and Yongqiang Huang and Mendel Rosenblum},
+	Booktitle = {SOSP '99: Proceedings of the seventeenth ACM symposium on Operating systems principles},
+	Date-Added = {2006-01-11 18:36:06 +0200},
+	Date-Modified = {2010-09-02 12:49:49 +0300},
+	Isbn = {1-58113-140-2},
+	Location = {Charleston, South Carolina, United States},
+	Pages = {154--169},
+	Publisher = {ACM Press},
+	Title = {Cellular {D}isco: resource management using virtual clusters on shared-memory multiprocessors},
+	Year = {1999},
+	Abstract = {Despite the fact that large-scale shared-memory multiprocessors have been commercially available for several years, system software that fully utilizes all their features is still not available, mostly due to the complexity and cost of making the required changes to the operating system. A recently proposed approach, called Disco, substantially reduces this development cost by using a virtual machine monitor that leverages the existing operating system technology.In this paper we present a system called Cellular Disco that extends the Disco work to provide all the advantages of the hardware partitioning and scalable operating system approaches. We argue that Cellular Disco can achieve these benefits at only a small fraction of the development cost of modifying the operating system. Cellular Disco effectively turns a large-scale shared-memory multiprocessor into a virtual cluster that supports fault containment and heterogeneity, while avoiding operating system scalability bottle-necks. Yet at the same time, Cellular Disco preserves the benefits of a shared-memory multiprocessor by implementing dynamic, fine-grained resource sharing, and by allowing users to overcommit resources such as processors and memory. This hybrid approach requires a scalable resource manager that makes local decisions with limited information while still providing good global performance and fault containment.In this paper we describe our experience with a Cellular Disco prototype on a 32-processor SGI Origin 2000 system. We show that the execution time penalty for this approach is low, typically within 10% of the best available commercial operating system for most workloads, and that it can manage the CPU and memory resources of the machine significantly better than the hardware partitioning approach.},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAp4AAAAAAp4AAgAABUZpbGVzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMa+JWNIKwAAAAFDIx9DZWxsdWxhciBEaXNjby0gcmVzb3UjMTQ2NEYucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUZPw6Po7wAAAAAAAAAAAAIABAAACQAAAAAAAAAAAAAAAAAAAAAPVmlydHVhbE1hY2hpbmVzAAAQAAgAAMa9+zMAAAARAAgAAMOjzM8AAAABABAAAUMjAAFAyQABPi4AAL8TAAIASkZpbGVzOkRvY3VtZW50czpQaEQ6cGFwZXJzOlZpcnR1YWxNYWNoaW5lczpDZWxsdWxhciBEaXNjby0gcmVzb3UjMTQ2NEYucGRmAA4AwABfAEMAZQBsAGwAdQBsAGEAcgAgAEQAaQBzAGMAbwAtACAAcgBlAHMAbwB1AHIAYwBlACAAbQBhAG4AYQBnAGUAbQBlAG4AdAAgAHUAcwBpAG4AZwAgAHYAaQByAHQAdQBhAGwAIABjAGwAdQBzAHQAZQByAHMAIABvAG4AIABzAGgAYQByAGUAZAAtAG0AZQBtAG8AcgB5ACAAbQB1AGwAdABpAHAAcgBvAGMAZQBzAHMAbwByAHMALgBwAGQAZgAPAAwABQBGAGkAbABlAHMAEgCFL0RvY3VtZW50cy9QaEQvcGFwZXJzL1ZpcnR1YWxNYWNoaW5lcy9DZWxsdWxhciBEaXNjby0gcmVzb3VyY2UgbWFuYWdlbWVudCB1c2luZyB2aXJ0dWFsIGNsdXN0ZXJzIG9uIHNoYXJlZC1tZW1vcnkgbXVsdGlwcm9jZXNzb3JzLnBkZgAAEwAOL1ZvbHVtZXMvRmlsZXMAFQACAA7//wAAgAXSHB0eH1gkY2xhc3Nlc1okY2xhc3NuYW1lox8gIV1OU011dGFibGVEYXRhVk5TRGF0YVhOU09iamVjdF8QgC4uLy4uL1BoRC9wYXBlcnMvVmlydHVhbE1hY2hpbmVzL0NlbGx1bGFyIERpc2NvLSByZXNvdXJjZSBtYW5hZ2VtZW50IHVzaW5nIHZpcnR1YWwgY2x1c3RlcnMgb24gc2hhcmVkLW1lbW9yeSBtdWx0aXByb2Nlc3NvcnMucGRm0hwdJCWiJSFcTlNEaWN0aW9uYXJ5EgABhqBfEA9OU0tleWVkQXJjaGl2ZXIACAARABYAHwAoADIANQA6ADwARQBLAFIAXQBlAGwAbwBxAHMAdgB4AHoAfACGAJMAmACgA0IDRANJA1IDXQNhA28DdgN/BAIEBwQKBBcEHAAAAAAAAAIBAAAAAAAAACgAAAAAAAAAAAAAAAAAAAQu},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/319151.319162}}
+
+@article{Walds02,
+	Address = {New York, NY, USA},
+	Author = {Carl A. Waldspurger},
+	Date-Added = {2006-01-11 18:27:13 +0200},
+	Date-Modified = {2010-09-02 12:49:49 +0300},
+	Issn = {0163-5980},
+	Journal = {SIGOPS Oper. Syst. Rev.},
+	Number = {SI},
+	Pages = {181--194},
+	Publisher = {ACM Press},
+	Title = {Memory resource management in {VM}ware {ESX} server},
+	Volume = {36},
+	Year = {2002},
+	Abstract = {VMware ESX Server is a thin software layer designed to multiplex hardware resources efficiently among virtual machines running unmodified commodity operating systems. This paper introduces several novel ESX Server mechanisms and policies for managing memory. A ballooning technique reclaims the pages considered least valuable by the operating system running in a virtual machine. An idle memory tax achieves efficient memory utilization while maintaining performance isolation guarantees. Content-based page sharing and hot I/O page remapping exploit transparent page remapping to eliminate redundancy and reduce copying overheads. These techniques are combined to efficiently support virtual machine workloads that overcommit memory.},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAhwAAAAAAhwAAgAABUZpbGVzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMa+JWNIKwAAAAFDIx9NZW1vcnkgUmVzb3VyY2UgTWFuYWcjMTQ2OUQucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUadw6Po8AAAAAAAAAAAAAIABAAACQAAAAAAAAAAAAAAAAAAAAAPVmlydHVhbE1hY2hpbmVzAAAQAAgAAMa9+zMAAAARAAgAAMOjzNAAAAABABAAAUMjAAFAyQABPi4AAL8TAAIASkZpbGVzOkRvY3VtZW50czpQaEQ6cGFwZXJzOlZpcnR1YWxNYWNoaW5lczpNZW1vcnkgUmVzb3VyY2UgTWFuYWcjMTQ2OUQucGRmAA4AagA0AE0AZQBtAG8AcgB5ACAAUgBlAHMAbwB1AHIAYwBlACAATQBhAG4AYQBnAGUAbQBlAG4AdAAgAGkAbgAgAFYATQB3AGEAcgBlACAARQBTAFgAIABTAGUAcgB2AGUAcgAgAC4AcABkAGYADwAMAAUARgBpAGwAZQBzABIAWi9Eb2N1bWVudHMvUGhEL3BhcGVycy9WaXJ0dWFsTWFjaGluZXMvTWVtb3J5IFJlc291cmNlIE1hbmFnZW1lbnQgaW4gVk13YXJlIEVTWCBTZXJ2ZXIgLnBkZgATAA4vVm9sdW1lcy9GaWxlcwAVAAIADv//AACABdIcHR4fWCRjbGFzc2VzWiRjbGFzc25hbWWjHyAhXU5TTXV0YWJsZURhdGFWTlNEYXRhWE5TT2JqZWN0XxBVLi4vLi4vUGhEL3BhcGVycy9WaXJ0dWFsTWFjaGluZXMvTWVtb3J5IFJlc291cmNlIE1hbmFnZW1lbnQgaW4gVk13YXJlIEVTWCBTZXJ2ZXIgLnBkZtIcHSQloiUhXE5TRGljdGlvbmFyeRIAAYagXxAPTlNLZXllZEFyY2hpdmVyAAgAEQAWAB8AKAAyADUAOgA8AEUASwBSAF0AZQBsAG8AcQBzAHYAeAB6AHwAhgCTAJgAoALAAsICxwLQAtsC3wLtAvQC/QNVA1oDXQNqA28AAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAADgQ==},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/844128.844146}}
+
+@article{Whita05,
+	Author = {Andrew Whitaker and Richard S. Cox and Marianne Shaw and Steven D. Gribble},
+	Date-Added = {2006-01-11 15:19:35 +0200},
+	Date-Modified = {2006-01-11 15:20:45 +0200},
+	Journal = {IEEE Computer},
+	Month = {May},
+	Number = {5},
+	Pages = {57--62},
+	Title = {Rethinking the Design of Virtual Machine Monitors},
+	Volume = {38},
+	Year = {2005},
+	Abstract = {To overcome the poor scalability and extensibility of traditional virtual machine monitors that partition a single physical machine into multiple virtual machines, the Denali VMM uses paravirtualization to promote scalability and hardware interposition to promote extensibility.}}
+
+@article{Uhlig05,
+	Author = {Rich Uhlig and Gil Neiger and Dion Rodgers and Amy L. Santoni and Fernando C.M. Martins and Andrew V. Anderson and Steven M. Bennett and Alain Kagi and Felix H. Leung and Larry Smith},
+	Date-Added = {2006-01-11 15:15:00 +0200},
+	Date-Modified = {2006-01-11 15:16:30 +0200},
+	Journal = {IEEE Computer},
+	Month = {May},
+	Number = {5},
+	Pages = {48--56},
+	Title = {Intel Virtualization Technology},
+	Volume = {38},
+	Year = {2005},
+	Abstract = {Once confined to specialized server and mainframe systems, virtualization is now supported in off-the-shelf systems based on Intel architecture hardware. Intel Virtualization Technology provides hardware support for processor virtualization, enabling simplifications of virtual machine monitor software. Resulting VMMs can support a wider range of legacy and future operating systems while maintaining high performance.}}
+
+@article{Rosen05,
+	Author = {Mendel Rosenblum and Tal Garfinkel},
+	Date-Added = {2006-01-11 15:13:38 +0200},
+	Date-Modified = {2006-01-11 15:14:33 +0200},
+	Journal = {IEEE Computer},
+	Month = {May},
+	Number = {5},
+	Pages = {39--47},
+	Title = {Virtual Machine Monitors: Current Technology and Future Trends},
+	Volume = {38},
+	Year = {2005},
+	Abstract = {Developed more than 30 years ago to address mainframe computing problems, virtual machine monitors have resurfaced on commodity platforms, offering novel solutions to challenges in security, reliability, and administration.}}
+
+@article{Figue05,
+	Author = {Renato Figueiredo and Peter A. Dinda and Jose Fortes},
+	Date-Added = {2006-01-11 15:10:27 +0200},
+	Date-Modified = {2010-09-02 12:49:49 +0300},
+	Journal = {IEEE Computer},
+	Month = {May},
+	Number = {5},
+	Pages = {28--31},
+	Title = {Guest Editors' Introduction: Resource Virtualization Renaissance},
+	Volume = {38},
+	Year = {2005},
+	Abstract = {Virtualization technologies encompass a variety of mechanisms and techniques used to address computer system problems such as security, performance, and reliability by decoupling the architecture and user-perceived behavior of hardware and software resources from their physical implementation.},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAfYAAAAAAfYAAgAABUZpbGVzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMa+JWNIKwAAAAFDIx9SZXNvdXJjZSBWaXJ0dWFsaXphdGkjMTQ2QTMucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUajw6Po7wAAAAAAAAAAAAIABAAACQAAAAAAAAAAAAAAAAAAAAAPVmlydHVhbE1hY2hpbmVzAAAQAAgAAMa9+zMAAAARAAgAAMOjzM8AAAABABAAAUMjAAFAyQABPi4AAL8TAAIASkZpbGVzOkRvY3VtZW50czpQaEQ6cGFwZXJzOlZpcnR1YWxNYWNoaW5lczpSZXNvdXJjZSBWaXJ0dWFsaXphdGkjMTQ2QTMucGRmAA4AUAAnAFIAZQBzAG8AdQByAGMAZQAgAFYAaQByAHQAdQBhAGwAaQB6AGEAdABpAG8AbgAgAFIAZQBuAGEAaQBzAHMAYQBuAGMAZQAuAHAAZABmAA8ADAAFAEYAaQBsAGUAcwASAE0vRG9jdW1lbnRzL1BoRC9wYXBlcnMvVmlydHVhbE1hY2hpbmVzL1Jlc291cmNlIFZpcnR1YWxpemF0aW9uIFJlbmFpc3NhbmNlLnBkZgAAEwAOL1ZvbHVtZXMvRmlsZXMAFQACAA7//wAAgAXSHB0eH1gkY2xhc3Nlc1okY2xhc3NuYW1lox8gIV1OU011dGFibGVEYXRhVk5TRGF0YVhOU09iamVjdF8QSC4uLy4uL1BoRC9wYXBlcnMvVmlydHVhbE1hY2hpbmVzL1Jlc291cmNlIFZpcnR1YWxpemF0aW9uIFJlbmFpc3NhbmNlLnBkZtIcHSQloiUhXE5TRGljdGlvbmFyeRIAAYagXxAPTlNLZXllZEFyY2hpdmVyAAgAEQAWAB8AKAAyADUAOgA8AEUASwBSAF0AZQBsAG8AcQBzAHYAeAB6AHwAhgCTAJgAoAKaApwCoQKqArUCuQLHAs4C1wMiAycDKgM3AzwAAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAADTg==}}
+
+@article{Smith05,
+	Author = {James E. Smith and Ravi Nair},
+	Date-Added = {2006-01-11 15:06:02 +0200},
+	Date-Modified = {2006-01-11 15:09:16 +0200},
+	Journal = {IEEE Computer},
+	Month = {May},
+	Number = {5},
+	Pages = {32--38},
+	Title = {The Architecture of Virtual Machines},
+	Volume = {38},
+	Year = {2005},
+	Abstract = {A virtual machine can support individual processes or a complete system depending on the abstraction level where virtualization occurs. Some VMs support flexible hardware usage and software isolation, while others translate from one instruction set to another.}}
+
+@inproceedings{Barha03,
+	Address = {New York, NY, USA},
+	Author = {Paul Barham and Boris Dragovic and Keir Fraser and Steven Hand and Tim Harris and Alex Ho and Rolf Neugebauer and Ian Pratt and Andrew Warfield},
+	Booktitle = {SOSP '03: Proceedings of the nineteenth ACM symposium on Operating systems principles},
+	Date-Added = {2006-01-05 14:27:13 +0200},
+	Date-Modified = {2010-09-02 12:49:49 +0300},
+	Isbn = {1-58113-757-5},
+	Location = {Bolton Landing, NY, USA},
+	Pages = {164--177},
+	Publisher = {ACM Press},
+	Title = {Xen and the art of virtualization},
+	Year = {2003},
+	Abstract = {Numerous systems have been designed which use virtualization to subdivide the ample resources of a modern computer. Some require specialized hardware, or cannot support commodity operating systems. Some target 100% binary compatibility at the expense of performance. Others sacrifice security or functionality for speed. Few offer resource isolation or performance guarantees; most provide only best-effort provisioning, risking denial of service.This paper presents Xen, an x86 virtual machine monitor which allows multiple commodity operating systems to share conventional hardware in a safe and resource managed fashion, but without sacrificing either performance or functionality. This is achieved by providing an idealized virtual machine abstraction to which operating systems such as Linux, BSD and Windows XP, can be ported with minimal effort.Our design is targeted at hosting up to 100 virtual machine instances simultaneously on a modern server. The virtualization approach taken by Xen is extremely efficient: we allow operating systems such as Linux and Windows XP to be hosted simultaneously for a negligible performance overhead --- at most a few percent compared with the unvirtualized case. We considerably outperform competing commercial and freely available solutions in a range of microbenchmarks and system-wide tests.},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAfAAAAAAAfAAAgAABUZpbGVzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMa+JWNIKwAAAAFDIx9YZW4gYW5kIHRoZSBBcnQgb2YgVmkjMTQ2QjEucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUaxw6Po8AAAAAAAAAAAAAIABAAACQAAAAAAAAAAAAAAAAAAAAAPVmlydHVhbE1hY2hpbmVzAAAQAAgAAMa9+zMAAAARAAgAAMOjzNAAAAABABAAAUMjAAFAyQABPi4AAL8TAAIASkZpbGVzOkRvY3VtZW50czpQaEQ6cGFwZXJzOlZpcnR1YWxNYWNoaW5lczpYZW4gYW5kIHRoZSBBcnQgb2YgVmkjMTQ2QjEucGRmAA4ATAAlAFgAZQBuACAAYQBuAGQAIAB0AGgAZQAgAEEAcgB0ACAAbwBmACAAVgBpAHIAdAB1AGEAbABpAHoAYQB0AGkAbwBuAC4AcABkAGYADwAMAAUARgBpAGwAZQBzABIASy9Eb2N1bWVudHMvUGhEL3BhcGVycy9WaXJ0dWFsTWFjaGluZXMvWGVuIGFuZCB0aGUgQXJ0IG9mIFZpcnR1YWxpemF0aW9uLnBkZgAAEwAOL1ZvbHVtZXMvRmlsZXMAFQACAA7//wAAgAXSHB0eH1gkY2xhc3Nlc1okY2xhc3NuYW1lox8gIV1OU011dGFibGVEYXRhVk5TRGF0YVhOU09iamVjdF8QRi4uLy4uL1BoRC9wYXBlcnMvVmlydHVhbE1hY2hpbmVzL1hlbiBhbmQgdGhlIEFydCBvZiBWaXJ0dWFsaXphdGlvbi5wZGbSHB0kJaIlIVxOU0RpY3Rpb25hcnkSAAGGoF8QD05TS2V5ZWRBcmNoaXZlcgAIABEAFgAfACgAMgA1ADoAPABFAEsAUgBdAGUAbABvAHEAcwB2AHgAegB8AIYAkwCYAKAClAKWApsCpAKvArMCwQLIAtEDGgMfAyIDLwM0AAAAAAAAAgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAAA0Y=},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/945445.945462}}
+
+@book{Mille03,
+	Author = {James S. Miller and Susann Ragsdale and Jim Miller},
+	Date-Added = {2005-12-20 15:40:49 +0200},
+	Date-Modified = {2005-12-20 16:06:45 +0200},
+	Month = {October},
+	Publisher = {Addison-Wesley},
+	Series = {Microsoft .NET Development Series.},
+	Title = {The Common Language Infrastructure Annotated Standard},
+	Year = {2003}}
+
+@book{Randa04,
+	Author = {Allison Randal and Dan Sugalski and Leopold T{\"o}tsch},
+	Date-Added = {2005-12-20 15:30:49 +0200},
+	Date-Modified = {2010-09-02 12:49:49 +0300},
+	Month = {June},
+	Publisher = {O'Reilly},
+	Title = {{P}erl 6 and {P}arrot essentials},
+	Year = {2004},
+	Abstract = {This book is an unparalleled sneak-peek of what's coming in the widely-anticipated Perl 6. It uncovers groundbreaking new developments in Parrot--the interpreter engine that will execute code written in the new Perl 6 language and the most revolutionary change in the language itself--Apocalypse 12 on objects. It also includes expanded coverage of Apocalypse 5 (regular expressions) and Apocalypse 6 (subroutines).},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAeAAAAAAAeAAAgAABUZpbGVzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMa+JWNIKwAAAAFDIx9QZXJsIDYgQW5kIFBhcnJvdCBFc3MjMTQ2QTEuY2htAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUahw6Po7wAAAAAAAAAAAAIABAAACQAAAAAAAAAAAAAAAAAAAAAPVmlydHVhbE1hY2hpbmVzAAAQAAgAAMa9+zMAAAARAAgAAMOjzM8AAAABABAAAUMjAAFAyQABPi4AAL8TAAIASkZpbGVzOkRvY3VtZW50czpQaEQ6cGFwZXJzOlZpcnR1YWxNYWNoaW5lczpQZXJsIDYgQW5kIFBhcnJvdCBFc3MjMTQ2QTEuY2htAA4AQgAgAFAAZQByAGwAIAA2ACAAQQBuAGQAIABQAGEAcgByAG8AdAAgAEUAcwBzAGUAbgB0AGkAYQBsAHMALgBjAGgAbQAPAAwABQBGAGkAbABlAHMAEgBGL0RvY3VtZW50cy9QaEQvcGFwZXJzL1ZpcnR1YWxNYWNoaW5lcy9QZXJsIDYgQW5kIFBhcnJvdCBFc3NlbnRpYWxzLmNobQATAA4vVm9sdW1lcy9GaWxlcwAVAAIADv//AACABdIcHR4fWCRjbGFzc2VzWiRjbGFzc25hbWWjHyAhXU5TTXV0YWJsZURhdGFWTlNEYXRhWE5TT2JqZWN0XxBBLi4vLi4vUGhEL3BhcGVycy9WaXJ0dWFsTWFjaGluZXMvUGVybCA2IEFuZCBQYXJyb3QgRXNzZW50aWFscy5jaG3SHB0kJaIlIVxOU0RpY3Rpb25hcnkSAAGGoF8QD05TS2V5ZWRBcmNoaXZlcgAIABEAFgAfACgAMgA1ADoAPABFAEsAUgBdAGUAbABvAHEAcwB2AHgAegB8AIYAkwCYAKAChAKGAosClAKfAqMCsQK4AsEDBQMKAw0DGgMfAAAAAAAAAgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAzE=}}
+
+@book{Lindh99,
+	Address = {Boston, MA, USA},
+	Author = {Tim Lindholm and Frank Yellin},
+	Date-Added = {2005-12-20 14:42:29 +0200},
+	Date-Modified = {2005-12-20 15:30:28 +0200},
+	Edition = {2nd},
+	Isbn = {0201432943},
+	Local-Url = {file://localhost/Volumes/Files/Documents/PhD/papers/VirtualMachines/vmspec/Overview.html},
+	Publisher = {Addison-Wesley Longman Publishing Co., Inc.},
+	Title = {Java Virtual Machine Specification},
+	Year = {1999},
+	Abstract = {The nucleus of the Java 2 platform, the Java virtual machine is the technology that enables the Java 2 platform to host applications on any computer or operating system without rewriting or recompiling. This book was written by those directly responsible for the design and implementation of the Java virtual machine, and is the complete and definitive specification for the technology. It is an essential reference for writers of compilers for the Java programming language and implementors of the Java virtual machine. This second edition specifies the newest version of the Java virtual machine and provides a fascinating view into the inner workings of the Java 2 platform.}}
+
+@article{Goldb74,
+	Author = {Robert P. Goldberg},
+	Date-Added = {2005-12-19 13:33:38 +0200},
+	Date-Modified = {2005-12-19 13:35:48 +0200},
+	Journal = {IEEE Computer},
+	Month = {June},
+	Number = {6},
+	Pages = {34--46},
+	Title = {Survey of Virtual Machine Research},
+	Volume = {7},
+	Year = {1974}}
+
+@article{Popek74,
+	Address = {New York, NY, USA},
+	Author = {Gerald J. Popek and Robert P. Goldberg},
+	Date-Added = {2005-12-19 13:15:58 +0200},
+	Date-Modified = {2010-09-02 12:49:49 +0300},
+	Issn = {0001-0782},
+	Journal = {Commun. ACM},
+	Month = {July},
+	Number = {7},
+	Pages = {412--421},
+	Publisher = {ACM Press},
+	Title = {Formal requirements for virtualizable third generation architectures},
+	Volume = {17},
+	Year = {1974},
+	Abstract = {Virtual machine systems have been implemented on a limited number of third generation computer systems, e.g. CP-67 on the IBM 360/67. From previous empirical studies, it is known that certain third generation computer systems, e.g. the DEC PDP-10, cannot support a virtual machine system. In this paper, model of a third-generation-like computer system is developed. Formal techniques are used to derive precise sufficient conditions to test whether such an architecture can support virtual machines.},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAlwAAAAAAlwAAgAABUZpbGVzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMa+JWNIKwAAAAFDIx9Gb3JtYWwgUmVxdWlyZW1lbnRzIGYjMTQ2OTYucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUaWw6Po8AAAAAAAAAAAAAIABAAACQAAAAAAAAAAAAAAAAAAAAAPVmlydHVhbE1hY2hpbmVzAAAQAAgAAMa9+zMAAAARAAgAAMOjzNAAAAABABAAAUMjAAFAyQABPi4AAL8TAAIASkZpbGVzOkRvY3VtZW50czpQaEQ6cGFwZXJzOlZpcnR1YWxNYWNoaW5lczpGb3JtYWwgUmVxdWlyZW1lbnRzIGYjMTQ2OTYucGRmAA4AlABJAEYAbwByAG0AYQBsACAAUgBlAHEAdQBpAHIAZQBtAGUAbgB0AHMAIABmAG8AcgAgAFYAaQByAHQAdQBhAGwAaQB6AGEAYgBsAGUAIABUAGgAaQByAGQAIABHAGUAbgBlAHIAYQB0AGkAbwBuACAAQQByAGMAaABpAHQAZQBjAHQAdQByAGUAcwAgAC4AcABkAGYADwAMAAUARgBpAGwAZQBzABIAby9Eb2N1bWVudHMvUGhEL3BhcGVycy9WaXJ0dWFsTWFjaGluZXMvRm9ybWFsIFJlcXVpcmVtZW50cyBmb3IgVmlydHVhbGl6YWJsZSBUaGlyZCBHZW5lcmF0aW9uIEFyY2hpdGVjdHVyZXMgLnBkZgAAEwAOL1ZvbHVtZXMvRmlsZXMAFQACAA7//wAAgAXSHB0eH1gkY2xhc3Nlc1okY2xhc3NuYW1lox8gIV1OU011dGFibGVEYXRhVk5TRGF0YVhOU09iamVjdF8Qai4uLy4uL1BoRC9wYXBlcnMvVmlydHVhbE1hY2hpbmVzL0Zvcm1hbCBSZXF1aXJlbWVudHMgZm9yIFZpcnR1YWxpemFibGUgVGhpcmQgR2VuZXJhdGlvbiBBcmNoaXRlY3R1cmVzIC5wZGbSHB0kJaIlIVxOU0RpY3Rpb25hcnkSAAGGoF8QD05TS2V5ZWRBcmNoaXZlcgAIABEAFgAfACgAMgA1ADoAPABFAEsAUgBdAGUAbABvAHEAcwB2AHgAegB8AIYAkwCYAKADAAMCAwcDEAMbAx8DLQM0Az0DqgOvA7IDvwPEAAAAAAAAAgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAAA9Y=},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/361011.361073}}
+
+@inproceedings{Uhlig04,
+	Address = {San Jose, CA},
+	Author = {Volkmar Uhlig and Joshua LeVasseur and Espen Skoglund and Uwe Dannowski},
+	Booktitle = {Proceedings of the Third Virtual Machine Research and Technology Symposium},
+	Date-Added = {2005-12-07 14:17:52 +0200},
+	Date-Modified = {2010-09-02 12:49:49 +0300},
+	Month = {May},
+	Organization = {USENIX},
+	Pages = {43--56},
+	Title = {Towards Scalable Multiprocessor Virtual Machines},
+	Year = {2004},
+	Abstract = {A multiprocessor virtual machine benefits its guest operating system in supporting scalable job throughput and request latency--useful properties in server consolidation where servers require several of the system processors for steady state or to handle load bursts.
+
+Typical operating systems, optimized for multiprocessor systems in their use of spin-locks for critical sections, can defeat flexible virtual machine scheduling due to lock-holder preemption and misbalanced load. The virtual machine must assist the guest operating system to avoid lock-holder preemption and to schedule jobs with knowledge of asymmetric processor allocation. We want to support a virtual machine environment with flexible scheduling policies, while maximizing guest performance.
+
+This paper presents solutions to avoid lock-holder preemption for both fully virtualized and paravirtualized environments. Experiments show that we can nearly eliminate the effects of lock-holder preemption. Furthermore, the paper presents a scheduler feedback mechanism that despite the presence of asymmetric processor allocation achieves optimal and fair load balancing in the guest operating system.},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAhwAAAAAAhwAAgAABUZpbGVzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMa+JWNIKwAAAAFDIx9Ub3dhcmRzIFNjYWxhYmxlIE11bHQjMTQ2QUIucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUarw6Po7wAAAAAAAAAAAAIABAAACQAAAAAAAAAAAAAAAAAAAAAPVmlydHVhbE1hY2hpbmVzAAAQAAgAAMa9+zMAAAARAAgAAMOjzM8AAAABABAAAUMjAAFAyQABPi4AAL8TAAIASkZpbGVzOkRvY3VtZW50czpQaEQ6cGFwZXJzOlZpcnR1YWxNYWNoaW5lczpUb3dhcmRzIFNjYWxhYmxlIE11bHQjMTQ2QUIucGRmAA4AagA0AFQAbwB3AGEAcgBkAHMAIABTAGMAYQBsAGEAYgBsAGUAIABNAHUAbAB0AGkAcAByAG8AYwBlAHMAcwBvAHIAIABWAGkAcgB0AHUAYQBsACAATQBhAGMAaABpAG4AZQBzAC4AcABkAGYADwAMAAUARgBpAGwAZQBzABIAWi9Eb2N1bWVudHMvUGhEL3BhcGVycy9WaXJ0dWFsTWFjaGluZXMvVG93YXJkcyBTY2FsYWJsZSBNdWx0aXByb2Nlc3NvciBWaXJ0dWFsIE1hY2hpbmVzLnBkZgATAA4vVm9sdW1lcy9GaWxlcwAVAAIADv//AACABdIcHR4fWCRjbGFzc2VzWiRjbGFzc25hbWWjHyAhXU5TTXV0YWJsZURhdGFWTlNEYXRhWE5TT2JqZWN0XxBVLi4vLi4vUGhEL3BhcGVycy9WaXJ0dWFsTWFjaGluZXMvVG93YXJkcyBTY2FsYWJsZSBNdWx0aXByb2Nlc3NvciBWaXJ0dWFsIE1hY2hpbmVzLnBkZtIcHSQloiUhXE5TRGljdGlvbmFyeRIAAYagXxAPTlNLZXllZEFyY2hpdmVyAAgAEQAWAB8AKAAyADUAOgA8AEUASwBSAF0AZQBsAG8AcQBzAHYAeAB6AHwAhgCTAJgAoALAAsICxwLQAtsC3wLtAvQC/QNVA1oDXQNqA28AAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAADgQ==}}
+
+@inproceedings{Arnol05,
+	Address = {New York, NY, USA},
+	Author = {Matthew Arnold and Adam Welc and V. T. Rajan},
+	Booktitle = {OOPSLA '05: Proceedings of the 20th annual ACM SIGPLAN conference on Object oriented programming systems languages and applications},
+	Date-Added = {2005-10-18 14:09:27 +0300},
+	Date-Modified = {2010-09-02 12:49:49 +0300},
+	Isbn = {1-59593-031-0},
+	Location = {San Diego, CA, USA},
+	Month = {May},
+	Pages = {297--311},
+	Publisher = {ACM Press},
+	Title = {Improving virtual machine performance using a cross-run profile repository},
+	Year = {2005},
+	Abstract = {Virtual machines for languages such as the Java programming language make extensive use of online profiling and dynamic optimization to improve program performance. But despite the important role that profiling plays in achieving high performance, current virtual machines discard a program's profile data at the end of execution, wasting the opportunity to use past knowledge to improve future performance. In this paper, we present a fully automated architecture for exploiting cross-run profile data in virtual machines. Our work addresses a number of challenges that previously limited the practicality of such an approach.We apply this architecture to address the problem of selective optimization, and describe our implementation in IBM's J9 Java virtual machine. Our results demonstrate substantial performance improvements on a broad suite of Java programs, with the average performance ranging from 8.8% -- 16.6% depending on the execution scenario.},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1094811.1094835}}

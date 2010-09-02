@@ -1,0 +1,476 @@
+%% This BibTeX bibliography file was created using BibDesk.
+%% http://bibdesk.sourceforge.net/
+
+
+%% Created for Georgios Gousios at 2007-01-11 11:19:01 +0200 
+
+
+%% Saved with string encoding Western (ASCII) 
+
+
+
+@inproceedings{Cantr04,
+	Author = {Bryan M. Cantrill and Michael W. Shapiro and Adam H. Leventhal},
+	Booktitle = {Proceedings of the 2004 USENIX Annual Technical Conference},
+	Date-Added = {2007-01-11 11:10:10 +0200},
+	Date-Modified = {2007-01-11 11:18:55 +0200},
+	Local-Url = {file://localhost/Users/gousiosg/Documents/PhD/papers/OS/Dynamic%20Instrumentation%20of%20Production%20Systems.pdf},
+	Organization = {USENIX},
+	Pages = {15--28},
+	Title = {Dynamic Instrumentation of Production Systems},
+	Year = {2004}}
+
+@article{Eicke99,
+	Abstract = {Safe language technology can be used for protection within 
+a single address space. This protection is enforced by the language's type 
+system, which ensures that references to objects cannot be forged. A safe 
+language alone, however, lacks many features taken for granted in more 
+traditional operating systems, such as rights revocation, thread protec- 
+tion, resource management, and support for domain termination. This 
+paper describes the J-Kernel, a portable Java-based protection system 
+that addresses these issues. J-Kernel protection domains can commu- 
+nicate through revocable capabilities, but are prevented from directly 
+sharing unrevocable object references. A number of micro-benchmarks 
+characterize the costs of language-based protection, and an extensible 
+web and telephony server based on the J-Kernel demonstrates the use of 
+language-based protection in a large application. },
+	Address = {London, UK},
+	Author = {Thorsten von Eicken and Chi-Chao Chang and Grzegorz Czajkowski and Chris Hawblitzel and Deyu Hu and Dan Spoonhower},
+	Book = {Secure Internet programming: security issues for mobile and distributed objects},
+	Date-Added = {2006-05-15 13:48:55 +0300},
+	Date-Modified = {2006-05-29 00:07:52 +0300},
+	Isbn = {3-540-66130-1},
+	Local-Url = {file://localhost/Volumes/Files/Documents/PhD/papers/OS/J-Kernel-%20a%20Capability%20Based%20Operating%20System%20for%20Java%20.pdf},
+	Pages = {369--393},
+	Publisher = {Springer-Verlag},
+	Title = {J-Kernel: a capability-based operating system for {J}ava},
+	Year = {1999}}
+
+@inproceedings{Golm02,
+	Abstract = {This paper describes the architecture and performance of the JX operating system. JX is both an operating system completely written in Java and a runtime system for Java applications. Our work demonstrates that it is possible to build a complete operating system in Java, achieve a good performance, and still benefit from the modern software-technology of this object-oriented, type-safe language. We explain how an operating system can be structured that is no longer build on MMU protection but on type safety.
+JX is based on a small microkernel which is responsible for system initialization, CPU context switching, and lowlevel protection-domain management. The Java code is organized in components, which are loaded into domains, verified, and translated to native code. Domains can be completely isolated from each other.
+The JX architecture allows a wide range of system configurations, from fast and monolithic to very flexible, but slower configurations. We compare the performance of JX with Linux by using two non-trivial operating system components: a file system and an NFS server. Furthermore we discuss the performance impact of several alternative system configurations. In a monolithic configuration JX achieves between about 40% and 100% Linux performance in the file system benchmark and about 80% in the NFS benchmark.
+},
+	Author = {Michael Golm and Meik Felser and Christian Wawersich and J{\"u}rgen Klein{\"o}der},
+	Booktitle = {Proceedings of the USENIX 2002 Annual Technical Conference},
+	Date-Added = {2006-05-10 23:39:55 +0300},
+	Date-Modified = {2006-05-10 23:43:50 +0300},
+	Local-Url = {file://localhost/Volumes/Files/Documents/PhD/papers/OS/The%20JX%20Operating%20System%20.pdf},
+	Month = {June},
+	Pages = {45--48},
+	Title = {The JX Operating System},
+	Year = {2002}}
+
+@inproceedings{Back00,
+	Address = {San Diego, CA},
+	Author = {G. Back and P. Tullmann and L. Stoller and W. C. Hsieh and J. Lepreau},
+	Booktitle = {Proceedings of the USENIX 2000 Annual Technical Conference},
+	Date-Added = {2006-05-03 23:04:53 +0300},
+	Date-Modified = {2006-05-28 23:55:26 +0300},
+	Local-Url = {file://localhost/Volumes/Files/Documents/PhD/papers/OS/Techniques%20for%20the%20Design%20of%20Java%20Operating%20Systems%20.pdf},
+	Month = {June},
+	Organization = {USENIX Association},
+	Pages = {197--210},
+	Title = {Techniques for the Design of {J}ava Operating Systems},
+	Year = {2000}}
+
+@article{Fothe61,
+	Abstract = {This paper is concerned with the method of address interpretation in the Atlas computer. The Atlas has been designed and built as a joint exercise between the Computer Departments of Manchester University and of Ferranti Ltd., and the ideas and concepts described in this paper were conceived and developed by the University Computer Department. The address interpretation achieves the effect of dynamic storage allocation throughout the main memory; it also provides for automatic transfers of information, as required, between the core store and a backing store on drums. The core and drum stores can be considered together as a single memory (of maximum size about one million 48-bit words), and addressed as being entirely immediate access: access is in fact immediate only to the core part of the memory, but internal exchanges between the cores and drums are performed to bring the required information to the core store for use.},
+	Address = {New York, NY, USA},
+	Author = {John Fotheringham},
+	Date-Added = {2006-02-13 16:32:54 +0200},
+	Date-Modified = {2006-02-13 16:35:34 +0200},
+	Doi = {http://doi.acm.org/10.1145/366786.366800},
+	Issn = {0001-0782},
+	Journal = {Commun. ACM},
+	Local-Url = {file://localhost/Volumes/Files/Documents/PhD/papers/OS/Dynamic%20Storage%20Allocation%20in%20the%20Atlas%20Computer,%20Including%20an%20Automatic%20Use%20of%20a%20Backing%20Store.pdf},
+	Number = {10},
+	Pages = {435--436},
+	Publisher = {ACM Press},
+	Title = {Dynamic storage allocation in the Atlas computer, including an automatic use of a backing store},
+	Volume = {4},
+	Year = {1961}}
+
+@article{Denni96,
+	Address = {New York, NY, USA},
+	Annote = {A comprehensive study of virtual memory},
+	Author = {Peter J. Denning},
+	Date-Added = {2006-02-13 16:22:09 +0200},
+	Date-Modified = {2006-02-13 16:25:20 +0200},
+	Doi = {http://doi.acm.org/10.1145/234313.234403},
+	Issn = {0360-0300},
+	Journal = {ACM Comput. Surv.},
+	Local-Url = {file://localhost/Volumes/Files/Documents/PhD/papers/OS/Virtual%20Memory%20(v2).pdf},
+	Number = {1},
+	Pages = {213--216},
+	Publisher = {ACM Press},
+	Title = {Virtual memory},
+	Volume = {28},
+	Year = {1996}}
+
+@article{Ullma75,
+	Author = {Ullman, J},
+	Date-Added = {2006-02-07 16:14:38 +0200},
+	Date-Modified = {2006-05-29 00:07:23 +0300},
+	Journal = {J. Computer and System Sciences},
+	Number = {384--393},
+	Title = {{NP}-Complete Scheduling Problems},
+	Volume = {10},
+	Year = {1975}}
+
+@article{El-Re95,
+	Abstract = {A scheduling problem arises when concurrent parts of a parallel program must be arranged in time and space so that the program's overall execution time is minimized. A program can be viewed as a collection of tasks that may run serially or in parallel. The goal of scheduling is to determine an assignment of tasks to processing elements and to prioritize task execution to optimize certain performance measures. The authors look at different forms of the scheduling problem and survey relevant models, optimal algorithms, heuristic algorithms, and useful software tools. They provide models for representing parallel programs, parallel systems, and communication cost. Examples and algorithms illustrate various approaches to scheduling. The scheduling problem, which is NP-complete, has led to the development of numerous heuristics for approximating an optimal solution; each may work under different circumstances. The effectiveness of these heuristics depends on factors such as grain size, interconnection topology, communication bandwidth, and program structure. Scheduling software tools represent another promising approach. Working with such tools can help a programmer find answers to numerous questions that arise in developing a parallel application. The authors describe three of these scheduling tools.},
+	Author = {El-Rewini, H. and Ali, H.H. and Lewis, T.},
+	Date-Added = {2006-02-07 16:05:35 +0200},
+	Date-Modified = {2006-02-07 16:16:36 +0200},
+	Journal = {IEEE Computer},
+	Local-Url = {file://localhost/Volumes/Files/Documents/PhD/papers/OS/Task%20scheduling%20in%20multiprocessing%20systems.pdf},
+	Month = {December},
+	Number = {12},
+	Pages = {27--37},
+	Title = {Task scheduling in multiprocessing systems},
+	Volume = {28},
+	Year = {1995}}
+
+@article{Kwok99,
+	Abstract = {Static scheduling of a program represented by a directed task graph on a multiprocessor system to minimize the program completion time is a well-known problem in parallel processing. Since finding an optimal schedule is an NP-complete problem in general, researchers have resorted to devising efficient heuristics. A plethora of heuristics have been proposed based on a wide spectrum of techniques, including branch-and-bound, integer-programming, searching, graph-theory, randomization, genetic algorithms, and evolutionary methods. The objective of this survey is to describe various scheduling algorithms and their functionalities in a contrasting fashion as well as examine their relative merits in terms of performance and time-complexity. Since these algorithms are based on diverse assumptions, they differ in their functionalities, and hence are difficult to describe in a unified context. We propose a taxonomy that classifies these algorithms into different categories. We consider 27 scheduling algorithms, with each algorithm explained through an easy-to-understand description followed by an illustrative example to demonstrate its operation. We also outline some of the novel and promising optimization approaches and current research trends in the area. Finally, we give an overview of the software tools that provide scheduling/mapping functionalities.},
+	Address = {New York, NY, USA},
+	Author = {Yu-Kwong Kwok and Ishfaq Ahmad},
+	Date-Added = {2006-02-07 11:36:38 +0200},
+	Date-Modified = {2006-02-07 11:46:11 +0200},
+	Doi = {http://doi.acm.org/10.1145/344588.344618},
+	Issn = {0360-0300},
+	Journal = {ACM Comput. Surv.},
+	Local-Url = {file://localhost/Volumes/Files/Documents/PhD/papers/OS/Static%20Scheduling%20Algorithms%20for%20Allocating%20Directed%20Task%20Graphs%20to%20Multiprocessors%20.pdf},
+	Number = {4},
+	Pages = {406--471},
+	Publisher = {ACM Press},
+	Title = {Static scheduling algorithms for allocating directed task graphs to multiprocessors},
+	Volume = {31},
+	Year = {1999}}
+
+@article{Mario77,
+	Abstract = {This paper surveys the deterministic scheduling of jobs in uniprocessor, multiprocessor,
+and job-shop environments. The survey begins with a brief introduction to the
+representation of task or job sets, followed by a discussion of classification categories.
+These categories include number of processors, task interruptlbility, job periodicity,
+deadlines, and number of resources. Results are given for single-processor schedules in
+job-shop and multIprogramming environments, flow-shop schedules, and multiprocessor
+schedules. They are stated in terms of optimal constructive algorithms and suboptimal
+heuristics. In most cases the latter are stated in terms of performance bounds related to
+optimal results. Annotations for most of the references are provided in the form of a table
+classifying the referenced studies m terms of various parameters.
+Keywords and Phrases: Deterministic scheduling, optimal schedules, multiprocessors,
+job-shop, flow-shop, graph structures, deadlines, resources, preemption, periodic jobs.},
+	Address = {New York, NY, USA},
+	Author = {Mario J. Gonzalez, Jr.},
+	Date-Added = {2006-02-07 11:34:25 +0200},
+	Date-Modified = {2006-02-07 11:43:42 +0200},
+	Doi = {http://doi.acm.org/10.1145/356698.356700},
+	Issn = {0360-0300},
+	Journal = {ACM Comput. Surv.},
+	Local-Url = {file://localhost/Volumes/Files/Documents/PhD/papers/OS/Deterministic%20Processor%20Scheduling.pdf},
+	Number = {3},
+	Pages = {173--204},
+	Publisher = {ACM Press},
+	Title = {Deterministic Processor Scheduling},
+	Volume = {9},
+	Year = {1977}}
+
+@mastersthesis{Gousi04,
+	Author = {Georgios Gousios},
+	Date-Added = {2006-02-06 18:30:48 +0200},
+	Date-Modified = {2006-02-06 18:31:39 +0200},
+	Month = {September},
+	School = {University of Manchester},
+	Title = {{JikesNode}: A {Java} operating system},
+	Year = {2004}}
+
+@misc{Prans04,
+	Author = {Ewout Pransgma},
+	Date-Modified = {2006-02-06 18:32:21 +0200},
+	Key = {JNode},
+	Note = {http://jnode.sourceforge.net},
+	Title = {The {J}node operating system},
+	Year = {2004}}
+
+@inproceedings{Engle95,
+	Abstract = {Traditional operating systems limit the performance, flexibility, and
+functionality of applications by fixing the interface and implementation
+of operating system abstractions such as interprocess communication
+and virtual memory. The exokernel operating system
+architecture addresses this problem by providing application-level
+management of physical resources. In the exokernel architecture, a
+small kernel securely exports all hardware resources through a lowlevel
+interface to untrusted library operating systems. Library operating
+systems use this interface to implement system objects and
+policies. This separation of resource protection from management
+allows application-specific customization of traditional operating
+system abstractions by extending, specializing, or even replacing
+libraries.
+We have implemented a prototype exokernel operating system.
+Measurements show that most primitive kernel operations (such
+as exception handling and protected control transfer) are ten to 100
+times faster than in Ultrix, a mature monolithic UNIX operating system.
+In addition, we demonstrate that an exokemel allows applications
+to control machine resources in ways not possible in traditional
+operating systems. For instance, virtual memory and interprocess
+communication abstractions are implemented entirely within an
+application-level library. Measurements show that application-level
+virtual memory and interprocess communication primitives are five
+to 40 times faster than Ultrix's kernel primitives. Compared to
+state-of-the-art implementations from the literature, the prototype
+exokemel system is at least five times faster on operations such as
+exception dispatching and interprocess communication.},
+	Address = {New York, NY, USA},
+	Author = {D. R. Engler and M. F. Kaashoek and J. O'Toole, Jr.},
+	Booktitle = {SOSP '95: Proceedings of the fifteenth ACM symposium on Operating systems principles},
+	Date-Added = {2006-02-06 17:02:54 +0200},
+	Date-Modified = {2006-02-06 17:07:07 +0200},
+	Doi = {http://doi.acm.org/10.1145/224056.224076},
+	Isbn = {0-89791-715-4},
+	Location = {Copper Mountain, Colorado, United States},
+	Pages = {251--266},
+	Publisher = {ACM Press},
+	Title = {Exokernel: an operating system architecture for application-level resource management},
+	Year = {1995}}
+
+@misc{Qnx05,
+	Date-Added = {2006-02-06 15:52:53 +0200},
+	Date-Modified = {2006-02-06 18:35:34 +0200},
+	Howpublished = {Online},
+	Key = {qnx},
+	Note = {http://www.qnx.com/},
+	Organization = {QNX Software Systems},
+	Title = {{QNX} System Architecture},
+	Urldate = {February 2006},
+	Year = {2005}}
+
+@inproceedings{Harti97,
+	Abstract = {First-generation m-kernels have a reputation for being too slow and lacking sufficient flexibility. To determine whether L4, a lean second-generation p-kernel, has overcome these limitations, we have repeated several earlier experiments and conducted some
+novel ones. Moreover, we ported the Linux operating system to run on top of the L4 m-kernel and compared the resulting system with both Linux running native, and MkLinux, a Linux version that executes on top of a first-generation Mach-derived p-kernel.
+For L4Linux, the AIM benchmarks report a maximum throughput which is only 5% lower than that of native Linux. The corresponding penalty is 5 times higher for a co-located in-kernel version of MkLinux, and 7 times higher for a user-level version of MkLinux. These numbers demonstrate both that it is possible to implement a high-performance conventional operating system personality above a p-kernel, and that the performance of the p-kernel is crucial to achieve this. Further experiments illustrate that the resulting system is highly extensible and that the extensions perform well. Even real-time memory management including second-level cache allocation can be implemented at user-level, coexisting with L4Linux.},
+	Address = {New York, NY, USA},
+	Author = {Hermann Hartig and Michael Hohmuth and Jochen Liedtke and Sebastian Schonberg},
+	Booktitle = {SOSP '97: Proceedings of the sixteenth ACM symposium on Operating systems principles},
+	Date-Added = {2006-02-06 15:27:27 +0200},
+	Date-Modified = {2006-02-06 15:56:59 +0200},
+	Doi = {http://doi.acm.org/10.1145/268998.266660},
+	Isbn = {0-89791-916-5},
+	Local-Url = {file://localhost/Volumes/Files/Documents/PhD/papers/OS/The%20performance%20of%20%CE%BC-kernel-based%20systems.pdf},
+	Location = {Saint Malo, France},
+	Pages = {66--77},
+	Publisher = {ACM Press},
+	Title = {The performance of micro-kernel-based systems},
+	Year = {1997}}
+
+@inproceedings{Liedt95,
+	Abstract = {From a software-technology point of view, the m-kernel concept is superior to large integrated kernels. On the other hand, it is widely believed that (a) m-kernel based systems are inherently inefficient and (b) they are not sufficiently flexible. Contradictory to this belief, we show and support by documentary evidence that inefficiency and inflexibility of current m-kernels is not inherited from the basic idea but mostly from overloading the kernel and/or from improper implementation. Based on functional reasons, we describe some concepts
+which must be implemented by a p-kernel and illustrate their flexibility. Then, we analyze the performance critical points. We show what performance is achievable, that the efficiency is sufficient with respect to macro-kernels and why some published contradictory measurements are not evident. Furthermore, we describe some implementation techniques and illustrate why m-kernels are inherently not port able, although they improve portability of the whole system.},
+	Address = {New York, NY, USA},
+	Author = {J. Liedtke},
+	Booktitle = {SOSP '95: Proceedings of the fifteenth ACM symposium on Operating systems principles},
+	Date-Added = {2006-02-06 15:23:31 +0200},
+	Date-Modified = {2006-02-06 15:42:36 +0200},
+	Doi = {http://doi.acm.org/10.1145/224056.224075},
+	Isbn = {0-89791-715-4},
+	Local-Url = {file://localhost/Volumes/Files/Documents/PhD/papers/OS/On%20micro-kernel%20construction.pdf},
+	Location = {Copper Mountain, Colorado, United States},
+	Pages = {237--250},
+	Publisher = {ACM Press},
+	Title = {On micro-kernel construction},
+	Year = {1995}}
+
+@inproceedings{Acett86,
+	Address = {Atlanta, Georgia},
+	Author = {M. Acetta and R. Baron and W. Bolosky and D. Golub and R. Rashid and A. Tevanian and M. Young},
+	Booktitle = {Proceedings of Summer USENIX 1986 Technical Conference},
+	Date-Modified = {2006-02-06 12:46:40 +0200},
+	Month = {June},
+	Organization = {USENIX},
+	Pages = {93-112},
+	Title = {Mach: A new kernel foundation for {U}nix development},
+	Year = {1986}}
+
+@article{Quart85,
+	Abstract = {This paper presents an in-depth examination of the 4.2 Berkeley Software Distribution, Virtual VAX-11 Version (4.2BSD), which is a version of the UNIX Time-Sharing System. There are notes throughout on 4.3BSD, the forthcoming system from the University of California at Berkeley. We trace the historical development of the UNIX system from its conception in 1969 until today, and describe the design principles that have guided this development. We then present the internal data structures and algorithms used by the kernel to support the user interface. In particular, we describe process management, memory management, the file system, the I/O system, and communications. These are treated in as much detail as the UNIX licenses will allow. We conclude with a brief description of the user interface and a set of bibliographic notes.
+
+},
+	Address = {New York, NY, USA},
+	Author = {John S. Quarterman and Abraham Silberschatz and James L. Peterson},
+	Date-Added = {2006-02-06 12:27:09 +0200},
+	Date-Modified = {2006-05-29 00:06:17 +0300},
+	Doi = {http://doi.acm.org/10.1145/6041.6043},
+	Issn = {0360-0300},
+	Journal = {ACM Comput. Surv.},
+	Local-Url = {file://localhost/Volumes/Files/Documents/PhD/papers/OS/4.2BSD%20and%204.3BSD%20as%20examples%20of%20the%20UNIX%20system.pdf},
+	Number = {4},
+	Pages = {379--418},
+	Publisher = {ACM Press},
+	Title = {4.2{BSD} and 4.3{BSD} as examples of the {UNIX} system},
+	Volume = {17},
+	Year = {1985}}
+
+@article{Liedt96,
+	Abstract = {The microkernel story is full of good ideas and blind alleys. The story began with enthusiasm about the promised dramatic increase in flexibility, safety, and modularity. But over the years, enthusiasm changed to disappointment, because the first-generation microkernels were inefficient and inflexible. Today,we observe radically new approaches to the microkernel idea that seek to avoid the old mistakes while overcoming the old constraints on flexibility and performance. The second-generation microkernels may be a basis for all types of operating systems, including timesharing, multimedia, and soft and hard real time.},
+	Address = {New York, NY, USA},
+	Author = {Jochen Liedtke},
+	Date-Added = {2006-02-06 12:09:56 +0200},
+	Date-Modified = {2006-02-06 12:10:42 +0200},
+	Doi = {http://doi.acm.org/10.1145/234215.234473},
+	Issn = {0001-0782},
+	Journal = {Commun. ACM},
+	Local-Url = {file://localhost/Volumes/Files/Documents/PhD/papers/OS/Toward%20real%20microkernels.pdf},
+	Number = {9},
+	Pages = {70--77},
+	Publisher = {ACM Press},
+	Title = {Toward real microkernels},
+	Volume = {39},
+	Year = {1996}}
+
+@inproceedings{Liedt93,
+	Abstract = {Inter-process communication (ipc) has to be fast and effective, otherwise programmers will not use remote procedure calls (RPC), multithreading and multitasking adequately. Thus ipc performance is vital for modern operating systems, especially &mu;-kernel based ones. Surprisingly, most &mu;-kernels exhibit poor ipc performance, typically requiring 100 &mu;s for a short message transfer on a modern processor, running with 50 MHz clock rate.In contrast, we achieve 5 &mu;s; a twentyfold improvement.This paper describes the methods and principles used, starting from the architectural design and going down to the coding level. There is no single trick to obtaining this high performance; rather, a synergetic approach in design and implementation on all levels is needed. The methods and their synergy are illustrated by applying them to a concrete example, the L3 &mu;-kernel (an industrial-quality operating system in daily use at several hundred sites). The main ideas are to guide the complete kernel design by the ipc requirements, and to make heavy use of the concept of virtual address space inside the &mu;-kernel itself.As the L3 experiment shows, significant performance gains are possible: compared with Mach, they range from a factor of 22 (8-byte messages) to 3 (4-Kbyte messages). Although hardware specific details influence both the design and implementation, these techniques are applicable to the whole class of conventional general purpose von Neumann processors supporting virtual addresses. Furthermore, the effort required is reasonably small, for example the dedicated parts of the &mu;-kernel can be concentrated in a single medium sized module.},
+	Address = {New York, NY, USA},
+	Author = {Jochen Liedtke},
+	Booktitle = {SOSP '93: Proceedings of the fourteenth ACM symposium on Operating systems principles},
+	Date-Added = {2006-02-06 11:55:31 +0200},
+	Date-Modified = {2006-05-29 00:04:28 +0300},
+	Doi = {http://doi.acm.org/10.1145/168619.168633},
+	Isbn = {0-89791-632-8},
+	Local-Url = {file://localhost/Volumes/Files/Documents/PhD/papers/OS/Improving%20IPC%20by%20kernel%20design.pdf},
+	Location = {Asheville, North Carolina, United States},
+	Pages = {175--188},
+	Publisher = {ACM Press},
+	Title = {Improving {IPC} by kernel design},
+	Year = {1993}}
+
+@article{Denni71,
+	Abstract = {The common features of third generation operating systems are surveyed from a general view, with emphasis on the common abstractions that constitute at least the basis for a ``theory'' of operating systems. Properties of specific systems are not discussed except where examples are useful. The technical aspects of issues and concepts are stressed, the nontechnical aspects mentioned only briefly. A perfunctory knowledge of third generation systems is presumed.},
+	Address = {New York, NY, USA},
+	Author = {Peter J. Denning},
+	Date-Added = {2006-01-18 14:06:52 +0200},
+	Date-Modified = {2006-01-18 14:07:13 +0200},
+	Doi = {http://doi.acm.org/10.1145/356593.356595},
+	Issn = {0360-0300},
+	Journal = {ACM Comput. Surv.},
+	Number = {4},
+	Pages = {175--216},
+	Publisher = {ACM Press},
+	Title = {Third Generation Computer Systems},
+	Volume = {3},
+	Year = {1971}}
+
+@book{Tanen01,
+	Author = {Andrew S. Tanenbaum},
+	Date-Modified = {2006-01-12 13:30:39 +0200},
+	Edition = {2nd},
+	Publisher = {Prentice-Hall},
+	Title = {Modern operating systems},
+	Year = {2001}}
+
+@book{McKus96,
+	Author = {Marshall Kirk McKusick and Keith Bostic and Michael J. Karels and John S. Quaterman},
+	Date-Modified = {2006-01-12 13:30:44 +0200},
+	Publisher = {Addison-Wesley},
+	Title = {The Design and Implementation of the 4.4BSD Operating System},
+	Year = {1996}}
+
+@book{Bovet01,
+	Author = {Daniel P. Bovet and Marco Cesati},
+	Date-Modified = {2006-01-12 13:30:54 +0200},
+	Edition = {First edition},
+	Publisher = {O' Reilly},
+	Title = {Undestanding the {L}inux kernel},
+	Year = {2001}}
+
+@article{Ritch74,
+	Abstract = {UNIX is a general-purpose, multi-user, interactive operating system for the Digital Equipment Corporation PDP-11/40 and 11/45 computers. It offers a number of features seldom found even in larger operating systems, including: (1) a hierarchical file system incorporating demountable volumes; (2) compatible file, device, and inter-process I/O; (3) the ability to initiate asynchronous processes; (4) system command language selectable on a per-user basis; and (5) over 100 subsystems including a dozen languages. This paper discusses the nature and implementation of the file system and of the user command interface.
+
+},
+	Address = {New York, NY, USA},
+	Author = {Dennis M. Ritchie and Ken Thompson},
+	Date-Added = {2006-01-09 17:16:37 +0200},
+	Date-Modified = {2006-01-24 19:02:45 +0200},
+	Doi = {http://doi.acm.org/10.1145/361011.361061},
+	Issn = {0001-0782},
+	Journal = {Commun. ACM},
+	Local-Url = {file://localhost/Volumes/Files/Documents/PhD/papers/OS/The%20UNIX%20Time-%20Sharing%20System%20.pdf},
+	Number = {7},
+	Pages = {365--375},
+	Publisher = {ACM Press},
+	Title = {The {UNIX} time-sharing system},
+	Volume = {17},
+	Year = {1974}}
+
+@article{Gold69,
+	Abstract = {An experimental comparison of problem-solving using time-sharing and batch-processing computer systems conducted at MIT is described in this paper. This study is the first known attempt to evaluate two such systems for what may well be the predominant user population within the next decade---the professionals who, as nonprogrammers, are using the computer as an aid in decision-making and problem-solving rather than as a programming end in itself. Statistically and logically significant results indicate equal cost for usage of the two computer systems; however, a much higher level of performance is attained by time-sharing users. There are indications that significantly lower costs would have resulted if the time-sharing users had stopped work when they reached a performance level equal to that of the batch users. The users' speed of problem-solving and their attitudes made time-sharing the more favorable system.
+
+},
+	Address = {New York, NY, USA},
+	Author = {Michael M. Gold},
+	Date-Added = {2006-01-09 17:12:41 +0200},
+	Date-Modified = {2006-01-09 17:14:46 +0200},
+	Doi = {http://doi.acm.org/10.1145/362946.362958},
+	Issn = {0001-0782},
+	Journal = {Commun. ACM},
+	Local-Url = {file://localhost/Volumes/Files/Documents/PhD/papers/OS/Time-Sharing%20and%20Batch-%20Processing-%20An%20Experimental%20Comparison%20of%20Their%20Values%20in%20a%20Problem-Solving%20Situation%20.pdf},
+	Number = {5},
+	Pages = {249--259},
+	Publisher = {ACM Press},
+	Title = {Time-sharing and batch-processing: an experimental comparison of their values in a problem-solving situation},
+	Volume = {12},
+	Year = {1969}}
+
+@article{Amdah64,
+	Author = {G. M. Amdahl and G. A. Blaauv and F. P. Brooks, Jr},
+	Date-Added = {2006-01-09 16:58:10 +0200},
+	Date-Modified = {2006-01-24 19:07:46 +0200},
+	Journal = {IBM J. RES. DEVELOP.},
+	Local-Url = {file://localhost/Volumes/Files/Documents/PhD/papers/OS/Architecture%20of%20the%20IBM%20System-360.pdf},
+	Number = {2},
+	Title = {Architecture of the {IBM} {S}ystem/360},
+	Volume = {8},
+	Year = {1964}}
+
+@article{Denni70,
+	Address = {New York, NY, USA},
+	Author = {Peter J. Denning},
+	Date-Added = {2006-01-09 15:56:20 +0200},
+	Date-Modified = {2006-01-09 15:56:47 +0200},
+	Doi = {http://doi.acm.org/10.1145/356571.356573},
+	Issn = {0360-0300},
+	Journal = {ACM Comput. Surv.},
+	Local-Url = {file://localhost/Volumes/Files/Documents/PhD/papers/Misc/Virtual%20Memory.pdf},
+	Number = {3},
+	Pages = {153--189},
+	Publisher = {ACM Press},
+	Title = {Virtual Memory},
+	Volume = {2},
+	Year = {1970}}
+
+@inproceedings{Vergh98,
+	Abstract = {Shared-memory multiprocessors (SMPs) are being extensively used as general-purpose servers. The tight coupling of multiple processors, memory, and I/O provides enormous computing power in a single system, and enables the efficient sharing of these resources.The operating systems for these machines (UNIX or Windows NT) provide very few controls for sharing the resources of the system among the active tasks or users. This unconstrained sharing model is a serious limitation for a server because the load placed by one user can adversely affect other users' performance in an unpredictable manner. We show that this lack of isolation is caused by the resource allocation scheme (or lack thereof) carried over from singleuser workstations. Multi-user multiprocessor systems require more sophisticated resource management, and we show how the proposed "performance isolation" scheme can address the current weaknesses of these systems. We have implemented performance isolation in the Silicon Graphics IRIX operating system for three important system resources: CPU time, memory, and disk bandwidth. Running a number of workloads we show that our proposed scheme is successful at providing workstation-like isolation under heavy load, SMP-like latency under light load, and SMP-like throughput in all cases.},
+	Address = {New York, NY, USA},
+	Author = {Ben Verghese and Anoop Gupta and Mendel Rosenblum},
+	Booktitle = {ASPLOS-VIII: Proceedings of the eighth international conference on Architectural support for programming languages and operating systems},
+	Date-Added = {2006-01-09 16:13:30 +0200},
+	Date-Modified = {2006-01-09 16:15:10 +0200},
+	Doi = {http://doi.acm.org/10.1145/291069.291044},
+	Isbn = {1-58113-107-0},
+	Local-Url = {file://localhost/Volumes/Files/Documents/PhD/papers/OS/Performance%20Isolation-Sharing%20and%20Isolation%20in%20Shared-Memory%20Multiprocessors%20.pdf},
+	Location = {San Jose, California, United States},
+	Pages = {181--192},
+	Publisher = {ACM Press},
+	Title = {Performance isolation: sharing and isolation in shared-memory multiprocessors},
+	Year = {1998}}
+
+@techreport{Hunt05,
+	Abstract = { Singularity is a research project in Microsoft Research that started  with the question: what would a software platform look like if it was designed from scratch with the primary goal of dependability? Singularity is working to answer this question by building on advances in programming languages and tools to develop a new system architecture and operating system (named Singularity), with the aim of producing a more robust and dependable software platform. Singularity demonstrates the practicality of new technologies and architectural decisions, which should lead to the construction of more robust and dependable systems.},
+	Author = {Galen Hunt and James Larus and Marti?n Abadi and Mark Aiken and Paul Barham and Manuel Fa?hndrich and Chris Hawblitzel and Orion Hodson and Steven Levi and Nick Murphy and Bjarne Steensgaard and David Tarditi and Ted Wobber and Brian Zill},
+	Date-Added = {2005-11-28 13:54:56 +0200},
+	Date-Modified = {2006-05-29 00:02:02 +0300},
+	Institution = {Microsoft Research},
+	Number = {MSR-TR-2005-135 MSR-TR-2005-135},
+	Title = {An Overview of the {S}ingularity Project},
+	Type = {Microsoft Research Technical Report},
+	Year = {2005}}
