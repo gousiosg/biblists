@@ -71,7 +71,6 @@ pattern = '*.bib'
 
 for root, dirs, files in os.walk(bibdir):
     for filename in fnmatch.filter(files, pattern):
-        #print >> sys.stderr, "Found bib file %s" % os.path.join(root, filename);
         bibfiles.append(os.path.join(root, filename))
 
 for bib in bibfiles:

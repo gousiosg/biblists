@@ -191,7 +191,7 @@ def bib_parse(file,log):
     nextentry = bib_getentry()
     while nextentry <> None:
         (key,entry) = nextentry
-        #log.write(".")
+        #log.write(key)
         entries[key] = entry
         expect("}")
         try:
