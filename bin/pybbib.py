@@ -181,7 +181,7 @@ def bib_getentry():
 # note: the key "mytype" holds the type of entry, the key "mykey" 
 def bib_parse(file,log):
     global lastsuccessfulkey
-    log.write("\nProcessing %s: " % file)
+    log.write("Processing %s: " % file)
     entries = {} 
     try:
         initch( file )
@@ -191,7 +191,7 @@ def bib_parse(file,log):
     nextentry = bib_getentry()
     while nextentry <> None:
         (key,entry) = nextentry
-        #log.write(key)
+        #log.write("%s\n"%key)
         entries[key] = entry
         expect("}")
         try:
@@ -202,7 +202,7 @@ def bib_parse(file,log):
     if nextentry <> None:
         log.write(" %s" % lastsuccessfulkey)
     else:
-	log.write(" %d" % len(entries))
+	log.write(" %d\n" % len(entries))
     return entries
 
 def bib_write(f,record):

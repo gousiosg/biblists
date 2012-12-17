@@ -20,7 +20,7 @@ def error (msg):
     return
 
 def warning (msg):
-    sys.stderr.write("\npybcompact: warning: %s\n" % msg)
+    sys.stderr.write("pybcompact: warning: %s\n" % msg)
     return
 
 def collate (bibs,cites):
@@ -36,6 +36,8 @@ def collate (bibs,cites):
                 xref = xref.strip("{}")
                 xref = xref.strip("}{")
                 crossref[xref] = 1
+        else:
+            warning("Not found: %s" % (c))
     return ( found,crossref.keys() )
 
 # test input arguments

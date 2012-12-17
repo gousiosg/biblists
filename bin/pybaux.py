@@ -50,6 +50,6 @@ def aux_citations(file):
         if match:
             references = match.group(1)
             for k in references.split(","):
-                citations.append (k)
+                citations.append (k.strip())
     return citations
 
