@@ -1,11 +1,64 @@
 @inproceedings{GPD14,
   Author = {Georgios Gousios and Martin Pinzger and Arie van Deursen},
   Month = Jun,
+  Booktitle = {ICSE '14: Proceedings of the 36th International Conference on
+    Software Engineering},
   Title = {An exploration of the pull-based software development model},
   Year = 2014,
-  Note = {To appear at International Conference on Software Engineering 2014},
+  Note = {To appear},
   Abstract = {The advent of distributed version control systems has led to the development of a new paradigm for distributed software development; instead of pushing changes to a central repository, developers pull them from other repositories and merge them locally. Various code hosting sites, notably Github, have tapped on the opportunity to facilitate pull-based development by offering workflow support tools, such as code reviewing systems and integrated issue trackers. In this work, we explore how pull-based software development works, first on the GHTorrent corpus and then on a carefully selected sample of 291 projects. We find that the pull request model offers fast turnaround, increased opportunities for community engagement and decreased time to incorporate contributions. We show that a relatively small number of factors affect both the decision to merge a pull request and the time to process it. We also examine the reasons for pull request rejection and find that technical ones are only a small minority.},
-  Location={Hyderabad, India}
+  Location={Hyderabad, India},
+  speakerdeck = "c25d64607e600130294c22000a9f019a",
+  url = {/pub/exploration-pullreqs.pdf},
+}
+
+@inproceedings{GVSZ14,
+  Author = {Georgios Gousios and Bogdan Vasilescu and Alexander Serebrenik and Andy Zaidman},
+  Month = May,
+  Booktitle = {MSR '14: Proceedings of the 11th Working Conference on Mining Software Repositories},
+  Title = {Lean GHTorrent: GitHub data on demand},
+  Year = 2014,
+  Note = {To appear},
+  Abstract = {In recent years, Github has become the largest code host in the world, with more than 5M developers collaborating across 10M repositories. Numerous popular open source projects (such as Ruby on Rails, Homebrew, Bootstrap, Django or JQuery) have chosen Github as their host and have migrated their code base to it. Github offers a tremendous research potential. For instance, it is a flagship for current open source development, a place for developers to showcase their expertise to peers or potential recruiters, and the platform where social coding features or pull requests emerged. However, Github data is, to date, largely underexplored. To facilitate studies of Github, we have created GHTorrent, a scalable, queriable, offline mirror of the data offered through the Github REST API. In this paper we present a novel feature of GHTorrent designed to offer customisable data dumps on demand. The new GHTorrent data-on-demand service offers users the possibility to request via a web form up-to-date GHTorrent data dumps for any collection of Github repositories. We hope that by offering customisable GHTorrent data dumps we will not only lower the "barrier for entry" even further for researchers interested in mining Github data (thus encourage researchers to intensify their mining efforts), but also enhance the replicability of Github studies (since a snapshot of the data on which the results were obtained can now easily accompany each study).},
+  Location={Hyderabad, India},
+  url = {/pub/lean-ghtorrent.pdf},
+}
+
+@inproceedings{GZ14,
+  Author = {Georgios Gousios and Andy Zaidman},
+  Month = May,
+  Booktitle = {MSR '14: Proceedings of the 11th Working Conference on Mining Software Repositories},
+  Title = {A dataset for pull request research},
+  Year = 2014,
+  Note = {To appear},
+  Abstract = {Pull requests form a new method for collaborating in distributed software development. To study the pull request distributed development model, we constructed a dataset of almost 900 projects and 350,000 pull requests, including some of the largest users of pull requests on Github. In this paper, we describe how the project selection was done, we analyze the selected features and present a machine learning tool set for the R statistics environment.},
+  Location={Hyderabad, India},
+  url = {/pub/pullreqs-dataset.pdf},
+}
+
+@inproceedings{MKLGS14,
+  Author = {Dimitris Mitropoulos and Vassilios Karakoidas and Panos Louridas and
+  Georgios Gousios and Diomidis Spinellis},
+  Month = May,
+  Booktitle = {MSR '14: Proceedings of the 11th Working Conference on Mining Software Repositories},
+  Title = {The Bug Catalog of the Maven Ecosystem},
+  Year = 2014,
+  Note = {To appear},
+  Abstract = {Examining software ecosystems can provide the research community with data regarding artifacts, processes, and communities. We present a dataset obtained from the Maven central repository ecosystem (approximately 265{GB} of data) by statically analyzing the repository to detect potential software bugs. For our analysis we used {F}indBugs, a tool that examines Java bytecode to detect numerous types of bugs. The dataset contains the metrics results that Find- Bugs reports for every project version (a jar) included in the ecosystem. For every version we also stored specific metadata such as the jar’s size, its dependencies and others. Our dataset can be used to produce interesting research results, as we show in specific examples.},
+  Location={Hyderabad, India},
+  url = {/pub/maven-findbugs.pdf},
+}
+
+@inproceedings{KGBSGD14,
+  Author = {Eirini Kalliamvakou and Georgios Gousios and Kelly Blincoe and Leif Singer and Daniel M. German and Daniela Damian},
+  Month = May,
+  Booktitle = {MSR '14: Proceedings of the 11th Working Conference on Mining Software Repositories},
+  Title = {The Promises and Perils of Mining GitHub},
+  Year = 2014,
+  Note = {To appear},
+  Abstract = {With over 10 million Git repositories, GitHub is becoming one of the most important source of software artifacts on the Internet. Researchers are starting to mine the information stored in GitHub's event logs, trying to understand how its users employ the site to collaborate on software. However, so far there have been no studies describing the quality and properties of the data available from GitHub. We document the results of an empirical study aimed at understanding the characteristics of the repositories in GitHub and how users take advantage of GitHub's main features---namely commits, pull requests, and issues. Our results indicate that, while GitHub is a rich source of data on software development, mining GitHub for research purposes should take various potential perils into consideration. We show, for example, that the majority of the projects are personal and inactive; that GitHub is also being used for free storage and as a Web hosting service; and that almost 40\% of all pull requests do not appear as merged, even though they were. We provide a set of recommendations for software engineering researchers on how to approach the data in GitHub.},
+  Location={Hyderabad, India},
+  url = {/pub/promises-perils-github.pdf},
 }
 
 @inproceedings{MKLGS13,
@@ -13,33 +66,33 @@
   Title = {Dismal Code: Studying the Evolution of Security Bugs},
   Year = 2013,
   Month = Oct,
-  Booktitle = {{LASER} '13: Proceedings of the 2013 Workshop on Learning from Authoritative Security Experiment Results},
+  Booktitle = { {LASER} '13: Proceedings of the 2013 Workshop on Learning from Authoritative Security Experiment Results},
   Location = {Washington D.C., VA},
   abstract = { Security bugs are critical programming errors that can lead to
-  serious vulnerabilities in software. Such bugs may allow an attacker to take
-  over an application, steal data or prevent the application from working at
-  all.  We used the projects stored in the Maven repository to study the
-  characteristics of security bugs individually and in relation to other
-  software bugs. Specifically, we studied the evolution of security bugs through
-  time. In addition, we examined their persistence and their relationship with
-  a) the size of the corresponding version, and b) other bug categories.  We
-  analyzed every project version of the Maven repository by using FindBugs, a
-  popular static analysis tool.  To see how security bugs evolve over time we
-  took advantage of the repository's project history and dependency data.  Our
-  results indicate that there is no simple rule governing the number of security
-  bugs as a project evolves.  In particular, we cannot say that across projects
-  security-related defect counts increase or decrease significantly over time.
-  Furthermore, security bugs are not eliminated in a way that is particularly
-  different from the other bugs. In addition, the relation of security bugs
-  with a project's size appears to be different from the relation of the bugs
-  coming from other categories.  Finally, even if bugs seem to have similar
-  behaviour, severe security bugs seem to be unassociated with other bug
-  categories.  Our findings indicate that further research should be done to
-  analyze the evolution of security bugs. Given the fact that our experiment
-  included only Java projects, similar research could be done for another
-  ecosystem. Finally, the fact that projects have their own idiosyncrasies
-  concerning security bugs, could help us find the common characteristics of the
-  projects where security bugs increase over time. },
+    serious vulnerabilities in software. Such bugs may allow an attacker to take
+      over an application, steal data or prevent the application from working at
+      all.  We used the projects stored in the Maven repository to study the
+      characteristics of security bugs individually and in relation to other
+      software bugs. Specifically, we studied the evolution of security bugs through
+      time. In addition, we examined their persistence and their relationship with
+      a) the size of the corresponding version, and b) other bug categories.  We
+      analyzed every project version of the Maven repository by using FindBugs, a
+      popular static analysis tool.  To see how security bugs evolve over time we
+      took advantage of the repository's project history and dependency data.  Our
+      results indicate that there is no simple rule governing the number of security
+      bugs as a project evolves.  In particular, we cannot say that across projects
+      security-related defect counts increase or decrease significantly over time.
+      Furthermore, security bugs are not eliminated in a way that is particularly
+      different from the other bugs. In addition, the relation of security bugs
+      with a project's size appears to be different from the relation of the bugs
+      coming from other categories.  Finally, even if bugs seem to have similar
+      behaviour, severe security bugs seem to be unassociated with other bug
+      categories.  Our findings indicate that further research should be done to
+      analyze the evolution of security bugs. Given the fact that our experiment
+      included only Java projects, similar research could be done for another
+      ecosystem. Finally, the fact that projects have their own idiosyncrasies
+      concerning security bugs, could help us find the common characteristics of the
+      projects where security bugs increase over time. },
   url = {/pub/evolution-security-bugs.pdf}
 }
 
@@ -48,7 +101,7 @@
   Title = {The {GHT}orrent dataset and tool suite},
   Year = 2013,
   Month = May,
-  Booktitle = {{MSR} '13: Proceedings of the 10th Working Conference on Mining Software Repositories},
+  Booktitle = { {MSR} '13: Proceedings of the 10th Working Conference on Mining Software Repositories},
   Location = {San Francisco, CA},
   abstract = {A common requirement of many empirical software engineering studies is the acquisition and curation of data from software repositories. During the last few years, GitHub has emerged as a popular project hosting, mirroring and collaboration platform. GitHub provides an extensive REST API, which enables researchers to retrieve both the commits to the projects’ repositories and events generated through user actions on project resources. GHTorrent aims to create a scalable off line mirror of GitHub’s event streams and persistent data, and offer it to the research community as a service. In this paper, we present the project’s design and initial implementation and demonstrate how the provided datasets can be queried and processed.},
   url = {/pub/ghtorrent-dataset-toolsuite.pdf},
@@ -81,13 +134,13 @@
 
 @inproceedings{GS12,
   Author = {Georgios Gousios and Diomidis Spinellis},
-  Booktitle = {{MSR} '12: Proceedings of the 9th Working Conference on Mining Software Repositories},
+  Booktitle = { {MSR} '12: Proceedings of the 9th Working Conference on Mining Software Repositories},
   Editor = {Michael W. Godfrey and Jim Whitehead},
   Location = {Zurich, Switzerland},
   Month = jun,
   Pages = {12--21},
   Publisher = {IEEE},
-  Title = {{GHT}orrent: {G}it{H}ub's Data from a Firehose},
+  Title = { {GHT}orrent: {G}it{H}ub's Data from a Firehose},
   Year = 2012,
   doi = {10.1109/MSR.2012.6224294}, 
   ISSN = {2160-1852},
@@ -111,7 +164,7 @@
 
 @inproceedings{GS09a,
   Author = {Georgios Gousios and Diomidis Spinellis},
-  Booktitle = {{ICSE} '09: Proceedings of the 31st International Conference on Software Engineering -- Formal Research Demonstrations Track},
+  Booktitle = { {ICSE} '09: Proceedings of the 31st International Conference on Software Engineering -- Formal Research Demonstrations Track},
   Day = {16--24},
   Isbn = {978-1-4244-3743-6},
   Location = {Vancouver, Canada},
@@ -126,7 +179,7 @@
 
 @inproceedings{GS09b,
   Author = {Georgios Gousios and Diomidis Spinellis},
-  Booktitle = {{MSR} '09: Proceedings of the 6th Working Conference on Mining Software Repositories},
+  Booktitle = { {MSR} '09: Proceedings of the 6th Working Conference on Mining Software Repositories},
   Day = {16--17},
   Editor = {Michael W. Godfrey and Jim Whitehead},
   Isbn = {978-1-4244-3493-0},
