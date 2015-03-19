@@ -1,64 +1,242 @@
-@inproceedings{GPD14,
-  Author = {Georgios Gousios and Martin Pinzger and Arie van Deursen},
-  Month = Jun,
-  Booktitle = {ICSE '14: Proceedings of the 36th International Conference on
-    Software Engineering},
-  Title = {An exploration of the pull-based software development model},
-  Year = 2014,
+@inproceedings{GZSD15,
+  author = {Gousios, Georgios and Zaidman, Andy and Storey, Margaret-Anne and Deursen, Arie van},
+  title = {Work Practices and Challenges in Pull-Based Development: The Integrator’s Perspective},
+  booktitle = {Proceedings of the 37th International Conference on Software Engineering},
+  series = {ICSE 2015},
+  year = {2015},
+  location = {Florence, Italy},
+  Abstract = {
+    In the pull-based development model, the integrator has the crucial role of
+    managing and integrating contributions. This work focuses on the role of
+    the integrator and investigates working habits and challenges alike. We set
+    up an exploratory qualitative study involving a large-scale survey of 749
+    integrators, to which we add quantitative data from the integrator's
+    project.  Our results provide insights into the factors they consider in
+    their decision making process to accept or reject a contribution. Our key
+    findings are that integrators struggle to maintain the quality of their
+    projects and have difficulties with prioritizing contributions that are to
+    be merged.  Our insights have implications for practitioners who wish to
+    use or improve their pull-based development process, as well as for
+    researchers striving to understand the theoretical implications of the
+    pull-based model in software development.},
+  url = {/pub/pullreqs-integrators.pdf},
+  Note = {To appear}
+}
+
+@inproceedings{VGZ15,
+  author = {Roberta Coelho and Lucas Almeida and Georgios Gousios and Arie van
+  Deursen},
+  title = {Unveiling Exception Handling Bug Hazards in Android based on GitHub and Google Code Issues},
+  booktitle = {Proceedings of the 12th International Conference on Mining
+  Software Repositories},
+  year = {2015},
+  location = {Florence, Italy},
+  Abstract = {This paper reports on a study mining the exception stack traces included in 159,048 issues reported on Android projects hosted in GitHub (482 projects) and Google Code (157 projects). The goal of this study is to investigate whether stack trace information can reveal bug hazards related to exception handling code that may lead to a decrease in application robustness. Overall 6,005 exception stack traces were extracted, and subjected to source code and bytecode analysis. The outcomes of this study include the identification of the following bug hazards: (i) unexpected cross-type exception wrappings (for instance, trying to handle an instance of OutOfMemoryError ``hidden'' in a checked exception) which can make the exception-related code more complex and negatively impact the application robustness; (ii) undocumented runtime exceptions thrown by both the Android platform and third party libraries; and (iii) undoc- umented checked exceptions thrown by the Android Platform. Such undocumented exceptions make difficult, and most of the times infeasible for the client code to protect against unforeseen situations that may happen while calling third-party code. This study provides further insights on such bug hazards and the robustness threats they impose to Android apps as well as to other systems based on the Java exception model.},
+  url = {/pub/android-stacks.pdf},
+  Note = {To appear}
+}
+
+@inproceedings{DBGCD15,
+  author = {Martin Dias and Alberto Bacchelli and Georgios Gousios and Damien Cassou and Stephane Ducasse},
+  title = {Untangling Fine-Grained Code Changes},
+  booktitle = {Proceedings of the 22nd IEEE International Conference on Software Analysis, Evolution, and Reengineering},
+  Year = {2015},
+  series = {SANER 2015},
+  year = {2015},
+  location = {Montreal, Canada},
+  Abstract = {After working for some time, developers commit their code changes
+  to a version control system. When doing so, research shows that they often
+  bundle unrelated changes (e.g., bug fix and refactoring) in a single commit,
+  thus creating a so-called tangled commit. Sharing tangled commits is
+  problematic because it makes review, reversion, and integration of these
+  commits harder and historical analyses of the project less reliable.
+  Researchers have worked at untangling existing commits, i.e., finding which
+  part of a commit relates to which task. In this paper, we contribute to this
+  line of work in two ways: (1) A publicly available dataset of untangled code
+  changes, created with the help of two developers who accurately split their
+  code changes into self contained tasks over a period of four months; (2) based
+  on this dataset we devise and assess EpiceaUntangler, an approach to help
+  developers share untangled commits (aka. atomic commits) by using fine-grained
+  code change information. We further evaluate EpiceaUntangler by deploying it
+  to 7 developers, who used it for 2 weeks. We recorded a median success rate of
+  91\% and average one of 75\%, in automatically creating clusters of untangled
+  fine-grained code changes.},
+  url = {/pub/fine-untangling.pdf},
   Note = {To appear},
-  Abstract = {The advent of distributed version control systems has led to the development of a new paradigm for distributed software development; instead of pushing changes to a central repository, developers pull them from other repositories and merge them locally. Various code hosting sites, notably Github, have tapped on the opportunity to facilitate pull-based development by offering workflow support tools, such as code reviewing systems and integrated issue trackers. In this work, we explore how pull-based software development works, first on the GHTorrent corpus and then on a carefully selected sample of 291 projects. We find that the pull request model offers fast turnaround, increased opportunities for community engagement and decreased time to incorporate contributions. We show that a relatively small number of factors affect both the decision to merge a pull request and the time to process it. We also examine the reasons for pull request rejection and find that technical ones are only a small minority.},
-  Location={Hyderabad, India},
-  speakerdeck = "c25d64607e600130294c22000a9f019a",
+  award = {nomination for the SANER best paper}
+}
+
+@inproceedings{HG15,
+  author = {Claudia Hauff and Georgios Gousios},
+  title = {Matching GitHub developer profiles to job advertisements},
+  booktitle = {Proceedings of the 12th International Conference on Mining
+  Software Repositories},
+  year = {2015},
+  location = {Florence, Italy},
+  Abstract = {GitHub is a social coding platform that enables developers to efficiently work on projects, connect with other developers, collaborate and generally ``be seen'' by the community. This visibility also extends to prospective employers and HR personnel who may use GitHub to learn more about a developer’s skills and interests. We propose a pipeline that automatizes this process and automatically suggests matching job advertisements to developers, based on signals extracting from their activities on GitHub.},
+  url = {/pub/dev-profiles.pdf},
+  Note = {To appear}
+}
+
+@inproceedings{VGZ15,
+  author = {Erik van der Veen and Georgios Gousios and Andy Zaidman},
+  title = {Automatically Prioritizing Pull Requests},
+  booktitle = {Proceedings of the 12th International Conference on Mining
+  Software Repositories},
+  year = {2015},
+  location = {Florence, Italy},
+  Abstract = {In previous work, we observed that in the pull-based development model integrators face challenges with regard to prioritizing work in the face of multiple concurrent pull requests. We present the design and initial implementation of a prototype pull request prioritisation tool called PRioritizer. PRioritizer works like a priority inbox for pull requests, recommending the top pull requests the project owner should focus on. A preliminary user study showed that PRioritizer provides functionality that GitHub is currently lacking, even though users need more insight into how the priority ranking is established to make PRioritizer really useful.},
+  url = {/pub/prioritizer.pdf},
+  Note = {To appear}
+}
+
+@inproceedings{GPD14,
+  author = {Gousios, Georgios and Pinzger, Martin and Deursen, Arie van},
+  title = {An Exploratory Study of the Pull-based Software Development Model},
+  booktitle = {Proceedings of the 36th International Conference on Software Engineering},
+  Year = {2014},
+  series = {ICSE 2014},
+  isbn = {978-1-4503-2756-5},
+  location = {Hyderabad, India},
+  pages = {345--355},
+  numpages = {11},
+  doi = {10.1145/2568225.2568260},
+  acmid = {2568260},
+  publisher = {ACM},
+  address = {New York, NY, USA},
+  keywords = {Pull-based development, distributed software development, empirical software engineering, pull request},
+  Abstract = {The advent of distributed version control systems has led to the
+  development of a new paradigm for distributed software development; instead of
+  pushing changes to a central repository, developers pull them from other
+  repositories and merge them locally. Various code hosting sites, notably
+  Github, have tapped on the opportunity to facilitate pull-based development by
+  offering workflow support tools, such as code reviewing systems and integrated
+  issue trackers. In this work, we explore how pull-based software development
+  works, first on the GHTorrent corpus and then on a carefully selected sample
+  of 291 projects. We find that the pull request model offers fast turnaround,
+  increased opportunities for community engagement and decreased time to
+  incorporate contributions. We show that a relatively small number of factors
+  affect both the decision to merge a pull request and the time to process it.
+  We also examine the reasons for pull request rejection and find that technical
+  ones are only a small minority.},
+ speakerdeck = "2c6de050ce430131e1db2aa9d004a740",
   url = {/pub/exploration-pullreqs.pdf},
+  award = {nomination for the ACM SIGSOFT best paper}
 }
 
 @inproceedings{GVSZ14,
-  Author = {Georgios Gousios and Bogdan Vasilescu and Alexander Serebrenik and Andy Zaidman},
-  Month = May,
-  Booktitle = {MSR '14: Proceedings of the 11th Working Conference on Mining Software Repositories},
-  Title = {Lean GHTorrent: GitHub data on demand},
-  Year = 2014,
-  Note = {To appear},
-  Abstract = {In recent years, Github has become the largest code host in the world, with more than 5M developers collaborating across 10M repositories. Numerous popular open source projects (such as Ruby on Rails, Homebrew, Bootstrap, Django or JQuery) have chosen Github as their host and have migrated their code base to it. Github offers a tremendous research potential. For instance, it is a flagship for current open source development, a place for developers to showcase their expertise to peers or potential recruiters, and the platform where social coding features or pull requests emerged. However, Github data is, to date, largely underexplored. To facilitate studies of Github, we have created GHTorrent, a scalable, queriable, offline mirror of the data offered through the Github REST API. In this paper we present a novel feature of GHTorrent designed to offer customisable data dumps on demand. The new GHTorrent data-on-demand service offers users the possibility to request via a web form up-to-date GHTorrent data dumps for any collection of Github repositories. We hope that by offering customisable GHTorrent data dumps we will not only lower the "barrier for entry" even further for researchers interested in mining Github data (thus encourage researchers to intensify their mining efforts), but also enhance the replicability of Github studies (since a snapshot of the data on which the results were obtained can now easily accompany each study).},
-  Location={Hyderabad, India},
+  author = {Gousios, Georgios and Vasilescu, Bogdan and Serebrenik, Alexander and Zaidman, Andy},
+  title = {Lean {GHT}orrent: GitHub Data on Demand},
+  booktitle = {Proceedings of the 11th Working Conference on Mining Software Repositories},
+  series = {MSR 2014},
+  year = {2014},
+  isbn = {978-1-4503-2863-0},
+  location = {Hyderabad, India},
+  pages = {384--387},
+  numpages = {4},
+  doi = {10.1145/2597073.2597126},
+  acmid = {2597126},
+  publisher = {ACM},
+  address = {New York, NY, USA},
+  keywords = {GitHub, data on demand, dataset},
+  Abstract = {In recent years, Github has become the largest code host in the
+  world, with more than 5M developers collaborating across 10M repositories.
+  Numerous popular open source projects (such as Ruby on Rails, Homebrew,
+  Bootstrap, Django or JQuery) have chosen Github as their host and have
+  migrated their code base to it. Github offers a tremendous research potential.
+  For instance, it is a flagship for current open source development, a place
+  for developers to showcase their expertise to peers or potential recruiters,
+  and the platform where social coding features or pull requests emerged.
+  However, Github data is, to date, largely underexplored. To facilitate
+  studies of Github, we have created GHTorrent, a scalable, queriable, offline
+  mirror of the data offered through the Github REST API. In this paper we
+  present a novel feature of GHTorrent designed to offer customisable data
+  dumps on demand. The new GHTorrent data-on-demand service offers users the
+  possibility to request via a web form up-to-date GHTorrent data dumps for
+  any collection of Github repositories. We hope that by offering customisable
+  GHTorrent data dumps we will not only lower the "barrier for entry" even
+  further for researchers interested in mining Github data (thus encourage
+  researchers to intensify their mining efforts), but also enhance the
+  replicability of Github studies (since a snapshot of the data on which the
+  results were obtained can now easily accompany each study).},
   url = {/pub/lean-ghtorrent.pdf},
+  speakerdeck = "992bb730cd090131fa3126624a8aace7"
 }
 
 @inproceedings{GZ14,
-  Author = {Georgios Gousios and Andy Zaidman},
-  Month = May,
-  Booktitle = {MSR '14: Proceedings of the 11th Working Conference on Mining Software Repositories},
-  Title = {A dataset for pull request research},
-  Year = 2014,
-  Note = {To appear},
-  Abstract = {Pull requests form a new method for collaborating in distributed software development. To study the pull request distributed development model, we constructed a dataset of almost 900 projects and 350,000 pull requests, including some of the largest users of pull requests on Github. In this paper, we describe how the project selection was done, we analyze the selected features and present a machine learning tool set for the R statistics environment.},
-  Location={Hyderabad, India},
+  author = {Gousios, Georgios and Zaidman, Andy},
+  title = {A Dataset for Pull-based Development Research},
+  booktitle = {Proceedings of the 11th Working Conference on Mining Software Repositories},
+  series = {MSR 2014},
+  year = {2014},
+  isbn = {978-1-4503-2863-0},
+  location = {Hyderabad, India},
+  pages = {368--371},
+  numpages = {4},
+  doi = {10.1145/2597073.2597122},
+  acmid = {2597122},
+  publisher = {ACM},
+  address = {New York, NY, USA},
+  keywords = {distributed software development, empirical software engineering, pull request, pull-based development},
+  Abstract = {Pull requests form a new method for collaborating in distributed
+  software development. To study the pull request distributed development model,
+  we constructed a dataset of almost 900 projects and 350,000 pull requests,
+  including some of the largest users of pull requests on Github. In this paper,
+  we describe how the project selection was done, we analyze the selected
+  features and present a machine learning tool set for the R statistics
+  environment.},
   url = {/pub/pullreqs-dataset.pdf},
+  award = {MSR2014: Best data showcase paper},
+  speakerdeck = "629aa910cd09013116791efd7f77c4b7"
 }
 
 @inproceedings{MKLGS14,
-  Author = {Dimitris Mitropoulos and Vassilios Karakoidas and Panos Louridas and
-  Georgios Gousios and Diomidis Spinellis},
-  Month = May,
-  Booktitle = {MSR '14: Proceedings of the 11th Working Conference on Mining Software Repositories},
-  Title = {The Bug Catalog of the Maven Ecosystem},
-  Year = 2014,
-  Note = {To appear},
+  author = {Mitropoulos, Dimitris and Karakoidas, Vassilios and Louridas, Panos and Gousios, Georgios and Spinellis, Diomidis},
+  title = {The Bug Catalog of the Maven Ecosystem},
+  booktitle = {Proceedings of the 11th Working Conference on Mining Software Repositories},
+  series = {MSR 2014},
+  year = {2014},
+  isbn = {978-1-4503-2863-0},
+  location = {Hyderabad, India},
+  pages = {372--375},
+  numpages = {4},
+  doi = {10.1145/2597073.2597123},
+  acmid = {2597123},
+  publisher = {ACM},
+  address = {New York, NY, USA},
+  keywords = {FindBugs, Maven Repository, Software Bugs}, 
   Abstract = {Examining software ecosystems can provide the research community with data regarding artifacts, processes, and communities. We present a dataset obtained from the Maven central repository ecosystem (approximately 265{GB} of data) by statically analyzing the repository to detect potential software bugs. For our analysis we used {F}indBugs, a tool that examines Java bytecode to detect numerous types of bugs. The dataset contains the metrics results that Find- Bugs reports for every project version (a jar) included in the ecosystem. For every version we also stored specific metadata such as the jar’s size, its dependencies and others. Our dataset can be used to produce interesting research results, as we show in specific examples.},
-  Location={Hyderabad, India},
   url = {/pub/maven-findbugs.pdf},
 }
 
 @inproceedings{KGBSGD14,
-  Author = {Eirini Kalliamvakou and Georgios Gousios and Kelly Blincoe and Leif Singer and Daniel M. German and Daniela Damian},
-  Month = May,
-  Booktitle = {MSR '14: Proceedings of the 11th Working Conference on Mining Software Repositories},
-  Title = {The Promises and Perils of Mining GitHub},
-  Year = 2014,
-  Note = {To appear},
+  author = {Kalliamvakou, Eirini and Gousios, Georgios and Blincoe, Kelly and Singer, Leif and German, Daniel M. and Damian, Daniela},
+  title = {The Promises and Perils of Mining GitHub},
+  booktitle = {Proceedings of the 11th Working Conference on Mining Software Repositories},
+  series = {MSR 2014},
+  year = {2014},
+  isbn = {978-1-4503-2863-0},
+  location = {Hyderabad, India},
+  pages = {92--101},
+  numpages = {10},
+  doi = {10.1145/2597073.2597074},
+  acmid = {2597074},
+  publisher = {ACM},
+  address = {New York, NY, USA},
+  keywords = {Mining software repositories, bias, code reviews, git, github},
   Abstract = {With over 10 million Git repositories, GitHub is becoming one of the most important source of software artifacts on the Internet. Researchers are starting to mine the information stored in GitHub's event logs, trying to understand how its users employ the site to collaborate on software. However, so far there have been no studies describing the quality and properties of the data available from GitHub. We document the results of an empirical study aimed at understanding the characteristics of the repositories in GitHub and how users take advantage of GitHub's main features---namely commits, pull requests, and issues. Our results indicate that, while GitHub is a rich source of data on software development, mining GitHub for research purposes should take various potential perils into consideration. We show, for example, that the majority of the projects are personal and inactive; that GitHub is also being used for free storage and as a Web hosting service; and that almost 40\% of all pull requests do not appear as merged, even though they were. We provide a set of recommendations for software engineering researchers on how to approach the data in GitHub.},
-  Location={Hyderabad, India},
   url = {/pub/promises-perils-github.pdf},
+}
+
+@inproceedings{MKPLGS14,
+    author = {Dimitris Mitropoulos and Georgios Gousios and Panagiotis Papadopoulos and Vassilios Karakoidas and Panos Louridas and Diomidis Spinellis},
+    title = {The Vulnerability Dataset of a Large Software Ecosystem},
+    booktitle = {Proceedings of the 3rd International Workshop on Building Analysis Datasets and Gathering Experience Returns for Security},
+    year = {2014},
+    month = {September},
+    location = {Wroclaw, Poland},
+    publisher = {IEEE Computer Society},
+  url = {/pub/maven-bug-dataset.pdf}
 }
 
 @inproceedings{MKLGS13,
@@ -106,7 +284,8 @@
   abstract = {A common requirement of many empirical software engineering studies is the acquisition and curation of data from software repositories. During the last few years, GitHub has emerged as a popular project hosting, mirroring and collaboration platform. GitHub provides an extensive REST API, which enables researchers to retrieve both the commits to the projects’ repositories and events generated through user actions on project resources. GHTorrent aims to create a scalable off line mirror of GitHub’s event streams and persistent data, and offer it to the research community as a service. In this paper, we present the project’s design and initial implementation and demonstrate how the provided datasets can be queried and processed.},
   url = {/pub/ghtorrent-dataset-toolsuite.pdf},
   speakerdeck = "75bea5909fbb0130f0eb364613f6f036",
-  award = {MSR2013: Best data showcase paper}
+  award = {MSR2013: Best data showcase paper},
+  Note = {Best data showcase paper award}
 }
 
 @inproceedings{MGS12,
