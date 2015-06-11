@@ -5,25 +5,27 @@
   year = {2015},
   Abstract = {
     The research community in Software Engineering and Software Testing in
-particular builds many of its contributions on a set of mutually shared
-expectations. These expectations often form the motivation for research on the
-creation of new testing tools and the refinement of existing test processes in
-an attempt to support practitioners. Despite the fact that they are the basis
-for many publications as well as open-source and commercial testing
-applications, the common expectations and beliefs are rarely ever questioned.
-For example, Frederic Brooks' statement that testing takes half of the
-development time seems to have manifested itself within the community since he
-first made it in the ``Mythical Man Month'' in 1975. With this paper, we report
-on the surprising results of a large-scale field study with 416 software
-engineers whose development activity we closely monitored over the course of
-five months, resulting in over 13 years of recorded work time. Our findings
-question several commonly shared assumptions and beliefs about testing and might
-be contributing factors to the observed bug proneness of software in practice:
-the majority of developers in our study does not test; developers rarely run
-their tests in the IDE; Test-driven Development is not widely practiced; and,
-last but not least, software developers only spend a quarter of their work time
-engineering tests, whereas they think they test half of their time.
-   }
+    particular builds many of its contributions on a set of mutually shared
+    expectations. These expectations often form the motivation for research on
+    the creation of new testing tools and the refinement of existing test
+    processes in an attempt to support practitioners. Despite the fact that they
+    are the basis for many publications as well as open-source and commercial
+    testing applications, the common expectations and beliefs are rarely ever
+    questioned.  For example, Frederic Brooks' statement that testing takes half
+    of the development time seems to have manifested itself within the community
+    since he first made it in the ``Mythical Man Month'' in 1975. With this
+    paper, we report on the surprising results of a large-scale field study with
+    416 software engineers whose development activity we closely monitored over
+    the course of five months, resulting in over 13 years of recorded work time.
+    Our findings question several commonly shared assumptions and beliefs about
+    testing and might be contributing factors to the observed bug proneness of
+    software in practice: the majority of developers in our study does not test;
+    developers rarely run their tests in the IDE; Test-driven Development is not
+    widely practiced; and, last but not least, software developers only spend a
+    quarter of their work time engineering tests, whereas they think they test
+    half of their time.
+   },
+  Note = {To appear}
 }
 
 @inproceedings{GZSD15,
@@ -48,7 +50,7 @@ engineering tests, whereas they think they test half of their time.
     researchers striving to understand the theoretical implications of the
     pull-based model in software development.},
   url = {/pub/pullreqs-integrators.pdf},
-  Note = {To appear}
+  speakerdeck = "e340d9f98bd0426abada24888cf6f32d"
 }
 
 @inproceedings{CAGD15,
@@ -59,9 +61,52 @@ engineering tests, whereas they think they test half of their time.
   Software Repositories},
   year = {2015},
   location = {Florence, Italy},
-  Abstract = {This paper reports on a study mining the exception stack traces included in 159,048 issues reported on Android projects hosted in GitHub (482 projects) and Google Code (157 projects). The goal of this study is to investigate whether stack trace information can reveal bug hazards related to exception handling code that may lead to a decrease in application robustness. Overall 6,005 exception stack traces were extracted, and subjected to source code and bytecode analysis. The outcomes of this study include the identification of the following bug hazards: (i) unexpected cross-type exception wrappings (for instance, trying to handle an instance of OutOfMemoryError ``hidden'' in a checked exception) which can make the exception-related code more complex and negatively impact the application robustness; (ii) undocumented runtime exceptions thrown by both the Android platform and third party libraries; and (iii) undoc- umented checked exceptions thrown by the Android Platform. Such undocumented exceptions make difficult, and most of the times infeasible for the client code to protect against unforeseen situations that may happen while calling third-party code. This study provides further insights on such bug hazards and the robustness threats they impose to Android apps as well as to other systems based on the Java exception model.},
+  Abstract = {
+    This paper reports on a study mining the exception stack traces included in
+    159,048 issues reported on Android projects hosted in GitHub (482 projects)
+    and Google Code (157 projects). The goal of this study is to investigate
+    whether stack trace information can reveal bug hazards related to exception
+    handling code that may lead to a decrease in application robustness. Overall
+    6,005 exception stack traces were extracted, and subjected to source code
+    and bytecode analysis. The outcomes of this study include the identification
+    of the following bug hazards: (i) unexpected cross-type exception wrappings
+    (for instance, trying to handle an instance of OutOfMemoryError ``hidden''
+    in a checked exception) which can make the exception-related code more
+    complex and negatively impact the application robustness; (ii) undocumented
+    runtime exceptions thrown by both the Android platform and third party
+    libraries; and (iii) undoc- umented checked exceptions thrown by the Android
+    Platform. Such undocumented exceptions make difficult, and most of the times
+    infeasible for the client code to protect against unforeseen situations that
+    may happen while calling third-party code. This study provides further
+    insights on such bug hazards and the robustness threats they impose to
+    Android apps as well as to other systems based on the Java exception model.
+   },
   url = {/pub/android-stacks.pdf},
-  Note = {To appear}
+  speakerdeck="24731ec0a49f4724a82dd7b9e1f870f3"
+}
+
+@inproceedings{HGD15,
+  author = {Hennie Huijgens and Georgios Gousios and Arie van Deursen},
+  title = {Pricing via Functional Size: A Case Study of a Company’s Portfolio of 77 Outsourced Projects},
+  booktitle = {Proceedings of the 9th International Symposium on Empirical
+  Software Engineering and Measurement},
+  year = {2015},
+  location = {Beijing, China},
+  month = "Oct",
+  Abstract = {
+  A medium-sized west-European telecom company experienced a worsening trend in
+  performance, indicating that the organization did not learn from history, in
+  combination with much time and energy spent on preparation and review of
+  project proposals. In order to create more transparency in the supplier
+  proposal process a pilot was started on Functional Size Measurement pricing
+  (FSM-pricing). In this paper, we evaluate the implementation of FSM-pricing
+  in the software engineering domain of the company, as an instrument useful in
+  the context of software man- agement and supplier proposal pricing. We found
+  that a statistical, evidence-based pricing approach for software engineering,
+  as a single instrument (without a connection with expert judgment), can be
+  used in the subject companies to create cost transparency and performance
+  management of software project portfolios.},
+  note = "To appear"
 }
 
 @inproceedings{DBGCD15,
@@ -72,23 +117,25 @@ engineering tests, whereas they think they test half of their time.
   series = {SANER 2015},
   year = {2015},
   location = {Montreal, Canada},
-  Abstract = {After working for some time, developers commit their code changes
-  to a version control system. When doing so, research shows that they often
-  bundle unrelated changes (e.g., bug fix and refactoring) in a single commit,
-  thus creating a so-called tangled commit. Sharing tangled commits is
-  problematic because it makes review, reversion, and integration of these
-  commits harder and historical analyses of the project less reliable.
-  Researchers have worked at untangling existing commits, i.e., finding which
-  part of a commit relates to which task. In this paper, we contribute to this
-  line of work in two ways: (1) A publicly available dataset of untangled code
-  changes, created with the help of two developers who accurately split their
-  code changes into self contained tasks over a period of four months; (2) based
-  on this dataset we devise and assess EpiceaUntangler, an approach to help
-  developers share untangled commits (aka. atomic commits) by using fine-grained
-  code change information. We further evaluate EpiceaUntangler by deploying it
-  to 7 developers, who used it for 2 weeks. We recorded a median success rate of
-  91\% and average one of 75\%, in automatically creating clusters of untangled
-  fine-grained code changes.},
+  Abstract = {
+    After working for some time, developers commit their code changes to a
+    version control system. When doing so, research shows that they often bundle
+    unrelated changes (e.g., bug fix and refactoring) in a single commit, thus
+    creating a so-called tangled commit. Sharing tangled commits is problematic
+    because it makes review, reversion, and integration of these commits harder
+    and historical analyses of the project less reliable.  Researchers have
+    worked at untangling existing commits, i.e., finding which part of a commit
+    relates to which task. In this paper, we contribute to this line of work in
+    two ways: (1) A publicly available dataset of untangled code changes,
+    created with the help of two developers who accurately split their code
+    changes into self contained tasks over a period of four months; (2) based on
+    this dataset we devise and assess EpiceaUntangler, an approach to help
+    developers share untangled commits (aka. atomic commits) by using
+    fine-grained code change information. We further evaluate EpiceaUntangler by
+    deploying it to 7 developers, who used it for 2 weeks. We recorded a median
+    success rate of 91\% and average one of 75\%, in automatically creating
+    clusters of untangled fine-grained code changes.
+  },
   url = {/pub/fine-untangling.pdf},
   award = {nomination for the SANER best paper}
 }
@@ -99,33 +146,64 @@ engineering tests, whereas they think they test half of their time.
   booktitle = {Proceedings of the 37th International Conference on Software Engineering -- Niew Ideas and Emerging Results track},
   year = {2015},
   Abstract = {
-What do we know about software testing in the real world? It seems we know from Fred Brooks’ seminal work ``The Mythical Man-Month'' that 50\% of project effort is spent on testing. However, due to the enormous advances in software engineering in the past 40 years, the question stands: Is this observation still true? In fact, was it ever true? The vision for our research is to settle the discussion about Brooks' estimation once and for all: How much do developers test? Does developers' estimation on how much they test match reality? How frequently do they execute their tests, and is there a relationship between test runtime and execution frequency? What are the typical reactions to failing tests? Do developers solve actual defects in the production code, or do they merely relax their test assertions? Emerging results from 40 software engineering students show that students overestimate their testing time threefold, and 50\% of them test as little as 4\% of their time, or less. Having proven the scalability of our infrastructure, we are now extending our case study with professional software engineers from open-source and industrial organizations.
+    What do we know about software testing in the real world? It seems we know
+    from Fred Brooks’ seminal work ``The Mythical Man-Month'' that 50\% of
+    project effort is spent on testing. However, due to the enormous advances in
+    software engineering in the past 40 years, the question stands: Is this
+    observation still true? In fact, was it ever true? The vision for our
+    research is to settle the discussion about Brooks' estimation once and for
+    all: How much do developers test? Does developers' estimation on how much
+    they test match reality? How frequently do they execute their tests, and is
+    there a relationship between test runtime and execution frequency? What are
+    the typical reactions to failing tests? Do developers solve actual defects
+    in the production code, or do they merely relax their test assertions?
+    Emerging results from 40 software engineering students show that students
+    overestimate their testing time threefold, and 50\% of them test as little
+    as 4\% of their time, or less. Having proven the scalability of our
+    infrastructure, we are now extending our case study with professional
+    software engineers from open-source and industrial organizations.
   },
-  url = {/pub/test-time-nier.pdf},
+  url = {/pub/test-time-nier.pdf}
 }
 
 @inproceedings{HG15,
   author = {Claudia Hauff and Georgios Gousios},
   title = {Matching GitHub developer profiles to job advertisements},
   booktitle = {Proceedings of the 12th International Conference on Mining
-  Software Repositories},
+    Software Repositories},
   year = {2015},
   location = {Florence, Italy},
-  Abstract = {GitHub is a social coding platform that enables developers to efficiently work on projects, connect with other developers, collaborate and generally ``be seen'' by the community. This visibility also extends to prospective employers and HR personnel who may use GitHub to learn more about a developer’s skills and interests. We propose a pipeline that automatizes this process and automatically suggests matching job advertisements to developers, based on signals extracting from their activities on GitHub.},
-  url = {/pub/dev-profiles.pdf},
-  Note = {To appear}
+  Abstract = {
+    GitHub is a social coding platform that enables developers to efficiently
+    work on projects, connect with other developers, collaborate and generally
+    ``be seen'' by the community. This visibility also extends to prospective
+    employers and HR personnel who may use GitHub to learn more about a
+    developer’s skills and interests. We propose a pipeline that automatizes
+    this process and automatically suggests matching job advertisements to
+    developers, based on signals extracting from their activities on GitHub.
+  },
+  url = {/pub/dev-profiles.pdf}
 }
 
 @inproceedings{VGZ15,
   author = {Erik van der Veen and Georgios Gousios and Andy Zaidman},
   title = {Automatically Prioritizing Pull Requests},
   booktitle = {Proceedings of the 12th International Conference on Mining
-  Software Repositories},
+    Software Repositories},
   year = {2015},
   location = {Florence, Italy},
-  Abstract = {In previous work, we observed that in the pull-based development model integrators face challenges with regard to prioritizing work in the face of multiple concurrent pull requests. We present the design and initial implementation of a prototype pull request prioritisation tool called PRioritizer. PRioritizer works like a priority inbox for pull requests, recommending the top pull requests the project owner should focus on. A preliminary user study showed that PRioritizer provides functionality that GitHub is currently lacking, even though users need more insight into how the priority ranking is established to make PRioritizer really useful.},
-  url = {/pub/prioritizer.pdf},
-  Note = {To appear}
+  Abstract = {
+    In previous work, we observed that in the pull-based development model
+    integrators face challenges with regard to prioritizing work in the face of
+    multiple concurrent pull requests. We present the design and initial
+    implementation of a prototype pull request prioritisation tool called
+    PRioritizer. PRioritizer works like a priority inbox for pull requests,
+    recommending the top pull requests the project owner should focus on. A
+    preliminary user study showed that PRioritizer provides functionality that
+    GitHub is currently lacking, even though users need more insight into how
+    the priority ranking is established to make PRioritizer really useful.
+  },
+  url = {/pub/prioritizer.pdf}
 }
 
 @inproceedings{GPD14,
@@ -143,21 +221,23 @@ What do we know about software testing in the real world? It seems we know from 
   publisher = {ACM},
   address = {New York, NY, USA},
   keywords = {Pull-based development, distributed software development, empirical software engineering, pull request},
-  Abstract = {The advent of distributed version control systems has led to the
-  development of a new paradigm for distributed software development; instead of
-  pushing changes to a central repository, developers pull them from other
-  repositories and merge them locally. Various code hosting sites, notably
-  Github, have tapped on the opportunity to facilitate pull-based development by
-  offering workflow support tools, such as code reviewing systems and integrated
-  issue trackers. In this work, we explore how pull-based software development
-  works, first on the GHTorrent corpus and then on a carefully selected sample
-  of 291 projects. We find that the pull request model offers fast turnaround,
-  increased opportunities for community engagement and decreased time to
-  incorporate contributions. We show that a relatively small number of factors
-  affect both the decision to merge a pull request and the time to process it.
-  We also examine the reasons for pull request rejection and find that technical
-  ones are only a small minority.},
- speakerdeck = "2c6de050ce430131e1db2aa9d004a740",
+  Abstract = {
+    The advent of distributed version control systems has led to the development
+    of a new paradigm for distributed software development; instead of pushing
+    changes to a central repository, developers pull them from other
+    repositories and merge them locally. Various code hosting sites, notably
+    Github, have tapped on the opportunity to facilitate pull-based development
+    by offering workflow support tools, such as code reviewing systems and
+    integrated issue trackers. In this work, we explore how pull-based software
+    development works, first on the GHTorrent corpus and then on a carefully
+    selected sample of 291 projects. We find that the pull request model offers
+    fast turnaround, increased opportunities for community engagement and
+    decreased time to incorporate contributions. We show that a relatively small
+    number of factors affect both the decision to merge a pull request and the
+    time to process it.  We also examine the reasons for pull request rejection
+    and find that technical ones are only a small minority.
+  },
+  speakerdeck = "2c6de050ce430131e1db2aa9d004a740",
   url = {/pub/exploration-pullreqs.pdf},
   award = {nomination for the ACM SIGSOFT best paper}
 }
@@ -177,26 +257,28 @@ What do we know about software testing in the real world? It seems we know from 
   publisher = {ACM},
   address = {New York, NY, USA},
   keywords = {GitHub, data on demand, dataset},
-  Abstract = {In recent years, Github has become the largest code host in the
-  world, with more than 5M developers collaborating across 10M repositories.
-  Numerous popular open source projects (such as Ruby on Rails, Homebrew,
-  Bootstrap, Django or JQuery) have chosen Github as their host and have
-  migrated their code base to it. Github offers a tremendous research potential.
-  For instance, it is a flagship for current open source development, a place
-  for developers to showcase their expertise to peers or potential recruiters,
-  and the platform where social coding features or pull requests emerged.
-  However, Github data is, to date, largely underexplored. To facilitate
-  studies of Github, we have created GHTorrent, a scalable, queriable, offline
-  mirror of the data offered through the Github REST API. In this paper we
-  present a novel feature of GHTorrent designed to offer customisable data
-  dumps on demand. The new GHTorrent data-on-demand service offers users the
-  possibility to request via a web form up-to-date GHTorrent data dumps for
-  any collection of Github repositories. We hope that by offering customisable
-  GHTorrent data dumps we will not only lower the "barrier for entry" even
-  further for researchers interested in mining Github data (thus encourage
-  researchers to intensify their mining efforts), but also enhance the
-  replicability of Github studies (since a snapshot of the data on which the
-  results were obtained can now easily accompany each study).},
+  Abstract = {
+    In recent years, Github has become the largest code host in the world, with
+    more than 5M developers collaborating across 10M repositories.  Numerous
+    popular open source projects (such as Ruby on Rails, Homebrew, Bootstrap,
+    Django or JQuery) have chosen Github as their host and have migrated their
+    code base to it. Github offers a tremendous research potential.  For
+    instance, it is a flagship for current open source development, a place for
+    developers to showcase their expertise to peers or potential recruiters, and
+    the platform where social coding features or pull requests emerged.
+    However, Github data is, to date, largely underexplored. To facilitate
+    studies of Github, we have created GHTorrent, a scalable, queriable, offline
+    mirror of the data offered through the Github REST API. In this paper we
+    present a novel feature of GHTorrent designed to offer customisable data
+    dumps on demand. The new GHTorrent data-on-demand service offers users the
+    possibility to request via a web form up-to-date GHTorrent data dumps for
+    any collection of Github repositories. We hope that by offering customisable
+    GHTorrent data dumps we will not only lower the "barrier for entry" even
+    further for researchers interested in mining Github data (thus encourage
+    researchers to intensify their mining efforts), but also enhance the
+    replicability of Github studies (since a snapshot of the data on which the
+    results were obtained can now easily accompany each study).
+  },
   url = {/pub/lean-ghtorrent.pdf},
   speakerdeck = "992bb730cd090131fa3126624a8aace7"
 }
@@ -216,13 +298,15 @@ What do we know about software testing in the real world? It seems we know from 
   publisher = {ACM},
   address = {New York, NY, USA},
   keywords = {distributed software development, empirical software engineering, pull request, pull-based development},
-  Abstract = {Pull requests form a new method for collaborating in distributed
-  software development. To study the pull request distributed development model,
-  we constructed a dataset of almost 900 projects and 350,000 pull requests,
-  including some of the largest users of pull requests on Github. In this paper,
-  we describe how the project selection was done, we analyze the selected
-  features and present a machine learning tool set for the R statistics
-  environment.},
+  Abstract = {
+    Pull requests form a new method for collaborating in distributed software
+    development. To study the pull request distributed development model, we
+    constructed a dataset of almost 900 projects and 350,000 pull requests,
+    including some of the largest users of pull requests on Github. In this
+    paper, we describe how the project selection was done, we analyze the
+    selected features and present a machine learning tool set for the R
+    statistics environment.
+  },
   url = {/pub/pullreqs-dataset.pdf},
   award = {MSR2014: Best data showcase paper},
   speakerdeck = "629aa910cd09013116791efd7f77c4b7"
@@ -267,13 +351,13 @@ What do we know about software testing in the real world? It seems we know from 
 }
 
 @inproceedings{MKPLGS14,
-    author = {Dimitris Mitropoulos and Georgios Gousios and Panagiotis Papadopoulos and Vassilios Karakoidas and Panos Louridas and Diomidis Spinellis},
-    title = {The Vulnerability Dataset of a Large Software Ecosystem},
-    booktitle = {Proceedings of the 3rd International Workshop on Building Analysis Datasets and Gathering Experience Returns for Security},
-    year = {2014},
-    month = {September},
-    location = {Wroclaw, Poland},
-    publisher = {IEEE Computer Society},
+  author = {Dimitris Mitropoulos and Georgios Gousios and Panagiotis Papadopoulos and Vassilios Karakoidas and Panos Louridas and Diomidis Spinellis},
+  title = {The Vulnerability Dataset of a Large Software Ecosystem},
+  booktitle = {Proceedings of the 3rd International Workshop on Building Analysis Datasets and Gathering Experience Returns for Security},
+  year = {2014},
+  month = {September},
+  location = {Wroclaw, Poland},
+  publisher = {IEEE Computer Society},
   url = {/pub/maven-bug-dataset.pdf}
 }
 
@@ -284,31 +368,34 @@ What do we know about software testing in the real world? It seems we know from 
   Month = Oct,
   Booktitle = { {LASER} '13: Proceedings of the 2013 Workshop on Learning from Authoritative Security Experiment Results},
   Location = {Washington D.C., VA},
-  abstract = { Security bugs are critical programming errors that can lead to
-    serious vulnerabilities in software. Such bugs may allow an attacker to take
-      over an application, steal data or prevent the application from working at
-      all.  We used the projects stored in the Maven repository to study the
-      characteristics of security bugs individually and in relation to other
-      software bugs. Specifically, we studied the evolution of security bugs through
-      time. In addition, we examined their persistence and their relationship with
-      a) the size of the corresponding version, and b) other bug categories.  We
-      analyzed every project version of the Maven repository by using FindBugs, a
-      popular static analysis tool.  To see how security bugs evolve over time we
-      took advantage of the repository's project history and dependency data.  Our
-      results indicate that there is no simple rule governing the number of security
-      bugs as a project evolves.  In particular, we cannot say that across projects
-      security-related defect counts increase or decrease significantly over time.
-      Furthermore, security bugs are not eliminated in a way that is particularly
-      different from the other bugs. In addition, the relation of security bugs
-      with a project's size appears to be different from the relation of the bugs
-      coming from other categories.  Finally, even if bugs seem to have similar
-      behaviour, severe security bugs seem to be unassociated with other bug
-      categories.  Our findings indicate that further research should be done to
-      analyze the evolution of security bugs. Given the fact that our experiment
-      included only Java projects, similar research could be done for another
-      ecosystem. Finally, the fact that projects have their own idiosyncrasies
-      concerning security bugs, could help us find the common characteristics of the
-      projects where security bugs increase over time. },
+  abstract = {
+    Security bugs are critical programming errors that can lead to serious
+    vulnerabilities in software. Such bugs may allow an attacker to take over an
+    application, steal data or prevent the application from working at all.  We
+    used the projects stored in the Maven repository to study the
+    characteristics of security bugs individually and in relation to other
+    software bugs. Specifically, we studied the evolution of security bugs
+    through time. In addition, we examined their persistence and their
+    relationship with a) the size of the corresponding version, and b) other bug
+    categories.  We analyzed every project version of the Maven repository by
+    using FindBugs, a popular static analysis tool.  To see how security bugs
+    evolve over time we took advantage of the repository's project history and
+    dependency data.  Our results indicate that there is no simple rule
+    governing the number of security bugs as a project evolves.  In particular,
+    we cannot say that across projects security-related defect counts increase
+    or decrease significantly over time.  Furthermore, security bugs are not
+    eliminated in a way that is particularly different from the other bugs. In
+    addition, the relation of security bugs with a project's size appears to be
+    different from the relation of the bugs coming from other categories.
+    Finally, even if bugs seem to have similar behaviour, severe security bugs
+    seem to be unassociated with other bug categories.  Our findings indicate
+    that further research should be done to analyze the evolution of security
+    bugs. Given the fact that our experiment included only Java projects,
+    similar research could be done for another ecosystem. Finally, the fact that
+    projects have their own idiosyncrasies concerning security bugs, could help
+    us find the common characteristics of the projects where security bugs
+    increase over time.
+  },
   url = {/pub/evolution-security-bugs.pdf}
 }
 
@@ -323,7 +410,18 @@ What do we know about software testing in the real world? It seems we know from 
   series = {MSR '13},
   isbn = {978-1-4673-2936-1},
   location = {San Francisco, CA, USA},
-  abstract = {A common requirement of many empirical software engineering studies is the acquisition and curation of data from software repositories. During the last few years, GitHub has emerged as a popular project hosting, mirroring and collaboration platform. GitHub provides an extensive REST API, which enables researchers to retrieve both the commits to the projects’ repositories and events generated through user actions on project resources. GHTorrent aims to create a scalable off line mirror of GitHub’s event streams and persistent data, and offer it to the research community as a service. In this paper, we present the project’s design and initial implementation and demonstrate how the provided datasets can be queried and processed.},
+  abstract = {
+    A common requirement of many empirical software engineering studies is the
+    acquisition and curation of data from software repositories. During the last
+    few years, GitHub has emerged as a popular project hosting, mirroring and
+    collaboration platform. GitHub provides an extensive REST API, which enables
+    researchers to retrieve both the commits to the projects’ repositories and
+    events generated through user actions on project resources. GHTorrent aims
+    to create a scalable off line mirror of GitHub’s event streams and
+    persistent data, and offer it to the research community as a service. In
+    this paper, we present the project’s design and initial implementation and
+    demonstrate how the provided datasets can be queried and processed.
+  },
   url = {/pub/ghtorrent-dataset-toolsuite.pdf},
   speakerdeck = "75bea5909fbb0130f0eb364613f6f036",
   award = {MSR2013: Best data showcase paper},
