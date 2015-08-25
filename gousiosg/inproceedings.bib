@@ -1,7 +1,7 @@
 @inproceedings{BGPZ15,
   author = {Moritz Beller and Georgios Gousios and Annibale Panichella and Andy Zaidman},
   title = {When, How, And Why Developers (Do Not) Test},
-  booktitle = {Submitted to the the 10th Joint Meeting of the European Software Engineering Conference and the ACM SIGSOFT Symposium on the Foundations of Software Engineering},
+  booktitle = {10th Joint Meeting of the European Software Engineering Conference and the ACM SIGSOFT Symposium on the Foundations of Software Engineering},
   year = {2015},
   Abstract = {
     The research community in Software Engineering and Software Testing in
@@ -29,12 +29,16 @@
 }
 
 @inproceedings{GZSD15,
-  author = {Gousios, Georgios and Zaidman, Andy and Storey, Margaret-Anne and Deursen, Arie van},
+  author = {Georgios Gousios and Andy Zaidman and Margaret-Anne Storey and Arie van Deursen},
   title = {Work Practices and Challenges in Pull-Based Development: The Integrator’s Perspective},
   booktitle = {Proceedings of the 37th International Conference on Software Engineering},
-  series = {ICSE 2015},
+  series = {ICSE},
   year = {2015},
+  month = {May},
+  volume={1},
+  pages={358-368},
   location = {Florence, Italy},
+  doi = {10.1109/ICSE.2015.55},
   Abstract = {
     In the pull-based development model, the integrator has the crucial role of
     managing and integrating contributions. This work focuses on the role of
@@ -57,9 +61,9 @@
   author = {Roberta Coelho and Lucas Almeida and Georgios Gousios and Arie van
   Deursen},
   title = {Unveiling Exception Handling Bug Hazards in Android based on GitHub and Google Code Issues},
-  booktitle = {Proceedings of the 12th International Conference on Mining
-  Software Repositories},
+  booktitle = {Proceedings of the 2015 IEEE/ACM 12th Working Conference on Mining Software Repositories (MSR)},
   year = {2015},
+  month={May},
   location = {Florence, Italy},
   Abstract = {
     This paper reports on a study mining the exception stack traces included in
@@ -81,6 +85,8 @@
     insights on such bug hazards and the robustness threats they impose to
     Android apps as well as to other systems based on the Java exception model.
    },
+  pages={134-145},
+  doi={10.1109/MSR.2015.20},
   url = {/pub/android-stacks.pdf},
   speakerdeck="24731ec0a49f4724a82dd7b9e1f870f3"
 }
@@ -113,10 +119,11 @@
   author = {Martin Dias and Alberto Bacchelli and Georgios Gousios and Damien Cassou and Stephane Ducasse},
   title = {Untangling Fine-Grained Code Changes},
   booktitle = {Proceedings of the 22nd IEEE International Conference on Software Analysis, Evolution, and Reengineering},
-  Year = {2015},
   series = {SANER 2015},
   year = {2015},
   location = {Montreal, Canada},
+  pages = {341--350},
+  doi = {10.1109/SANER.2015.7081844},
   Abstract = {
     After working for some time, developers commit their code changes to a
     version control system. When doing so, research shows that they often bundle
@@ -145,6 +152,10 @@
   title = {How (Much) Do Developers Test?},
   booktitle = {Proceedings of the 37th International Conference on Software Engineering -- Niew Ideas and Emerging Results track},
   year = {2015},
+  month={May},
+  volume={2},
+  pages={559-562},
+  doi={10.1109/ICSE.2015.193},
   Abstract = {
     What do we know about software testing in the real world? It seems we know
     from Fred Brooks’ seminal work ``The Mythical Man-Month'' that 50\% of
@@ -169,9 +180,9 @@
 @inproceedings{HG15,
   author = {Claudia Hauff and Georgios Gousios},
   title = {Matching GitHub developer profiles to job advertisements},
-  booktitle = {Proceedings of the 12th International Conference on Mining
-    Software Repositories},
+  booktitle = {Proceedings of the 2015 IEEE/ACM 12th Working Conference on Mining Software Repositories (MSR)},
   year = {2015},
+  month={May},
   location = {Florence, Italy},
   Abstract = {
     GitHub is a social coding platform that enables developers to efficiently
@@ -182,17 +193,19 @@
     this process and automatically suggests matching job advertisements to
     developers, based on signals extracting from their activities on GitHub.
   },
+  doi={10.1109/MSR.2015.41},
+  pages={362-366},
   url = {/pub/dev-profiles.pdf}
 }
 
 @inproceedings{VGZ15,
   author = {Erik van der Veen and Georgios Gousios and Andy Zaidman},
   title = {Automatically Prioritizing Pull Requests},
-  booktitle = {Proceedings of the 12th International Conference on Mining
-    Software Repositories},
+  booktitle = {Proceedings of the 2015 IEEE/ACM 12th Working Conference on Mining Software Repositories (MSR)},
   year = {2015},
+  month={May},
   location = {Florence, Italy},
-  Abstract = {
+  abstract = {
     In previous work, we observed that in the pull-based development model
     integrators face challenges with regard to prioritizing work in the face of
     multiple concurrent pull requests. We present the design and initial
@@ -203,7 +216,31 @@
     GitHub is currently lacking, even though users need more insight into how
     the priority ranking is established to make PRioritizer really useful.
   },
+  doi={10.1109/MSR.2015.40},
+  pages={357-361},
   url = {/pub/prioritizer.pdf}
+}
+
+@inproceedings{KMLGS15,
+  author = {Karakoidas, Vassilios and Mitropoulos, Dimitrios and Louridas, Panos and Gousios, Georgios and Spinellis, Diomidis},
+  title = {Generating the Blueprints of the Java Ecosystem},
+  booktitle = {Proceedings of the 2015 IEEE/ACM 12th Working Conference on Mining Software Repositories (MSR)},
+  year = {2015},
+  month = {May},
+  location = {Florence, Italy},
+  pages = {510-513},
+  abstract = {
+    Examining a large number of software artifacts can provide the research
+    community with data regarding quality and design. We present a dataset
+    obtained by statically analyzing 22730 jar files taken from the Maven
+    central archive, which is the de-facto application library repository for
+    the Java ecosystem. For our analysis we used three popular static analysis
+    tools that calculate metrics regarding object-oriented design, program size,
+    and package design. The dataset contains the metrics results that every tool
+    reports for every selected jar of the ecosystem. Our dataset can be used to
+    produce interesting research results, such as measure the domain-specific
+    language usage.},
+  doi={10.1109/MSR.2015.76}
 }
 
 @inproceedings{GPD14,
@@ -211,7 +248,7 @@
   title = {An Exploratory Study of the Pull-based Software Development Model},
   booktitle = {Proceedings of the 36th International Conference on Software Engineering},
   Year = {2014},
-  series = {ICSE 2014},
+  series = {ICSE},
   isbn = {978-1-4503-2756-5},
   location = {Hyderabad, India},
   pages = {345--355},
@@ -326,8 +363,18 @@
   acmid = {2597123},
   publisher = {ACM},
   address = {New York, NY, USA},
-  keywords = {FindBugs, Maven Repository, Software Bugs}, 
-  Abstract = {Examining software ecosystems can provide the research community with data regarding artifacts, processes, and communities. We present a dataset obtained from the Maven central repository ecosystem (approximately 265{GB} of data) by statically analyzing the repository to detect potential software bugs. For our analysis we used {F}indBugs, a tool that examines Java bytecode to detect numerous types of bugs. The dataset contains the metrics results that Find- Bugs reports for every project version (a jar) included in the ecosystem. For every version we also stored specific metadata such as the jar’s size, its dependencies and others. Our dataset can be used to produce interesting research results, as we show in specific examples.},
+  keywords = {FindBugs, Maven Repository, Software Bugs},
+  Abstract = {
+    Examining software ecosystems can provide the research community with data
+    regarding artifacts, processes, and communities. We present a dataset
+    obtained from the Maven central repository ecosystem (approximately 265{GB}
+    of data) by statically analyzing the repository to detect potential software
+    bugs. For our analysis we used {F}indBugs, a tool that examines Java
+    bytecode to detect numerous types of bugs. The dataset contains the metrics
+    results that Find- Bugs reports for every project version (a jar) included
+    in the ecosystem. For every version we also stored specific metadata such as
+    the jar’s size, its dependencies and others. Our dataset can be used to
+    produce interesting research results, as we show in specific examples.},
   url = {/pub/maven-findbugs.pdf},
 }
 
@@ -346,7 +393,23 @@
   publisher = {ACM},
   address = {New York, NY, USA},
   keywords = {Mining software repositories, bias, code reviews, git, github},
-  Abstract = {With over 10 million Git repositories, GitHub is becoming one of the most important source of software artifacts on the Internet. Researchers are starting to mine the information stored in GitHub's event logs, trying to understand how its users employ the site to collaborate on software. However, so far there have been no studies describing the quality and properties of the data available from GitHub. We document the results of an empirical study aimed at understanding the characteristics of the repositories in GitHub and how users take advantage of GitHub's main features---namely commits, pull requests, and issues. Our results indicate that, while GitHub is a rich source of data on software development, mining GitHub for research purposes should take various potential perils into consideration. We show, for example, that the majority of the projects are personal and inactive; that GitHub is also being used for free storage and as a Web hosting service; and that almost 40\% of all pull requests do not appear as merged, even though they were. We provide a set of recommendations for software engineering researchers on how to approach the data in GitHub.},
+  Abstract = {
+    With over 10 million Git repositories, GitHub is becoming one of the most
+    important source of software artifacts on the Internet. Researchers are
+    starting to mine the information stored in GitHub's event logs, trying to
+    understand how its users employ the site to collaborate on software.
+    However, so far there have been no studies describing the quality and
+    properties of the data available from GitHub. We document the results of an
+    empirical study aimed at understanding the characteristics of the
+    repositories in GitHub and how users take advantage of GitHub's main
+    features---namely commits, pull requests, and issues. Our results indicate
+    that, while GitHub is a rich source of data on software development, mining
+    GitHub for research purposes should take various potential perils into
+    consideration. We show, for example, that the majority of the projects are
+    personal and inactive; that GitHub is also being used for free storage and
+    as a Web hosting service; and that almost 40\% of all pull requests do not
+    appear as merged, even though they were. We provide a set of recommendations
+    for software engineering researchers on how to approach the data in GitHub.},
   url = {/pub/promises-perils-github.pdf},
 }
 
@@ -364,10 +427,12 @@
 @inproceedings{MKLGS13,
   Author = {Dimitris Mitropoulos and Vassilios Karakoidas and Panos Louridas and Georgios Gousios and Diomidis Spinellis},
   Title = {Dismal Code: Studying the Evolution of Security Bugs},
-  Year = 2013,
-  Month = Oct,
+  Year = {2013},
+  Month = {Oct},
   Booktitle = { {LASER} '13: Proceedings of the 2013 Workshop on Learning from Authoritative Security Experiment Results},
-  Location = {Washington D.C., VA},
+  address = {Arlington, VA},
+  isbn = {978-1-931971-06-5},
+  pages = {37--48},
   abstract = {
     Security bugs are critical programming errors that can lead to serious
     vulnerabilities in software. Such bugs may allow an attacker to take over an
@@ -429,14 +494,15 @@
 }
 
 @inproceedings{MGS12,
-  Title="Measuring the Occurrence of Security-Related Bugs through Software
-    Evolution",
-  Author="Dimitris Mitropoulos and Georgios Gousios and Diomidis
-    Spinellis",
-  Booktitle="PCI 2012: Proceedings of 16th Panhellenic Conference on
-    Informatics (PCI 2012)",
-  Publisher="IEEE Computer Society",
-  Year = 2012,
+  Title={Measuring the Occurrence of Security-Related Bugs through Software
+    Evolution},
+  Author={Dimitris Mitropoulos and Georgios Gousios and Diomidis
+    Spinellis},
+  Booktitle={PCI 2012: Proceedings of 16th Panhellenic Conference on
+    Informatics},
+  Publisher={IEEE Computer Society},
+  Year = {2012},
+  doi={10.1109/PCi.2012.15},
   Pages = {117--122},
   abstract = "A security-related bug is a programming error that intro- duces a
     potentially exploitable weakness into a computer system. This weakness could
@@ -487,9 +553,10 @@
   Day = {16--24},
   Isbn = {978-1-4244-3743-6},
   Location = {Vancouver, Canada},
-  Month = may,
+  Month = {May},
   Pages = {579--582},
   Publisher = {IEEE},
+  doi={10.1109/ICSE.2009.5070560},
   Title = {Alitheia Core: An extensible software quality monitoring platform},
   Year = {2009},
   abstract = {Research in the fields of software quality and maintain- ability requires the analysis of large quantities of data, which often originate from open source software projects. Pre-processing data, calculating metrics, and synthesizing composite results from a large corpus of project artefacts is a tedious and error prone task lacking direct scientific value. The Alitheia Core tool is an extensible platform for software quality analysis that is designed specifically to fa- cilitate software engineering research on large and diverse data sources, by integrating data collection and preprocess- ing phases with an array of analysis services, and present- ing the researcher with an easy to use extension mechanism. The system has been used to process several projects suc- cessfully, forming the basis of an emerging ecosystem of quality analysis tools.},
@@ -507,10 +574,28 @@
   Pages = {31--40},
   Publisher = {IEEE},
   Title = {A platform for software engineering research},
+  doi={10.1109/MSR.2009.5069478},
   Year = 2009,
-  abstract = {Research in the fields of software quality, maintainabil- ity and evolution requires the analysis of large quantities of data, which often originate from open source software projects. Collecting and preprocessing data, calculating metrics, and synthesizing composite results from a large corpus of project artifacts is a tedious and error prone task lacking direct scientific value. The Alitheia Core tool is an extensible platform for software quality analysis that is designed specifically to facilitate software engineering research on large and diverse data sources, by integrating data collection and preprocessing phases with an array of analysis services, and presenting the researcher with an easy to use extension mechanism. Alitheia Core aims to be the basis of an ecosystem of shared tools and research data that will enable researchers to focus on their research questions at hand, rather than spend time on re-implementing analysis tools.
+  abstract = {
+    Research in the fields of software quality, maintainabil- ity and evolution
+    requires the analysis of large quantities of data, which often originate
+    from open source software projects. Collecting and preprocessing data,
+    calculating metrics, and synthesizing composite results from a large corpus
+    of project artifacts is a tedious and error prone task lacking direct
+    scientific value. The Alitheia Core tool is an extensible platform for
+    software quality analysis that is designed specifically to facilitate
+    software engineering research on large and diverse data sources, by
+    integrating data collection and preprocessing phases with an array of
+    analysis services, and presenting the researcher with an easy to use
+    extension mechanism. Alitheia Core aims to be the basis of an ecosystem of
+    shared tools and research data that will enable researchers to focus on
+    their research questions at hand, rather than spend time on re-implementing
+    analysis tools.
 
-    In this paper, we present the Alitheia Core platform in detail and demonstrate its usefulness in mining software repositories by guiding the reader through the steps required to execute a simple experiment.},
+    In this paper, we present the Alitheia Core platform in detail and
+    demonstrate its usefulness in mining software repositories by guiding the
+    reader through the steps required to execute a simple experiment.
+  },
   url = {/pub/a-platform-for-software-engineering-research.pdf}
 }
 
@@ -518,26 +603,50 @@
   Author = {Georgios Gousios and Diomidis Spinellis},
   Booktitle = {Proceedings of the 12th Pan-Hellenic Conference on Informatics},
   Title = {Java Performance Evaluation Using External Instrumentation},
-  Year = 2008,
+  Year = {2008},
   Location = {Samos, Greece},
-  Month = {August},
-  abstact = {The performance of programs written in the Java pro- gramming language is not trivial to analyse. The Java Vir- tual Machine hides the details of bytecode execution while not providing an accessible profiling mechanism. Most tools used for Java performance evaluations are based on sampling and only present engineers with sampled data aggregations. In this paper, we present the Java DTrace Toolkit, a collection of scripts that is specifically designed to assist engineers in identifying the roots of various perfor- mance problems observed with other tools.},
+  doi={10.1109/PCI.2008.14},
+  pages={173-177},
+  Month = {Aug},
+  abstract = {
+    The performance of programs written in the Java pro- gramming language is
+    not trivial to analyse. The Java Vir- tual Machine hides the details of
+    bytecode execution while not providing an accessible profiling mechanism.
+    Most tools used for Java performance evaluations are based on sampling and
+    only present engineers with sampled data aggregations. In this paper, we
+    present the Java DTrace Toolkit, a collection of scripts that is
+    specifically designed to assist engineers in identifying the roots of
+    various perfor- mance problems observed with other tools.
+  },
   url = {/pub/java-performance-evaluation-using-external-instrumentation.pdf}
 }
 
 @inproceedings{SGSS08,
   Address = {Boston},
   Author = {Ioannis Samoladas and Georgios Gousios and Diomidis Spinellis and Ioannis Stamelos},
-  Booktitle = {Open Source Development, Communities and Quality --- {OSS} 2008: 4th International Conference on Open Source Systems},
   Editor = {Ernesto Damiani and Giancarlo Succi},
   Location = {Milan, Italy},
-  Month = sep,
+  Month = {Sep},
   Organization = {IFIP 20th World Computer Congress, Working Group 2.3 on Open Source Software},
   Pages = {237--248},
   Publisher = {Springer},
   Title = {The {SQO-OSS} Quality Model: Measurement Based Open Source Software Evaluation},
+  booktitle={Open Source Development, Communities and Quality},
+  volume={275},
+  pages={237-248},
+  doi={10.1007/978-0-387-09684-1_19},
   Year = {2008},
-  abstract = {Software quality evaluation has always been an important part of software business. The quality evaluation process is usually based on hierarchical quality models that measure various aspects of software quality and deduce a characterization of the product quality being evaluated. The particular nature of open source software has rendered existing models unsuitable for detailed quality evaluations. In this paper, we present a hierarchical quality model that evaluates source code and community processes, based on automatic calculation of metric values and correlation of those to a set of predefined quality profiles.},
+  abstract = {
+    Software quality evaluation has always been an important part of software
+    business. The quality evaluation process is usually based on hierarchical
+    quality models that measure various aspects of software quality and deduce a
+    characterization of the product quality being evaluated. The particular
+    nature of open source software has rendered existing models unsuitable for
+    detailed quality evaluations. In this paper, we present a hierarchical
+    quality model that evaluates source code and community processes, based on
+    automatic calculation of metric values and correlation of those to a set of
+    predefined quality profiles.
+  },
   url = {/pub/sqo-oss-quality-model-measurement-based-open-source-software-evaluation.pdf}
 }
 
@@ -549,9 +658,22 @@
   Location = {Leipzig, Germany},
   Pages = {129--132},
   Publisher = {ACM},
+  doi = {10.1145/1370750.1370781},
   Title = {Measuring developer contribution from software repository data},
   Year = {2008},
-  abstract = {Apart from source code, software infrastructures supporting agile and distributed software projects contain traces of developer activity that does not directly affect the product itself but is important for the development process. We propose a model that, by combining traditional contribution metrics with data mined from software repositories, can deliver accurate developer contribution measurements. The model creates clusters of similar projects to extract weights that are then applied to the actions a developer performed on project assets to extract a combined measurement of the developer’s contribution. We are currently implementing the model in the context of a software quality monitoring system while we are also validating its components by means of questionnaires.},
+  abstract = {
+    Apart from source code, software infrastructures supporting agile and
+    distributed software projects contain traces of developer activity that does
+    not directly affect the product itself but is important for the development
+    process. We propose a model that, by combining traditional contribution
+    metrics with data mined from software repositories, can deliver accurate
+    developer contribution measurements. The model creates clusters of similar
+    projects to extract weights that are then applied to the actions a developer
+    performed on project assets to extract a combined measurement of the
+    developer’s contribution. We are currently implementing the model in the
+    context of a software quality monitoring system while we are also validating
+    its components by means of questionnaires.
+  },
   url = {/pub/measuring-developer-contribution-from-repository-data.pdf}
 }
 
@@ -559,19 +681,22 @@
   Author = {Georgios Gousios},
   Booktitle = {Companion to the 22nd ACM SIGPLAN conference on Object-oriented programming systems, languages, and applications (OOPSLA)},
   Location = {Montreal, Canada},
-  Month = {Oct 21-25},
+  Month = {Oct},
   Title = {The {J}ikes{X}en {J}ava Server Platform},
+  doi = {10.1145/1297846.1297959},
+  pages = {947--948},
   Year = {2007},
   url = {/pub/jikesxen.pdf},
-  abstract = {The purpose of the JVM is to abstract the Java language from the
-    hardware and software platforms it runs on. For this rea- son, the JVM uses
-      services offered by the host operating sys- tem in order to implement
-      identical services for the Java lan- guage. The obvious duplication of effort
-      in service provision and resource management between the JVM and the operat-
-      ing system has a measurable cost on the performance of Java programs. In my
-      PhD research, I try to find ways of min- imizing the cost of sharing resources
-      between the OS and the JVM, by identifying and removing unnecessary software
-      layers.}
+  abstract = {
+    The purpose of the JVM is to abstract the Java language from the hardware
+    and software platforms it runs on. For this rea- son, the JVM uses services
+    offered by the host operating sys- tem in order to implement identical
+    services for the Java lan- guage. The obvious duplication of effort in
+    service provision and resource management between the JVM and the operat-
+    ing system has a measurable cost on the performance of Java programs. In my
+    PhD research, I try to find ways of min- imizing the cost of sharing
+    resources between the OS and the JVM, by identifying and removing
+    unnecessary software layers.}
 }
 
 @inproceedings{GKSLVS07,
@@ -582,7 +707,21 @@
   Month = may,
   Title = {Software Quality Assessment of Open Source Software},
   Year = {2007},
-  abstract = {The open source software ecosystem comprises more than a hundred thousand applications of varying quality. Individuals and organizations wishing to use open source software packages have scarce objective data to evaluate their quality. However, open source development projects by definition allow anybody to read, and therefore evaluate their source code. In addition, most projects also publish process-related artefacts, such as bug databases, mailing lists, and configuration management system logs. The software quality observatory is a platform that uses these product and process data sources to automatically evaluate the quality of open source projects. A plugin-based service-oriented architecture allows the mixing and matching of metrics extraction suites, source code repositories, and transformation filters. The resulting platform is aimed at IT consultants and managers, the open source community, and researchers.},
+  abstract = {
+    The open source software ecosystem comprises more than a hundred thousand
+    applications of varying quality. Individuals and organizations wishing to
+    use open source software packages have scarce objective data to evaluate
+    their quality. However, open source development projects by definition allow
+    anybody to read, and therefore evaluate their source code. In addition, most
+    projects also publish process-related artefacts, such as bug databases,
+    mailing lists, and configuration management system logs. The software
+    quality observatory is a platform that uses these product and process data
+    sources to automatically evaluate the quality of open source projects. A
+    plugin-based service-oriented architecture allows the mixing and matching of
+    metrics extraction suites, source code repositories, and transformation
+    filters. The resulting platform is aimed at IT consultants and managers, the
+    open source community, and researchers.
+  },
   url = {/pub/software-quality-assessment-of-open-source-software.pdf}
 }
 
@@ -599,9 +738,21 @@
   Title = {Tuning {J}ava's memory manager for high performance server applications},
   Year = {2006},
   Url = {/pub/paper.pdf},
-  abstract = {Java is a strong player in the application server market and thus the performance of its virtual machine is an important aspect of a server's performance. One of the components that affect the performance of a {\sc jvm} is the memory manager, which also includes the garbage collector. Modern virtual machines offer a multitude of options for tuning the memory manager, which can have a significant impact on server application performance. 
+  abstract = {
+    Java is a strong player in the application server market and thus the
+    performance of its virtual machine is an important aspect of a server's
+    performance. One of the components that affect the performance of a {\sc
+    jvm} is the memory manager, which also includes the garbage collector.
+    Modern virtual machines offer a multitude of options for tuning the memory
+    manager, which can have a significant impact on server application
+    performance.
 
-    In this paper, we examine the effect of tuning the garbage collection in an application server environment. By employing both synthetic and real world application benchmarks, we assess the various garbage collection strategies offered by two popular virtual machines. Finally, we present a comprehensive list of generally applicable garbage collection guidelines.}
+    In this paper, we examine the effect of tuning the garbage collection in an
+    application server environment. By employing both synthetic and real world
+    application benchmarks, we assess the various garbage collection strategies
+    offered by two popular virtual machines. Finally, we present a comprehensive
+    list of generally applicable garbage collection guidelines.
+  }
 }
 
 @inproceedings{GS02,
