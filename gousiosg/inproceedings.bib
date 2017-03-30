@@ -1,3 +1,96 @@
+@inproceedings{KGDP17,
+  author = {Riivo Kikas and Georgios Gousios and Marlon Dumas and Dietmar Pfahl},
+  title = {Structure and Evolution of Package Dependency Networks},
+  booktitle = {Proceedings of the 14th Working Conference on Mining Software Repositories},
+  year = {2017},
+  month = {May},
+  location = {Buenos Aires, Argentina},
+  series = {MSR '17},
+  publisher = {IEEE},
+  Abstract = {
+
+  Software developers often include available open-source software packages
+    into their projects to minimize redundant effort. However, adding a
+    package to a project can also introduce risks, which can propagate through
+    multiple levels of dependencies. Currently, not much is known about the
+    structure of open-source package ecosystems of popular programming languages
+    and the extent to which transitive bug propagation is possible. This paper
+    analyzes the dependency network structure and evolution of the JavaScript,
+  Ruby, and Rust ecosystems. The reported results reveal significant differences
+    across language ecosystems. The results indicate that the number of
+    transitive dependencies for JavaScript has grown 60\% over the last year,
+  suggesting that developers should look more carefully into their dependencies
+    to understand what exactly is included. The study also reveals that
+    vulnerability to a removal of the most popular package is increasing, yet
+    most other packages have a decreasing impact on vulnerability. The findings
+    of this study can inform the development of dependency management tools.
+
+  },
+  url={/pub/ecosystems-evolution.pdf}
+}
+
+@inproceedings{BGZ17,
+ author = {Moritz Beller and Georgios Gousios and Andy Zaidman},
+ title = {Oops, My Tests Broke the Build: An Explorative Analysis of Travis CI with GitHub},
+ booktitle = {Proceedings of the 14th Working Conference on Mining Software Repositories},
+ series = {MSR'17},
+ year = {2017},
+ publisher = {IEEE},
+ location = {Buenos Aires, Argentina},
+ url = {/pub/tests-broke-build-explorative-analysis-travis-ci-github.pdf},
+ Abstract = {
+
+  Continuous Integration (CI) has become a best practice of modern software
+  development. Yet, at present, we have a shortfall of insight into the testing
+  practices that are common in CI-based software development. In particular, we
+  seek quantifiable evidence on how central testing is to the CI process, how
+  strongly the project language influences testing, whether different
+  integration environ- ments are valuable and if testing on the CI can serve as
+  a surrogate to local testing in the IDE. In an analysis of 2,640,825 Java and
+  Ruby builds on Travis CI, we find that testing is the single most important
+  reason why builds fail. Moreover, the programming lan- guage has a strong
+  influence on both the number of executed tests, their run time, and proneness
+  to fail. The use of multiple integra- tion environments leads to 10% more
+  failures being caught at build time. However, testing on Travis CI does not
+  seem an adequate surrogate for running tests locally in the IDE. To further
+  research on Travis CI with GitHub, we introduce Travistorrent.
+
+ }
+}
+
+
+@inproceedings{BGZ17,
+  author = {Riivo Kikas and Georgios Gousios and Marlon Dumas and Dietmar Pfahl},
+  title = {Structure and Evolution of Package Dependency Networks},
+  booktitle = {Proceedings of the 14th Working Conference on Mining Software Repositories},
+  year = {2016},
+  month = {May},
+  location = {Buenos Aires, Argentina},
+  series = {MSR '17},
+  publisher = {IEEE},
+  Abstract = {
+
+  Software developers often include available open-source software packages
+    into their projects to minimize redundant effort. However, adding a
+    package to a project can also introduce risks, which can propagate through
+    multiple levels of dependencies. Currently, not much is known about the
+    structure of open-source package ecosystems of popular programming languages
+    and the extent to which transitive bug propagation is possible. This paper
+    analyzes the dependency network structure and evolution of the JavaScript,
+  Ruby, and Rust ecosystems. The reported results reveal significant differences
+    across language ecosystems. The results indicate that the number of
+    transitive dependencies for JavaScript has grown 60\% over the last year,
+  suggesting that developers should look more carefully into their dependencies
+    to understand what exactly is included. The study also reveals that
+    vulnerability to a removal of the most popular package is increasing, yet
+    most other packages have a decreasing impact on vulnerability. The findings
+    of this study can inform the development of dependency management tools.
+
+  },
+  url={/pub/ecosystems-evolution.pdf}
+}
+
+
 @inproceedings{GSB16,
   author = {Georgios Gousios and Margaret-Anne Storey and
   Alberto Bacchelli},
