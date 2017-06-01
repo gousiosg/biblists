@@ -9,24 +9,26 @@
   publisher = {IEEE},
   Abstract = {
 
-  Software developers often include available open-source software packages
-    into their projects to minimize redundant effort. However, adding a
-    package to a project can also introduce risks, which can propagate through
-    multiple levels of dependencies. Currently, not much is known about the
-    structure of open-source package ecosystems of popular programming languages
-    and the extent to which transitive bug propagation is possible. This paper
-    analyzes the dependency network structure and evolution of the JavaScript,
-  Ruby, and Rust ecosystems. The reported results reveal significant differences
-    across language ecosystems. The results indicate that the number of
-    transitive dependencies for JavaScript has grown 60\% over the last year,
-  suggesting that developers should look more carefully into their dependencies
-    to understand what exactly is included. The study also reveals that
+  Software developers often include available open-source software packages into
+    their projects to minimize redundant effort. However, adding a package to a
+    project can also introduce risks, which can propagate through multiple
+    levels of dependencies. Currently, not much is known about the structure of
+    open-source package ecosystems of popular programming languages and the
+    extent to which transitive bug propagation is possible. This paper analyzes
+    the dependency network structure and evolution of the JavaScript, Ruby, and
+    Rust ecosystems. The reported results reveal significant differences across
+    language ecosystems. The results indicate that the number of transitive
+    dependencies for JavaScript has grown 60\% over the last year, suggesting
+    that developers should look more carefully into their dependencies to
+    understand what exactly is included. The study also reveals that
     vulnerability to a removal of the most popular package is increasing, yet
     most other packages have a decreasing impact on vulnerability. The findings
     of this study can inform the development of dependency management tools.
 
   },
-  url={/pub/ecosystems-evolution.pdf}
+  github = {riivo/package-dependency-networks},
+  url = {/pub/ecosystems-evolution.pdf},
+  speakerdeck = {a0d2f40f871941c6b1cf993b71e5af09}
 }
 
 @inproceedings{BGZ17,
@@ -41,55 +43,22 @@
  Abstract = {
 
   Continuous Integration (CI) has become a best practice of modern software
-  development. Yet, at present, we have a shortfall of insight into the testing
-  practices that are common in CI-based software development. In particular, we
-  seek quantifiable evidence on how central testing is to the CI process, how
-  strongly the project language influences testing, whether different
-  integration environ- ments are valuable and if testing on the CI can serve as
-  a surrogate to local testing in the IDE. In an analysis of 2,640,825 Java and
-  Ruby builds on Travis CI, we find that testing is the single most important
-  reason why builds fail. Moreover, the programming lan- guage has a strong
-  influence on both the number of executed tests, their run time, and proneness
-  to fail. The use of multiple integra- tion environments leads to 10% more
-  failures being caught at build time. However, testing on Travis CI does not
-  seem an adequate surrogate for running tests locally in the IDE. To further
-  research on Travis CI with GitHub, we introduce Travistorrent.
-
+    development. Yet, at present, we have a shortfall of insight into the
+    testing practices that are common in CI-based software development. In
+    particular, we seek quantifiable evidence on how central testing is to the
+    CI process, how strongly the project language influences testing, whether
+    different integration environ- ments are valuable and if testing on the CI
+    can serve as a surrogate to local testing in the IDE. In an analysis of
+    2,640,825 Java and Ruby builds on Travis CI, we find that testing is the
+    single most important reason why builds fail. Moreover, the programming lan-
+    guage has a strong influence on both the number of executed tests, their run
+    time, and proneness to fail. The use of multiple integra- tion environments
+    leads to 10\% more failures being caught at build time. However, testing on
+    Travis CI does not seem an adequate surrogate for running tests locally in
+    the IDE. To further research on Travis CI with GitHub, we introduce
+    Travistorrent.
  }
 }
-
-
-@inproceedings{BGZ17,
-  author = {Riivo Kikas and Georgios Gousios and Marlon Dumas and Dietmar Pfahl},
-  title = {Structure and Evolution of Package Dependency Networks},
-  booktitle = {Proceedings of the 14th Working Conference on Mining Software Repositories},
-  year = {2016},
-  month = {May},
-  location = {Buenos Aires, Argentina},
-  series = {MSR '17},
-  publisher = {IEEE},
-  Abstract = {
-
-  Software developers often include available open-source software packages
-    into their projects to minimize redundant effort. However, adding a
-    package to a project can also introduce risks, which can propagate through
-    multiple levels of dependencies. Currently, not much is known about the
-    structure of open-source package ecosystems of popular programming languages
-    and the extent to which transitive bug propagation is possible. This paper
-    analyzes the dependency network structure and evolution of the JavaScript,
-  Ruby, and Rust ecosystems. The reported results reveal significant differences
-    across language ecosystems. The results indicate that the number of
-    transitive dependencies for JavaScript has grown 60\% over the last year,
-  suggesting that developers should look more carefully into their dependencies
-    to understand what exactly is included. The study also reveals that
-    vulnerability to a removal of the most popular package is increasing, yet
-    most other packages have a decreasing impact on vulnerability. The findings
-    of this study can inform the development of dependency management tools.
-
-  },
-  url={/pub/ecosystems-evolution.pdf}
-}
-
 
 @inproceedings{GSB16,
   author = {Georgios Gousios and Margaret-Anne Storey and
@@ -128,6 +97,7 @@
   doi = {10.1145/2884781.2884826},
   award = {ACM SIGSOFT Distinguished paper},
   speakerdeck = {b24994c612524f0e959565281bf9cd8f},
+  github = {gousios/pullreqs-contributors},
   url={/pub/pullreqs-contributors.pdf}
 }
 
@@ -165,7 +135,7 @@
     widely practiced; and, last but not least, software developers only spend a
     quarter of their work time engineering tests, whereas they think they test
     half of their time.
-   },
+  },
    url = {/pub/when-how-why-developers-do-not-test.pdf}
 }
 
@@ -195,6 +165,7 @@
     researchers striving to understand the theoretical implications of the
     pull-based model in software development.},
   url = {/pub/pullreqs-integrators.pdf},
+  github = {gousiosg/pullreqs-integrators},
   speakerdeck = "e340d9f98bd0426abada24888cf6f32d"
 }
 
@@ -229,6 +200,7 @@
   pages={134-145},
   doi={10.1109/MSR.2015.20},
   url = {/pub/android-stacks.pdf},
+  github = {gousiosg/java-stacktrace-analysis},
   speakerdeck="24731ec0a49f4724a82dd7b9e1f870f3"
 }
 
@@ -322,7 +294,8 @@
   },
   speakerdeck = "2c6de050ce430131e1db2aa9d004a740",
   url = {/pub/exploration-pullreqs.pdf},
-  nomination = {ACM SIGSOFT distinguished paper}
+  nomination = {ACM SIGSOFT distinguished paper},
+  github = {gousiosg/pullreqs}
 }
 
 @inproceedings{KGBSGD14,
@@ -385,6 +358,7 @@
     demonstrate how the provided datasets can be queried and processed.
   },
   url = {/pub/ghtorrent-dataset-toolsuite.pdf},
+  github = {gousiosg/github-mirror},
   speakerdeck = "75bea5909fbb0130f0eb364613f6f036",
   award = {MSR2013: Best data showcase paper},
   Note = {Best data showcase paper award}
@@ -415,7 +389,8 @@
     this paper, we present the project’s design and initial implementation and
     demonstrate how the provided datasets can be queried and processed.
     },
-  url = {/pub/ghtorrent-githubs-data-from-a-firehose.pdf}
+  url = {/pub/ghtorrent-githubs-data-from-a-firehose.pdf},
+  github = {gousiosg/github-mirror}
 }
 
 @inproceedings{GS09b,
@@ -451,7 +426,8 @@
     demonstrate its usefulness in mining software repositories by guiding the
     reader through the steps required to execute a simple experiment.
   },
-  url = {/pub/a-platform-for-software-engineering-research.pdf}
+  url = {/pub/a-platform-for-software-engineering-research.pdf},
+  github = {istlab/Alitheia-Core}
 }
 
 @inproceedings{SGSS08,
