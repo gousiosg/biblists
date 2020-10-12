@@ -1,67 +1,94 @@
 @inproceedings{BSSRGA20,
-  author={Arnar Briem, J. and Smit, J. and Sellik, H. and Rapoport, P. and Gousios, G., and Aniche, M.},
-  booktitle={The 2nd Workshop on Testing for Deep Learning and Deep Learning for Testing (DeepTest)},
-  title={OffSide: Learning to Identify Mistakes in Boundary Conditions},
-  year={2020},
-  location={Seoul, South Korea},
-  url = {/pub/offside-mistakes-boundary-conditions.pdf}
+  author    = {Arnar Briem, J. and Smit, J. and Sellik, H. and Rapoport, P. and Gousios, G., and Aniche, M.},
+  booktitle = {The 2nd Workshop on Testing for Deep Learning and Deep Learning for Testing (DeepTest)},
+  title     = {OffSide: Learning to Identify Mistakes in Boundary Conditions},
+  year      = {2020},
+  location  = {Seoul, South Korea},
+  doi       = {10.1145/3387940.3391464},
+  abstract  = {
+    Mistakes in boundary conditions are the cause of many bugs in software. 
+    These mistakes happen when, e.g., developers make use of '<' or '>' in 
+    cases where they should have used '<=' or '>='. Mistakes in boundary 
+    conditions are often hard to find and manually detecting them might be 
+    very time-consuming for developers. While researchers have been proposing
+    techniques to cope with mistakes in the boundaries for a long time, the 
+    automated detection of such bugs still remains a challenge. We conjecture
+    that, for a tool to be able to precisely identify mistakes in boundary 
+    conditions, it should be able to capture the overall context of the 
+    source code under analysis. In this work, we propose a deep learning 
+    model that learn mistakes in boundary conditions and, later, is able to 
+    identify them in unseen code snippets. We train and test a model on over 
+    1.5 million code snippets, with and without mistakes in different boundary 
+    conditions. Our model shows an accuracy from 55% up to 87%. The model is 
+    also able to detect 24 out of 41 real-world bugs; however, with a high 
+    false positive rate. The existing state-of-the-practice linter tools are 
+    not able to detect any of the bugs. We hope this paper can pave the road 
+    towards deep learning models that will be able to support developers in 
+    detecting mistakes in boundary conditions.
+  },
+  keywords  = {machine learning for software testing, software testing, boundary testing, machine learning for software engineering, software engineering, deep learning for software testing},
+  isbn      = {9781450379632},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  series    = {ICSEW'20},
+  url       = {/pub/offside-mistakes-boundary-conditions.pdf},
 }
 
 @inproceedings{ACGZ20,
-  author={P. {Abate} and R. {Di Cosmo} and G. {Gousios} and S. {Zacchiroli}},
-  booktitle={The 27th IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER)},
-  title={Dependency Solving Is Still Hard, but We Are Getting Better at It},
-  year={2020},
-  volume={},
-  number={},
-  pages={547-551},
-  location={London, Ontario, Canada},
-  doi = {10.1109/SANER48275.2020.9054837},
-  url= {/pub/dependency-solving-hard-getting-better.pdf}
+  author    = {P. {Abate} and R. {Di Cosmo} and G. {Gousios} and S. {Zacchiroli}},
+  booktitle = {The 27th IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER)},
+  title     = {Dependency Solving Is Still Hard, but We Are Getting Better at It},
+  year      = {2020},
+  volume    = {},
+  number    = {},
+  pages     = {547-551},
+  location  = {London, Ontario, Canada},
+  doi       = {10.1109/SANER48275.2020.9054837},
+  url       = {/pub/dependency-solving-hard-getting-better.pdf}
 }
 
 @inproceedings{GKKPG18,
- author = {Gerasimou, Simos and Kechagia, Maria and Kolovos, Dimitris and Paige, Richard and Gousios, Georgios},
- title = {On Software Modernisation Due to Library Obsolescence},
- booktitle = {Proceedings of the 2Nd International Workshop on API Usage and Evolution},
- series = {WAPI '18},
- year = {2018},
- isbn = {978-1-4503-5754-8},
- location = {Gothenburg, Sweden},
- pages = {6--9},
- numpages = {4},
- url = {http://doi.acm.org/10.1145/3194793.3194798},
- doi = {10.1145/3194793.3194798},
- acmid = {3194798},
- publisher = {ACM},
- address = {New York, NY, USA},
- keywords = {application programming interfaces, library evolution, software libraries, software modernisation, visualisation},
+  author    = {Gerasimou, Simos and Kechagia, Maria and Kolovos, Dimitris and Paige, Richard and Gousios, Georgios},
+  title     = {On Software Modernisation Due to Library Obsolescence},
+  booktitle = {Proceedings of the 2Nd International Workshop on API Usage and Evolution},
+  series    = {WAPI '18},
+  year      = {2018},
+  isbn      = {978-1-4503-5754-8},
+  location  = {Gothenburg, Sweden},
+  pages     = {6--9},
+  numpages  = {4},
+  url       = {http://doi.acm.org/10.1145/3194793.3194798},
+  doi       = {10.1145/3194793.3194798},
+  acmid     = {3194798},
+  publisher = {ACM},
+  address   = {New York, NY, USA},
+  keywords  = {application programming interfaces, library evolution, software libraries, software modernisation, visualisation}
 }
 
 @inproceedings{GSV16,
-  author = {Gousios, Georgios and Safaric, Dominik and Visser, Joost},
-  title = {Streaming Software Analytics},
+  author    = {Gousios, Georgios and Safaric, Dominik and Visser, Joost},
+  title     = {Streaming Software Analytics},
   booktitle = {Proceedings of the 2nd International Workshop on BIG Data Software Engineering},
-  series = {BIGDSE '16},
-  year = {2016},
-  isbn = {978-1-4503-4152-3},
-  location = {Austin, Texas},
-  pages = {8--11},
-  numpages = {4},
-  url = {/pub/streaming-soft-analytics.pdf},
-  doi = {10.1145/2896825.2896832},
-  acmid = {2896832},
+  series    = {BIGDSE '16},
+  year      = {2016},
+  isbn      = {978-1-4503-4152-3},
+  location  = {Austin, Texas},
+  pages     = {8--11},
+  numpages  = {4},
+  url       = {/pub/streaming-soft-analytics.pdf},
+  doi       = {10.1145/2896825.2896832},
+  acmid     = {2896832},
   publisher = {ACM},
-  address = {New York, NY, USA},
-  keywords = {data mining, software analytics, streaming},
+  address   = {New York, NY, USA},
+  keywords  = {data mining, software analytics, streaming}
 }
 
-@inproceedigns {BLPGZ16,
-  author = {Moritz Beller and Igor Levaja and Annibale Panichella and Georgios Gousios and Andy Zaidman},
-  title = {How to Catch ’Em All: WatchDog, a Family of IDE Plug-Ins to Assess Testing},
+@inproceedigns{BLPGZ16,
+  author    = {Moritz Beller and Igor Levaja and Annibale Panichella and Georgios Gousios and Andy Zaidman},
+  title     = {How to Catch ’Em All: WatchDog, a Family of IDE Plug-Ins to Assess Testing},
   booktitle = {Proceedings of the 3rd International Workshop on Software Engineering Research and Industrial Practice},
-  year = 2016,
-  Abstract = {
+  year      = 2016,
+  abstract  = {
     As software engineering researchers, we are also zealous tool smiths.
     Building a research prototype is often a daunting task, let alone building a
     industry-grade family of tools supporting multiple platforms to ensure the
@@ -74,17 +101,17 @@
     practitioners, WatchDog, provides real-time and aggregated feedback in the
     form of individual testing reports.
   },
-  url = {/pub/how-to-catchem-all.pdf}
+  url       = {/pub/how-to-catchem-all.pdf}
 }
 
 @inproceedings{CDGHH15,
-  author = {Guanliang Chen and Dan Davis and Georgios Gousios and Claudia Hauff and Geert-Jan Houben},
-  title = {Learning transfer: does it take place?},
+  author    = {Guanliang Chen and Dan Davis and Georgios Gousios and Claudia Hauff and Geert-Jan Houben},
+  title     = {Learning transfer: does it take place?},
   booktitle = {Proceedings of the 2nd Workshop of Learning With MOOCs},
-  year = {2015},
-  month={Oct},
-  location = {NY, USA},
-  Abstract = {
+  year      = {2015},
+  month     = {Oct},
+  location  = {NY, USA},
+  abstract  = {
     The rising number of MOOCs enable people to advance their knowledge and
     competencies in a wide range of fields. Learning though is only the first
     step, the transfer of the taught concepts into practice is equally important
@@ -96,30 +123,30 @@
     functional concepts in their programming practice before the start of
     FP101x, begin using them.
   },
-  url = {/pub/learning-transfer.pdf}
+  url       = {/pub/learning-transfer.pdf}
 }
 
 @inproceedings{MKPLGS14,
-  author = {Dimitris Mitropoulos and Georgios Gousios and Panagiotis Papadopoulos and Vassilios Karakoidas and Panos Louridas and Diomidis Spinellis},
-  title = {The Vulnerability Dataset of a Large Software Ecosystem},
+  author    = {Dimitris Mitropoulos and Georgios Gousios and Panagiotis Papadopoulos and Vassilios Karakoidas and Panos Louridas and Diomidis Spinellis},
+  title     = {The Vulnerability Dataset of a Large Software Ecosystem},
   booktitle = {Proceedings of the 3rd International Workshop on Building Analysis Datasets and Gathering Experience Returns for Security},
-  year = {2014},
-  month = {September},
-  location = {Wroclaw, Poland},
+  year      = {2014},
+  month     = {September},
+  location  = {Wroclaw, Poland},
   publisher = {IEEE Computer Society},
-  url = {/pub/maven-bug-dataset.pdf}
+  url       = {/pub/maven-bug-dataset.pdf}
 }
 
 @inproceedings{MKLGS13,
-  Author = {Dimitris Mitropoulos and Vassilios Karakoidas and Panos Louridas and Georgios Gousios and Diomidis Spinellis},
-  Title = {Dismal Code: Studying the Evolution of Security Bugs},
-  Year = {2013},
-  Month = {Oct},
-  Booktitle = { {LASER} '13: Proceedings of the 2013 Workshop on Learning from Authoritative Security Experiment Results},
-  address = {Arlington, VA},
-  isbn = {978-1-931971-06-5},
-  pages = {37--48},
-  abstract = {
+  author    = {Dimitris Mitropoulos and Vassilios Karakoidas and Panos Louridas and Georgios Gousios and Diomidis Spinellis},
+  title     = {Dismal Code: Studying the Evolution of Security Bugs},
+  year      = {2013},
+  month     = {Oct},
+  booktitle = { {LASER} '13: Proceedings of the 2013 Workshop on Learning from Authoritative Security Experiment Results},
+  address   = {Arlington, VA},
+  isbn      = {978-1-931971-06-5},
+  pages     = {37--48},
+  abstract  = {
     Security bugs are critical programming errors that can lead to serious
     vulnerabilities in software. Such bugs may allow an attacker to take over an
     application, steal data or prevent the application from working at all.  We
@@ -147,21 +174,21 @@
     us find the common characteristics of the projects where security bugs
     increase over time.
   },
-  url = {/pub/evolution-security-bugs.pdf}
+  url       = {/pub/evolution-security-bugs.pdf}
 }
 
 @inproceedings{MGS12,
-  Title={Measuring the Occurrence of Security-Related Bugs through Software
+  title     = {Measuring the Occurrence of Security-Related Bugs through Software
     Evolution},
-  Author={Dimitris Mitropoulos and Georgios Gousios and Diomidis
+  author    = {Dimitris Mitropoulos and Georgios Gousios and Diomidis
     Spinellis},
-  Booktitle={PCI 2012: Proceedings of 16th Panhellenic Conference on
+  booktitle = {PCI 2012: Proceedings of 16th Panhellenic Conference on
     Informatics},
-  Publisher={IEEE Computer Society},
-  Year = {2012},
-  doi={10.1109/PCi.2012.15},
-  Pages = {117--122},
-  abstract = "A security-related bug is a programming error that intro- duces a
+  publisher = {IEEE Computer Society},
+  year      = {2012},
+  doi       = {10.1109/PCi.2012.15},
+  pages     = {117--122},
+  abstract  = {A security-related bug is a programming error that intro- duces a
     potentially exploitable weakness into a computer system. This weakness could
     lead to a security breach with unfortunate consequences. Version control
     systems provide an accurate historical record of the software code’s evolu-
@@ -170,20 +197,20 @@
     analyzer on all versions of its revision history. We have applied our approach
     on four projects and we have come out with some interesting results including
     the fact that the number of the security-related bugs increase as the project
-    evolves.",
-  url = {/pub/measuring-the-occurrence-of-security-related-bugs-through-software-evolution.pdf}
+    evolves.},
+  url       = {/pub/measuring-the-occurrence-of-security-related-bugs-through-software-evolution.pdf}
 }
 
 @inproceedings{KGSP09,
-  Author = {Eirini Kalliamvakou and Georgios Gousios and Diomidis Spinellis and Nancy Pouloudi},
-  Booktitle = {MCIS 2009: 4th {M}editerranean Conference on Information Systems},
-  Editor = {Poulymenakou, A. and Pouloudi, N. and Pramatari, K.},
-  Location = {Athens, Greece},
-  Month = sep,
-  Pages = {600--611},
-  Title = {Measuring Developer Contribution from Software Repository Data},
-  Year = 2009,
-  abstract = {
+  author    = {Eirini Kalliamvakou and Georgios Gousios and Diomidis Spinellis and Nancy Pouloudi},
+  booktitle = {MCIS 2009: 4th {M}editerranean Conference on Information Systems},
+  editor    = {Poulymenakou, A. and Pouloudi, N. and Pramatari, K.},
+  location  = {Athens, Greece},
+  month     = sep,
+  pages     = {600--611},
+  title     = {Measuring Developer Contribution from Software Repository Data},
+  year      = 2009,
+  abstract  = {
     Our work is concerned with an enriched perspective of what constitutes
     developer contribution in software infrastructures supporting incremental
     development and distributed software projects. We use the term
@@ -199,19 +226,19 @@
     system implementation and we apply our measurements on various projects from
     the GNOME ecosystem.
     },
-  Url = {/pub/measuring-developer-contribution-from-software-repository-data.pdf}
+  url       = {/pub/measuring-developer-contribution-from-software-repository-data.pdf}
 }
 
 @inproceedings{GS08,
-  Author = {Georgios Gousios and Diomidis Spinellis},
-  Booktitle = {Proceedings of the 12th Pan-Hellenic Conference on Informatics},
-  Title = {Java Performance Evaluation Using External Instrumentation},
-  Year = {2008},
-  Location = {Samos, Greece},
-  doi={10.1109/PCI.2008.14},
-  pages={173-177},
-  Month = {Aug},
-  abstract = {
+  author    = {Georgios Gousios and Diomidis Spinellis},
+  booktitle = {Proceedings of the 12th Pan-Hellenic Conference on Informatics},
+  title     = {Java Performance Evaluation Using External Instrumentation},
+  year      = {2008},
+  location  = {Samos, Greece},
+  doi       = {10.1109/PCI.2008.14},
+  pages     = {173-177},
+  month     = {Aug},
+  abstract  = {
     The performance of programs written in the Java pro- gramming language is
     not trivial to analyse. The Java Vir- tual Machine hides the details of
     bytecode execution while not providing an accessible profiling mechanism.
@@ -221,18 +248,18 @@
     specifically designed to assist engineers in identifying the roots of
     various perfor- mance problems observed with other tools.
   },
-  url = {/pub/java-performance-evaluation-using-external-instrumentation.pdf}
+  url       = {/pub/java-performance-evaluation-using-external-instrumentation.pdf}
 }
 
 @inproceedings{GKSLVS07,
-  Author = {Georgios Gousios and Vassilios Karakoidas and Konstantinos Stroggylos and Panagiotis Louridas and Vasileios Vlachos and Diomidis Spinellis},
-  Booktitle = {Proceedings of the 11th Panhellenic Conference on Informatics},
-  Day = {18--20},
-  Location = {Patras, Greece},
-  Month = may,
-  Title = {Software Quality Assessment of Open Source Software},
-  Year = {2007},
-  abstract = {
+  author    = {Georgios Gousios and Vassilios Karakoidas and Konstantinos Stroggylos and Panagiotis Louridas and Vasileios Vlachos and Diomidis Spinellis},
+  booktitle = {Proceedings of the 11th Panhellenic Conference on Informatics},
+  day       = {18--20},
+  location  = {Patras, Greece},
+  month     = may,
+  title     = {Software Quality Assessment of Open Source Software},
+  year      = {2007},
+  abstract  = {
     The open source software ecosystem comprises more than a hundred thousand
     applications of varying quality. Individuals and organizations wishing to
     use open source software packages have scarce objective data to evaluate
@@ -247,5 +274,5 @@
     filters. The resulting platform is aimed at IT consultants and managers, the
     open source community, and researchers.
   },
-  url = {/pub/software-quality-assessment-of-open-source-software.pdf}
+  url       = {/pub/software-quality-assessment-of-open-source-software.pdf}
 }
