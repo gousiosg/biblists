@@ -1,3 +1,38 @@
+@article{IGHG2020pp,
+  title         = {Questions for Data Scientists in Software Engineering: A Replication},
+  author        = {Maliheh Izadi and Siavash Ganji and Abbas Heydarnoori and Georgios Gousios},
+  journal       = {arXiv preprint},
+  year          = {2020},
+  url           = {https://arxiv.org/pdf/2010.09116.pdf},
+  archiveprefix = {arXiv},
+  eprint        = {2010.09116},
+  primaryclass  = {cs.SE},
+  abstract      = {
+    Many platforms exploit collaborative tagging to provide their users with
+    faster and more accurate results while searching or navigating. Tags can
+    communicate different concepts such as the main features, technologies,
+    functionality, and the goal of a software repository. Recently, GitHub has
+    enabled users to annotate repositories with topic tags. It has also
+    provided a set of featured topics, and their possible aliases, carefully
+    curated with the help of the community. This creates the opportunity to use
+    this initial seed of topics to automatically annotate all remaining
+    repositories, by training models that recommend high-quality topic tags to
+    developers. In this work, we study the application of multi-label
+    classification techniques to predict software repositories' topics. First,
+    we augment GitHub's featured topics. The core idea is to derive more
+    information from projects' available documentation. Our data contains about
+    152K GitHub repositories and 228 featured topics. Then, we apply supervised
+    models on repositories' textual information such as descriptions, README
+    files, wiki pages, and file names. We assess the performance of our
+    approach both quantitatively and qualitatively. Our proposed model achieves
+    Recall\@5 and LRAP of 0.890 and 0.805, respectively. Moreover, based on
+    users' assessment, our approach is highly capable of recommending correct
+    and complete sets of topics. Finally, we use our models to develop an
+    online tool named Repository Catalogue, that automatically predicts topics
+    for Github repositories and is publicly available.
+  }
+}
+
 @article{HRMGD20pp,
   title         = {Questions for Data Scientists in Software Engineering: A Replication},
   author        = {Huijgens, Hennie and Rastogi, Ayushi and Mulders, Ernst and Gousios, Georgios and van Deursen, Arie},
@@ -8,17 +43,17 @@
   archiveprefix = {arXiv},
   eprint        = {2010.03165},
   primaryclass  = {cs.SE},
-  abstract = {
-  	In 2014, a Microsoft study investigated the sort of questions that data 
-	science applied to software engineering should answer. This resulted 
+  abstract      = {
+  	In 2014, a Microsoft study investigated the sort of questions that data
+	science applied to software engineering should answer. This resulted
 	in 145 questions that developers considered relevant for data scientists
-	to answer, thus providing a research agenda to the community. Fast 
-	forward to five years, no further studies investigated whether the 
-	questions from the software engineers at Microsoft hold for other 
-	software companies, including software-intensive companies with 
-	different primary focus (to which we refer as software-defined 
-	enterprises). Furthermore, it is not evident that the problems identified 
-	five years ago are still applicable, given the technological advances in 
+	to answer, thus providing a research agenda to the community. Fast
+	forward to five years, no further studies investigated whether the
+	questions from the software engineers at Microsoft hold for other
+	software companies, including software-intensive companies with
+	different primary focus (to which we refer as software-defined
+	enterprises). Furthermore, it is not evident that the problems identified
+	five years ago are still applicable, given the technological advances in
 	software engineering.
   }
 }
@@ -35,24 +70,24 @@
   primaryclass  = {cs.SE},
   abstract      = {
 	The selection of third-party libraries is an essential element of virtually
-	any software development project. However, deciding which libraries to 
-	choose is a challenging practical problem. Selecting the wrong library 
-	can severely impact a software project in terms of cost, time, and 
+	any software development project. However, deciding which libraries to
+	choose is a challenging practical problem. Selecting the wrong library
+	can severely impact a software project in terms of cost, time, and
 	development effort, with the severity of the impact depending on the role
-	of the library in the software architecture, among others. Despite the 
+	of the library in the software architecture, among others. Despite the
 	importance of following a careful library selection process, in practice,
-	the selection of third-party libraries is still conducted in an ad-hoc 
-	manner, where dozens of factors play an influential role in the 
-	decision. In this paper, we study the factors that influence the 
-	selection process of libraries, as perceived by industry developers. To 
-	that aim, we perform a cross-sectional interview study with 16 developers 
-	from 11 different businesses and survey 115 developers that are involved 
-	in the selection of libraries. We systematically devised a comprehensive 
-	set of 26 technical, human, and economic factors that developers take into 
-	consideration when selecting a software library. Eight of these factors are 
-	new to the literature. We explain each of these factors and how they play a 
-	role in the decision. Finally, we discuss the implications of our work to library 
-	maintainers, potential library users, package manager developers, and empirical 
+	the selection of third-party libraries is still conducted in an ad-hoc
+	manner, where dozens of factors play an influential role in the
+	decision. In this paper, we study the factors that influence the
+	selection process of libraries, as perceived by industry developers. To
+	that aim, we perform a cross-sectional interview study with 16 developers
+	from 11 different businesses and survey 115 developers that are involved
+	in the selection of libraries. We systematically devised a comprehensive
+	set of 26 technical, human, and economic factors that developers take into
+	consideration when selecting a software library. Eight of these factors are
+	new to the literature. We explain each of these factors and how they play a
+	role in the decision. Finally, we discuss the implications of our work to library
+	maintainers, potential library users, package manager developers, and empirical
 	software engineering researchers.
   }
 }
@@ -66,37 +101,36 @@
   eprint        = {1912.03768},
   archiveprefix = {arXiv},
   primaryclass  = {cs.SE},
-  abstract       = {
-	Maintaining large code bases written in dynamically typed languages, such 
-	as JavaScript or Python, can be challenging due to the absence of type 
-	annotations: simple data compatibility errors proliferate, IDE support is 
-	limited, and APIs are hard to comprehend. Recent work attempts to address 
-	those issues through either static type inference or probabilistic type 
+  abstract      = {
+	Maintaining large code bases written in dynamically typed languages, such
+	as JavaScript or Python, can be challenging due to the absence of type
+	annotations: simple data compatibility errors proliferate, IDE support is
+	limited, and APIs are hard to comprehend. Recent work attempts to address
+	those issues through either static type inference or probabilistic type
 	prediction. Unfortunately, static type inference for dynamic languages is
-	inherently limited, while probabilistic approaches suffer from imprecision. 
+	inherently limited, while probabilistic approaches suffer from imprecision.
 	This paper presents TypeWriter, the first combination of probabilistic type
-	prediction with search-based refinement of predicted types. TypeWriter's 
-	predictor learns to infer the return and argument types for functions from 
-	partially annotated code bases by combining the natural language properties 
-	of code with programming language-level information. To validate predicted 
-	types, TypeWriter invokes a gradual type checker with different 
+	prediction with search-based refinement of predicted types. TypeWriter's
+	predictor learns to infer the return and argument types for functions from
+	partially annotated code bases by combining the natural language properties
+	of code with programming language-level information. To validate predicted
+	types, TypeWriter invokes a gradual type checker with different
 	combinations of the predicted types, while navigating the space of possible
-	type combinations in a feedback-directed manner. We implement the 
-	TypeWriter approach for Python and evaluate it on two code corpora: a 
+	type combinations in a feedback-directed manner. We implement the
+	TypeWriter approach for Python and evaluate it on two code corpora: a
 	multi-million line code base at Facebook and a collection of 1,137 popular
 	open-source projects. We show that TypeWriter's type predictor achieves an
 	F1 score of 0.64 (0.79) in the top-1 (top-5) predictions for return types,
 	and 0.57 (0.80) for argument types, which clearly outperforms prior type
-	prediction models. By combining predictions with search-based 
-	validation, TypeWriter can fully annotate between 14% to 44% of the 
+	prediction models. By combining predictions with search-based
+	validation, TypeWriter can fully annotate between 14% to 44% of the
 	files in a randomly selected corpus, while ensuring type correctness.
-	A comparison with a static type inference tool shows that TypeWriter 
+	A comparison with a static type inference tool shows that TypeWriter
 	adds many more non-trivial types. TypeWriter currently suggests types
-	to developers at Facebook and several thousands of types have 
+	to developers at Facebook and several thousands of types have
 	already been accepted with minimal changes.
   }
 }
-
 
 @article{BGZ16,
   title    = {Oops, my tests broke the build: An analysis of Travis CI builds with GitHub},
@@ -105,20 +139,20 @@
   month    = apr,
   keywords = {Travis CI, GitHub, TravisTorrent, GHTorrent, Testing, JUnit, Ruby, Java, IDE, Continuous Integration},
   abstract = {
-	Continuous Integration (CI) has become a best practice of modern 
-	software development. At present, we have a shortfall of insight 
-	into the testing practices that are common in CI-based software 
-	development. In particular, we seek quantifiable evidence on how 
-	central testing really is in CI, how strongly the project language 
-	nfluences testing, whether different integration environments are 
-	valuable and if testing on the CI can serve as a surrogate to local 
-	testing in the IDE. In an analysis of 2,640,825 Java and Ruby builds 
+	Continuous Integration (CI) has become a best practice of modern
+	software development. At present, we have a shortfall of insight
+	into the testing practices that are common in CI-based software
+	development. In particular, we seek quantifiable evidence on how
+	central testing really is in CI, how strongly the project language
+	nfluences testing, whether different integration environments are
+	valuable and if testing on the CI can serve as a surrogate to local
+	testing in the IDE. In an analysis of 2,640,825 Java and Ruby builds
 	on Travis CI, we find that testing is the single most important reason
-	why builds fail. Moreover, the programming language has a strong influence 
-	on both the number of executed tests, their test run time and proneness 
-	to fail. The use of multiple integration environments leads to 10% more 
-	failures being caught at build time. However, testing in the CI does not 
-	seem to be a good surrogate for running tests in the IDE. To facilitate 
+	why builds fail. Moreover, the programming language has a strong influence
+	on both the number of executed tests, their test run time and proneness
+	to fail. The use of multiple integration environments leads to 10% more
+	failures being caught at build time. However, testing in the CI does not
+	seem to be a good surrogate for running tests in the IDE. To facilitate
 	further research on Travis CI with GitHub, we introduce TravisTorrent.
   },
   volume   = 4,
@@ -128,7 +162,6 @@
   url      = {https://doi.org/10.7287/peerj.preprints.1984v1},
   doi      = {10.7287/peerj.preprints.1984v1}
 }
-
 
 @techreport{RNG16,
   author      = {Rastogi, Ayushi and Nagappan, Nachiappan and Gousios, Georgios},
