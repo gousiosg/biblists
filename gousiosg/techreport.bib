@@ -1,10 +1,11 @@
-@misc{BP20,
+@article{BP20,
   title         = {Fine-Grained Network Analysis for Modern Software Ecosystems},
   author        = {Paolo Boldi and Georgios Gousios},
   year          = {2020},
   eprint        = {2012.04760},
   archiveprefix = {arXiv},
   primaryclass  = {cs.SE},
+  url           = {https://arxiv.org/pdf/2012.04760.pdf},
   abstract      = {
     Modern software development is increasingly dependent on components, 
     libraries and frameworks coming from third-party vendors or open-source 
@@ -22,13 +23,14 @@
   }
 }
 
-@misc{MSBNGD20,
+@article{MSBNGD20,
   title         = {Nudge: Accelerating Overdue Pull Requests Towards Completion},
   author        = {Chandra Maddila and Sai Surya Upadrasta and Chetan Bansal and Nachiappan Nagappan and Georgios Gousios and Arie van Deursen},
   year          = {2020},
   eprint        = {2011.12468},
   archiveprefix = {arXiv},
   primaryclass  = {cs.SE},
+  url           = {https://arxiv.org/pdf/2011.12468.pdf},
   abstract      = {
     Pull requests are a key part of the collaborative software development and 
     code review process today. However, pull requests can also slow down the 
@@ -122,33 +124,34 @@
   archiveprefix = {arXiv},
   primaryclass  = {cs.SE},
   abstract      = {
-	Maintaining large code bases written in dynamically typed languages, such
-	as JavaScript or Python, can be challenging due to the absence of type
-	annotations: simple data compatibility errors proliferate, IDE support is
-	limited, and APIs are hard to comprehend. Recent work attempts to address
-	those issues through either static type inference or probabilistic type
-	prediction. Unfortunately, static type inference for dynamic languages is
-	inherently limited, while probabilistic approaches suffer from imprecision.
-	This paper presents TypeWriter, the first combination of probabilistic type
-	prediction with search-based refinement of predicted types. TypeWriter's
-	predictor learns to infer the return and argument types for functions from
-	partially annotated code bases by combining the natural language properties
-	of code with programming language-level information. To validate predicted
-	types, TypeWriter invokes a gradual type checker with different
-	combinations of the predicted types, while navigating the space of possible
-	type combinations in a feedback-directed manner. We implement the
-	TypeWriter approach for Python and evaluate it on two code corpora: a
-	multi-million line code base at Facebook and a collection of 1,137 popular
-	open-source projects. We show that TypeWriter's type predictor achieves an
-	F1 score of 0.64 (0.79) in the top-1 (top-5) predictions for return types,
-	and 0.57 (0.80) for argument types, which clearly outperforms prior type
-	prediction models. By combining predictions with search-based
-	validation, TypeWriter can fully annotate between 14% to 44% of the
-	files in a randomly selected corpus, while ensuring type correctness.
-	A comparison with a static type inference tool shows that TypeWriter
-	adds many more non-trivial types. TypeWriter currently suggests types
-	to developers at Facebook and several thousands of types have
-	already been accepted with minimal changes.
+	  Maintaining large code bases written in dynamically typed languages,
+	  such as JavaScript or Python, can be challenging due to the absence of
+	  type annotations: simple data compatibility errors proliferate, IDE
+	  support is limited, and APIs are hard to comprehend. Recent work
+	  attempts to address those issues through either static type inference
+	  or probabilistic type prediction. Unfortunately, static type inference
+	  for dynamic languages is inherently limited, while probabilistic
+	  approaches suffer from imprecision. This paper presents TypeWriter, the
+	  first combination of probabilistic type prediction with search-based
+	  refinement of predicted types. TypeWriter's predictor learns to infer
+	  the return and argument types for functions from partially annotated
+	  code bases by combining the natural language properties of code with
+	  programming language-level information. To validate predicted types,
+	  TypeWriter invokes a gradual type checker with different combinations
+	  of the predicted types, while navigating the space of possible type
+	  combinations in a feedback-directed manner. We implement the TypeWriter
+	  approach for Python and evaluate it on two code corpora: a
+	  multi-million line code base at Facebook and a collection of 1,137
+	  popular open-source projects. We show that TypeWriter's type predictor
+	  achieves an F1 score of 0.64 (0.79) in the top-1 (top-5) predictions
+	  for return types, and 0.57 (0.80) for argument types, which clearly
+	  outperforms prior type prediction models. By combining predictions with
+	  search-based validation, TypeWriter can fully annotate between 14% to
+	  44% of the files in a randomly selected corpus, while ensuring type
+	  correctness. A comparison with a static type inference tool shows that
+	  TypeWriter adds many more non-trivial types. TypeWriter currently
+	  suggests types to developers at Facebook and several thousands of types
+	  have already been accepted with minimal changes.
   }
 }
 
@@ -218,9 +221,25 @@
 }
 
 @techreport{Gousi07,
-  abstract    = {The purpose of the jvm is to abstract the Java language from the hardware and software platforms it runs on. Currently, there is an obvious duplication of effort in service provision and resource management between the JVM and the operating system that has a measurable cost on the performance of Java programs. The emergence of efficient hardware resource virtualisation mechanisms presents implementers with new opportunities for optimising the Java software execution stack.
+  abstract    = {
+    The purpose of the jvm is to abstract the Java language from the hardware
+    and software platforms it runs on. Currently, there is an obvious
+    duplication of effort in service provision and resource management
+    between the JVM and the operating system that has a measurable cost on
+    the performance of Java programs. The emergence of efficient hardware
+    resource virtualisation mechanisms presents implementers with new
+    opportunities for optimising the Java software execution stack.
 
-In this paper, we examine the sources of the runtime overhead imposed on the Java programming language by the native execution environment. We use both synthetic and real world applications as benchmarks along with modern instrumentation tools to measure this overhead. We base our measurements on the assumption that the jvm can be directly hosted on virtualised hardware. Based on our findings, we also propose a cost estimation heuristic, which allows us to estimate the minimal gain to be expected when applications will be moved to hypervisor-hosted virtual machines.},
+    In this paper, we examine the sources of the runtime overhead imposed on
+    the Java programming language by the native execution environment. We use
+    both synthetic and real world applications as benchmarks along with
+    modern instrumentation tools to measure this overhead. We base our
+    measurements on the assumption that the jvm can be directly hosted on
+    virtualised hardware. Based on our findings, we also propose a cost
+    estimation heuristic, which allows us to estimate the minimal gain to be
+    expected when applications will be moved to hypervisor-hosted virtual
+    machines.
+  },
   author      = {Georgios Gousios},
   institution = {Athens University of Economics and Business},
   month       = {Jan},
@@ -231,7 +250,20 @@ In this paper, we examine the sources of the runtime overhead imposed on the Jav
 }
 
 @techreport{Gousi11,
-  abstract    = {A new trend in programming languages and system design is the use of constructs derived from the functional language field. Startups requiring fast product turnover and large corporations looking for increased maintainability are exploring the use of new, purely functional (such as Erlang or Haskell) or functionally-enabled (such as Scala and Ruby) languages, on the basis of decreased complexity and higher productivity. Despite the apparent increase in their use, the soft- ware engineering properties, including the alleged advantages, of such languages are largely underexplored. In this paper, we discuss the issues that prohibit the use of classic complexity and productivity metrics and present the rationale behind a new set of metrics that targets this increasingly important set of languages.},
+  abstract    = {
+    A new trend in programming languages and system design is the use of
+    constructs derived from the functional language field. Startups requiring
+    fast product turnover and large corporations looking for increased
+    maintainability are exploring the use of new, purely functional (such as
+    Erlang or Haskell) or functionally-enabled (such as Scala and Ruby)
+    languages, on the basis of decreased complexity and higher productivity.
+    Despite the apparent increase in their use, the software engineering
+    properties, including the alleged advantages, of such languages are
+    largely underexplored. In this paper, we discuss the issues that prohibit
+    the use of classic complexity and productivity metrics and present the
+    rationale behind a new set of metrics that targets this increasingly
+    important set of languages.
+  },
   author      = {Georgios Gousios},
   institution = {Athens University of Economics and Business},
   month       = {Jan},
