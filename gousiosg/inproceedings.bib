@@ -1,87 +1,218 @@
-@inproceedings{KRHDG19,
-  title = {Releasing Fast and Slow: An Exploratory Case Study at ING},
-	author = {Elvan Kula and Ayushi Rastogi and Hennie Huijgens and {van Deursen}, Arie and Georgios Gousios},
-	year = 2019,
-	booktitle = {Proceedings of the 27th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering},
-	publisher = {ACM DL},
-	doi = {10.1145/3338906.3338978},
-	abstract = {
-
-    The appeal of delivering new features faster has led many software projects
-      to adopt rapid releases. However, it is not well understood what the
-      effects of this practice are. This paper presents an exploratory case
-      study of rapid releases at ING, a large banking company that develops
-      software solutions in-house, to characterize rapid releases. Since 2011,
-    ING has shifted to a rapid release model. This switch has resulted in a
-      mixed environment of 611 teams releasing relatively fast and slow. We
-      followed a mixed-methods approach in which we conducted a survey with 461
-      participants and corroborated their perceptions with 2 years of code
-      quality data and 1 year of release delay data. Our research shows that:
-      rapid releases are more commonly delayed than their non-rapid
-      counterparts, however, rapid releases have shorter delays; rapid releases
-      can be beneficial in terms of reviewing and user-perceived quality;
-    rapidly released software tends to have a higher code churn, a higher test
-      coverage and a lower average complexity; challenges in rapid releases are
-      related to managing dependencies and certain code aspects, e.g. design
-      debt.
+@inproceedings{PGLC20,
+  author    = {Pradel, Michael and Gousios, Georgios and Liu, Jason and Chandra, Satish},
+  title     = {TypeWriter: Neural Type Prediction with Search-Based Validation},
+  year      = {2020},
+  isbn      = {9781450370431},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  url       = {https://doi.org/10.1145/3368089.3409715},
+  doi       = {10.1145/3368089.3409715},
+  booktitle = {Proceedings of the 28th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering},
+  pages     = {209–220},
+  numpages  = {12},
+  keywords  = {Machine learning models of code, type annotations},
+  location  = {Virtual Event, USA},
+  series    = {ESEC/FSE 2020},
+  abstract  = {
+    Maintaining large code bases written in dynamically typed languages, such
+    as JavaScript or Python, can be challenging due to the absence of type
+    annotations: simple data compatibility errors proliferate, IDE support is
+    limited, and APIs are hard to comprehend. Recent work attempts to address
+    those issues through either static type inference or probabilistic type
+    prediction. Unfortunately, static type inference for dynamic languages is
+    inherently limited, while probabilistic approaches suffer from
+    imprecision. This paper presents TypeWriter, the first combination of
+    probabilistic type prediction with search-based refinement of predicted
+    types. TypeWriter’s predictor learns to infer the return and argument
+    types for functions from partially annotated code bases by combining the
+    natural language properties of code with programming language-level
+    information. To validate predicted types, TypeWriter invokes a gradual
+    type checker with different combinations of the predicted types, while
+    navigating the space of possible type combinations in a feedback-directed
+    manner. We implement the TypeWriter approach for Python and evaluate it
+    on two code corpora: a multi-million line code base at Facebook and a
+    collection of 1,137 popular open-source projects. We show that
+    TypeWriter’s type predictor achieves an F1 score of 0.64 (0.79) in the
+    top-1 (top-5) predictions for return types, and 0.57 (0.80) for argument
+    types, which clearly outperforms prior type prediction models. By
+    combining predictions with search-based validation, TypeWriter can fully
+    annotate between 14% to 44% of the files in a randomly selected corpus,
+    while ensuring type correctness. A comparison with a static type
+    inference tool shows that TypeWriter adds many more non-trivial types.
+    TypeWriter currently suggests types to developers at Facebook and several
+    thousands of types have already been accepted with minimal changes.
   },
-  url = {/pub/releasing-fast-and-slow.pdf}
-
+  url       = {https://arxiv.org/abs/1912.03768}
 }
 
+@inproceedings{VATBG20,
+  author    = {Larios Vargas, Enrique and Aniche, Maur\'{\i}cio and Treude, Christoph and Bruntink, Magiel and Gousios, Georgios},
+  title     = {Selecting Third-Party Libraries: The Practitioners’ Perspective},
+  year      = {2020},
+  isbn      = {9781450370431},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  doi       = {10.1145/3368089.3409711},
+  booktitle = {Proceedings of the 28th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering},
+  pages     = {245–256},
+  numpages  = {12},
+  keywords  = {library adoption, software libraries, APIs, empirical software engineering, library selection},
+  location  = {Virtual Event, USA},
+  series    = {ESEC/FSE 2020},
+  abstract  = {
+    The selection of third-party libraries is an essential element of
+    virtually any software development project. However, deciding which
+    libraries to choose is a challenging practical problem. Selecting the
+    wrong library can severely impact a software project in terms of cost,
+    time, and development effort, with the severity of the impact depending
+    on the role of the library in the software architecture, among others.
+    Despite the importance of following a careful library selection process,
+    in practice, the selection of third-party libraries is still conducted in
+    an ad-hoc manner, where dozens of factors play an influential role in the
+    decision. In this paper, we study the factors that influence the
+    selection process of libraries, as perceived by industry developers. To
+    that aim, we perform a cross-sectional interview study with 16 developers
+    from 11 different businesses and survey 115 developers that are involved
+    in the selection of libraries. We systematically devised a comprehensive
+    set of 26 technical, human, and economic factors that developers take
+    into consideration when selecting a software library. Eight of these
+    factors are new to the literature. We explain each of these factors and
+    how they play a role in the decision. Finally, we discuss the
+    implications of our work to library maintainers, potential library users,
+    package manager developers, and empirical software engineering
+    researchers.
+  },
+  url       = {https://arxiv.org/pdf/2005.12574.pdf}
+}
+
+@inproceedings{HRMGD20,
+  author    = {Huijgens, Hennie and Rastogi, Ayushi and Mulders, Ernst and Gousios, Georgios and Deursen, Arie van},
+  title     = {Questions for Data Scientists in Software Engineering: A Replication},
+  year      = {2020},
+  isbn      = {9781450370431},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  url       = {},
+  doi       = {10.1145/3368089.3409717},
+  booktitle = {Proceedings of the 28th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering},
+  pages     = {568–579},
+  numpages  = {12},
+  keywords  = {Software Analytics, Data Science, Software Engineering},
+  location  = {Virtual Event, USA},
+  series    = {ESEC/FSE 2020},
+  abstract  = {
+    In 2014, a Microsoft study investigated the sort of questions that data
+    science applied to software engineering should answer. This resulted in
+    145 questions that developers considered relevant for data scientists to
+    answer, thus providing a research agenda to the community. Fast forward
+    to five years, no further studies investigated whether the questions from
+    the software engineers at Microsoft hold for other software companies,
+    including software-intensive companies with different primary focus (to
+    which we refer as software-defined enterprises). Furthermore, it is not
+    evident that the problems identified five years ago are still applicable,
+    given the technological advances in software engineering. This paper
+    presents a study at ING, a software-defined enterprise in banking in
+    which over 15,000 IT staff provides in-house software solutions. This
+    paper presents a comprehensive guide of questions for data scientists
+    selected from the previous study at Microsoft along with our current work
+    at ING. We replicated the original Microsoft study at ING, looking for
+    questions that impact both software companies and software-defined
+    enterprises and continue to impact software engineering. We also add new
+    questions that emerged from differences in the context of the two
+    companies and the five years gap in between. Our results show that
+    software engineering questions for data scientists in the
+    software-defined enterprise are largely similar to the software company,
+    albeit with exceptions. We hope that the software engineering research
+    community builds on the new list of questions to create a useful body of
+    knowledge.
+  },
+  url       = {https://arxiv.org/pdf/2010.03165.pdf}
+}
+
+@inproceedings{KRHDG19,
+  title     = {Releasing Fast and Slow: An Exploratory Case Study at ING},
+  author    = {Elvan Kula and Ayushi Rastogi and Hennie Huijgens and {van Deursen}, Arie and Georgios Gousios},
+  year      = 2019,
+  booktitle = {Proceedings of the 27th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering},
+  publisher = {ACM DL},
+  doi       = {10.1145/3338906.3338978},
+  abstract  = {
+
+    The appeal of delivering new features faster has led many software
+    projects to adopt rapid releases. However, it is not well understood what
+    the effects of this practice are. This paper presents an exploratory case
+    study of rapid releases at ING, a large banking company that develops
+    software solutions in-house, to characterize rapid releases. Since 2011,
+    ING has shifted to a rapid release model. This switch has resulted in a
+    mixed environment of 611 teams releasing relatively fast and slow. We
+    followed a mixed-methods approach in which we conducted a survey with 461
+    participants and corroborated their perceptions with 2 years of code
+    quality data and 1 year of release delay data. Our research shows that:
+    rapid releases are more commonly delayed than their non-rapid
+    counterparts, however, rapid releases have shorter delays; rapid releases
+    can be beneficial in terms of reviewing and user-perceived quality;
+    rapidly released software tends to have a higher code churn, a higher
+    test coverage and a lower average complexity; challenges in rapid
+    releases are related to managing dependencies and certain code aspects,
+    e.g. design debt. 
+
+  },
+  url       = {/pub/releasing-fast-and-slow.pdf}
+}
+
+
 @inproceedings{KDPGD19,
-  title = {Effective and Efficient API Misuse Detection via Exception Propagation
+  title     = {Effective and Efficient API Misuse Detection via Exception Propagation
   and Search-Based Testing},
-  author = {Maria Kechagia and Xavier Devroey and Annibale Panichella and Georgios Gousios and {van Deursen}, Arie},
-  year = {2019},
-  month = {7},
-  day = {15},
-  doi = {10.1145/3293882.3330552},
-  language = {English},
+  author    = {Maria Kechagia and Xavier Devroey and Annibale Panichella and Georgios Gousios and {van Deursen}, Arie},
+  year      = {2019},
+  month     = {7},
+  day       = {15},
+  doi       = {10.1145/3293882.3330552},
+  language  = {English},
   booktitle = {Proceedings of the 28th ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA ’19)},
   publisher = {ACM DL},
-  abstract = {
+  abstract  = {
 
     Application Programming Interfaces (APIs) typically come with (implicit)
-      usage constraints. The violations of these constraints (API misuses) can
-      lead to software crashes. Even though there are several tools that can
-      detect API misuses, most of them suffer from a very high rate of false
-      positives. We introduce Catcher, a novel API misuse detection approach
-      that combines static exception propagation analysis with automatic
-      search-based test case generation to effectively and efficiently pinpoint
-      crash-prone API misuses in client applications. We validate Catcher
-      against 21 Java applications, targeting misuses of the Java platform’s
-      API. Our results indicate that Catcher is able to generate test cases that
-      uncover 243 (unique) API misuses that result in crashes. Our empirical
-      evaluation shows that Catcher can detect a large number of misuses (77
-      cases) that would remain undetected by the traditional coverage-based
-      test case generator EvoSuite. Additionally, on average, Catcher is eight
-      times faster than EvoSuite in generating test cases for the identified
-      misuses. Finally, we find that the majority of the exceptions triggered by
-      Catcher are unexpected to developers, i.e., not only unhandled in the
-      source code but also not listed in the documentation of the client
-      applications.
+    usage constraints. The violations of these constraints (API misuses) can
+    lead to software crashes. Even though there are several tools that can
+    detect API misuses, most of them suffer from a very high rate of false
+    positives. We introduce Catcher, a novel API misuse detection approach
+    that combines static exception propagation analysis with automatic
+    search-based test case generation to effectively and efficiently pinpoint
+    crash-prone API misuses in client applications. We validate Catcher
+    against 21 Java applications, targeting misuses of the Java platform’s
+    API. Our results indicate that Catcher is able to generate test cases
+    that uncover 243 (unique) API misuses that result in crashes. Our
+    empirical evaluation shows that Catcher can detect a large number of
+    misuses (77 cases) that would remain undetected by the traditional
+    coverage-based test case generator EvoSuite. Additionally, on average,
+    Catcher is eight times faster than EvoSuite in generating test cases for
+    the identified misuses. Finally, we find that the majority of the
+    exceptions triggered by Catcher are unexpected to developers, i.e., not
+    only unhandled in the source code but also not listed in the
+    documentation of the client applications.
   },
-
-  url = {/pub/api-misuse-detection-exception-propagation-sbst.pdf}
+  url       = {/pub/api-misuse-detection-exception-propagation-sbst.pdf}
 }
 
 @inproceedings{BMG18,
-  author = {Banken, Herman and Meijer, Erik and Gousios, Georgios},
-  title = {Debugging Data Flows in Reactive Programs},
+  author    = {Banken, Herman and Meijer, Erik and Gousios, Georgios},
+  title     = {Debugging Data Flows in Reactive Programs},
   booktitle = {Proceedings of the 40th International Conference on Software Engineering},
-  series = {ICSE '18},
-  year = {2018},
-  isbn = {978-1-4503-5638-1},
-  location = {Gothenburg, Sweden},
-  pages = {752--763},
-  numpages = {12},
-  doi = {10.1145/3180155.3180156},
-  acmid = {3180156},
+  series    = {ICSE '18},
+  year      = {2018},
+  isbn      = {978-1-4503-5638-1},
+  location  = {Gothenburg, Sweden},
+  pages     = {752--763},
+  numpages  = {12},
+  doi       = {10.1145/3180155.3180156},
+  acmid     = {3180156},
   publisher = {ACM},
-  address = {New York, NY, USA},
-  keywords = {debugging, program comprehension, reactive programming, visualization},
-  Abstract = {
+  address   = {New York, NY, USA},
+  keywords  = {debugging, program comprehension, reactive programming, visualization},
+  abstract  = {
 
     Reactive Programming is a style of programming that provides developers with a
     set of abstractions that facilitate event handling and stream processing.
@@ -98,27 +229,26 @@
     tools.
 
   },
-  url = {/pub/debugging-dataflows-in-reactive-programs.pdf},
-  github = {hermanbanken/RxFiddle}
+  url       = {/pub/debugging-dataflows-in-reactive-programs.pdf},
+  github    = {hermanbanken/RxFiddle}
 }
 
 @inproceedings{RNGH18,
-  author = {Rastogi, Ayushi and Nagappan, Nachiappan and Gousios, Georgios and van der Hoek, Andr{\'e}},
-  title = {Relationship Between Geographical Location and Evaluation of Developer Contributions in Github},
+  author    = {Rastogi, Ayushi and Nagappan, Nachiappan and Gousios, Georgios and van der Hoek, Andr{\'e}},
+  title     = {Relationship Between Geographical Location and Evaluation of Developer Contributions in Github},
   booktitle = {Proceedings of the 12th ACM/IEEE International Symposium on Empirical Software Engineering and Measurement},
-  series = {ESEM '18},
-  year = {2018},
-  isbn = {978-1-4503-5823-1},
-  location = {Oulu, Finland},
-  pages = {22:1--22:8},
+  series    = {ESEM '18},
+  year      = {2018},
+  isbn      = {978-1-4503-5823-1},
+  location  = {Oulu, Finland},
+  pages     = {22:1--22:8},
   articleno = {22},
-  numpages = {8},
-  doi = {10.1145/3239235.3240504},
+  numpages  = {8},
+  doi       = {10.1145/3239235.3240504},
   publisher = {ACM},
-  address = {New York, NY, USA},
-  keywords = {geographical location, github, open source, pull requests},
-
-  abstract = {
+  address   = {New York, NY, USA},
+  keywords  = {geographical location, github, open source, pull requests},
+  abstract  = {
 
   Background: Open source software projects show gender bias sug-
     gesting that other demographic characteristics of developers, like
@@ -139,22 +269,22 @@
     requests were evaluated by developers from the same country.
 
    },
-   url = {/pub/relationship-between-geographical-location-evaluation-of-developer-contributions.pdf},
-   award = {Open Data Recognition}
+  url       = {/pub/relationship-between-geographical-location-evaluation-of-developer-contributions.pdf},
+  award     = {Open Data Recognition}
 }
 
 @inproceedings{BHVG18,
-  author={Edward van der Bent and Juriaan Hage and Joost Visser and Georgios Gousios},
-  booktitle={2018 IEEE 25th International Conference on Software Analysis, Evolution and Reengineering (SANER)},
-  title={How good is your {P}uppet? An empirically defined and validated quality
+  author    = {Edward van der Bent and Juriaan Hage and Joost Visser and Georgios Gousios},
+  booktitle = {2018 IEEE 25th International Conference on Software Analysis, Evolution and Reengineering (SANER)},
+  title     = {How good is your {P}uppet? An empirically defined and validated quality
     model for {P}uppet},
-	series = {SANER 2018},
-  doi={10.1109/SANER.2018.8330206},
-  pages={164-174},
-	location = {Campobasso, Italy},
-  month={March},
-	year = {2018},
-	abstract = {
+  series    = {SANER 2018},
+  doi       = {10.1109/SANER.2018.8330206},
+  pages     = {164-174},
+  location  = {Campobasso, Italy},
+  month     = {March},
+  year      = {2018},
+  abstract  = {
 
   Puppet is a declarative language for configuration management that has rapidly
   gained popularity in recent years. Numerous organizations now rely on Puppet
@@ -176,23 +306,21 @@
   consultancy practice.
 
   },
-
-  title={How good is your puppet? An empirically defined and validated quality model for puppet},
-
+  title     = {How good is your puppet? An empirically defined and validated quality model for puppet}
 }
 
 @inproceedings{KGDP17,
-  author = {Riivo Kikas and Georgios Gousios and Marlon Dumas and Dietmar Pfahl},
-  title = {Structure and Evolution of Package Dependency Networks},
-  booktitle = {Proceedings of the 14th Working Conference on Mining Software Repositories},
-  year = {2017},
-  month = {May},
-  location = {Buenos Aires, Argentina},
-  series = {MSR '17},
-  publisher = {IEEE press},
-  pages = {102--112},
-  doi = {10.1109/MSR.2017.55},
-  Abstract = {
+  author      = {Riivo Kikas and Georgios Gousios and Marlon Dumas and Dietmar Pfahl},
+  title       = {Structure and Evolution of Package Dependency Networks},
+  booktitle   = {Proceedings of the 14th Working Conference on Mining Software Repositories},
+  year        = {2017},
+  month       = {May},
+  location    = {Buenos Aires, Argentina},
+  series      = {MSR '17},
+  publisher   = {IEEE press},
+  pages       = {102--112},
+  doi         = {10.1109/MSR.2017.55},
+  abstract    = {
 
   Software developers often include available open-source software packages into
     their projects to minimize redundant effort. However, adding a package to a
@@ -211,55 +339,56 @@
     of this study can inform the development of dependency management tools.
 
   },
-  github = {riivo/package-dependency-networks},
-  url = {/pub/ecosystems-evolution.pdf},
+  github      = {riivo/package-dependency-networks},
+  url         = {/pub/ecosystems-evolution.pdf},
   speakerdeck = {a0d2f40f871941c6b1cf993b71e5af09}
 }
 
 @inproceedings{BGZ17,
- author = {Moritz Beller and Georgios Gousios and Andy Zaidman},
- title = {Oops, My Tests Broke the Build: An Explorative Analysis of Travis CI with GitHub},
- booktitle = {Proceedings of the 14th Working Conference on Mining Software Repositories},
- series = {MSR'17},
- year = {2017},
- publisher = {IEEE press},
- pages = {356--367},
- doi = {10.1109/MSR.2017.62},
- location = {Buenos Aires, Argentina},
- url = {/pub/tests-broke-build-explorative-analysis-travis-ci-github.pdf},
- Abstract = {
+  author    = {Moritz Beller and Georgios Gousios and Andy Zaidman},
+  title     = {Oops, My Tests Broke the Build: An Explorative Analysis of Travis CI with GitHub},
+  booktitle = {Proceedings of the 14th Working Conference on Mining Software Repositories},
+  series    = {MSR'17},
+  year      = {2017},
+  publisher = {IEEE press},
+  pages     = {356--367},
+  doi       = {10.1109/MSR.2017.62},
+  location  = {Buenos Aires, Argentina},
+  url       = {/pub/tests-broke-build-explorative-analysis-travis-ci-github.pdf},
+  abstract  = {
 
-  Continuous Integration (CI) has become a best practice of modern software
-    development. Yet, at present, we have a shortfall of insight into the
-    testing practices that are common in CI-based software development. In
-    particular, we seek quantifiable evidence on how central testing is to the
-    CI process, how strongly the project language influences testing, whether
-    different integration environ- ments are valuable and if testing on the CI
-    can serve as a surrogate to local testing in the IDE. In an analysis of
-    2,640,825 Java and Ruby builds on Travis CI, we find that testing is the
-    single most important reason why builds fail. Moreover, the programming lan-
-    guage has a strong influence on both the number of executed tests, their run
-    time, and proneness to fail. The use of multiple integra- tion environments
-    leads to 10\% more failures being caught at build time. However, testing on
-    Travis CI does not seem an adequate surrogate for running tests locally in
-    the IDE. To further research on Travis CI with GitHub, we introduce
-    Travistorrent.
+   Continuous Integration (CI) has become a best practice of modern software
+   development. Yet, at present, we have a shortfall of insight into the
+   testing practices that are common in CI-based software development. In
+   particular, we seek quantifiable evidence on how central testing is to the
+   CI process, how strongly the project language influences testing, whether
+   different integration environ- ments are valuable and if testing on the CI
+   can serve as a surrogate to local testing in the IDE. In an analysis of
+   2,640,825 Java and Ruby builds on Travis CI, we find that testing is the
+   single most important reason why builds fail. Moreover, the programming
+   lan- guage has a strong influence on both the number of executed tests,
+   their run time, and proneness to fail. The use of multiple integra- tion
+   environments leads to 10\% more failures being caught at build time.
+   However, testing on Travis CI does not seem an adequate surrogate for
+   running tests locally in the IDE. To further research on Travis CI with
+   GitHub, we introduce Travistorrent.
  }
 }
 
+
 @inproceedings{GSB16,
-  author = {Georgios Gousios and Margaret-Anne Storey and
+  author      = {Georgios Gousios and Margaret-Anne Storey and
   Alberto Bacchelli},
-  title = {Work Practices and Challenges in Pull-Based Development: The Contributor's Perspective},
-  booktitle = {Proceedings of the 38th International Conference on Software Engineering},
-  year = {2016},
-  month = {May},
-  location = {Austin, Texas},
-  series = {ICSE '16},
-  isbn = {978-1-4503-3900-1},
-  publisher = {ACM},
-  pages = {285--296},
-  Abstract = {
+  title       = {Work Practices and Challenges in Pull-Based Development: The Contributor's Perspective},
+  booktitle   = {Proceedings of the 38th International Conference on Software Engineering},
+  year        = {2016},
+  month       = {May},
+  location    = {Austin, Texas},
+  series      = {ICSE '16},
+  isbn        = {978-1-4503-3900-1},
+  publisher   = {ACM},
+  pages       = {285--296},
+  abstract    = {
   The pull-based development model is an emerging way of contributing to
   distributed software projects that is gaining enormous popularity within the
   open source software (OSS) world. Previous work has examined this model by
@@ -281,27 +410,27 @@
  Based on these findings, we present recommendations for practitioners to
  streamline the contribution process and discuss potential future research
  directions.},
-  doi = {10.1145/2884781.2884826},
-  award = {ACM SIGSOFT Distinguished paper},
+  doi         = {10.1145/2884781.2884826},
+  award       = {ACM SIGSOFT Distinguished paper},
   speakerdeck = {b24994c612524f0e959565281bf9cd8f},
-  github = {gousiosg/pullreqs-contributors},
-  url={/pub/pullreqs-contributors.pdf}
+  github      = {gousiosg/pullreqs-contributors},
+  url         = {/pub/pullreqs-contributors.pdf}
 }
 
 @inproceedings{BGPZ15,
-  author = {Beller, Moritz and Gousios, Georgios and Panichella, Annibale and Zaidman, Andy},
-  title = {When, How, and Why Developers (Do Not) Test in Their IDEs},
+  author    = {Beller, Moritz and Gousios, Georgios and Panichella, Annibale and Zaidman, Andy},
+  title     = {When, How, and Why Developers (Do Not) Test in Their IDEs},
   booktitle = {Proceedings of the 10th Joint Meeting on Foundations of Software Engineering},
-  series = {ESEC/FSE 2015},
-  year = {2015},
-  isbn = {978-1-4503-3675-8},
-  location = {Bergamo, Italy},
-  pages = {179--190},
-  doi = {10.1145/2786805.2786843},
-  acmid = {2786843},
+  series    = {ESEC/FSE 2015},
+  year      = {2015},
+  isbn      = {978-1-4503-3675-8},
+  location  = {Bergamo, Italy},
+  pages     = {179--190},
+  doi       = {10.1145/2786805.2786843},
+  acmid     = {2786843},
   publisher = {ACM},
-  address = {New York, NY, USA},
-  Abstract = {
+  address   = {New York, NY, USA},
+  abstract  = {
     The research community in Software Engineering and Software Testing in
     particular builds many of its contributions on a set of mutually shared
     expectations. These expectations often form the motivation for research on
@@ -323,22 +452,22 @@
     quarter of their work time engineering tests, whereas they think they test
     half of their time.
   },
-   url = {/pub/when-how-why-developers-do-not-test.pdf}
+  url       = {/pub/when-how-why-developers-do-not-test.pdf}
 }
 
 @inproceedings{GZSD15,
-  author = {Georgios Gousios and Andy Zaidman and Margaret-Anne Storey and Arie van Deursen},
-  title = {Work Practices and Challenges in Pull-Based Development: The
+  author      = {Georgios Gousios and Andy Zaidman and Margaret-Anne Storey and Arie van Deursen},
+  title       = {Work Practices and Challenges in Pull-Based Development: The
     Integrator's Perspective},
-  booktitle = {Proceedings of the 37th International Conference on Software Engineering},
-  series = {ICSE},
-  year = {2015},
-  month = {May},
-  volume={1},
-  pages={358-368},
-  location = {Florence, Italy},
-  doi = {10.1109/ICSE.2015.55},
-  Abstract = {
+  booktitle   = {Proceedings of the 37th International Conference on Software Engineering},
+  series      = {ICSE},
+  year        = {2015},
+  month       = {May},
+  volume      = {1},
+  pages       = {358-368},
+  location    = {Florence, Italy},
+  doi         = {10.1109/ICSE.2015.55},
+  abstract    = {
     In the pull-based development model, the integrator has the crucial role of
     managing and integrating contributions. This work focuses on the role of
     the integrator and investigates working habits and challenges alike. We set
@@ -352,20 +481,20 @@
     use or improve their pull-based development process, as well as for
     researchers striving to understand the theoretical implications of the
     pull-based model in software development.},
-  url = {/pub/pullreqs-integrators.pdf},
-  github = {gousiosg/pullreqs-integrators},
-  speakerdeck = "e340d9f98bd0426abada24888cf6f32d"
+  url         = {/pub/pullreqs-integrators.pdf},
+  github      = {gousiosg/pullreqs-integrators},
+  speakerdeck = {e340d9f98bd0426abada24888cf6f32d}
 }
 
 @inproceedings{CAGD15,
-  author = {Roberta Coelho and Lucas Almeida and Georgios Gousios and Arie van
+  author      = {Roberta Coelho and Lucas Almeida and Georgios Gousios and Arie van
   Deursen},
-  title = {Unveiling Exception Handling Bug Hazards in Android based on GitHub and Google Code Issues},
-  booktitle = {Proceedings of the 2015 IEEE/ACM 12th Working Conference on Mining Software Repositories (MSR)},
-  year = {2015},
-  month={May},
-  location = {Florence, Italy},
-  Abstract = {
+  title       = {Unveiling Exception Handling Bug Hazards in Android based on GitHub and Google Code Issues},
+  booktitle   = {Proceedings of the 2015 IEEE/ACM 12th Working Conference on Mining Software Repositories (MSR)},
+  year        = {2015},
+  month       = {May},
+  location    = {Florence, Italy},
+  abstract    = {
     This paper reports on a study mining the exception stack traces included in
     159,048 issues reported on Android projects hosted in GitHub (482 projects)
     and Google Code (157 projects). The goal of this study is to investigate
@@ -385,23 +514,23 @@
     insights on such bug hazards and the robustness threats they impose to
     Android apps as well as to other systems based on the Java exception model.
    },
-  pages={134-145},
-  doi={10.1109/MSR.2015.20},
-  url = {/pub/android-stacks.pdf},
-  github = {gousiosg/java-stacktrace-analysis},
-  speakerdeck="24731ec0a49f4724a82dd7b9e1f870f3"
+  pages       = {134-145},
+  doi         = {10.1109/MSR.2015.20},
+  url         = {/pub/android-stacks.pdf},
+  github      = {gousiosg/java-stacktrace-analysis},
+  speakerdeck = {24731ec0a49f4724a82dd7b9e1f870f3}
 }
 
 @inproceedings{HGD15,
-  author = {Hennie Huijgens and Georgios Gousios and Arie van Deursen},
-  title = {Pricing via Functional Size: A Case Study of a Company's Portfolio of 77 Outsourced Projects},
+  author    = {Hennie Huijgens and Georgios Gousios and Arie van Deursen},
+  title     = {Pricing via Functional Size: A Case Study of a Company's Portfolio of 77 Outsourced Projects},
   booktitle = {2015 ACM/IEEE International Symposium on Empirical Software Engineering and Measurement (ESEM)},
-  year = {2015},
-  pages = {1--10},
-  location = {Beijing, China},
-  doi = {10.1109/ESEM.2015.7321211},
-  month = "Oct",
-  Abstract = {
+  year      = {2015},
+  pages     = {1--10},
+  location  = {Beijing, China},
+  doi       = {10.1109/ESEM.2015.7321211},
+  month     = {Oct},
+  abstract  = {
   A medium-sized west-European telecom company experienced a worsening trend in
   performance, indicating that the organization did not learn from history, in
   combination with much time and energy spent on preparation and review of
@@ -414,19 +543,19 @@
   as a single instrument (without a connection with expert judgment), can be
   used in the subject companies to create cost transparency and performance
   management of software project portfolios.},
-  url = {/pub/pricing-via-functional-size.pdf}
+  url       = {/pub/pricing-via-functional-size.pdf}
 }
 
 @inproceedings{DBGCD15,
-  author = {Martin Dias and Alberto Bacchelli and Georgios Gousios and Damien Cassou and Stephane Ducasse},
-  title = {Untangling Fine-Grained Code Changes},
-  booktitle = {Proceedings of the 22nd IEEE International Conference on Software Analysis, Evolution, and Reengineering},
-  series = {SANER 2015},
-  year = {2015},
-  location = {Montreal, Canada},
-  pages = {341--350},
-  doi = {10.1109/SANER.2015.7081844},
-  Abstract = {
+  author     = {Martin Dias and Alberto Bacchelli and Georgios Gousios and Damien Cassou and Stephane Ducasse},
+  title      = {Untangling Fine-Grained Code Changes},
+  booktitle  = {Proceedings of the 22nd IEEE International Conference on Software Analysis, Evolution, and Reengineering},
+  series     = {SANER 2015},
+  year       = {2015},
+  location   = {Montreal, Canada},
+  pages      = {341--350},
+  doi        = {10.1109/SANER.2015.7081844},
+  abstract   = {
     After working for some time, developers commit their code changes to a
     version control system. When doing so, research shows that they often bundle
     unrelated changes (e.g., bug fix and refactoring) in a single commit, thus
@@ -445,26 +574,26 @@
     success rate of 91\% and average one of 75\%, in automatically creating
     clusters of untangled fine-grained code changes.
   },
-  url = {/pub/fine-untangling.pdf},
+  url        = {/pub/fine-untangling.pdf},
   nomination = {SANER best paper}
 }
 
 @inproceedings{GPD14,
-  author = {Gousios, Georgios and Pinzger, Martin and Deursen, Arie van},
-  title = {An Exploratory Study of the Pull-based Software Development Model},
-  booktitle = {Proceedings of the 36th International Conference on Software Engineering},
-  Year = {2014},
-  series = {ICSE},
-  isbn = {978-1-4503-2756-5},
-  location = {Hyderabad, India},
-  pages = {345--355},
-  numpages = {11},
-  doi = {10.1145/2568225.2568260},
-  acmid = {2568260},
-  publisher = {ACM},
-  address = {New York, NY, USA},
-  keywords = {Pull-based development, distributed software development, empirical software engineering, pull request},
-  Abstract = {
+  author      = {Gousios, Georgios and Pinzger, Martin and Deursen, Arie van},
+  title       = {An Exploratory Study of the Pull-based Software Development Model},
+  booktitle   = {Proceedings of the 36th International Conference on Software Engineering},
+  year        = {2014},
+  series      = {ICSE},
+  isbn        = {978-1-4503-2756-5},
+  location    = {Hyderabad, India},
+  pages       = {345--355},
+  numpages    = {11},
+  doi         = {10.1145/2568225.2568260},
+  acmid       = {2568260},
+  publisher   = {ACM},
+  address     = {New York, NY, USA},
+  keywords    = {Pull-based development, distributed software development, empirical software engineering, pull request},
+  abstract    = {
     The advent of distributed version control systems has led to the development
     of a new paradigm for distributed software development; instead of pushing
     changes to a central repository, developers pull them from other
@@ -480,28 +609,28 @@
     time to process it.  We also examine the reasons for pull request rejection
     and find that technical ones are only a small minority.
   },
-  speakerdeck = "2c6de050ce430131e1db2aa9d004a740",
-  url = {/pub/exploration-pullreqs.pdf},
-  nomination = {ACM SIGSOFT distinguished paper},
-  github = {gousiosg/pullreqs}
+  speakerdeck = {2c6de050ce430131e1db2aa9d004a740},
+  url         = {/pub/exploration-pullreqs.pdf},
+  nomination  = {ACM SIGSOFT distinguished paper},
+  github      = {gousiosg/pullreqs}
 }
 
 @inproceedings{KGBSGD14,
-  author = {Kalliamvakou, Eirini and Gousios, Georgios and Blincoe, Kelly and Singer, Leif and German, Daniel M. and Damian, Daniela},
-  title = {The Promises and Perils of Mining GitHub},
+  author    = {Kalliamvakou, Eirini and Gousios, Georgios and Blincoe, Kelly and Singer, Leif and German, Daniel M. and Damian, Daniela},
+  title     = {The Promises and Perils of Mining GitHub},
   booktitle = {Proceedings of the 11th Working Conference on Mining Software Repositories},
-  series = {MSR 2014},
-  year = {2014},
-  isbn = {978-1-4503-2863-0},
-  location = {Hyderabad, India},
-  pages = {92--101},
-  numpages = {10},
-  doi = {10.1145/2597073.2597074},
-  acmid = {2597074},
+  series    = {MSR 2014},
+  year      = {2014},
+  isbn      = {978-1-4503-2863-0},
+  location  = {Hyderabad, India},
+  pages     = {92--101},
+  numpages  = {10},
+  doi       = {10.1145/2597073.2597074},
+  acmid     = {2597074},
   publisher = {ACM},
-  address = {New York, NY, USA},
-  keywords = {Mining software repositories, bias, code reviews, git, github},
-  Abstract = {
+  address   = {New York, NY, USA},
+  keywords  = {Mining software repositories, bias, code reviews, git, github},
+  abstract  = {
     With over 10 million Git repositories, GitHub is becoming one of the most
     important source of software artifacts on the Internet. Researchers are
     starting to mine the information stored in GitHub's event logs, trying to
@@ -518,21 +647,21 @@
     as a Web hosting service; and that almost 40\% of all pull requests do not
     appear as merged, even though they were. We provide a set of recommendations
     for software engineering researchers on how to approach the data in GitHub.},
-  url = {/pub/promises-perils-github.pdf},
+  url       = {/pub/promises-perils-github.pdf}
 }
 
 @inproceedings{G13,
-  Author = {Georgios Gousios},
-  Title = {The {GHT}orrent dataset and tool suite},
-  Year = 2013,
-  Month = May,
-  pages = {233--236},
-  numpages = {4},
-  Booktitle = {Proceedings of the 10th Working Conference on Mining Software Repositories},
-  series = {MSR '13},
-  isbn = {978-1-4673-2936-1},
-  location = {San Francisco, CA, USA},
-  abstract = {
+  author      = {Georgios Gousios},
+  title       = {The {GHT}orrent dataset and tool suite},
+  year        = 2013,
+  month       = May,
+  pages       = {233--236},
+  numpages    = {4},
+  booktitle   = {Proceedings of the 10th Working Conference on Mining Software Repositories},
+  series      = {MSR '13},
+  isbn        = {978-1-4673-2936-1},
+  location    = {San Francisco, CA, USA},
+  abstract    = {
     A common requirement of many empirical software engineering studies is the
     acquisition and curation of data from software repositories. During the last
     few years, GitHub has emerged as a popular project hosting, mirroring and
@@ -544,27 +673,27 @@
     this paper, we present the project’s design and initial implementation and
     demonstrate how the provided datasets can be queried and processed.
   },
-  url = {/pub/ghtorrent-dataset-toolsuite.pdf},
-  github = {gousiosg/github-mirror},
-  speakerdeck = "75bea5909fbb0130f0eb364613f6f036",
-  award = {MSR2013: Best data showcase paper},
-  Note = {Best data showcase paper award}
+  url         = {/pub/ghtorrent-dataset-toolsuite.pdf},
+  github      = {gousiosg/github-mirror},
+  speakerdeck = {75bea5909fbb0130f0eb364613f6f036},
+  award       = {MSR2013: Best data showcase paper},
+  note        = {Best data showcase paper award}
 }
 
 @inproceedings{GS12,
-  Author = {Georgios Gousios and Diomidis Spinellis},
-  Booktitle = { {MSR} '12: Proceedings of the 9th Working Conference on Mining Software Repositories},
-  Editor = {Michael W. Godfrey and Jim Whitehead},
-  Location = {Zurich, Switzerland},
-  Month = jun,
-  Pages = {12--21},
-  Publisher = {IEEE},
-  Title = { {GHT}orrent: {G}it{H}ub's Data from a Firehose},
-  Year = 2012,
-  doi = {10.1109/MSR.2012.6224294},
-  ISSN = {2160-1852},
-  SlideshareEmbed = "13184524",
-  abstract = {
+  author          = {Georgios Gousios and Diomidis Spinellis},
+  booktitle       = { {MSR} '12: Proceedings of the 9th Working Conference on Mining Software Repositories},
+  editor          = {Michael W. Godfrey and Jim Whitehead},
+  location        = {Zurich, Switzerland},
+  month           = jun,
+  pages           = {12--21},
+  publisher       = {IEEE},
+  title           = { {GHT}orrent: {G}it{H}ub's Data from a Firehose},
+  year            = 2012,
+  doi             = {10.1109/MSR.2012.6224294},
+  issn            = {2160-1852},
+  slideshareembed = {13184524},
+  abstract        = {
     A common requirement of many empirical software engineering studies is the
     acquisition and curation of data from software repositories. During the last
     few years, GitHub has emerged as a popular project hosting, mirroring and
@@ -576,24 +705,24 @@
     this paper, we present the project’s design and initial implementation and
     demonstrate how the provided datasets can be queried and processed.
     },
-  url = {/pub/ghtorrent-githubs-data-from-a-firehose.pdf},
-  github = {gousiosg/github-mirror}
+  url             = {/pub/ghtorrent-githubs-data-from-a-firehose.pdf},
+  github          = {gousiosg/github-mirror}
 }
 
 @inproceedings{GS09b,
-  Author = {Georgios Gousios and Diomidis Spinellis},
-  Booktitle = { {MSR} '09: Proceedings of the 6th Working Conference on Mining Software Repositories},
-  Day = {16--17},
-  Editor = {Michael W. Godfrey and Jim Whitehead},
-  Isbn = {978-1-4244-3493-0},
-  Location = {Vancouver, Canada},
-  Month = may,
-  Pages = {31--40},
-  Publisher = {IEEE},
-  Title = {A platform for software engineering research},
-  doi={10.1109/MSR.2009.5069478},
-  Year = 2009,
-  abstract = {
+  author    = {Georgios Gousios and Diomidis Spinellis},
+  booktitle = { {MSR} '09: Proceedings of the 6th Working Conference on Mining Software Repositories},
+  day       = {16--17},
+  editor    = {Michael W. Godfrey and Jim Whitehead},
+  isbn      = {978-1-4244-3493-0},
+  location  = {Vancouver, Canada},
+  month     = may,
+  pages     = {31--40},
+  publisher = {IEEE},
+  title     = {A platform for software engineering research},
+  doi       = {10.1109/MSR.2009.5069478},
+  year      = 2009,
+  abstract  = {
     Research in the fields of software quality, maintainabil- ity and evolution
     requires the analysis of large quantities of data, which often originate
     from open source software projects. Collecting and preprocessing data,
@@ -613,26 +742,26 @@
     demonstrate its usefulness in mining software repositories by guiding the
     reader through the steps required to execute a simple experiment.
   },
-  url = {/pub/a-platform-for-software-engineering-research.pdf},
-  github = {istlab/Alitheia-Core}
+  url       = {/pub/a-platform-for-software-engineering-research.pdf},
+  github    = {istlab/Alitheia-Core}
 }
 
 @inproceedings{SGSS08,
-  Address = {Boston},
-  Author = {Ioannis Samoladas and Georgios Gousios and Diomidis Spinellis and Ioannis Stamelos},
-  Editor = {Ernesto Damiani and Giancarlo Succi},
-  Location = {Milan, Italy},
-  Month = {Sep},
-  Organization = {IFIP 20th World Computer Congress, Working Group 2.3 on Open Source Software},
-  Pages = {237--248},
-  Publisher = {Springer},
-  Title = {The {SQO-OSS} Quality Model: Measurement Based Open Source Software Evaluation},
-  booktitle={Open Source Development, Communities and Quality},
-  volume={275},
-  pages={237-248},
-  doi={10.1007/978-0-387-09684-1_19},
-  Year = {2008},
-  abstract = {
+  address      = {Boston},
+  author       = {Ioannis Samoladas and Georgios Gousios and Diomidis Spinellis and Ioannis Stamelos},
+  editor       = {Ernesto Damiani and Giancarlo Succi},
+  location     = {Milan, Italy},
+  month        = {Sep},
+  organization = {IFIP 20th World Computer Congress, Working Group 2.3 on Open Source Software},
+  pages        = {237--248},
+  publisher    = {Springer},
+  title        = {The {SQO-OSS} Quality Model: Measurement Based Open Source Software Evaluation},
+  booktitle    = {Open Source Development, Communities and Quality},
+  volume       = {275},
+  pages        = {237-248},
+  doi          = {10.1007/978-0-387-09684-1_19},
+  year         = {2008},
+  abstract     = {
     Software quality evaluation has always been an important part of software
     business. The quality evaluation process is usually based on hierarchical
     quality models that measure various aspects of software quality and deduce a
@@ -643,20 +772,20 @@
     automatic calculation of metric values and correlation of those to a set of
     predefined quality profiles.
   },
-  url = {/pub/sqo-oss-quality-model-measurement-based-open-source-software-evaluation.pdf}
+  url          = {/pub/sqo-oss-quality-model-measurement-based-open-source-software-evaluation.pdf}
 }
 
 @inproceedings{G07,
-  Author = {Georgios Gousios},
-  Booktitle = {Companion to the 22nd ACM SIGPLAN conference on Object-oriented programming systems, languages, and applications (OOPSLA)},
-  Location = {Montreal, Canada},
-  Month = {Oct},
-  Title = {The {J}ikes{X}en {J}ava Server Platform},
-  doi = {10.1145/1297846.1297959},
-  pages = {947--948},
-  Year = {2007},
-  url = {/pub/jikesxen.pdf},
-  abstract = {
+  author    = {Georgios Gousios},
+  booktitle = {Companion to the 22nd ACM SIGPLAN conference on Object-oriented programming systems, languages, and applications (OOPSLA)},
+  location  = {Montreal, Canada},
+  month     = {Oct},
+  title     = {The {J}ikes{X}en {J}ava Server Platform},
+  doi       = {10.1145/1297846.1297959},
+  pages     = {947--948},
+  year      = {2007},
+  url       = {/pub/jikesxen.pdf},
+  abstract  = {
     The purpose of the JVM is to abstract the Java language from the hardware
     and software platforms it runs on. For this rea- son, the JVM uses services
     offered by the host operating sys- tem in order to implement identical
@@ -669,19 +798,19 @@
 }
 
 @inproceedings{GKS06,
-  Author = {Georgios Gousios and Vassilios Karakoidas and Diomidis Spinellis},
-  Booktitle = {Proceedings of the 5th International System Administration and Network Engineering Conference SANE 06},
-  Day = {18--19},
-  Editor = {Alexios Zavras},
-  Location = {Delft, The Netherlands},
-  Month = may,
-  Organization = {NLUUG},
-  Pages = {69--83},
-  Publisher = {Stichting SANE},
-  Title = {Tuning {J}ava's memory manager for high performance server applications},
-  Year = {2006},
-  Url = {/pub/paper.pdf},
-  abstract = {
+  author       = {Georgios Gousios and Vassilios Karakoidas and Diomidis Spinellis},
+  booktitle    = {Proceedings of the 5th International System Administration and Network Engineering Conference SANE 06},
+  day          = {18--19},
+  editor       = {Alexios Zavras},
+  location     = {Delft, The Netherlands},
+  month        = may,
+  organization = {NLUUG},
+  pages        = {69--83},
+  publisher    = {Stichting SANE},
+  title        = {Tuning {J}ava's memory manager for high performance server applications},
+  year         = {2006},
+  url          = {/pub/paper.pdf},
+  abstract     = {
     Java is a strong player in the application server market and thus the
     performance of its virtual machine is an important aspect of a server's
     performance. One of the components that affect the performance of a {\sc
@@ -699,14 +828,14 @@
 }
 
 @inproceedings{GS02,
-  Author = {Georgios Gousios and Diomidis Spinellis},
-  Booktitle = {Proceedings of the 3rd International System Administration and Networking Conference {SANE 2002}},
-  Location = {Maastricht, The Netherlands},
-  Month = may,
-  Note = {Best refereed paper award},
-  Pages = {103--119},
-  Title = {A Comparison of Portable Dynamic Web Content Technologies for the Apache Web Server},
-  Year = 2002,
-  award = {SANE2002: Best refereed paper award},
-  url = {/pub/comparison-of-portable-dynamic-web-content-technology-apache.pdf}
+  author    = {Georgios Gousios and Diomidis Spinellis},
+  booktitle = {Proceedings of the 3rd International System Administration and Networking Conference {SANE 2002}},
+  location  = {Maastricht, The Netherlands},
+  month     = may,
+  note      = {Best refereed paper award},
+  pages     = {103--119},
+  title     = {A Comparison of Portable Dynamic Web Content Technologies for the Apache Web Server},
+  year      = 2002,
+  award     = {SANE2002: Best refereed paper award},
+  url       = {/pub/comparison-of-portable-dynamic-web-content-technology-apache.pdf}
 }
