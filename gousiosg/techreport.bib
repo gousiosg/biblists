@@ -1,35 +1,55 @@
-@article{IGHG2020pp,
-  title         = {Questions for Data Scientists in Software Engineering: A Replication},
-  author        = {Maliheh Izadi and Siavash Ganji and Abbas Heydarnoori and Georgios Gousios},
-  journal       = {arXiv preprint},
+@misc{BP20,
+  title         = {Fine-Grained Network Analysis for Modern Software Ecosystems},
+  author        = {Paolo Boldi and Georgios Gousios},
   year          = {2020},
-  url           = {https://arxiv.org/pdf/2010.09116.pdf},
+  eprint        = {2012.04760},
   archiveprefix = {arXiv},
-  eprint        = {2010.09116},
   primaryclass  = {cs.SE},
   abstract      = {
-    Many platforms exploit collaborative tagging to provide their users with
-    faster and more accurate results while searching or navigating. Tags can
-    communicate different concepts such as the main features, technologies,
-    functionality, and the goal of a software repository. Recently, GitHub has
-    enabled users to annotate repositories with topic tags. It has also
-    provided a set of featured topics, and their possible aliases, carefully
-    curated with the help of the community. This creates the opportunity to use
-    this initial seed of topics to automatically annotate all remaining
-    repositories, by training models that recommend high-quality topic tags to
-    developers. In this work, we study the application of multi-label
-    classification techniques to predict software repositories' topics. First,
-    we augment GitHub's featured topics. The core idea is to derive more
-    information from projects' available documentation. Our data contains about
-    152K GitHub repositories and 228 featured topics. Then, we apply supervised
-    models on repositories' textual information such as descriptions, README
-    files, wiki pages, and file names. We assess the performance of our
-    approach both quantitatively and qualitatively. Our proposed model achieves
-    Recall\@5 and LRAP of 0.890 and 0.805, respectively. Moreover, based on
-    users' assessment, our approach is highly capable of recommending correct
-    and complete sets of topics. Finally, we use our models to develop an
-    online tool named Repository Catalogue, that automatically predicts topics
-    for Github repositories and is publicly available.
+    Modern software development is increasingly dependent on components, 
+    libraries and frameworks coming from third-party vendors or open-source 
+    suppliers and made available through a number of platforms (or forges). 
+    This way of writing software puts an emphasis on reuse and on composition, 
+    commoditizing the services which modern applications require. On the other 
+    hand, bugs and vulnerabilities in a single library living in one such 
+    ecosystem can affect, directly or by transitivity, a huge number of other 
+    libraries and applications. Currently, only product-level information on 
+    library dependencies is used to contain this kind of danger, but this 
+    knowledge often reveals itself too imprecise to lead to effective (and 
+    possibly automated) handling policies. We will discuss how fine-grained 
+    function-level dependencies can greatly improve reliability and reduce 
+    the impact of vulnerabilities on the whole software ecosystem.
+  }
+}
+
+@misc{MSBNGD20,
+  title         = {Nudge: Accelerating Overdue Pull Requests Towards Completion},
+  author        = {Chandra Maddila and Sai Surya Upadrasta and Chetan Bansal and Nachiappan Nagappan and Georgios Gousios and Arie van Deursen},
+  year          = {2020},
+  eprint        = {2011.12468},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.SE},
+  abstract      = {
+    Pull requests are a key part of the collaborative software development and 
+    code review process today. However, pull requests can also slow down the 
+    software development process when the reviewer(s) or the author do not 
+    actively engage with the pull request. In this work, we design an end-to-end 
+    service, Nudge, for accelerating overdue pull requests towards completion 
+    by reminding the author or the reviewer(s) to engage with their overdue 
+    pull requests. First, we use models based on effort estimation and machine
+    learning to predict the completion time for a given pull request. Second, 
+    we use activity detection to reduce false positives. Lastly, we use 
+    dependency determination to understand the blocker of the pull request and
+    nudge the appropriate actor(author or reviewer(s)). We also do a 
+    correlation analysis to understand the statistical relationship between the
+    pull request completion times and various pull request and developer 
+    related attributes. Nudge has been deployed on 147 repositories at 
+    Microsoft since 2019. We do a large scale evaluation based on the implicit 
+    and explicit feedback we received from sending the Nudge notifications on 
+    8,500 pull requests. We observe significant reduction in completion time, 
+    by over 60%, for pull requests which were nudged thus increasing the 
+    efficiency of the code review process and accelerating the pull request 
+    progression.
   }
 }
 
