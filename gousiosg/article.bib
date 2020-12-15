@@ -1,207 +1,260 @@
-@article{BGPPAZ17,
-  author={M. Beller and G. Gousios and A. Panichella and S. Proksch and S. Amann and A. Zaidman},
-  journal={IEEE Transactions on Software Engineering},
-  title={Developer Testing in the {IDE}: Patterns, Beliefs, and Behavior},
-  year={2017},
-  volume={PP},
-  number={99},
-  pages={1-1},
-  doi={10.1109/TSE.2017.2776152},
-  ISSN={0098-5589},
-  month={},
-  url="/pub/developer-testing-in-IDE.pdf"
+@article{BG20,
+  author     = {Boldi, Paolo and Gousios, Georgios},
+  title      = {Fine-Grained Network Analysis for Modern Software Ecosystems},
+  year       = {2020},
+  issue_date = {December 2020},
+  publisher  = {Association for Computing Machinery},
+  address    = {New York, NY, USA},
+  volume     = {21},
+  number     = {1},
+  issn       = {1533-5399},
+  doi        = {10.1145/3418209},
+  journal    = {ACM Trans. Internet Technol.},
+  month      = dec,
+  articleno  = {1},
+  numpages   = {14},
+  keywords   = {security breaches, Software reuse, network analysis},
+  abstract   = {
+    Modern software development is increasingly dependent on components,
+    libraries, and frameworks coming from third-party vendors or open-source
+    suppliers and made available through a number of platforms (or forges).
+    This way of writing software puts an emphasis on reuse and on
+    composition, commoditizing the services that modern applications require.
+    On the other hand, bugs and vulnerabilities in a single library living in
+    one such ecosystem can affect, directly or by transitivity, a huge number
+    of other libraries and applications. Currently, only product-level
+    information on library dependencies is used to contain this kind of
+    danger, but this knowledge often reveals itself too imprecise to lead to
+    effective (and possibly automated) handling policies. We will discuss how
+    fine-grained function-level dependencies can greatly improve reliability
+    and reduce the impact of vulnerabilities on the whole software ecosystem.
+  },
+  url        = {https://arxiv.org/pdf/2012.04760.pdf}
 }
 
-@Article{CAGDT17,
-  author={Coelho, Roberta and Almeida, Lucas and Gousios, Georgios and Deursen,
+@article{BGPPAZ17,
+  author  = {M. {Beller} and G. {Gousios} and A. {Panichella} and S. {Proksch} and S. {Amann} and A. {Zaidman}},
+  journal = {IEEE Transactions on Software Engineering},
+  title   = {Developer testing in the {ide}: patterns, beliefs, and behavior},
+  year    = {2019},
+  volume  = {45},
+  number  = {3},
+  pages   = {261-284},
+  doi     = {10.1109/TSE.2017.2776152},
+  issn    = {0098-5589},
+  month   = mar,
+  url     = {/pub/developer-testing-in-IDE.pdf}
+}
+
+@article{CAGDT17,
+  author   = {Coelho, Roberta and Almeida, Lucas and Gousios, Georgios and Deursen,
     Arie van and Treude, Christoph},
-  title="Exception handling bug hazards in Android",
-  journal="Empirical Software Engineering",
-  year="2017",
-  month="Jun",
-  day="01",
-  volume="22",
-  number="3",
-  pages="1264--1304",
-  abstract={Adequate handling of exceptions has proven difficult for many
-    software engineers. Mobile app developers in particular, have to cope with
-    compatibility, middleware, memory constraints, and battery restrictions. The
-    goal of this paper is to obtain a thorough understanding of common exception
-    handling bug hazards that app developers face. To that end, we first provide
-    a detailed empirical study of over 6,000 Java exception stack traces we
-    extracted from over 600 open source Android projects. Key insights from this
-    study include common causes for system crashes, and common chains of
-    wrappings between checked and unchecked exceptions. Furthermore, we provide
-    a survey with 71 developers involved in at least one of the projects
-    analyzed. The results corroborate the stack trace findings, and indicate
-    that developers are unaware of frequently occurring undocumented exception
-    handling behavior. Overall, the findings of our study call for tool support
-    to help developers understand their own and third party exception handling
-    and wrapping logic.},
-  issn="1573-7616",
-  doi="10.1007/s10664-016-9443-7",
-  url="/pub/exception-handling-bug-hazards-android.pdf"
+  title    = {Exception handling bug hazards in Android},
+  journal  = {Empirical Software Engineering},
+  year     = {2017},
+  month    = {Jun},
+  day      = {01},
+  volume   = {22},
+  number   = {3},
+  pages    = {1264--1304},
+  issn     = {1573-7616},
+  doi      = {10.1007/s10664-016-9443-7},
+  abstract = {
+    Adequate handling of exceptions has proven difficult for many software
+    engineers. Mobile app developers in particular, have to cope with
+    compatibility, middleware, memory constraints, and battery restrictions.
+    The goal of this paper is to obtain a thorough understanding of common
+    exception handling bug hazards that app developers face. To that end, we
+    first provide a detailed empirical study of over 6,000 Java exception
+    stack traces we extracted from over 600 open source Android projects. Key
+    insights from this study include common causes for system crashes, and
+    common chains of wrappings between checked and unchecked exceptions.
+    Furthermore, we provide a survey with 71 developers involved in at least
+    one of the projects analyzed. The results corroborate the stack trace
+    findings, and indicate that developers are unaware of frequently
+    occurring undocumented exception handling behavior. Overall, the findings
+    of our study call for tool support to help developers understand their
+    own and third party exception handling and wrapping logic.
+  },
+  url      = {/pub/exception-handling-bug-hazards-android.pdf}
 }
 
 @article{KGBSGD16,
-  year={2016},
-  issn={1573-7616},
-  journal={Empirical Software Engineering},
-  doi={10.1007/s10664-015-9393-5},
-  title={An in-depth study of the promises and perils of mining {GitHub}},
-  publisher={Springer US},
-  keywords={Mining software repositories; git; GitHub; Code reviews},
-  author={Kalliamvakou, Eirini and Gousios, Georgios and Blincoe, Kelly and Singer, Leif and German, DanielM. and Damian, Daniela},
-  pages={2035--2071},
-  volume="21",
-  number="5",
-  Abstract = {With over 10 million git repositories, GitHub is becoming one of
-  the most important sources of software artifacts on the Internet. Researchers
-  mine the information stored in GitHub’s event logs to understand how its users
-  employ the site to collaborate on software, but so far there have been no
-  studies describing the quality and properties of the available GitHub data. We
-  document the results of an empirical study aimed at understanding the
-  characteristics of the repositories and users in GitHub; we see how users take
-  advantage of GitHub’s main features and how their activity is tracked on
-  GitHub and related datasets to point out misalignment between the real and
-  mined data. Our results indicate that while GitHub is a rich source of data on
-  software development, mining GitHub for research purposes should take various
-  potential perils into consideration. For example, we show that the majority of
-  the projects are personal and inactive, and that almost 40\% of all pull
-  requests do not appear as merged even though they were. Also, approximately
-  half of GitHub’s registered users do not have public activity, while the
-  activity of GitHub users in repositories is not always easy to pinpoint. We
-  use our identified perils to see if they can pose validity threats; we
-  review selected papers from the MSR 2014 Mining Challenge and see if there are
-  potential impacts to consider. We provide a set of recommendations for
-  software engineering researchers on how to approach the data in GitHub.},
-  url = {/pub/promises-perils-github-extended.pdf}
+  year      = {2016},
+  issn      = {1573-7616},
+  journal   = {Empirical Software Engineering},
+  doi       = {10.1007/s10664-015-9393-5},
+  title     = {An in-depth study of the promises and perils of mining {GitHub}},
+  publisher = {Springer US},
+  keywords  = {Mining software repositories; git; GitHub; Code reviews},
+  author    = {Kalliamvakou, Eirini and Gousios, Georgios and Blincoe, Kelly and Singer, Leif and German, DanielM. and Damian, Daniela},
+  pages     = {2035--2071},
+  volume    = {21},
+  number    = {5},
+  abstract  = {
+    With over 10 million git repositories, GitHub is becoming one of the most
+    important sources of software artifacts on the Internet. Researchers mine
+    the information stored in GitHub’s event logs to understand how its users
+    employ the site to collaborate on software, but so far there have been no
+    studies describing the quality and properties of the available GitHub
+    data. We document the results of an empirical study aimed at
+    understanding the characteristics of the repositories and users in
+    GitHub; we see how users take advantage of GitHub’s main features and how
+    their activity is tracked on GitHub and related datasets to point out
+    misalignment between the real and mined data. Our results indicate that
+    while GitHub is a rich source of data on software development, mining
+    GitHub for research purposes should take various potential perils into
+    consideration. For example, we show that the majority of the projects are
+    personal and inactive, and that almost 40\% of all pull requests do not
+    appear as merged even though they were. Also, approximately half of
+    GitHub’s registered users do not have public activity, while the activity
+    of GitHub users in repositories is not always easy to pinpoint. We use
+    our identified perils to see if they can pose validity threats; we review
+    selected papers from the MSR 2014 Mining Challenge and see if there are
+    potential impacts to consider. We provide a set of recommendations for
+    software engineering researchers on how to approach the data in GitHub.
+  },
+  url       = {/pub/promises-perils-github-extended.pdf}
 }
 
 @article{GS14,
-  year={2014},
-  issn={1382-3256},
-  journal={Empirical Software Engineering},
-  volume={19},
-  number={4},
-  doi={10.1007/s10664-013-9242-3},
-  title={Conducting quantitative software engineering studies with Alitheia Core},
-  publisher={Springer US},
-  keywords={Quantitative software engineering; Software repository mining},
-  author={Gousios, Georgios and Spinellis, Diomidis},
-  pages={885-925},
-  Url={/pub/conducting-quantitative-softeng-studies-alitheia-core.pdf},
-  Abstract = {Quantitative empirical software engineering research benefits
-  mightily from processing large open source software repository data sets. The
-  diversity of repository management tools and the long history of some
-  projects, renders the task of working those datasets a tedious and error-prone
-  exercise. The Alitheia Core analysis platform preprocesses repository data
-  into an intermediate format that allows researchers to provide custom analysis
-  tools. Alitheia Core automatically distributes the processing load on multiple
-  processors while enabling programmatic access to the raw data, the metadata,
-  and the analysis results. The tool has been successfully applied on hundreds
-  of medium to large-sized open-source projects, enabling large-scale empirical
-  studies.}
+  year      = {2014},
+  issn      = {1382-3256},
+  journal   = {Empirical Software Engineering},
+  volume    = {19},
+  number    = {4},
+  doi       = {10.1007/s10664-013-9242-3},
+  title     = {Conducting quantitative software engineering studies with Alitheia Core},
+  publisher = {Springer US},
+  keywords  = {Quantitative software engineering; Software repository mining},
+  author    = {Gousios, Georgios and Spinellis, Diomidis},
+  pages     = {885-925},
+  url       = {/pub/conducting-quantitative-softeng-studies-alitheia-core.pdf},
+  abstract  = {
+    Quantitative empirical software engineering research benefits mightily
+    from processing large open source software repository data sets. The
+    diversity of repository management tools and the long history of some
+    projects, renders the task of working those datasets a tedious and
+    error-prone exercise. The Alitheia Core analysis platform preprocesses
+    repository data into an intermediate format that allows researchers to
+    provide custom analysis tools. Alitheia Core automatically distributes
+    the processing load on multiple processors while enabling programmatic
+    access to the raw data, the metadata, and the analysis results. The tool
+    has been successfully applied on hundreds of medium to large-sized
+    open-source projects, enabling large-scale empirical studies.
+  }
 }
 
 @article{LG12,
-  Author = {Panos Louridas and Georgios Gousios},
-  doi = {10.1145/2347696.2347706},
-  Issn = {0163-5948},
-  Journal = {SIGSOFT Softw. Eng. Notes},
-  Month = sep,
-  Number = {5},
-  Pages = {1--4},
-  Publisher = {ACM},
-  Title = {A note on rigour and replicability},
-  Url = {/pub/note-rigour-replicability.pdf},
-  Volume = {37},
-  Year = {2012},
-  abstract={As any empirical science, Software Engineering research should
-  strive towards better research practices. Replication is regrettably not a
-  priority for Software Engineering researchers and, moreover, not afforded by
-  many published studies. Here we report our experience from our encounter with
-  a recent paper in a flagship Software Engineering conference. Our experience
-  shows that current publication requirements do not guarantee replicability.}
+  author    = {Panos Louridas and Georgios Gousios},
+  doi       = {10.1145/2347696.2347706},
+  issn      = {0163-5948},
+  journal   = {SIGSOFT Softw. Eng. Notes},
+  month     = sep,
+  number    = {5},
+  pages     = {1--4},
+  publisher = {ACM},
+  title     = {A note on rigour and replicability},
+  url       = {/pub/note-rigour-replicability.pdf},
+  volume    = {37},
+  year      = {2012},
+  abstract  = {
+    As any empirical science, Software Engineering research should strive
+    towards better research practices. Replication is regrettably not a
+    priority for Software Engineering researchers and, moreover, not afforded
+    by many published studies. Here we report our experience from our
+    encounter with a recent paper in a flagship Software Engineering
+    conference. Our experience shows that current publication requirements do
+    not guarantee replicability.
+  }
 }
 
 @article{ASKG11,
-  Author = {Stephanos Androutsellis-Theotokis and Diomidis Spinellis and Maria Kechagia and Georgios Gousios},
-  Doi = {10.1561/0200000026},
-  Issn = {1571-9545},
-  Journal = {Foundations and Trends in Technology, Information and Operations Management},
-  Number = {3--4},
-  Pages = {187--347},
-  Title = {Open Source Software: A Survey from 10,000 Feet},
-  Url = {/pub/oos-10000-feet.pdf},
-  Volume = {4},
-  Year = 2011,
-  abstract = {Open source software (OSS), the origins of which can be traced
-  back to the 1950s, is software distributed with a license that allows access
-  to its source code, free redistribution, the creation of derived works, and
-  unrestricted use. OSS applications cover most areas of consumer and business
-  software and their study touches many disciplines, including computer science,
-  information systems, economics, psychology, and law. Behind a successful OSS
-  project lies a community of actors, ranging from core developers to passive
-  users, held together by a flexible governance structure and membership,
-  leadership and contribution policies that align their interests. The
-  motivation behind individuals participating in OSS projects can be, among
-  others, social, ideological, hedonistic, or signaling, while companies gain
-  from their access to high-quality, innovative projects and an increase in
-  their reputation and visibility. Nowadays many business models rely on OSS as
-  a product through the provision of associated services, or in coexistence with
-  proprietary software, hardware, services, or licensing. The numerous OSS
-  licenses mainly differ on how they treat derived software: some contain
-  provisions that maintain its availability in open source form while others
-  allow more flexibility. Through its widespread adoption, OSS is affecting the
-  software industry, science, engineering, research, teaching, the developing
-  countries, and the society at large through its ability to democratize
-  technology and innovation.}
+  author   = {Stephanos Androutsellis-Theotokis and Diomidis Spinellis and Maria Kechagia and Georgios Gousios},
+  doi      = {10.1561/0200000026},
+  issn     = {1571-9545},
+  journal  = {Foundations and Trends in Technology, Information and Operations Management},
+  number   = {3--4},
+  pages    = {187--347},
+  title    = {Open Source Software: A Survey from 10,000 Feet},
+  url      = {/pub/oos-10000-feet.pdf},
+  volume   = {4},
+  year     = 2011,
+  abstract = {
+    Open source software (OSS), the origins of which can be traced back to
+    the 1950s, is software distributed with a license that allows access to
+    its source code, free redistribution, the creation of derived works, and
+    unrestricted use. OSS applications cover most areas of consumer and
+    business software and their study touches many disciplines, including
+    computer science, information systems, economics, psychology, and law.
+    Behind a successful OSS project lies a community of actors, ranging from
+    core developers to passive users, held together by a flexible governance
+    structure and membership, leadership and contribution policies that align
+    their interests. The motivation behind individuals participating in OSS
+    projects can be, among others, social, ideological, hedonistic, or
+    signaling, while companies gain from their access to high-quality,
+    innovative projects and an increase in their reputation and visibility.
+    Nowadays many business models rely on OSS as a product through the
+    provision of associated services, or in coexistence with proprietary
+    software, hardware, services, or licensing. The numerous OSS licenses
+    mainly differ on how they treat derived software: some contain provisions
+    that maintain its availability in open source form while others allow
+    more flexibility. Through its widespread adoption, OSS is affecting the
+    software industry, science, engineering, research, teaching, the
+    developing countries, and the society at large through its ability to
+    democratize technology and innovation.
+  }
 }
 
 @article{SGKLASS09,
-  Author = {Diomidis Spinellis and Georgios Gousios and Vassilios Karakoidas and Panagiotis Louridas and Paul J. Adams and Ioannis Samoladas and Ioannis Stamelos},
-  Doi = {10.1016/j.entcs.2009.02.058},
-  Issn = {1571-0661},
-  Journal = {Electronic Notes in Theoretical Computer Science},
-  Pages = {5 -- 28},
-  Title = {Evaluating the Quality of Open Source Software},
-  Url = {/pub/eval-quality-of-open-source-software.pdf},
-  Volume = {233},
-  Year = {2009},
-  abstract={Traditionally, research on quality attributes was either kept under
-  wraps within the organization that performed it, or carried out by outsiders
-  using narrow, black-box techniques. The emergence of open source software has
-  changed this picture allowing us to evaluate both software products and the
-  processes that yield them. Thus, the software source code and the associated
-  data stored in the version control system, the bug tracking databases, the
-  mailing lists, and the wikis allow us to evaluate quality in a transparent
-  way. Even better, the large number of (often competing) open source projects
-  makes it possible to contrast the quality of comparable systems serving the
-  same domain. Furthermore, by combining historical source code snapshots with
-  significant events, such as bug discoveries and fixes, we can further dig into
-  the causes and effects of problems. Here we present motivating examples,
-  tools, and techniques that can be used to evaluate the quality of open source
-  (and by extension also proprietary) software.}
+  author   = {Diomidis Spinellis and Georgios Gousios and Vassilios Karakoidas and Panagiotis Louridas and Paul J. Adams and Ioannis Samoladas and Ioannis Stamelos},
+  doi      = {10.1016/j.entcs.2009.02.058},
+  issn     = {1571-0661},
+  journal  = {Electronic Notes in Theoretical Computer Science},
+  pages    = {5 -- 28},
+  title    = {Evaluating the Quality of Open Source Software},
+  url      = {/pub/eval-quality-of-open-source-software.pdf},
+  volume   = {233},
+  year     = {2009},
+  abstract = {
+    Traditionally, research on quality attributes was either kept under wraps
+    within the organization that performed it, or carried out by outsiders
+    using narrow, black-box techniques. The emergence of open source software
+    has changed this picture allowing us to evaluate both software products
+    and the processes that yield them. Thus, the software source code and the
+    associated data stored in the version control system, the bug tracking
+    databases, the mailing lists, and the wikis allow us to evaluate quality
+    in a transparent way. Even better, the large number of (often competing)
+    open source projects makes it possible to contrast the quality of
+    comparable systems serving the same domain. Furthermore, by combining
+    historical source code snapshots with significant events, such as bug
+    discoveries and fixes, we can further dig into the causes and effects of
+    problems. Here we present motivating examples, tools, and techniques that
+    can be used to evaluate the quality of open source (and by extension also
+    proprietary) software.
+  }
 }
 
 @article{GAG04,
-  Author = {Georgios Gousios and Efthimia Aivaloglou and Stefanos Gritzallis},
-  Journal = {Computer Standards \& Interfaces},
-  Month =  {Mar},
-  Volume = {27},
-  Number = {3},
-  Pages = {269--284},
-  Title = {Distributed Component Architectures Security Issues},
-  Url = {/pub/distributed-component-architectures-security-issues.pdf},
-  Volume = 27,
-  doi = {10.1016/j.csi.2004.08.003},
-  Year = {2005},
-  abstract = {Enterprise information systems and e-commerce applications are
-  tightly integrated in today ’s modern enterprises. Component architectures are
-  the base for building such multi-tier, distributed applications. This paper
-  examines the security threats those systems must confront and the solutions
-  proposed by the major existing component architectures. A comparative
-  evaluation of both security features and implementation issues is carried out
-  to determine each architecture’s strong points and drawbacks.}
+  author   = {Georgios Gousios and Efthimia Aivaloglou and Stefanos Gritzallis},
+  journal  = {Computer Standards \& Interfaces},
+  month    = {Mar},
+  volume   = {27},
+  number   = {3},
+  pages    = {269--284},
+  title    = {Distributed Component Architectures Security Issues},
+  url      = {/pub/distributed-component-architectures-security-issues.pdf},
+  volume   = 27,
+  doi      = {10.1016/j.csi.2004.08.003},
+  year     = {2005},
+  abstract = {
+    Enterprise information systems and e-commerce applications are tightly
+    integrated in today ’s modern enterprises. Component architectures are
+    the base for building such multi-tier, distributed applications. This
+    paper examines the security threats those systems must confront and the
+    solutions proposed by the major existing component architectures. A
+    comparative evaluation of both security features and implementation
+    issues is carried out to determine each architecture’s strong points and
+    drawbacks. 
+  }
 }
