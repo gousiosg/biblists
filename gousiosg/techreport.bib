@@ -1,3 +1,40 @@
+@misc{HBTG21,
+  title         = {Pr\"azi: From Package-based to Call-based Dependency Networks},
+  author        = {Joseph Hejderup and Moritz Beller and Konstantinos Triantafyllou and Georgios Gousios},
+  year          = {2021},
+  eprint        = {2101.09563},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.SE},
+  url           = {https://arxiv.org/pdf/2101.09563.pdf},
+  abstract =  {
+    Software reuse has emerged as one of the most crucial elements of modern
+    software development. The standard way to study the dependency networks
+    caused by reuse is to infer relationships between software packages
+    through manifests in the packages' repositories. Such networks can help
+    answer important questions like "How many packages have dependencies to
+    packages with known security issues?" or "What are the most used
+    packages?". However, an important overlooked aspect of current networks
+    is that manifest-inferred relationships do not necessarily describe how
+    or whether these dependencies are actually used in the code. To better
+    model dependencies between packages, we devise Präzi, an approach
+    combining manifests and call graphs of packages. Präzi constructs a
+    fine-grained dependency network at the more fine-grained function-level,
+    instead of at the manifest-level. For this paper, we provide a
+    prototypical Präzi implementation for the popular system programming
+    language Rust. Using it, we replicate a recent evolution study
+    characterizing Rust's package repository, this http URL, on the
+    function-level. Our results identify new key characteristics and
+    developments of this http URL: i) 49% of all function calls in this http
+    URL target a function in a dependency, suggesting prevalent reuse of
+    dependencies, ii) packages call 40% of their resolved transitive
+    dependencies, iii) package maintainers make nearly 7 new calls to their
+    dependencies biannually, and iv) packages have two to three times more
+    indirect callers than direct callers of their APIs. These results show
+    that current analyses of manifest-level dependency networks are not
+    sufficient to understand how packages use each other.
+  }
+}
+
 @misc{MNBGD21pp,
   title         = {ConE: A Concurrent Edit Detection Tool for Large Scale Software Development},
   author        = {Chandra Maddila and Nachiappan Nagappan and Christian Bird and Georgios Gousios and Arie van Deursen},
@@ -5,7 +42,7 @@
   eprint        = {2101.06542},
   archiveprefix = {arXiv},
   primaryclass  = {cs.SE},
-  url           = {https://arxiv.org/abs/2101.06542},
+  url           = {https://arxiv.org/pdf/2101.06542},
   abstract      = {
     Developers from different teams or organizations, co-located or
     distributed, making changes to the same source code files or areas,
@@ -35,7 +72,7 @@
   eprint        = {2101.04470},
   archiveprefix = {arXiv},
   primaryclass  = {cs.LG},
-  url           = {https://arxiv.org/abs/2101.04470},
+  url           = {https://arxiv.org/pdf/2101.04470},
   abstract      = {
     Dynamic languages, such as Python and Javascript, trade static typing for
     developer flexibility. While this allegedly enables greater productivity,
