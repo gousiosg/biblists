@@ -1,3 +1,120 @@
+
+@article{KGDG21,
+  author   = {Kula, Elvan and Greuter, Eric and Van Deursen, Arie and Georgios, Gousios},
+  journal  = {IEEE Transactions on Software Engineering},
+  title    = {Factors Affecting On-Time Delivery in Large-Scale Agile Software Development},
+  year     = {2021},
+  volume   = {},
+  number   = {},
+  pages    = {1-1},
+  doi      = {10.1109/TSE.2021.3101192},
+  abstract = {
+    Late delivery of software projects and cost overruns have been common
+    problems in the software industry for decades. Both problems are
+    manifestations of deficiencies in effort estimation during project planning.
+    With software projects being complex socio-technical systems, a large pool
+    of factors can affect effort estimation and on-time delivery. To identify
+    the most relevant factors and their interactions affecting schedule
+    deviations in large-scale agile software development, we conducted a
+    mixed-methods case study at ING: two rounds of surveys revealed a multitude
+    of organizational, people, process, project and technical factors which were
+    then quantified and statistically modeled using software repository data
+    from 185 teams. We find that factors such as requirements refinement, task
+    dependencies, organizational alignment and organizational politics are
+    perceived to have the greatest impact on on-time delivery, whereas proxy
+    measures such as project size, number of dependencies, historical delivery
+    performance and team familiarity can help explain a large degree of schedule
+    deviations. We also discover hierarchical interactions among factors:
+    organizational factors are perceived to interact with people factors, which
+    in turn impact technical factors. We compose our findings in the form of a
+    conceptual framework representing influential factors and their
+    relationships to on-time delivery. Our results can help practitioners
+    identify and manage delay risks in agile settings, can inform the design of
+    automated tools to predict schedule overruns and can contribute towards the
+    development of a relational theory of software project management.
+  },
+  url      = {https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9503331}
+}
+
+@article{MNBGD21,
+  author   = {Maddila, Chandra and Nagappan, Nachiappan and Bird, Christian and Gousios, Georgios and van Deursen, Arie},
+  journal  = {ACM Transactions on Software Engineering and Methodology},
+  title    = {ConE: A Concurrent Edit Detection Tool for Large Scale Software Development},
+  year     = {2021},
+  volume   = {},
+  number   = {},
+  pages    = {1-1},
+  doi      = {},
+  abstract = {
+
+    Modern, complex software systems are being continuously extended and
+    adjusted. The developers responsible for this may come from different teams
+    or organizations, and may be distributed over the world. This may make it
+    difficult to keep track of what other developers are doing, which may result
+    in multiple developers concurrently editing the same code areas. This, in
+    turn, may lead to hard-to-merge changes or even merge conflicts, logical
+    bugs that are difficult to detect, duplication of work, and wasted developer
+    productivity. To address this, we explore the extent of this problem in the
+    pull request based software development model. We study half a year of
+    changes made to six large repositories in Microsoft in which at least 1,000
+    pull requests are created each month. We find that files concurrently edited
+    in different pull requests are more likely to introduce bugs. Motivated by
+    these findings, we design, implement, and deploy a service named ConE
+    (Concurrent Edit Detector) that proactively detects pull requests containing
+    concurrent edits, to help mitigate the problems caused by them. ConE has
+    been designed to scale, and to minimize false alarms while still flagging
+    relevant concurrently edited files. Key concepts of ConE include the
+    detection of the Extent of Overlap between pull requests, and the
+    identification of Rarely Concurrently Edited Files. To evaluate ConE, we
+    report on its operational deployment on 234 repositories inside Microsoft.
+    ConE assessed 26,000 pull requests and made 775 recommendations about
+    conflicting changes, which were rated as useful in over 70% (554) of the
+    cases. From interviews with 48 users we learned that they believed cone
+    would save time in conflict resolution and avoiding duplicate work, and that
+    over 90% intend to keep using the service on a daily basis.
+    
+  },
+  url      = {},
+  note = {To appear}
+}
+
+@article{IHG21,
+  author   = {Maliheh Izadi and Abbas Heydarnoori and Georgios Gousios},
+  title    = {Topic recommendation for software repositories using multi-label classification algorithms},
+  journal  = {Empirical Software Engineering},
+  volume   = {26},
+  number   = {5},
+  pages    = {93},
+  year     = {2021},
+  url      = {https://arxiv.org/pdf/2010.09116},
+  doi      = {10.1007/s10664-021-09976-2},
+  abstract = {
+    Many platforms exploit collaborative tagging to provide their users with
+    faster and more accurate results while searching or navigating. Tags can
+    communicate different concepts such as the main features, technologies,
+    functionality, and the goal of a software repository. Recently, GitHub has
+    enabled users to annotate repositories with topic tags. It has also provided
+    a set of featured topics, and their possible aliases, carefully curated with
+    the help of the community. This creates the opportunity to use this initial
+    seed of topics to automatically annotate all remaining repositories, by
+    training models that recommend high-quality topic tags to developers. In
+    this work, we study the application of multi-label classification techniques
+    to predict software repositories’ topics. First, we map the large-space of
+    user-defined topics to those featured by GitHub. The core idea is to derive
+    more information from projects’ available documentation. Our data contains
+    about 152K GitHub repositories and 228 featured topics. Then, we apply
+    supervised models on repositories’ textual information such as descriptions,
+    README files, wiki pages, and file names. We assess the performance of our
+    approach both quantitatively and qualitatively. Our proposed model achieves
+    Recall\@5 and LRAP scores of 0.890 and 0.805, respectively. Moreover, based
+    on users’ assessment, our approach is highly capable of recommending correct
+    and complete set of topics. Finally, we use our models to develop an online
+    tool named Repository Catalogue, that automatically predicts topics for
+    GitHub repositories and is publicly available.
+  }
+}
+
+
 @article{BG20,
   author     = {Boldi, Paolo and Gousios, Georgios},
   title      = {Fine-Grained Network Analysis for Modern Software Ecosystems},

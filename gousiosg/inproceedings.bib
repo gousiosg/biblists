@@ -1,3 +1,60 @@
+@inproceedings{SPGA21,
+  author    = {Elvan Kula and Arie van Deursen and Georgios Gousios},
+  title     = {Modeling Team Dynamics for the Characterization and Prediction of Delays in User Stories},
+  booktitle = {Proceedings of 36th IEEE/ACM International Conference on Automated Software Engineering (ASE)},
+  year      = 2021,
+  abstract  = {
+    In agile software development, proper team structures and effort estimates
+    are crucial to ensure the on-time delivery of software projects. Delivery
+    performance can vary due to the influence of changes in teams, resulting in
+    team dynamics that remain largely unexplored. In this paper, we explore the
+    effects of various aspects of teamwork on delays in software deliveries. We
+    conducted a case study at ING and analyzed historical log data from 765,200
+    user stories and 571 teams to identify team factors characterizing delayed
+    user stories. Based on these factors, we built models to predict the
+    likelihood and duration of delays in user stories. The evaluation results
+    show that the use of team-related features leads to a significant
+    improvement in the predictions of delay, achieving on average 74\%-82\%
+    precision, 78\%-86\% recall and 76\%-84\% F-measure. Moreover, our results
+    show that team-related features can help improve the prediction of delay
+    likelihood, while delay duration can be explained exclusively using them.
+    Finally, training on recent user stories using a sliding window setting
+    improves the predictive performance; our predictive models perform
+    significantly better for teams that have been stable. Overall, our results
+    indicate that planning in agile development settings can be significantly
+    improved by incorporating team-related information and incremental learning
+    methods into analysis/predictive models.
+    },
+    note={to appear}
+}
+
+@inproceedings{SPGA21,
+  author    = {Hendrig Sellik and Onno van Paridon and Georgios Gousios and Maurício Aniche},
+  title     = {Learning Off-By-One Mistakes: An Empirical Study},
+  booktitle = {Proceedings of 18th Conference on Mining Software Repositories Conference (MSR)},
+  year      = 2021,
+  pages     = {58-67},
+  doi       = {10.1109/MSR52588.2021.00019},
+  abstract  = {
+    Mistakes in binary conditions are a source of error in many software
+    systems. They happen when developers use, e.g., < or > instead of <= or
+    >=. These boundary mistakes are hard to find and impose manual,
+    labor-intensive work for software developers. While previous research has
+    been proposing solutions to identify errors in boundary conditions, the
+    problem remains open. In this paper, we explore the effectiveness of deep
+    learning models in learning and predicting mistakes in boundary
+    conditions. We train different models on approximately 1.6M examples with
+    faults in different boundary conditions. We achieve a precision of 85%
+    and a recall of 84% on a balanced dataset, but lower numbers in an
+    imbalanced dataset. We also perform tests on 41 real-world boundary
+    condition bugs found from GitHub, where the model shows only a modest
+    performance. Finally, we test the model on a large-scale Java code base
+    from Adyen, our industrial partner. The model reported 36 buggy methods,
+    but none of them were confirmed by developers.
+    },
+  url       = {https://arxiv.org/pdf/2102.12429.pdf}
+}
+
 @inproceedings{PGLC20,
   author    = {Pradel, Michael and Gousios, Georgios and Liu, Jason and Chandra, Satish},
   title     = {TypeWriter: Neural Type Prediction with Search-Based Validation},

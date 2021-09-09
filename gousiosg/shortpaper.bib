@@ -1,18 +1,49 @@
+@inproceedings{MLG21,
+  author    = {Mir, Amir M. and Latoškinas, Evaldas and Gousios, Georgios},
+  booktitle = {2021 IEEE/ACM 18th International Conference on Mining Software Repositories (MSR)},
+  title     = {ManyTypes4Py: A Benchmark Python Dataset for Machine Learning-based Type Inference},
+  month     = may,
+  year      = {2021},
+  volume    = {1},
+  pages     = {585-589},
+  doi       = {10.1109/MSR52588.2021.00079},
+  publisher = {IEEE Computer Society},
+  address   = {Los Alamitos, CA, USA},
+  abstact   = {
+    
+    In this paper, we present ManyTypes4Py, a large Python dataset for machine
+    learning (ML)-based type inference. The dataset contains a total of 5,382
+    Python projects with more than 869K type annotations. Duplicate source code
+    files were removed to eliminate the negative effect of the duplication bias.
+    To facilitate training and evaluation of ML models, the dataset was split
+    into training, validation and test sets by files. To extract type
+    information from abstract syntax trees (ASTs), a light- weight static
+    analyzer pipeline is developed and accompanied with the dataset. Using this
+    pipeline, the collected Python projects were analyzed and the results of the
+    AST analysis were stored in JSON-formatted files. The ManyTypes4Py dataset
+    is shared on zenodo and its tools are publicly available on GitHub.
+
+  },
+  url       = {https://arxiv.org/pdf/2104.04706.pdf},
+  github    = {saltudelft/many-types-4-py-dataset}
+}
+    
+    
 @inproceedings{HDG18,
-  author = {Hejderup, Joseph and van Deursen, Arie and Gousios, Georgios},
-  title = {Software Ecosystem Call Graph for Dependency Management},
+  author    = {Hejderup, Joseph and van Deursen, Arie and Gousios, Georgios},
+  title     = {Software Ecosystem Call Graph for Dependency Management},
   booktitle = {Proceedings of the 40th International Conference on Software Engineering: New Ideas and Emerging Results},
-  series = {ICSE-NIER '18},
-  year = {2018},
-  isbn = {978-1-4503-5662-6},
-  location = {Gothenburg, Sweden},
-  pages = {101--104},
-  numpages = {4},
-  doi = {10.1145/3183399.3183417},
-  acmid = {3183417},
+  series    = {ICSE-NIER '18},
+  year      = {2018},
+  isbn      = {978-1-4503-5662-6},
+  location  = {Gothenburg, Sweden},
+  pages     = {101--104},
+  numpages  = {4},
+  doi       = {10.1145/3183399.3183417},
+  acmid     = {3183417},
   publisher = {ACM},
-  address = {New York, NY, USA},
-  abstract = {
+  address   = {New York, NY, USA},
+  abstract  = {
 
     A popular form of software reuse is the use of open source software
     libraries hosted on centralized code repositories, such as Maven or npm.
@@ -29,24 +60,24 @@
     security issue from a core package to an affected client application.
 
   },
-  url = {/pub/soft-ecosystem-cg-dep-mgmt.pdf},
+  url       = {/pub/soft-ecosystem-cg-dep-mgmt.pdf}
 }
 
 @inproceedings{VHKBG18,
-  author = {Vargas, Enrique Larios and Hejderup, Joseph and Kechagia, Maria and Bruntink, Magiel and Gousios, Georgios},
-  title = {Enabling Real-time Feedback in Software Engineering},
+  author    = {Vargas, Enrique Larios and Hejderup, Joseph and Kechagia, Maria and Bruntink, Magiel and Gousios, Georgios},
+  title     = {Enabling Real-time Feedback in Software Engineering},
   booktitle = {Proceedings of the 40th International Conference on Software Engineering: New Ideas and Emerging Results},
-  series = {ICSE-NIER '18},
-  year = {2018},
-  isbn = {978-1-4503-5662-6},
-  location = {Gothenburg, Sweden},
-  pages = {21--24},
-  numpages = {4},
-  doi = {10.1145/3183399.3183416},
-  acmid = {3183416},
+  series    = {ICSE-NIER '18},
+  year      = {2018},
+  isbn      = {978-1-4503-5662-6},
+  location  = {Gothenburg, Sweden},
+  pages     = {21--24},
+  numpages  = {4},
+  doi       = {10.1145/3183399.3183416},
+  acmid     = {3183416},
   publisher = {ACM},
-  address = {New York, NY, USA},
-  abstract = {
+  address   = {New York, NY, USA},
+  abstract  = {
 
     Modern software projects consist of more than just code: teams follow
     development processes, the code runs on servers or mobile phones and
@@ -67,25 +98,25 @@
     dependency management, productivity analytics, and run-time error feedback.
 
   },
-  url = {/pub/realtime-feedback-se.pdf}
+  url       = {/pub/realtime-feedback-se.pdf}
 }
 
 @inproceedings{HLSRGR17,
-  author = {Hennie Huijgens and Robert Lamping and Dick Stevens and Hartger
+  author    = {Hennie Huijgens and Robert Lamping and Dick Stevens and Hartger
     Rothengatter and Georgios Gousios and Daniele Romano},
-  title = {Strong Agile Metrics: Mining Log Data to Determine Predictive Power of Software Metrics for Continuous Delivery Teams},
+  title     = {Strong Agile Metrics: Mining Log Data to Determine Predictive Power of Software Metrics for Continuous Delivery Teams},
   booktitle = {Proceedings of the 2017 11th Joint Meeting on Foundations of Software Engineering},
-  series = {ESEC/FSE 2017},
-  year = {2017},
-  isbn = {978-1-4503-5105-8},
-  location = {Paderborn, Germany},
-  pages = {866--871},
-  numpages = {6},
-  doi = {10.1145/3106237.3117779},
-  acmid = {3117779},
+  series    = {ESEC/FSE 2017},
+  year      = {2017},
+  isbn      = {978-1-4503-5105-8},
+  location  = {Paderborn, Germany},
+  pages     = {866--871},
+  numpages  = {6},
+  doi       = {10.1145/3106237.3117779},
+  acmid     = {3117779},
   publisher = {ACM},
-  address = {New York, NY, USA},
-  abstract = {
+  address   = {New York, NY, USA},
+  abstract  = {
 
     ING Bank, a large Netherlands-based internationally operating bank,
     implemented a fully automated continuous delivery pipe-line for its software
@@ -100,20 +131,20 @@
     four leading metrics to be strong.
 
   },
-  url = {/pub/strong-agile-metrics.pdf},
+  url       = {/pub/strong-agile-metrics.pdf}
 }
 
 @inproceedings{BGZ17a,
-  author = {Moritz Beller and Georgios Gousios and Andy Zaidman},
-  title = {TravisTorrent: Synthesizing Travis CI and GitHub for Full-Stack Research on Continuous Integration},
+  author    = {Moritz Beller and Georgios Gousios and Andy Zaidman},
+  title     = {TravisTorrent: Synthesizing Travis CI and GitHub for Full-Stack Research on Continuous Integration},
   booktitle = {Proceedings of the 14th Working Conference on Mining Software Repositories},
-  series = {MSR'17},
-  year = {2017},
+  series    = {MSR'17},
+  year      = {2017},
   publisher = {IEEE press},
-  pages = {447--450},
-  doi = {10.1109/MSR.2017.24},
-  location = {Buenos Aires, Argentina},
-  abstract = {
+  pages     = {447--450},
+  doi       = {10.1109/MSR.2017.24},
+  location  = {Buenos Aires, Argentina},
+  abstract  = {
 
    Continuous Integration (CI) has become a best practice of modern software
    development. Thanks in part to its tight integration with GitHub, Travis CI
@@ -132,19 +163,19 @@
    time of commit extracted through GHTorrent.
 
   },
-  url = {/pub/travistorrent.pdf},
+  url       = {/pub/travistorrent.pdf}
 }
 
 @inproceedings{BGZ15,
-  author = {Moritz Beller and Georgios Gousios and Andy Zaidman},
-  title = {How (Much) Do Developers Test?},
+  author    = {Moritz Beller and Georgios Gousios and Andy Zaidman},
+  title     = {How (Much) Do Developers Test?},
   booktitle = {Proceedings of the 37th International Conference on Software Engineering -- Niew Ideas and Emerging Results track},
-  year = {2015},
-  month={May},
-  volume={2},
-  pages={559-562},
-  doi={10.1109/ICSE.2015.193},
-  Abstract = {
+  year      = {2015},
+  month     = {May},
+  volume    = {2},
+  pages     = {559-562},
+  doi       = {10.1109/ICSE.2015.193},
+  abstract  = {
     What do we know about software testing in the real world? It seems we know
     from Fred Brooks’ seminal work ``The Mythical Man-Month'' that 50\% of
     project effort is spent on testing. However, due to the enormous advances in
@@ -162,17 +193,17 @@
     infrastructure, we are now extending our case study with professional
     software engineers from open-source and industrial organizations.
   },
-  url = {/pub/test-time-nier.pdf}
+  url       = {/pub/test-time-nier.pdf}
 }
 
 @inproceedings{HG15,
-  author = {Claudia Hauff and Georgios Gousios},
-  title = {Matching GitHub developer profiles to job advertisements},
+  author    = {Claudia Hauff and Georgios Gousios},
+  title     = {Matching GitHub developer profiles to job advertisements},
   booktitle = {Proceedings of the 2015 IEEE/ACM 12th Working Conference on Mining Software Repositories (MSR)},
-  year = {2015},
-  month={May},
-  location = {Florence, Italy},
-  Abstract = {
+  year      = {2015},
+  month     = {May},
+  location  = {Florence, Italy},
+  abstract  = {
     GitHub is a social coding platform that enables developers to efficiently
     work on projects, connect with other developers, collaborate and generally
     ``be seen'' by the community. This visibility also extends to prospective
@@ -181,19 +212,19 @@
     this process and automatically suggests matching job advertisements to
     developers, based on signals extracting from their activities on GitHub.
   },
-  doi={10.1109/MSR.2015.41},
-  pages={362-366},
-  url = {/pub/dev-profiles.pdf}
+  doi       = {10.1109/MSR.2015.41},
+  pages     = {362-366},
+  url       = {/pub/dev-profiles.pdf}
 }
 
 @inproceedings{VGZ15,
-  author = {Erik van der Veen and Georgios Gousios and Andy Zaidman},
-  title = {Automatically Prioritizing Pull Requests},
+  author    = {Erik van der Veen and Georgios Gousios and Andy Zaidman},
+  title     = {Automatically Prioritizing Pull Requests},
   booktitle = {Proceedings of the 2015 IEEE/ACM 12th Working Conference on Mining Software Repositories (MSR)},
-  year = {2015},
-  month={May},
-  location = {Florence, Italy},
-  abstract = {
+  year      = {2015},
+  month     = {May},
+  location  = {Florence, Italy},
+  abstract  = {
     In previous work, we observed that in the pull-based development model
     integrators face challenges with regard to prioritizing work in the face of
     multiple concurrent pull requests. We present the design and initial
@@ -204,21 +235,21 @@
     GitHub is currently lacking, even though users need more insight into how
     the priority ranking is established to make PRioritizer really useful.
   },
-  doi={10.1109/MSR.2015.40},
-  pages={357-361},
-  url = {/pub/prioritizer.pdf},
-  github = {PRioritizer/PRioritizer-paper}
+  doi       = {10.1109/MSR.2015.40},
+  pages     = {357-361},
+  url       = {/pub/prioritizer.pdf},
+  github    = {PRioritizer/PRioritizer-paper}
 }
 
 @inproceedings{KMLGS15,
-  author = {Karakoidas, Vassilios and Mitropoulos, Dimitrios and Louridas, Panos and Gousios, Georgios and Spinellis, Diomidis},
-  title = {Generating the Blueprints of the Java Ecosystem},
+  author    = {Karakoidas, Vassilios and Mitropoulos, Dimitrios and Louridas, Panos and Gousios, Georgios and Spinellis, Diomidis},
+  title     = {Generating the Blueprints of the Java Ecosystem},
   booktitle = {Proceedings of the 2015 IEEE/ACM 12th Working Conference on Mining Software Repositories (MSR)},
-  year = {2015},
-  month = {May},
-  location = {Florence, Italy},
-  pages = {510-513},
-  abstract = {
+  year      = {2015},
+  month     = {May},
+  location  = {Florence, Italy},
+  pages     = {510-513},
+  abstract  = {
     Examining a large number of software artifacts can provide the research
     community with data regarding quality and design. We present a dataset
     obtained by statically analyzing 22730 jar files taken from the Maven
@@ -229,26 +260,26 @@
     reports for every selected jar of the ecosystem. Our dataset can be used to
     produce interesting research results, such as measure the domain-specific
     language usage.},
-  doi={10.1109/MSR.2015.76},
-  url={/pub/generating-blueprints-java-ecosystem.pdf}
+  doi       = {10.1109/MSR.2015.76},
+  url       = {/pub/generating-blueprints-java-ecosystem.pdf}
 }
 
 @inproceedings{GVSZ14,
-  author = {Gousios, Georgios and Vasilescu, Bogdan and Serebrenik, Alexander and Zaidman, Andy},
-  title = {Lean {GHT}orrent: GitHub Data on Demand},
-  booktitle = {Proceedings of the 11th Working Conference on Mining Software Repositories},
-  series = {MSR 2014},
-  year = {2014},
-  isbn = {978-1-4503-2863-0},
-  location = {Hyderabad, India},
-  pages = {384--387},
-  numpages = {4},
-  doi = {10.1145/2597073.2597126},
-  acmid = {2597126},
-  publisher = {ACM},
-  address = {New York, NY, USA},
-  keywords = {GitHub, data on demand, dataset},
-  Abstract = {
+  author      = {Gousios, Georgios and Vasilescu, Bogdan and Serebrenik, Alexander and Zaidman, Andy},
+  title       = {Lean {GHT}orrent: GitHub Data on Demand},
+  booktitle   = {Proceedings of the 11th Working Conference on Mining Software Repositories},
+  series      = {MSR 2014},
+  year        = {2014},
+  isbn        = {978-1-4503-2863-0},
+  location    = {Hyderabad, India},
+  pages       = {384--387},
+  numpages    = {4},
+  doi         = {10.1145/2597073.2597126},
+  acmid       = {2597126},
+  publisher   = {ACM},
+  address     = {New York, NY, USA},
+  keywords    = {GitHub, data on demand, dataset},
+  abstract    = {
     In recent years, Github has become the largest code host in the world, with
     more than 5M developers collaborating across 10M repositories.  Numerous
     popular open source projects (such as Ruby on Rails, Homebrew, Bootstrap,
@@ -270,27 +301,27 @@
     replicability of Github studies (since a snapshot of the data on which the
     results were obtained can now easily accompany each study).
   },
-  url = {/pub/lean-ghtorrent.pdf},
-  github = {ghtorrent/ghtorrent-service},
-  speakerdeck = "992bb730cd090131fa3126624a8aace7"
+  url         = {/pub/lean-ghtorrent.pdf},
+  github      = {ghtorrent/ghtorrent-service},
+  speakerdeck = {992bb730cd090131fa3126624a8aace7}
 }
 
 @inproceedings{GZ14,
-  author = {Gousios, Georgios and Zaidman, Andy},
-  title = {A Dataset for Pull-based Development Research},
-  booktitle = {Proceedings of the 11th Working Conference on Mining Software Repositories},
-  series = {MSR 2014},
-  year = {2014},
-  isbn = {978-1-4503-2863-0},
-  location = {Hyderabad, India},
-  pages = {368--371},
-  numpages = {4},
-  doi = {10.1145/2597073.2597122},
-  acmid = {2597122},
-  publisher = {ACM},
-  address = {New York, NY, USA},
-  keywords = {distributed software development, empirical software engineering, pull request, pull-based development},
-  Abstract = {
+  author      = {Gousios, Georgios and Zaidman, Andy},
+  title       = {A Dataset for Pull-based Development Research},
+  booktitle   = {Proceedings of the 11th Working Conference on Mining Software Repositories},
+  series      = {MSR 2014},
+  year        = {2014},
+  isbn        = {978-1-4503-2863-0},
+  location    = {Hyderabad, India},
+  pages       = {368--371},
+  numpages    = {4},
+  doi         = {10.1145/2597073.2597122},
+  acmid       = {2597122},
+  publisher   = {ACM},
+  address     = {New York, NY, USA},
+  keywords    = {distributed software development, empirical software engineering, pull request, pull-based development},
+  abstract    = {
     Pull requests form a new method for collaborating in distributed software
     development. To study the pull request distributed development model, we
     constructed a dataset of almost 900 projects and 350,000 pull requests,
@@ -299,28 +330,28 @@
     selected features and present a machine learning tool set for the R
     statistics environment.
   },
-  url = {/pub/pullreqs-dataset.pdf},
-  award = {MSR2014: Best data showcase paper},
-  github = {gousiosg/pullreqs},
-  speakerdeck = "629aa910cd09013116791efd7f77c4b7"
+  url         = {/pub/pullreqs-dataset.pdf},
+  award       = {MSR2014: Best data showcase paper},
+  github      = {gousiosg/pullreqs},
+  speakerdeck = {629aa910cd09013116791efd7f77c4b7}
 }
 
 @inproceedings{MKLGS14,
-  author = {Mitropoulos, Dimitris and Karakoidas, Vassilios and Louridas, Panos and Gousios, Georgios and Spinellis, Diomidis},
-  title = {The Bug Catalog of the Maven Ecosystem},
+  author    = {Mitropoulos, Dimitris and Karakoidas, Vassilios and Louridas, Panos and Gousios, Georgios and Spinellis, Diomidis},
+  title     = {The Bug Catalog of the Maven Ecosystem},
   booktitle = {Proceedings of the 11th Working Conference on Mining Software Repositories},
-  series = {MSR 2014},
-  year = {2014},
-  isbn = {978-1-4503-2863-0},
-  location = {Hyderabad, India},
-  pages = {372--375},
-  numpages = {4},
-  doi = {10.1145/2597073.2597123},
-  acmid = {2597123},
+  series    = {MSR 2014},
+  year      = {2014},
+  isbn      = {978-1-4503-2863-0},
+  location  = {Hyderabad, India},
+  pages     = {372--375},
+  numpages  = {4},
+  doi       = {10.1145/2597073.2597123},
+  acmid     = {2597123},
   publisher = {ACM},
-  address = {New York, NY, USA},
-  keywords = {FindBugs, Maven Repository, Software Bugs},
-  Abstract = {
+  address   = {New York, NY, USA},
+  keywords  = {FindBugs, Maven Repository, Software Bugs},
+  abstract  = {
     Examining software ecosystems can provide the research community with data
     regarding artifacts, processes, and communities. We present a dataset
     obtained from the Maven central repository ecosystem (approximately 265{GB}
@@ -331,22 +362,22 @@
     in the ecosystem. For every version we also stored specific metadata such as
     the jar’s size, its dependencies and others. Our dataset can be used to
     produce interesting research results, as we show in specific examples.},
-  url = {/pub/maven-findbugs.pdf},
+  url       = {/pub/maven-findbugs.pdf}
 }
 
 @inproceedings{GS09a,
-  Author = {Georgios Gousios and Diomidis Spinellis},
-  Booktitle = { {ICSE} '09: Proceedings of the 31st International Conference on Software Engineering -- Formal Research Demonstrations Track},
-  Day = {16--24},
-  Isbn = {978-1-4244-3743-6},
-  Location = {Vancouver, Canada},
-  Month = {May},
-  Pages = {579--582},
-  Publisher = {IEEE},
-  doi={10.1109/ICSE.2009.5070560},
-  Title = {Alitheia Core: An extensible software quality monitoring platform},
-  Year = {2009},
-  abstract = {
+  author    = {Georgios Gousios and Diomidis Spinellis},
+  booktitle = { {ICSE} '09: Proceedings of the 31st International Conference on Software Engineering -- Formal Research Demonstrations Track},
+  day       = {16--24},
+  isbn      = {978-1-4244-3743-6},
+  location  = {Vancouver, Canada},
+  month     = {May},
+  pages     = {579--582},
+  publisher = {IEEE},
+  doi       = {10.1109/ICSE.2009.5070560},
+  title     = {Alitheia Core: An extensible software quality monitoring platform},
+  year      = {2009},
+  abstract  = {
     Research in the fields of software quality and maintainability requires the
     analysis of large quantities of data, which often originate from open source
     software projects. Pre-processing data, calculating metrics, and
@@ -359,23 +390,22 @@
     with an easy to use extension mechanism. The system has been used to process
     several projects successfully, forming the basis of an emerging ecosystem of
     quality analysis tools.},
-  url =
-  {/pub/alitheia-core-extensible-software-quality-monitoring-platform.pdf},
-  github = {istlab/Alitheia-Core}
+  url       = {/pub/alitheia-core-extensible-software-quality-monitoring-platform.pdf},
+  github    = {istlab/Alitheia-Core}
 }
 
 @inproceedings{GKS08,
-  Address = {New York, NY, USA},
-  Author = {Georgios Gousios and Eirini Kalliamvakou and Diomidis Spinellis},
-  Booktitle = {MSR '08: Proceedings of the 2008 International Working Conference on Mining Software Repositories},
-  Isbn = {978-1-60558-024-1},
-  Location = {Leipzig, Germany},
-  Pages = {129--132},
-  Publisher = {ACM},
-  doi = {10.1145/1370750.1370781},
-  Title = {Measuring developer contribution from software repository data},
-  Year = {2008},
-  abstract = {
+  address   = {New York, NY, USA},
+  author    = {Georgios Gousios and Eirini Kalliamvakou and Diomidis Spinellis},
+  booktitle = {MSR '08: Proceedings of the 2008 International Working Conference on Mining Software Repositories},
+  isbn      = {978-1-60558-024-1},
+  location  = {Leipzig, Germany},
+  pages     = {129--132},
+  publisher = {ACM},
+  doi       = {10.1145/1370750.1370781},
+  title     = {Measuring developer contribution from software repository data},
+  year      = {2008},
+  abstract  = {
     Apart from source code, software infrastructures supporting agile and
     distributed software projects contain traces of developer activity that does
     not directly affect the product itself but is important for the development
@@ -388,6 +418,6 @@
     context of a software quality monitoring system while we are also validating
     its components by means of questionnaires.
   },
-  url = {/pub/measuring-developer-contribution-from-repository-data.pdf}
+  url       = {/pub/measuring-developer-contribution-from-repository-data.pdf}
 }
 

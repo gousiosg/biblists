@@ -1,4 +1,31 @@
-@misc{HBTG21,
+@misc{SPGA21pp,
+  title         = {Learning Off-By-One Mistakes: An Empirical Study},
+  author        = {Hendrig Sellik and Onno van Paridon and Georgios Gousios and Maurício Aniche},
+  year          = {2021},
+  eprint        = {2102.12429},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.SE},
+  url           = {https://arxiv.org/pdf/2102.12429.pdf},
+  abstract      = {
+    Mistakes in binary conditions are a source of error in many software
+    systems. They happen when developers use, e.g., < or > instead of <= or
+    >=. These boundary mistakes are hard to find and impose manual,
+    labor-intensive work for software developers. While previous research has
+    been proposing solutions to identify errors in boundary conditions, the
+    problem remains open. In this paper, we explore the effectiveness of deep
+    learning models in learning and predicting mistakes in boundary
+    conditions. We train different models on approximately 1.6M examples with
+    faults in different boundary conditions. We achieve a precision of 85%
+    and a recall of 84% on a balanced dataset, but lower numbers in an
+    imbalanced dataset. We also perform tests on 41 real-world boundary
+    condition bugs found from GitHub, where the model shows only a modest
+    performance. Finally, we test the model on a large-scale Java code base
+    from Adyen, our industrial partner. The model reported 36 buggy methods,
+    but none of them were confirmed by developers.
+    }
+}
+
+@misc{HBTG21pp,
   title         = {Pr\"azi: From Package-based to Call-based Dependency Networks},
   author        = {Joseph Hejderup and Moritz Beller and Konstantinos Triantafyllou and Georgios Gousios},
   year          = {2021},
@@ -6,7 +33,7 @@
   archiveprefix = {arXiv},
   primaryclass  = {cs.SE},
   url           = {https://arxiv.org/pdf/2101.09563.pdf},
-  abstract =  {
+  abstract      = {
     Software reuse has emerged as one of the most crucial elements of modern
     software development. The standard way to study the dependency networks
     caused by reuse is to infer relationships between software packages
