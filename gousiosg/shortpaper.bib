@@ -10,24 +10,34 @@
   publisher = {IEEE Computer Society},
   address   = {Los Alamitos, CA, USA},
   abstact   = {
-    
-    In this paper, we present ManyTypes4Py, a large Python dataset for machine
-    learning (ML)-based type inference. The dataset contains a total of 5,382
-    Python projects with more than 869K type annotations. Duplicate source code
-    files were removed to eliminate the negative effect of the duplication bias.
-    To facilitate training and evaluation of ML models, the dataset was split
-    into training, validation and test sets by files. To extract type
-    information from abstract syntax trees (ASTs), a light- weight static
-    analyzer pipeline is developed and accompanied with the dataset. Using this
-    pipeline, the collected Python projects were analyzed and the results of the
-    AST analysis were stored in JSON-formatted files. The ManyTypes4Py dataset
-    is shared on zenodo and its tools are publicly available on GitHub.
-
-  },
+               
+               In this paper, we present ManyTypes4Py, a large Python dataset for machine
+               learning (ML)-based type inference. The dataset contains a total of 5,382
+               Python projects with more than 869K type annotations. Duplicate source code
+               files were removed to eliminate the negative effect of the duplication bias.
+               To facilitate training and evaluation of ML models, the dataset was split
+               into training, validation and test sets by files. To extract type
+               information from abstract syntax trees (ASTs), a light- weight static
+               analyzer pipeline is developed and accompanied with the dataset. Using this
+               pipeline, the collected Python projects were analyzed and the results of the
+               AST analysis were stored in JSON-formatted files. The ManyTypes4Py dataset
+               is shared on zenodo and its tools are publicly available on GitHub.
+               
+               },
   url       = {https://arxiv.org/pdf/2104.04706.pdf},
   github    = {saltudelft/many-types-4-py-dataset}
 }
-    
+
+@inproceedings{ACGZ20,
+  author    = {P. {Abate} and R. {Di Cosmo} and G. {Gousios} and S. {Zacchiroli}},
+  booktitle = {The 27th IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER)},
+  title     = {Dependency Solving Is Still Hard, but We Are Getting Better at It},
+  year      = {2020},
+  pages     = {547-551},
+  location  = {London, Ontario, Canada},
+  doi       = {10.1109/SANER48275.2020.9054837},
+  url       = {/pub/dependency-solving-hard-getting-better.pdf}
+}    
     
 @inproceedings{HDG18,
   author    = {Hejderup, Joseph and van Deursen, Arie and Gousios, Georgios},
@@ -44,22 +54,22 @@
   publisher = {ACM},
   address   = {New York, NY, USA},
   abstract  = {
-
-    A popular form of software reuse is the use of open source software
-    libraries hosted on centralized code repositories, such as Maven or npm.
-    Developers only need to declare dependencies to external libraries, and
-    automated tools make them available to the workspace of the project.
-    Recent incidents, such as the Equifax data breach and the leftpad package
-    removal, demonstrate the difficulty in assessing the severity, impact and
-    spread of bugs in dependency networks. While dependency checkers are being
-    adapted as a counter measure, they only provide indicative information. To
-    remedy this situation, we propose a fine-grained dependency network that
-    goes beyond packages and into call graphs. The result is a versioned
-    ecosystem-level call graph. In this paper, we outline the process to
-    construct the proposed graph and present a preliminary evaluation of a
-    security issue from a core package to an affected client application.
-
-  },
+               
+               A popular form of software reuse is the use of open source software
+               libraries hosted on centralized code repositories, such as Maven or npm.
+               Developers only need to declare dependencies to external libraries, and
+               automated tools make them available to the workspace of the project.
+               Recent incidents, such as the Equifax data breach and the leftpad package
+               removal, demonstrate the difficulty in assessing the severity, impact and
+               spread of bugs in dependency networks. While dependency checkers are being
+               adapted as a counter measure, they only provide indicative information. To
+               remedy this situation, we propose a fine-grained dependency network that
+               goes beyond packages and into call graphs. The result is a versioned
+               ecosystem-level call graph. In this paper, we outline the process to
+               construct the proposed graph and present a preliminary evaluation of a
+               security issue from a core package to an affected client application.
+               
+               },
   url       = {/pub/soft-ecosystem-cg-dep-mgmt.pdf}
 }
 
@@ -78,32 +88,32 @@
   publisher = {ACM},
   address   = {New York, NY, USA},
   abstract  = {
-
-    Modern software projects consist of more than just code: teams follow
-    development processes, the code runs on servers or mobile phones and
-    produces run time logs and users talk about the software in forums like
-    StackOverflow and Twitter and rate it on app stores. Insights stemming
-    from the real-time analysis of combined software engineering data can help
-    software practitioners to conduct faster decision-making. With the
-    development of CodeFeedr, a Real-time Software Analytics Platform, we aim
-    to make software analytics a core feedback loop for software engineering
-    projects.
-
-    CodeFeedr's vision entails: (1) The ability to unify archival and current
-    software analytics data under a single query language, and (2) The
-    feasibility to apply new techniques and methods for high-level aggregation
-    and summarization of near real-time information on software development. In
-    this paper, we outline three use cases where our platform is expected to
-    have a significant impact on the quality and speed of decision making;
-    dependency management, productivity analytics, and run-time error feedback.
-
-  },
+               
+               Modern software projects consist of more than just code: teams follow
+               development processes, the code runs on servers or mobile phones and
+               produces run time logs and users talk about the software in forums like
+               StackOverflow and Twitter and rate it on app stores. Insights stemming
+               from the real-time analysis of combined software engineering data can help
+               software practitioners to conduct faster decision-making. With the
+               development of CodeFeedr, a Real-time Software Analytics Platform, we aim
+               to make software analytics a core feedback loop for software engineering
+               projects.
+               
+               CodeFeedr's vision entails: (1) The ability to unify archival and current
+               software analytics data under a single query language, and (2) The
+               feasibility to apply new techniques and methods for high-level aggregation
+               and summarization of near real-time information on software development. In
+               this paper, we outline three use cases where our platform is expected to
+               have a significant impact on the quality and speed of decision making;
+               dependency management, productivity analytics, and run-time error feedback.
+               
+               },
   url       = {/pub/realtime-feedback-se.pdf}
 }
 
 @inproceedings{HLSRGR17,
   author    = {Hennie Huijgens and Robert Lamping and Dick Stevens and Hartger
-    Rothengatter and Georgios Gousios and Daniele Romano},
+               Rothengatter and Georgios Gousios and Daniele Romano},
   title     = {Strong Agile Metrics: Mining Log Data to Determine Predictive Power of Software Metrics for Continuous Delivery Teams},
   booktitle = {Proceedings of the 2017 11th Joint Meeting on Foundations of Software Engineering},
   series    = {ESEC/FSE 2017},
@@ -117,20 +127,20 @@
   publisher = {ACM},
   address   = {New York, NY, USA},
   abstract  = {
-
-    ING Bank, a large Netherlands-based internationally operating bank,
-    implemented a fully automated continuous delivery pipe-line for its software
-    engineering activities in more than 300 teams, that perform more than 2500
-    deployments to production each month on more than 750 different
-    applications. Our objective is to examine how strong metrics for agile
-    (Scrum) DevOps teams can be set in an iterative fashion. We perform an
-    exploratory case study that focuses on the classification based on
-    predictive power of software metrics, in which we analyze log data derived
-    from two initial sources within this pipeline. We analyzed a subset of 16
-    metrics from 59 squads. We identified two lagging metrics and assessed
-    four leading metrics to be strong.
-
-  },
+               
+               ING Bank, a large Netherlands-based internationally operating bank,
+               implemented a fully automated continuous delivery pipe-line for its software
+               engineering activities in more than 300 teams, that perform more than 2500
+               deployments to production each month on more than 750 different
+               applications. Our objective is to examine how strong metrics for agile
+               (Scrum) DevOps teams can be set in an iterative fashion. We perform an
+               exploratory case study that focuses on the classification based on
+               predictive power of software metrics, in which we analyze log data derived
+               from two initial sources within this pipeline. We analyzed a subset of 16
+               metrics from 59 squads. We identified two lagging metrics and assessed
+               four leading metrics to be strong.
+               
+               },
   url       = {/pub/strong-agile-metrics.pdf}
 }
 
@@ -145,24 +155,24 @@
   doi       = {10.1109/MSR.2017.24},
   location  = {Buenos Aires, Argentina},
   abstract  = {
-
-   Continuous Integration (CI) has become a best practice of modern software
-   development. Thanks in part to its tight integration with GitHub, Travis CI
-   has emerged as arguably the most widely used CI platform for Open-Source
-   Software (OSS) development. However, despite its prominent role in Software
-   Engineering in practice, the benefits, costs, and implications of doing CI
-   are all but clear from an academic standpoint. Little research has been done,
-   and even less was of quantitative nature. In order to lay the groundwork for
-   data-driven research on CI, we built TravisTorrent,
-   travistorrent.testroots.org, a freely available data set based on Travis CI and
-   GitHub that provides easy access to hundreds of thousands of analyzed builds
-   from more than 1,000 projects. Unique to TravisTorrent is that each of its
-   2,640,825 Travis builds is synthesized with meta data from Travis CI’s API,
-   the results of analyzing its textual build log, a link to the GitHub commit
-   which triggered the build, and dynamically aggregated project data from the
-   time of commit extracted through GHTorrent.
-
-  },
+               
+               Continuous Integration (CI) has become a best practice of modern software
+               development. Thanks in part to its tight integration with GitHub, Travis CI
+               has emerged as arguably the most widely used CI platform for Open-Source
+               Software (OSS) development. However, despite its prominent role in Software
+               Engineering in practice, the benefits, costs, and implications of doing CI
+               are all but clear from an academic standpoint. Little research has been done,
+               and even less was of quantitative nature. In order to lay the groundwork for
+               data-driven research on CI, we built TravisTorrent,
+               travistorrent.testroots.org, a freely available data set based on Travis CI and
+               GitHub that provides easy access to hundreds of thousands of analyzed builds
+               from more than 1,000 projects. Unique to TravisTorrent is that each of its
+               2,640,825 Travis builds is synthesized with meta data from Travis CI’s API,
+               the results of analyzing its textual build log, a link to the GitHub commit
+               which triggered the build, and dynamically aggregated project data from the
+               time of commit extracted through GHTorrent.
+               
+               },
   url       = {/pub/travistorrent.pdf}
 }
 
@@ -176,23 +186,23 @@
   pages     = {559-562},
   doi       = {10.1109/ICSE.2015.193},
   abstract  = {
-    What do we know about software testing in the real world? It seems we know
-    from Fred Brooks’ seminal work ``The Mythical Man-Month'' that 50\% of
-    project effort is spent on testing. However, due to the enormous advances in
-    software engineering in the past 40 years, the question stands: Is this
-    observation still true? In fact, was it ever true? The vision for our
-    research is to settle the discussion about Brooks' estimation once and for
-    all: How much do developers test? Does developers' estimation on how much
-    they test match reality? How frequently do they execute their tests, and is
-    there a relationship between test runtime and execution frequency? What are
-    the typical reactions to failing tests? Do developers solve actual defects
-    in the production code, or do they merely relax their test assertions?
-    Emerging results from 40 software engineering students show that students
-    overestimate their testing time threefold, and 50\% of them test as little
-    as 4\% of their time, or less. Having proven the scalability of our
-    infrastructure, we are now extending our case study with professional
-    software engineers from open-source and industrial organizations.
-  },
+               What do we know about software testing in the real world? It seems we know
+               from Fred Brooks’ seminal work ``The Mythical Man-Month'' that 50\% of
+               project effort is spent on testing. However, due to the enormous advances in
+               software engineering in the past 40 years, the question stands: Is this
+               observation still true? In fact, was it ever true? The vision for our
+               research is to settle the discussion about Brooks' estimation once and for
+               all: How much do developers test? Does developers' estimation on how much
+               they test match reality? How frequently do they execute their tests, and is
+               there a relationship between test runtime and execution frequency? What are
+               the typical reactions to failing tests? Do developers solve actual defects
+               in the production code, or do they merely relax their test assertions?
+               Emerging results from 40 software engineering students show that students
+               overestimate their testing time threefold, and 50\% of them test as little
+               as 4\% of their time, or less. Having proven the scalability of our
+               infrastructure, we are now extending our case study with professional
+               software engineers from open-source and industrial organizations.
+               },
   url       = {/pub/test-time-nier.pdf}
 }
 
@@ -204,14 +214,14 @@
   month     = {May},
   location  = {Florence, Italy},
   abstract  = {
-    GitHub is a social coding platform that enables developers to efficiently
-    work on projects, connect with other developers, collaborate and generally
-    ``be seen'' by the community. This visibility also extends to prospective
-    employers and HR personnel who may use GitHub to learn more about a
-    developer’s skills and interests. We propose a pipeline that automatizes
-    this process and automatically suggests matching job advertisements to
-    developers, based on signals extracting from their activities on GitHub.
-  },
+               GitHub is a social coding platform that enables developers to efficiently
+               work on projects, connect with other developers, collaborate and generally
+               ``be seen'' by the community. This visibility also extends to prospective
+               employers and HR personnel who may use GitHub to learn more about a
+               developer’s skills and interests. We propose a pipeline that automatizes
+               this process and automatically suggests matching job advertisements to
+               developers, based on signals extracting from their activities on GitHub.
+               },
   doi       = {10.1109/MSR.2015.41},
   pages     = {362-366},
   url       = {/pub/dev-profiles.pdf}
@@ -225,16 +235,16 @@
   month     = {May},
   location  = {Florence, Italy},
   abstract  = {
-    In previous work, we observed that in the pull-based development model
-    integrators face challenges with regard to prioritizing work in the face of
-    multiple concurrent pull requests. We present the design and initial
-    implementation of a prototype pull request prioritisation tool called
-    PRioritizer. PRioritizer works like a priority inbox for pull requests,
-    recommending the top pull requests the project owner should focus on. A
-    preliminary user study showed that PRioritizer provides functionality that
-    GitHub is currently lacking, even though users need more insight into how
-    the priority ranking is established to make PRioritizer really useful.
-  },
+               In previous work, we observed that in the pull-based development model
+               integrators face challenges with regard to prioritizing work in the face of
+               multiple concurrent pull requests. We present the design and initial
+               implementation of a prototype pull request prioritisation tool called
+               PRioritizer. PRioritizer works like a priority inbox for pull requests,
+               recommending the top pull requests the project owner should focus on. A
+               preliminary user study showed that PRioritizer provides functionality that
+               GitHub is currently lacking, even though users need more insight into how
+               the priority ranking is established to make PRioritizer really useful.
+               },
   doi       = {10.1109/MSR.2015.40},
   pages     = {357-361},
   url       = {/pub/prioritizer.pdf},
@@ -250,16 +260,16 @@
   location  = {Florence, Italy},
   pages     = {510-513},
   abstract  = {
-    Examining a large number of software artifacts can provide the research
-    community with data regarding quality and design. We present a dataset
-    obtained by statically analyzing 22730 jar files taken from the Maven
-    central archive, which is the de-facto application library repository for
-    the Java ecosystem. For our analysis we used three popular static analysis
-    tools that calculate metrics regarding object-oriented design, program size,
-    and package design. The dataset contains the metrics results that every tool
-    reports for every selected jar of the ecosystem. Our dataset can be used to
-    produce interesting research results, such as measure the domain-specific
-    language usage.},
+               Examining a large number of software artifacts can provide the research
+               community with data regarding quality and design. We present a dataset
+               obtained by statically analyzing 22730 jar files taken from the Maven
+               central archive, which is the de-facto application library repository for
+               the Java ecosystem. For our analysis we used three popular static analysis
+               tools that calculate metrics regarding object-oriented design, program size,
+               and package design. The dataset contains the metrics results that every tool
+               reports for every selected jar of the ecosystem. Our dataset can be used to
+               produce interesting research results, such as measure the domain-specific
+               language usage.},
   doi       = {10.1109/MSR.2015.76},
   url       = {/pub/generating-blueprints-java-ecosystem.pdf}
 }
@@ -280,27 +290,27 @@
   address     = {New York, NY, USA},
   keywords    = {GitHub, data on demand, dataset},
   abstract    = {
-    In recent years, Github has become the largest code host in the world, with
-    more than 5M developers collaborating across 10M repositories.  Numerous
-    popular open source projects (such as Ruby on Rails, Homebrew, Bootstrap,
-    Django or JQuery) have chosen Github as their host and have migrated their
-    code base to it. Github offers a tremendous research potential.  For
-    instance, it is a flagship for current open source development, a place for
-    developers to showcase their expertise to peers or potential recruiters, and
-    the platform where social coding features or pull requests emerged.
-    However, Github data is, to date, largely underexplored. To facilitate
-    studies of Github, we have created GHTorrent, a scalable, queriable, offline
-    mirror of the data offered through the Github REST API. In this paper we
-    present a novel feature of GHTorrent designed to offer customisable data
-    dumps on demand. The new GHTorrent data-on-demand service offers users the
-    possibility to request via a web form up-to-date GHTorrent data dumps for
-    any collection of Github repositories. We hope that by offering customisable
-    GHTorrent data dumps we will not only lower the "barrier for entry" even
-    further for researchers interested in mining Github data (thus encourage
-    researchers to intensify their mining efforts), but also enhance the
-    replicability of Github studies (since a snapshot of the data on which the
-    results were obtained can now easily accompany each study).
-  },
+                 In recent years, Github has become the largest code host in the world, with
+                 more than 5M developers collaborating across 10M repositories.  Numerous
+                 popular open source projects (such as Ruby on Rails, Homebrew, Bootstrap,
+                 Django or JQuery) have chosen Github as their host and have migrated their
+                 code base to it. Github offers a tremendous research potential.  For
+                 instance, it is a flagship for current open source development, a place for
+                 developers to showcase their expertise to peers or potential recruiters, and
+                 the platform where social coding features or pull requests emerged.
+                 However, Github data is, to date, largely underexplored. To facilitate
+                 studies of Github, we have created GHTorrent, a scalable, queriable, offline
+                 mirror of the data offered through the Github REST API. In this paper we
+                 present a novel feature of GHTorrent designed to offer customisable data
+                 dumps on demand. The new GHTorrent data-on-demand service offers users the
+                 possibility to request via a web form up-to-date GHTorrent data dumps for
+                 any collection of Github repositories. We hope that by offering customisable
+                 GHTorrent data dumps we will not only lower the "barrier for entry" even
+                 further for researchers interested in mining Github data (thus encourage
+                 researchers to intensify their mining efforts), but also enhance the
+                 replicability of Github studies (since a snapshot of the data on which the
+                 results were obtained can now easily accompany each study).
+                 },
   url         = {/pub/lean-ghtorrent.pdf},
   github      = {ghtorrent/ghtorrent-service},
   speakerdeck = {992bb730cd090131fa3126624a8aace7}
@@ -322,14 +332,14 @@
   address     = {New York, NY, USA},
   keywords    = {distributed software development, empirical software engineering, pull request, pull-based development},
   abstract    = {
-    Pull requests form a new method for collaborating in distributed software
-    development. To study the pull request distributed development model, we
-    constructed a dataset of almost 900 projects and 350,000 pull requests,
-    including some of the largest users of pull requests on Github. In this
-    paper, we describe how the project selection was done, we analyze the
-    selected features and present a machine learning tool set for the R
-    statistics environment.
-  },
+                 Pull requests form a new method for collaborating in distributed software
+                 development. To study the pull request distributed development model, we
+                 constructed a dataset of almost 900 projects and 350,000 pull requests,
+                 including some of the largest users of pull requests on Github. In this
+                 paper, we describe how the project selection was done, we analyze the
+                 selected features and present a machine learning tool set for the R
+                 statistics environment.
+                 },
   url         = {/pub/pullreqs-dataset.pdf},
   award       = {MSR2014: Best data showcase paper},
   github      = {gousiosg/pullreqs},
@@ -352,16 +362,16 @@
   address   = {New York, NY, USA},
   keywords  = {FindBugs, Maven Repository, Software Bugs},
   abstract  = {
-    Examining software ecosystems can provide the research community with data
-    regarding artifacts, processes, and communities. We present a dataset
-    obtained from the Maven central repository ecosystem (approximately 265{GB}
-    of data) by statically analyzing the repository to detect potential software
-    bugs. For our analysis we used {F}indBugs, a tool that examines Java
-    bytecode to detect numerous types of bugs. The dataset contains the metrics
-    results that Find- Bugs reports for every project version (a jar) included
-    in the ecosystem. For every version we also stored specific metadata such as
-    the jar’s size, its dependencies and others. Our dataset can be used to
-    produce interesting research results, as we show in specific examples.},
+               Examining software ecosystems can provide the research community with data
+               regarding artifacts, processes, and communities. We present a dataset
+               obtained from the Maven central repository ecosystem (approximately 265{GB}
+               of data) by statically analyzing the repository to detect potential software
+               bugs. For our analysis we used {F}indBugs, a tool that examines Java
+               bytecode to detect numerous types of bugs. The dataset contains the metrics
+               results that Find- Bugs reports for every project version (a jar) included
+               in the ecosystem. For every version we also stored specific metadata such as
+               the jar’s size, its dependencies and others. Our dataset can be used to
+               produce interesting research results, as we show in specific examples.},
   url       = {/pub/maven-findbugs.pdf}
 }
 
@@ -378,18 +388,18 @@
   title     = {Alitheia Core: An extensible software quality monitoring platform},
   year      = {2009},
   abstract  = {
-    Research in the fields of software quality and maintainability requires the
-    analysis of large quantities of data, which often originate from open source
-    software projects. Pre-processing data, calculating metrics, and
-    synthesizing composite results from a large corpus of project artefacts is a
-    tedious and error prone task lacking direct scientific value. The Alitheia
-    Core tool is an extensible platform for software quality analysis that is
-    designed specifically to fa- cilitate software engineering research on large
-    and diverse data sources, by integrating data collection and preprocess- ing
-    phases with an array of analysis services, and presenting the researcher
-    with an easy to use extension mechanism. The system has been used to process
-    several projects successfully, forming the basis of an emerging ecosystem of
-    quality analysis tools.},
+               Research in the fields of software quality and maintainability requires the
+               analysis of large quantities of data, which often originate from open source
+               software projects. Pre-processing data, calculating metrics, and
+               synthesizing composite results from a large corpus of project artefacts is a
+               tedious and error prone task lacking direct scientific value. The Alitheia
+               Core tool is an extensible platform for software quality analysis that is
+               designed specifically to fa- cilitate software engineering research on large
+               and diverse data sources, by integrating data collection and preprocess- ing
+               phases with an array of analysis services, and presenting the researcher
+               with an easy to use extension mechanism. The system has been used to process
+               several projects successfully, forming the basis of an emerging ecosystem of
+               quality analysis tools.},
   url       = {/pub/alitheia-core-extensible-software-quality-monitoring-platform.pdf},
   github    = {istlab/Alitheia-Core}
 }
@@ -406,18 +416,18 @@
   title     = {Measuring developer contribution from software repository data},
   year      = {2008},
   abstract  = {
-    Apart from source code, software infrastructures supporting agile and
-    distributed software projects contain traces of developer activity that does
-    not directly affect the product itself but is important for the development
-    process. We propose a model that, by combining traditional contribution
-    metrics with data mined from software repositories, can deliver accurate
-    developer contribution measurements. The model creates clusters of similar
-    projects to extract weights that are then applied to the actions a developer
-    performed on project assets to extract a combined measurement of the
-    developer’s contribution. We are currently implementing the model in the
-    context of a software quality monitoring system while we are also validating
-    its components by means of questionnaires.
-  },
+               Apart from source code, software infrastructures supporting agile and
+               distributed software projects contain traces of developer activity that does
+               not directly affect the product itself but is important for the development
+               process. We propose a model that, by combining traditional contribution
+               metrics with data mined from software repositories, can deliver accurate
+               developer contribution measurements. The model creates clusters of similar
+               projects to extract weights that are then applied to the actions a developer
+               performed on project assets to extract a combined measurement of the
+               developer’s contribution. We are currently implementing the model in the
+               context of a software quality monitoring system while we are also validating
+               its components by means of questionnaires.
+               },
   url       = {/pub/measuring-developer-contribution-from-repository-data.pdf}
 }
 

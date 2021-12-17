@@ -1,3 +1,81 @@
+@article{HG22,
+  title    = {Can we trust tests to automate dependency updates? A case study of Java Projects},
+  journal  = {Journal of Systems and Software},
+  volume   = {183},
+  pages    = {111097},
+  year     = {2022},
+  issn     = {0164-1212},
+  doi      = {https://doi.org/10.1016/j.jss.2021.111097},
+  author   = {Joseph Hejderup and Georgios Gousios},
+  keywords = {Semantic versioning, Library updates, Package management, Dependency management, Software migration},
+  abstract = {
+              Developers are increasingly using services such as Dependabot to automate
+              dependency updates. However, recent research has shown that developers
+              perceive such services as unreliable, as they heavily rely on test coverage
+              to detect conflicts in updates. To understand the prevalence of tests
+              exercising dependencies, we calculate the test coverage of direct and
+              indirect uses of dependencies in 521 well-tested Java projects. We find that
+              tests only cover 58% of direct and 21% of transitive dependency calls. By
+              creating 1,122,420 artificial updates with simple faults covering all
+              dependency usages in 262 projects, we measure the effectiveness of test
+              suites in detecting semantic faults in dependencies; we find that tests can
+              only detect 47% of direct and 35% of indirect artificial faults on average.
+              To increase reliability, we investigate the use of change impact analysis as
+              a means of reducing false negatives; on average, our tool can uncover 74% of
+              injected faults in direct dependencies and 64% for transitive dependencies,
+              nearly two times more than test suites. We then apply our tool in 22
+              real-world dependency updates, where it identifies three semantically
+              conflicting cases and three cases of unused dependencies that tests were
+              unable to detect. Our findings indicate that the combination of static and
+              dynamic analysis should be a requirement for future dependency updating
+              systems.
+              },
+  url      = {http://pure.tudelft.nl/ws/portalfiles/portal/100980924/1_s2.0_S0164121221001941_main.pdf},
+  github   = {jhejderup/uppdatera}
+}
+
+@misc{HBTG22,
+  title    = {Pr\"azi: From Package-based to Call-based Dependency
+              Networks},
+  author   = {Joseph Hejderup and Moritz Beller and Konstantinos
+              Triantafyllou and Georgios Gousios},
+  journal  = {Empirical Software
+              Engineering},
+  volume   = {},
+  number   = {},
+  pages    = {},
+  year     = {2022},
+  abstract = { Modern programming languages such as Java, JavaScript, and Rust
+              encourage software reuse by hosting diverse and fast-growing repositories of
+              highly interdependent packages (i.e., reusable libraries) for their users. The
+              standard way to study the interdependence between software packages is to infer
+              a package dependency network by parsing manifest data. Such networks help answer
+              questions such as “How many packages have dependencies to packages with known
+              security issues?” or “What are the most used packages?”. However, an overlooked
+              aspect in existing studies is that manifest-inferred relationships do not
+              necessarily examine the actual usage of these dependencies in source code. To
+              better model dependencies between packages, we developed Präzi, an approach
+              combining manifests and call graphs of packages. Präzi constructs a dependency
+              network at the more fine-grained function-level, instead of at the manifest
+              level. This paper discusses a prototypical Präzi implementation for the
+              popular system programming language Rust. We use Präzi to characterize Rust’s
+              package repository, Crates.io, at the function level and perform a comparative
+              study with metadata-based networks. Our results show that metadata-based
+              networks generalize how packages use their dependencies. 
+              
+              Using Using Präzi, we find packages call only 40% of their resolved dependencies, 
+              and that manual analysis of 34 cases reveals that not all packages use a dependency
+              the same way. We argue that researchers and practitioners interested in understanding 
+              how developers or programs use dependencies should account for its context—not the 
+              sum of all resolved dependencies., we find packages call only 40% of their resolved 
+              dependencies, and that manual analysis of 34 cases reveals that not all packages 
+              use a dependency the same way. We argue that researchers and practitioners interested 
+              in understanding how developers or programs use dependencies should account for its 
+              context—not the sum of all resolved dependencies.
+              },
+  note     = {To appear},
+  github   = {jhejderup/prazi}
+}
 
 @article{KGDG21,
   author   = {Kula, Elvan and Greuter, Eric and Van Deursen, Arie and Georgios, Gousios},
@@ -9,31 +87,31 @@
   pages    = {1-1},
   doi      = {10.1109/TSE.2021.3101192},
   abstract = {
-    Late delivery of software projects and cost overruns have been common
-    problems in the software industry for decades. Both problems are
-    manifestations of deficiencies in effort estimation during project planning.
-    With software projects being complex socio-technical systems, a large pool
-    of factors can affect effort estimation and on-time delivery. To identify
-    the most relevant factors and their interactions affecting schedule
-    deviations in large-scale agile software development, we conducted a
-    mixed-methods case study at ING: two rounds of surveys revealed a multitude
-    of organizational, people, process, project and technical factors which were
-    then quantified and statistically modeled using software repository data
-    from 185 teams. We find that factors such as requirements refinement, task
-    dependencies, organizational alignment and organizational politics are
-    perceived to have the greatest impact on on-time delivery, whereas proxy
-    measures such as project size, number of dependencies, historical delivery
-    performance and team familiarity can help explain a large degree of schedule
-    deviations. We also discover hierarchical interactions among factors:
-    organizational factors are perceived to interact with people factors, which
-    in turn impact technical factors. We compose our findings in the form of a
-    conceptual framework representing influential factors and their
-    relationships to on-time delivery. Our results can help practitioners
-    identify and manage delay risks in agile settings, can inform the design of
-    automated tools to predict schedule overruns and can contribute towards the
-    development of a relational theory of software project management.
-  },
-  url      = {https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9503331}
+              Late delivery of software projects and cost overruns have been common
+              problems in the software industry for decades. Both problems are
+              manifestations of deficiencies in effort estimation during project planning.
+              With software projects being complex socio-technical systems, a large pool
+              of factors can affect effort estimation and on-time delivery. To identify
+              the most relevant factors and their interactions affecting schedule
+              deviations in large-scale agile software development, we conducted a
+              mixed-methods case study at ING: two rounds of surveys revealed a multitude
+              of organizational, people, process, project and technical factors which were
+              then quantified and statistically modeled using software repository data
+              from 185 teams. We find that factors such as requirements refinement, task
+              dependencies, organizational alignment and organizational politics are
+              perceived to have the greatest impact on on-time delivery, whereas proxy
+              measures such as project size, number of dependencies, historical delivery
+              performance and team familiarity can help explain a large degree of schedule
+              deviations. We also discover hierarchical interactions among factors:
+              organizational factors are perceived to interact with people factors, which
+              in turn impact technical factors. We compose our findings in the form of a
+              conceptual framework representing influential factors and their
+              relationships to on-time delivery. Our results can help practitioners
+              identify and manage delay risks in agile settings, can inform the design of
+              automated tools to predict schedule overruns and can contribute towards the
+              development of a relational theory of software project management.
+              },
+  url      = {https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9503331}
 }
 
 @article{MNBGD21,
@@ -46,36 +124,36 @@
   pages    = {1-1},
   doi      = {},
   abstract = {
-
-    Modern, complex software systems are being continuously extended and
-    adjusted. The developers responsible for this may come from different teams
-    or organizations, and may be distributed over the world. This may make it
-    difficult to keep track of what other developers are doing, which may result
-    in multiple developers concurrently editing the same code areas. This, in
-    turn, may lead to hard-to-merge changes or even merge conflicts, logical
-    bugs that are difficult to detect, duplication of work, and wasted developer
-    productivity. To address this, we explore the extent of this problem in the
-    pull request based software development model. We study half a year of
-    changes made to six large repositories in Microsoft in which at least 1,000
-    pull requests are created each month. We find that files concurrently edited
-    in different pull requests are more likely to introduce bugs. Motivated by
-    these findings, we design, implement, and deploy a service named ConE
-    (Concurrent Edit Detector) that proactively detects pull requests containing
-    concurrent edits, to help mitigate the problems caused by them. ConE has
-    been designed to scale, and to minimize false alarms while still flagging
-    relevant concurrently edited files. Key concepts of ConE include the
-    detection of the Extent of Overlap between pull requests, and the
-    identification of Rarely Concurrently Edited Files. To evaluate ConE, we
-    report on its operational deployment on 234 repositories inside Microsoft.
-    ConE assessed 26,000 pull requests and made 775 recommendations about
-    conflicting changes, which were rated as useful in over 70% (554) of the
-    cases. From interviews with 48 users we learned that they believed cone
-    would save time in conflict resolution and avoiding duplicate work, and that
-    over 90% intend to keep using the service on a daily basis.
-    
-  },
+              
+              Modern, complex software systems are being continuously extended and
+              adjusted. The developers responsible for this may come from different teams
+              or organizations, and may be distributed over the world. This may make it
+              difficult to keep track of what other developers are doing, which may result
+              in multiple developers concurrently editing the same code areas. This, in
+              turn, may lead to hard-to-merge changes or even merge conflicts, logical
+              bugs that are difficult to detect, duplication of work, and wasted developer
+              productivity. To address this, we explore the extent of this problem in the
+              pull request based software development model. We study half a year of
+              changes made to six large repositories in Microsoft in which at least 1,000
+              pull requests are created each month. We find that files concurrently edited
+              in different pull requests are more likely to introduce bugs. Motivated by
+              these findings, we design, implement, and deploy a service named ConE
+              (Concurrent Edit Detector) that proactively detects pull requests containing
+              concurrent edits, to help mitigate the problems caused by them. ConE has
+              been designed to scale, and to minimize false alarms while still flagging
+              relevant concurrently edited files. Key concepts of ConE include the
+              detection of the Extent of Overlap between pull requests, and the
+              identification of Rarely Concurrently Edited Files. To evaluate ConE, we
+              report on its operational deployment on 234 repositories inside Microsoft.
+              ConE assessed 26,000 pull requests and made 775 recommendations about
+              conflicting changes, which were rated as useful in over 70% (554) of the
+              cases. From interviews with 48 users we learned that they believed cone
+              would save time in conflict resolution and avoiding duplicate work, and that
+              over 90% intend to keep using the service on a daily basis.
+              
+              },
   url      = {},
-  note = {To appear}
+  note     = {To appear}
 }
 
 @article{IHG21,
@@ -89,29 +167,29 @@
   url      = {https://arxiv.org/pdf/2010.09116},
   doi      = {10.1007/s10664-021-09976-2},
   abstract = {
-    Many platforms exploit collaborative tagging to provide their users with
-    faster and more accurate results while searching or navigating. Tags can
-    communicate different concepts such as the main features, technologies,
-    functionality, and the goal of a software repository. Recently, GitHub has
-    enabled users to annotate repositories with topic tags. It has also provided
-    a set of featured topics, and their possible aliases, carefully curated with
-    the help of the community. This creates the opportunity to use this initial
-    seed of topics to automatically annotate all remaining repositories, by
-    training models that recommend high-quality topic tags to developers. In
-    this work, we study the application of multi-label classification techniques
-    to predict software repositories’ topics. First, we map the large-space of
-    user-defined topics to those featured by GitHub. The core idea is to derive
-    more information from projects’ available documentation. Our data contains
-    about 152K GitHub repositories and 228 featured topics. Then, we apply
-    supervised models on repositories’ textual information such as descriptions,
-    README files, wiki pages, and file names. We assess the performance of our
-    approach both quantitatively and qualitatively. Our proposed model achieves
-    Recall\@5 and LRAP scores of 0.890 and 0.805, respectively. Moreover, based
-    on users’ assessment, our approach is highly capable of recommending correct
-    and complete set of topics. Finally, we use our models to develop an online
-    tool named Repository Catalogue, that automatically predicts topics for
-    GitHub repositories and is publicly available.
-  }
+              Many platforms exploit collaborative tagging to provide their users with
+              faster and more accurate results while searching or navigating. Tags can
+              communicate different concepts such as the main features, technologies,
+              functionality, and the goal of a software repository. Recently, GitHub has
+              enabled users to annotate repositories with topic tags. It has also provided
+              a set of featured topics, and their possible aliases, carefully curated with
+              the help of the community. This creates the opportunity to use this initial
+              seed of topics to automatically annotate all remaining repositories, by
+              training models that recommend high-quality topic tags to developers. In
+              this work, we study the application of multi-label classification techniques
+              to predict software repositories’ topics. First, we map the large-space of
+              user-defined topics to those featured by GitHub. The core idea is to derive
+              more information from projects’ available documentation. Our data contains
+              about 152K GitHub repositories and 228 featured topics. Then, we apply
+              supervised models on repositories’ textual information such as descriptions,
+              README files, wiki pages, and file names. We assess the performance of our
+              approach both quantitatively and qualitatively. Our proposed model achieves
+              Recall\@5 and LRAP scores of 0.890 and 0.805, respectively. Moreover, based
+              on users’ assessment, our approach is highly capable of recommending correct
+              and complete set of topics. Finally, we use our models to develop an online
+              tool named Repository Catalogue, that automatically predicts topics for
+              GitHub repositories and is publicly available.
+              }
 }
 
 
@@ -132,20 +210,20 @@
   numpages   = {14},
   keywords   = {security breaches, Software reuse, network analysis},
   abstract   = {
-    Modern software development is increasingly dependent on components,
-    libraries, and frameworks coming from third-party vendors or open-source
-    suppliers and made available through a number of platforms (or forges).
-    This way of writing software puts an emphasis on reuse and on
-    composition, commoditizing the services that modern applications require.
-    On the other hand, bugs and vulnerabilities in a single library living in
-    one such ecosystem can affect, directly or by transitivity, a huge number
-    of other libraries and applications. Currently, only product-level
-    information on library dependencies is used to contain this kind of
-    danger, but this knowledge often reveals itself too imprecise to lead to
-    effective (and possibly automated) handling policies. We will discuss how
-    fine-grained function-level dependencies can greatly improve reliability
-    and reduce the impact of vulnerabilities on the whole software ecosystem.
-  },
+                Modern software development is increasingly dependent on components,
+                libraries, and frameworks coming from third-party vendors or open-source
+                suppliers and made available through a number of platforms (or forges).
+                This way of writing software puts an emphasis on reuse and on
+                composition, commoditizing the services that modern applications require.
+                On the other hand, bugs and vulnerabilities in a single library living in
+                one such ecosystem can affect, directly or by transitivity, a huge number
+                of other libraries and applications. Currently, only product-level
+                information on library dependencies is used to contain this kind of
+                danger, but this knowledge often reveals itself too imprecise to lead to
+                effective (and possibly automated) handling policies. We will discuss how
+                fine-grained function-level dependencies can greatly improve reliability
+                and reduce the impact of vulnerabilities on the whole software ecosystem.
+                },
   url        = {https://arxiv.org/pdf/2012.04760.pdf}
 }
 
@@ -165,7 +243,7 @@
 
 @article{CAGDT17,
   author   = {Coelho, Roberta and Almeida, Lucas and Gousios, Georgios and Deursen,
-    Arie van and Treude, Christoph},
+              Arie van and Treude, Christoph},
   title    = {Exception handling bug hazards in Android},
   journal  = {Empirical Software Engineering},
   year     = {2017},
@@ -177,22 +255,22 @@
   issn     = {1573-7616},
   doi      = {10.1007/s10664-016-9443-7},
   abstract = {
-    Adequate handling of exceptions has proven difficult for many software
-    engineers. Mobile app developers in particular, have to cope with
-    compatibility, middleware, memory constraints, and battery restrictions.
-    The goal of this paper is to obtain a thorough understanding of common
-    exception handling bug hazards that app developers face. To that end, we
-    first provide a detailed empirical study of over 6,000 Java exception
-    stack traces we extracted from over 600 open source Android projects. Key
-    insights from this study include common causes for system crashes, and
-    common chains of wrappings between checked and unchecked exceptions.
-    Furthermore, we provide a survey with 71 developers involved in at least
-    one of the projects analyzed. The results corroborate the stack trace
-    findings, and indicate that developers are unaware of frequently
-    occurring undocumented exception handling behavior. Overall, the findings
-    of our study call for tool support to help developers understand their
-    own and third party exception handling and wrapping logic.
-  },
+              Adequate handling of exceptions has proven difficult for many software
+              engineers. Mobile app developers in particular, have to cope with
+              compatibility, middleware, memory constraints, and battery restrictions.
+              The goal of this paper is to obtain a thorough understanding of common
+              exception handling bug hazards that app developers face. To that end, we
+              first provide a detailed empirical study of over 6,000 Java exception
+              stack traces we extracted from over 600 open source Android projects. Key
+              insights from this study include common causes for system crashes, and
+              common chains of wrappings between checked and unchecked exceptions.
+              Furthermore, we provide a survey with 71 developers involved in at least
+              one of the projects analyzed. The results corroborate the stack trace
+              findings, and indicate that developers are unaware of frequently
+              occurring undocumented exception handling behavior. Overall, the findings
+              of our study call for tool support to help developers understand their
+              own and third party exception handling and wrapping logic.
+              },
   url      = {/pub/exception-handling-bug-hazards-android.pdf}
 }
 
@@ -209,28 +287,28 @@
   volume    = {21},
   number    = {5},
   abstract  = {
-    With over 10 million git repositories, GitHub is becoming one of the most
-    important sources of software artifacts on the Internet. Researchers mine
-    the information stored in GitHub’s event logs to understand how its users
-    employ the site to collaborate on software, but so far there have been no
-    studies describing the quality and properties of the available GitHub
-    data. We document the results of an empirical study aimed at
-    understanding the characteristics of the repositories and users in
-    GitHub; we see how users take advantage of GitHub’s main features and how
-    their activity is tracked on GitHub and related datasets to point out
-    misalignment between the real and mined data. Our results indicate that
-    while GitHub is a rich source of data on software development, mining
-    GitHub for research purposes should take various potential perils into
-    consideration. For example, we show that the majority of the projects are
-    personal and inactive, and that almost 40\% of all pull requests do not
-    appear as merged even though they were. Also, approximately half of
-    GitHub’s registered users do not have public activity, while the activity
-    of GitHub users in repositories is not always easy to pinpoint. We use
-    our identified perils to see if they can pose validity threats; we review
-    selected papers from the MSR 2014 Mining Challenge and see if there are
-    potential impacts to consider. We provide a set of recommendations for
-    software engineering researchers on how to approach the data in GitHub.
-  },
+               With over 10 million git repositories, GitHub is becoming one of the most
+               important sources of software artifacts on the Internet. Researchers mine
+               the information stored in GitHub’s event logs to understand how its users
+               employ the site to collaborate on software, but so far there have been no
+               studies describing the quality and properties of the available GitHub
+               data. We document the results of an empirical study aimed at
+               understanding the characteristics of the repositories and users in
+               GitHub; we see how users take advantage of GitHub’s main features and how
+               their activity is tracked on GitHub and related datasets to point out
+               misalignment between the real and mined data. Our results indicate that
+               while GitHub is a rich source of data on software development, mining
+               GitHub for research purposes should take various potential perils into
+               consideration. For example, we show that the majority of the projects are
+               personal and inactive, and that almost 40\% of all pull requests do not
+               appear as merged even though they were. Also, approximately half of
+               GitHub’s registered users do not have public activity, while the activity
+               of GitHub users in repositories is not always easy to pinpoint. We use
+               our identified perils to see if they can pose validity threats; we review
+               selected papers from the MSR 2014 Mining Challenge and see if there are
+               potential impacts to consider. We provide a set of recommendations for
+               software engineering researchers on how to approach the data in GitHub.
+               },
   url       = {/pub/promises-perils-github-extended.pdf}
 }
 
@@ -248,18 +326,18 @@
   pages     = {885-925},
   url       = {/pub/conducting-quantitative-softeng-studies-alitheia-core.pdf},
   abstract  = {
-    Quantitative empirical software engineering research benefits mightily
-    from processing large open source software repository data sets. The
-    diversity of repository management tools and the long history of some
-    projects, renders the task of working those datasets a tedious and
-    error-prone exercise. The Alitheia Core analysis platform preprocesses
-    repository data into an intermediate format that allows researchers to
-    provide custom analysis tools. Alitheia Core automatically distributes
-    the processing load on multiple processors while enabling programmatic
-    access to the raw data, the metadata, and the analysis results. The tool
-    has been successfully applied on hundreds of medium to large-sized
-    open-source projects, enabling large-scale empirical studies.
-  }
+               Quantitative empirical software engineering research benefits mightily
+               from processing large open source software repository data sets. The
+               diversity of repository management tools and the long history of some
+               projects, renders the task of working those datasets a tedious and
+               error-prone exercise. The Alitheia Core analysis platform preprocesses
+               repository data into an intermediate format that allows researchers to
+               provide custom analysis tools. Alitheia Core automatically distributes
+               the processing load on multiple processors while enabling programmatic
+               access to the raw data, the metadata, and the analysis results. The tool
+               has been successfully applied on hundreds of medium to large-sized
+               open-source projects, enabling large-scale empirical studies.
+               }
 }
 
 @article{LG12,
@@ -276,14 +354,14 @@
   volume    = {37},
   year      = {2012},
   abstract  = {
-    As any empirical science, Software Engineering research should strive
-    towards better research practices. Replication is regrettably not a
-    priority for Software Engineering researchers and, moreover, not afforded
-    by many published studies. Here we report our experience from our
-    encounter with a recent paper in a flagship Software Engineering
-    conference. Our experience shows that current publication requirements do
-    not guarantee replicability.
-  }
+               As any empirical science, Software Engineering research should strive
+               towards better research practices. Replication is regrettably not a
+               priority for Software Engineering researchers and, moreover, not afforded
+               by many published studies. Here we report our experience from our
+               encounter with a recent paper in a flagship Software Engineering
+               conference. Our experience shows that current publication requirements do
+               not guarantee replicability.
+               }
 }
 
 @article{ASKG11,
@@ -298,29 +376,29 @@
   volume   = {4},
   year     = 2011,
   abstract = {
-    Open source software (OSS), the origins of which can be traced back to
-    the 1950s, is software distributed with a license that allows access to
-    its source code, free redistribution, the creation of derived works, and
-    unrestricted use. OSS applications cover most areas of consumer and
-    business software and their study touches many disciplines, including
-    computer science, information systems, economics, psychology, and law.
-    Behind a successful OSS project lies a community of actors, ranging from
-    core developers to passive users, held together by a flexible governance
-    structure and membership, leadership and contribution policies that align
-    their interests. The motivation behind individuals participating in OSS
-    projects can be, among others, social, ideological, hedonistic, or
-    signaling, while companies gain from their access to high-quality,
-    innovative projects and an increase in their reputation and visibility.
-    Nowadays many business models rely on OSS as a product through the
-    provision of associated services, or in coexistence with proprietary
-    software, hardware, services, or licensing. The numerous OSS licenses
-    mainly differ on how they treat derived software: some contain provisions
-    that maintain its availability in open source form while others allow
-    more flexibility. Through its widespread adoption, OSS is affecting the
-    software industry, science, engineering, research, teaching, the
-    developing countries, and the society at large through its ability to
-    democratize technology and innovation.
-  }
+              Open source software (OSS), the origins of which can be traced back to
+              the 1950s, is software distributed with a license that allows access to
+              its source code, free redistribution, the creation of derived works, and
+              unrestricted use. OSS applications cover most areas of consumer and
+              business software and their study touches many disciplines, including
+              computer science, information systems, economics, psychology, and law.
+              Behind a successful OSS project lies a community of actors, ranging from
+              core developers to passive users, held together by a flexible governance
+              structure and membership, leadership and contribution policies that align
+              their interests. The motivation behind individuals participating in OSS
+              projects can be, among others, social, ideological, hedonistic, or
+              signaling, while companies gain from their access to high-quality,
+              innovative projects and an increase in their reputation and visibility.
+              Nowadays many business models rely on OSS as a product through the
+              provision of associated services, or in coexistence with proprietary
+              software, hardware, services, or licensing. The numerous OSS licenses
+              mainly differ on how they treat derived software: some contain provisions
+              that maintain its availability in open source form while others allow
+              more flexibility. Through its widespread adoption, OSS is affecting the
+              software industry, science, engineering, research, teaching, the
+              developing countries, and the society at large through its ability to
+              democratize technology and innovation.
+              }
 }
 
 @article{SGKLASS09,
@@ -334,22 +412,22 @@
   volume   = {233},
   year     = {2009},
   abstract = {
-    Traditionally, research on quality attributes was either kept under wraps
-    within the organization that performed it, or carried out by outsiders
-    using narrow, black-box techniques. The emergence of open source software
-    has changed this picture allowing us to evaluate both software products
-    and the processes that yield them. Thus, the software source code and the
-    associated data stored in the version control system, the bug tracking
-    databases, the mailing lists, and the wikis allow us to evaluate quality
-    in a transparent way. Even better, the large number of (often competing)
-    open source projects makes it possible to contrast the quality of
-    comparable systems serving the same domain. Furthermore, by combining
-    historical source code snapshots with significant events, such as bug
-    discoveries and fixes, we can further dig into the causes and effects of
-    problems. Here we present motivating examples, tools, and techniques that
-    can be used to evaluate the quality of open source (and by extension also
-    proprietary) software.
-  }
+              Traditionally, research on quality attributes was either kept under wraps
+              within the organization that performed it, or carried out by outsiders
+              using narrow, black-box techniques. The emergence of open source software
+              has changed this picture allowing us to evaluate both software products
+              and the processes that yield them. Thus, the software source code and the
+              associated data stored in the version control system, the bug tracking
+              databases, the mailing lists, and the wikis allow us to evaluate quality
+              in a transparent way. Even better, the large number of (often competing)
+              open source projects makes it possible to contrast the quality of
+              comparable systems serving the same domain. Furthermore, by combining
+              historical source code snapshots with significant events, such as bug
+              discoveries and fixes, we can further dig into the causes and effects of
+              problems. Here we present motivating examples, tools, and techniques that
+              can be used to evaluate the quality of open source (and by extension also
+              proprietary) software.
+              }
 }
 
 @article{GAG04,
@@ -365,13 +443,13 @@
   doi      = {10.1016/j.csi.2004.08.003},
   year     = {2005},
   abstract = {
-    Enterprise information systems and e-commerce applications are tightly
-    integrated in today ’s modern enterprises. Component architectures are
-    the base for building such multi-tier, distributed applications. This
-    paper examines the security threats those systems must confront and the
-    solutions proposed by the major existing component architectures. A
-    comparative evaluation of both security features and implementation
-    issues is carried out to determine each architecture’s strong points and
-    drawbacks. 
-  }
+              Enterprise information systems and e-commerce applications are tightly
+              integrated in today ’s modern enterprises. Component architectures are
+              the base for building such multi-tier, distributed applications. This
+              paper examines the security threats those systems must confront and the
+              solutions proposed by the major existing component architectures. A
+              comparative evaluation of both security features and implementation
+              issues is carried out to determine each architecture’s strong points and
+              drawbacks. 
+              }
 }

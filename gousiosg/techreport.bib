@@ -1,3 +1,84 @@
+@misc{YDG21,
+  title         = {KabOOM: Unsupervised Crash Categorization through Timeseries Fingerprinting},
+  author        = {Edward Yao and Wes Dyer and Georgios Gousios},
+  year          = {2021},
+  eprint        = {2110.10450},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.SE},
+  url           = {https://arxiv.org/pdf/2110.10450.pdf},
+  abstract      = {
+                   Modern mobile applications include instrumentation that sample internal
+                   application metrics at regular intervals. Following a crash, sample metrics are
+                   collected and can potentially be valuable for root-causing difficult to diagnose
+                   crashes. However, the fine-grained nature and overwhelming wealth of available
+                   application metrics, coupled with frequent application updates, renders their
+                   use for root-causing crashes extremely difficult.  We propose KabOOM, a method
+                   to automatically cluster telemetry reports in intuitive, distinct crash
+                   categories. Uniquely, KabOOM relies on multivariate timeseries fingerprinting;
+                   an auto-encoder coupled with a cluster centroid optimization technique learns
+                   embeddings of each crash report, which are then used to cluster metric
+                   timeseries based crash reports. We demonstrate the effectiveness of KabOOM on
+                   both reducing the dimensionality of the incoming crash reports and producing
+                   crash categories that are intuitive to developers.
+                   
+                   }
+}
+
+@misc{RG21,
+  title         = {How does Software Change?},
+  author        = {Ayushi Rastogi and Georgios Gousios},
+  year          = {2021},
+  eprint        = {2106.01885},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.SE},
+  abstract      = {
+                   
+                   Software evolves with changes to its codebase over time. Internally,
+                   software changes in response to decisions to include some code change into
+                   the codebase and discard others. Explaining the mechanism of software
+                   evolution, this paper presents a theory of software change. Our theory is
+                   grounded in multiple evidence sources (e.g., GitHub documentation and
+                   relevant scientific literature) relating to the pull-based development
+                   model in GitHub. The resulting theory explains the influence of
+                   project-related core concepts (e.g., people and governance) as well as its
+                   ecosystem on the decision of software change.
+                   },
+  url           = {https://arxiv.org/pdf/2106.01885.pdf}
+}
+
+@misc{ZYGR21,
+  title         = {Pull Request Decision Explained: An Empirical Overview},
+  author        = {Xunhui Zhang and Yue Yu and Georgios Gousios and Ayushi Rastogi},
+  year          = {2021},
+  eprint        = {2105.13970},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.SE},
+  abstract      = {
+                   Context: Pull-based development model is widely used in open
+                   source, leading the trends in distributed software
+                   development. One aspect which has garnered significant
+                   attention is studies on pull request decision - identifying
+                   factors for explanation. Objective: This study builds on a
+                   decade long research on pull request decision to explain it.
+                   We empirically investigate how factors influence pull request
+                   decision and scenarios that change the influence of factors.
+                   Method: We identify factors influencing pull request decision
+                   on GitHub through a systematic literature review and infer it
+                   by mining archival data. We collect a total of 3,347,937 pull
+                   requests with 95 features from 11,230 diverse projects on
+                   GitHub. Using this data, we explore the relations of the
+                   factors to each other and build mixed-effect logistic
+                   regression models to empirically explain pull request
+                   decision. Results: Our study shows that a small number of
+                   factors explain pull request decision with the integrator
+                   same or different from the submitter as the most important
+                   factor. We also noted that some factors are important only in
+                   special cases e.g., the percentage of failed builds is
+                   important for pull request decision when continuous
+                   integration is used.  },
+  url           = {https://arxiv.org/pdf/2105.13970.pdf}
+}
+                   
 @misc{SPGA21pp,
   title         = {Learning Off-By-One Mistakes: An Empirical Study},
   author        = {Hendrig Sellik and Onno van Paridon and Georgios Gousios and Maurício Aniche},
@@ -7,22 +88,22 @@
   primaryclass  = {cs.SE},
   url           = {https://arxiv.org/pdf/2102.12429.pdf},
   abstract      = {
-    Mistakes in binary conditions are a source of error in many software
-    systems. They happen when developers use, e.g., < or > instead of <= or
-    >=. These boundary mistakes are hard to find and impose manual,
-    labor-intensive work for software developers. While previous research has
-    been proposing solutions to identify errors in boundary conditions, the
-    problem remains open. In this paper, we explore the effectiveness of deep
-    learning models in learning and predicting mistakes in boundary
-    conditions. We train different models on approximately 1.6M examples with
-    faults in different boundary conditions. We achieve a precision of 85%
-    and a recall of 84% on a balanced dataset, but lower numbers in an
-    imbalanced dataset. We also perform tests on 41 real-world boundary
-    condition bugs found from GitHub, where the model shows only a modest
-    performance. Finally, we test the model on a large-scale Java code base
-    from Adyen, our industrial partner. The model reported 36 buggy methods,
-    but none of them were confirmed by developers.
-    }
+                   Mistakes in binary conditions are a source of error in many software
+                   systems. They happen when developers use, e.g., < or > instead of <= or
+                   >=. These boundary mistakes are hard to find and impose manual,
+                   labor-intensive work for software developers. While previous research has
+                   been proposing solutions to identify errors in boundary conditions, the
+                   problem remains open. In this paper, we explore the effectiveness of deep
+                   learning models in learning and predicting mistakes in boundary
+                   conditions. We train different models on approximately 1.6M examples with
+                   faults in different boundary conditions. We achieve a precision of 85%
+                   and a recall of 84% on a balanced dataset, but lower numbers in an
+                   imbalanced dataset. We also perform tests on 41 real-world boundary
+                   condition bugs found from GitHub, where the model shows only a modest
+                   performance. Finally, we test the model on a large-scale Java code base
+                   from Adyen, our industrial partner. The model reported 36 buggy methods,
+                   but none of them were confirmed by developers.
+                   }
 }
 
 @misc{HBTG21pp,
@@ -34,32 +115,32 @@
   primaryclass  = {cs.SE},
   url           = {https://arxiv.org/pdf/2101.09563.pdf},
   abstract      = {
-    Software reuse has emerged as one of the most crucial elements of modern
-    software development. The standard way to study the dependency networks
-    caused by reuse is to infer relationships between software packages
-    through manifests in the packages' repositories. Such networks can help
-    answer important questions like "How many packages have dependencies to
-    packages with known security issues?" or "What are the most used
-    packages?". However, an important overlooked aspect of current networks
-    is that manifest-inferred relationships do not necessarily describe how
-    or whether these dependencies are actually used in the code. To better
-    model dependencies between packages, we devise Präzi, an approach
-    combining manifests and call graphs of packages. Präzi constructs a
-    fine-grained dependency network at the more fine-grained function-level,
-    instead of at the manifest-level. For this paper, we provide a
-    prototypical Präzi implementation for the popular system programming
-    language Rust. Using it, we replicate a recent evolution study
-    characterizing Rust's package repository, this http URL, on the
-    function-level. Our results identify new key characteristics and
-    developments of this http URL: i) 49% of all function calls in this http
-    URL target a function in a dependency, suggesting prevalent reuse of
-    dependencies, ii) packages call 40% of their resolved transitive
-    dependencies, iii) package maintainers make nearly 7 new calls to their
-    dependencies biannually, and iv) packages have two to three times more
-    indirect callers than direct callers of their APIs. These results show
-    that current analyses of manifest-level dependency networks are not
-    sufficient to understand how packages use each other.
-  }
+                   Software reuse has emerged as one of the most crucial elements of modern
+                   software development. The standard way to study the dependency networks
+                   caused by reuse is to infer relationships between software packages
+                   through manifests in the packages' repositories. Such networks can help
+                   answer important questions like "How many packages have dependencies to
+                   packages with known security issues?" or "What are the most used
+                   packages?". However, an important overlooked aspect of current networks
+                   is that manifest-inferred relationships do not necessarily describe how
+                   or whether these dependencies are actually used in the code. To better
+                   model dependencies between packages, we devise Präzi, an approach
+                   combining manifests and call graphs of packages. Präzi constructs a
+                   fine-grained dependency network at the more fine-grained function-level,
+                   instead of at the manifest-level. For this paper, we provide a
+                   prototypical Präzi implementation for the popular system programming
+                   language Rust. Using it, we replicate a recent evolution study
+                   characterizing Rust's package repository, this http URL, on the
+                   function-level. Our results identify new key characteristics and
+                   developments of this http URL: i) 49% of all function calls in this http
+                   URL target a function in a dependency, suggesting prevalent reuse of
+                   dependencies, ii) packages call 40% of their resolved transitive
+                   dependencies, iii) package maintainers make nearly 7 new calls to their
+                   dependencies biannually, and iv) packages have two to three times more
+                   indirect callers than direct callers of their APIs. These results show
+                   that current analyses of manifest-level dependency networks are not
+                   sufficient to understand how packages use each other.
+                   }
 }
 
 @misc{MNBGD21pp,
@@ -71,25 +152,25 @@
   primaryclass  = {cs.SE},
   url           = {https://arxiv.org/pdf/2101.06542},
   abstract      = {
-    Developers from different teams or organizations, co-located or
-    distributed, making changes to the same source code files or areas,
-    through pull requests that are active in the same time period, is an
-    essential part of developing complex software systems. With such a
-    dynamically changing environment spanning several boundaries, geographic
-    and organizational, there is little awareness about the changes that are
-    flowing in through other active pull requests in the system leading to
-    complex merge conflicts, hard-to-detect logical bugs or duplication of
-    work and wasted developer productivity. In order to address this problem,
-    we studied changes produced in eight very large repositories, in
-    Microsoft to understand the extent of concurrent edits and their relation
-    to subsequent bugs and bug fixes. Motivated by our findings, we developed
-    a system called ConE (Concurrent Edit Detector) that proactively detects
-    concurrent edits to help mitigate the problems caused by them. We present
-    the results of ConE's deployment through early intervention techniques
-    such as pull request notifications, by which ConE facilitates better
-    communication among all the stakeholders participating in collaborative
-    software development, helping avoid future problems.
-  }
+                   Developers from different teams or organizations, co-located or
+                   distributed, making changes to the same source code files or areas,
+                   through pull requests that are active in the same time period, is an
+                   essential part of developing complex software systems. With such a
+                   dynamically changing environment spanning several boundaries, geographic
+                   and organizational, there is little awareness about the changes that are
+                   flowing in through other active pull requests in the system leading to
+                   complex merge conflicts, hard-to-detect logical bugs or duplication of
+                   work and wasted developer productivity. In order to address this problem,
+                   we studied changes produced in eight very large repositories, in
+                   Microsoft to understand the extent of concurrent edits and their relation
+                   to subsequent bugs and bug fixes. Motivated by our findings, we developed
+                   a system called ConE (Concurrent Edit Detector) that proactively detects
+                   concurrent edits to help mitigate the problems caused by them. We present
+                   the results of ConE's deployment through early intervention techniques
+                   such as pull request notifications, by which ConE facilitates better
+                   communication among all the stakeholders participating in collaborative
+                   software development, helping avoid future problems.
+                   }
 }
 
 @misc{MLPG21pp,
@@ -101,28 +182,28 @@
   primaryclass  = {cs.LG},
   url           = {https://arxiv.org/pdf/2101.04470},
   abstract      = {
-    Dynamic languages, such as Python and Javascript, trade static typing for
-    developer flexibility. While this allegedly enables greater productivity,
-    lack of static typing can cause runtime exceptions, type inconsistencies,
-    and is a major factor for weak IDE support. To alleviate these issues,
-    PEP 484 introduced optional type annotations for Python. As retrofitting
-    types to existing codebases is error-prone and laborious, learning-based
-    approaches have been proposed to enable automatic type annotations based
-    on existing, partially annotated codebases. However, the prediction of
-    rare and user-defined types is still challenging. In this paper, we
-    present Type4Py, a deep similarity learning-based type inference model
-    for Python. We design a hierarchical neural network model that learns to
-    discriminate between types of the same kind and dissimilar types in a
-    high-dimensional space, which results in clusters of types. Nearest
-    neighbor search suggests likely type signatures of given Python
-    functions. The types visible to analyzed modules are surfaced using
-    lightweight dependency analysis. The results of quantitative and
-    qualitative evaluation indicate that Type4Py significantly outperforms
-    state-of-the-art approaches at the type prediction task. Considering the
-    Top-1 prediction, Type4Py obtains 19.33% and 13.49% higher precision than
-    Typilus and TypeWriter, respectively, while utilizing a much bigger
-    vocabulary.
-  }
+                   Dynamic languages, such as Python and Javascript, trade static typing for
+                   developer flexibility. While this allegedly enables greater productivity,
+                   lack of static typing can cause runtime exceptions, type inconsistencies,
+                   and is a major factor for weak IDE support. To alleviate these issues,
+                   PEP 484 introduced optional type annotations for Python. As retrofitting
+                   types to existing codebases is error-prone and laborious, learning-based
+                   approaches have been proposed to enable automatic type annotations based
+                   on existing, partially annotated codebases. However, the prediction of
+                   rare and user-defined types is still challenging. In this paper, we
+                   present Type4Py, a deep similarity learning-based type inference model
+                   for Python. We design a hierarchical neural network model that learns to
+                   discriminate between types of the same kind and dissimilar types in a
+                   high-dimensional space, which results in clusters of types. Nearest
+                   neighbor search suggests likely type signatures of given Python
+                   functions. The types visible to analyzed modules are surfaced using
+                   lightweight dependency analysis. The results of quantitative and
+                   qualitative evaluation indicate that Type4Py significantly outperforms
+                   state-of-the-art approaches at the type prediction task. Considering the
+                   Top-1 prediction, Type4Py obtains 19.33% and 13.49% higher precision than
+                   Typilus and TypeWriter, respectively, while utilizing a much bigger
+                   vocabulary.
+                   }
 }
 
 @article{BP20pp,
@@ -134,20 +215,20 @@
   primaryclass  = {cs.SE},
   url           = {https://arxiv.org/pdf/2012.04760.pdf},
   abstract      = {
-    Modern software development is increasingly dependent on components, 
-    libraries and frameworks coming from third-party vendors or open-source 
-    suppliers and made available through a number of platforms (or forges). 
-    This way of writing software puts an emphasis on reuse and on composition, 
-    commoditizing the services which modern applications require. On the other 
-    hand, bugs and vulnerabilities in a single library living in one such 
-    ecosystem can affect, directly or by transitivity, a huge number of other 
-    libraries and applications. Currently, only product-level information on 
-    library dependencies is used to contain this kind of danger, but this 
-    knowledge often reveals itself too imprecise to lead to effective (and 
-    possibly automated) handling policies. We will discuss how fine-grained 
-    function-level dependencies can greatly improve reliability and reduce 
-    the impact of vulnerabilities on the whole software ecosystem.
-  }
+                   Modern software development is increasingly dependent on components, 
+                   libraries and frameworks coming from third-party vendors or open-source 
+                   suppliers and made available through a number of platforms (or forges). 
+                   This way of writing software puts an emphasis on reuse and on composition, 
+                   commoditizing the services which modern applications require. On the other 
+                   hand, bugs and vulnerabilities in a single library living in one such 
+                   ecosystem can affect, directly or by transitivity, a huge number of other 
+                   libraries and applications. Currently, only product-level information on 
+                   library dependencies is used to contain this kind of danger, but this 
+                   knowledge often reveals itself too imprecise to lead to effective (and 
+                   possibly automated) handling policies. We will discuss how fine-grained 
+                   function-level dependencies can greatly improve reliability and reduce 
+                   the impact of vulnerabilities on the whole software ecosystem.
+                   }
 }
 
 @article{MSBNGD20,
@@ -159,27 +240,27 @@
   primaryclass  = {cs.SE},
   url           = {https://arxiv.org/pdf/2011.12468.pdf},
   abstract      = {
-    Pull requests are a key part of the collaborative software development and 
-    code review process today. However, pull requests can also slow down the 
-    software development process when the reviewer(s) or the author do not 
-    actively engage with the pull request. In this work, we design an end-to-end 
-    service, Nudge, for accelerating overdue pull requests towards completion 
-    by reminding the author or the reviewer(s) to engage with their overdue 
-    pull requests. First, we use models based on effort estimation and machine
-    learning to predict the completion time for a given pull request. Second, 
-    we use activity detection to reduce false positives. Lastly, we use 
-    dependency determination to understand the blocker of the pull request and
-    nudge the appropriate actor(author or reviewer(s)). We also do a 
-    correlation analysis to understand the statistical relationship between the
-    pull request completion times and various pull request and developer 
-    related attributes. Nudge has been deployed on 147 repositories at 
-    Microsoft since 2019. We do a large scale evaluation based on the implicit 
-    and explicit feedback we received from sending the Nudge notifications on 
-    8,500 pull requests. We observe significant reduction in completion time, 
-    by over 60%, for pull requests which were nudged thus increasing the 
-    efficiency of the code review process and accelerating the pull request 
-    progression.
-  }
+                   Pull requests are a key part of the collaborative software development and 
+                   code review process today. However, pull requests can also slow down the 
+                   software development process when the reviewer(s) or the author do not 
+                   actively engage with the pull request. In this work, we design an end-to-end 
+                   service, Nudge, for accelerating overdue pull requests towards completion 
+                   by reminding the author or the reviewer(s) to engage with their overdue 
+                   pull requests. First, we use models based on effort estimation and machine
+                   learning to predict the completion time for a given pull request. Second, 
+                   we use activity detection to reduce false positives. Lastly, we use 
+                   dependency determination to understand the blocker of the pull request and
+                   nudge the appropriate actor(author or reviewer(s)). We also do a 
+                   correlation analysis to understand the statistical relationship between the
+                   pull request completion times and various pull request and developer 
+                   related attributes. Nudge has been deployed on 147 repositories at 
+                   Microsoft since 2019. We do a large scale evaluation based on the implicit 
+                   and explicit feedback we received from sending the Nudge notifications on 
+                   8,500 pull requests. We observe significant reduction in completion time, 
+                   by over 60%, for pull requests which were nudged thus increasing the 
+                   efficiency of the code review process and accelerating the pull request 
+                   progression.
+                   }
 }
 
 @article{HRMGD20pp,
@@ -193,18 +274,18 @@
   eprint        = {2010.03165},
   primaryclass  = {cs.SE},
   abstract      = {
-  	In 2014, a Microsoft study investigated the sort of questions that data
-	science applied to software engineering should answer. This resulted
-	in 145 questions that developers considered relevant for data scientists
-	to answer, thus providing a research agenda to the community. Fast
-	forward to five years, no further studies investigated whether the
-	questions from the software engineers at Microsoft hold for other
-	software companies, including software-intensive companies with
-	different primary focus (to which we refer as software-defined
-	enterprises). Furthermore, it is not evident that the problems identified
-	five years ago are still applicable, given the technological advances in
-	software engineering.
-  }
+                   In 2014, a Microsoft study investigated the sort of questions that data
+                   science applied to software engineering should answer. This resulted
+                   in 145 questions that developers considered relevant for data scientists
+                   to answer, thus providing a research agenda to the community. Fast
+                   forward to five years, no further studies investigated whether the
+                   questions from the software engineers at Microsoft hold for other
+                   software companies, including software-intensive companies with
+                   different primary focus (to which we refer as software-defined
+                   enterprises). Furthermore, it is not evident that the problems identified
+                   five years ago are still applicable, given the technological advances in
+                   software engineering.
+                   }
 }
 
 @article{VATBG20pp,
@@ -218,27 +299,27 @@
   eprint        = {2010.03165},
   primaryclass  = {cs.SE},
   abstract      = {
-	The selection of third-party libraries is an essential element of virtually
-	any software development project. However, deciding which libraries to
-	choose is a challenging practical problem. Selecting the wrong library
-	can severely impact a software project in terms of cost, time, and
-	development effort, with the severity of the impact depending on the role
-	of the library in the software architecture, among others. Despite the
-	importance of following a careful library selection process, in practice,
-	the selection of third-party libraries is still conducted in an ad-hoc
-	manner, where dozens of factors play an influential role in the
-	decision. In this paper, we study the factors that influence the
-	selection process of libraries, as perceived by industry developers. To
-	that aim, we perform a cross-sectional interview study with 16 developers
-	from 11 different businesses and survey 115 developers that are involved
-	in the selection of libraries. We systematically devised a comprehensive
-	set of 26 technical, human, and economic factors that developers take into
-	consideration when selecting a software library. Eight of these factors are
-	new to the literature. We explain each of these factors and how they play a
-	role in the decision. Finally, we discuss the implications of our work to library
-	maintainers, potential library users, package manager developers, and empirical
-	software engineering researchers.
-  }
+                   The selection of third-party libraries is an essential element of virtually
+                   any software development project. However, deciding which libraries to
+                   choose is a challenging practical problem. Selecting the wrong library
+                   can severely impact a software project in terms of cost, time, and
+                   development effort, with the severity of the impact depending on the role
+                   of the library in the software architecture, among others. Despite the
+                   importance of following a careful library selection process, in practice,
+                   the selection of third-party libraries is still conducted in an ad-hoc
+                   manner, where dozens of factors play an influential role in the
+                   decision. In this paper, we study the factors that influence the
+                   selection process of libraries, as perceived by industry developers. To
+                   that aim, we perform a cross-sectional interview study with 16 developers
+                   from 11 different businesses and survey 115 developers that are involved
+                   in the selection of libraries. We systematically devised a comprehensive
+                   set of 26 technical, human, and economic factors that developers take into
+                   consideration when selecting a software library. Eight of these factors are
+                   new to the literature. We explain each of these factors and how they play a
+                   role in the decision. Finally, we discuss the implications of our work to library
+                   maintainers, potential library users, package manager developers, and empirical
+                   software engineering researchers.
+                   }
 }
 
 @article{PGLC20pp,
@@ -251,35 +332,35 @@
   archiveprefix = {arXiv},
   primaryclass  = {cs.SE},
   abstract      = {
-	  Maintaining large code bases written in dynamically typed languages,
-	  such as JavaScript or Python, can be challenging due to the absence of
-	  type annotations: simple data compatibility errors proliferate, IDE
-	  support is limited, and APIs are hard to comprehend. Recent work
-	  attempts to address those issues through either static type inference
-	  or probabilistic type prediction. Unfortunately, static type inference
-	  for dynamic languages is inherently limited, while probabilistic
-	  approaches suffer from imprecision. This paper presents TypeWriter, the
-	  first combination of probabilistic type prediction with search-based
-	  refinement of predicted types. TypeWriter's predictor learns to infer
-	  the return and argument types for functions from partially annotated
-	  code bases by combining the natural language properties of code with
-	  programming language-level information. To validate predicted types,
-	  TypeWriter invokes a gradual type checker with different combinations
-	  of the predicted types, while navigating the space of possible type
-	  combinations in a feedback-directed manner. We implement the TypeWriter
-	  approach for Python and evaluate it on two code corpora: a
-	  multi-million line code base at Facebook and a collection of 1,137
-	  popular open-source projects. We show that TypeWriter's type predictor
-	  achieves an F1 score of 0.64 (0.79) in the top-1 (top-5) predictions
-	  for return types, and 0.57 (0.80) for argument types, which clearly
-	  outperforms prior type prediction models. By combining predictions with
-	  search-based validation, TypeWriter can fully annotate between 14% to
-	  44% of the files in a randomly selected corpus, while ensuring type
-	  correctness. A comparison with a static type inference tool shows that
-	  TypeWriter adds many more non-trivial types. TypeWriter currently
-	  suggests types to developers at Facebook and several thousands of types
-	  have already been accepted with minimal changes.
-  }
+                   Maintaining large code bases written in dynamically typed languages,
+                   such as JavaScript or Python, can be challenging due to the absence of
+                   type annotations: simple data compatibility errors proliferate, IDE
+                   support is limited, and APIs are hard to comprehend. Recent work
+                   attempts to address those issues through either static type inference
+                   or probabilistic type prediction. Unfortunately, static type inference
+                   for dynamic languages is inherently limited, while probabilistic
+                   approaches suffer from imprecision. This paper presents TypeWriter, the
+                   first combination of probabilistic type prediction with search-based
+                   refinement of predicted types. TypeWriter's predictor learns to infer
+                   the return and argument types for functions from partially annotated
+                   code bases by combining the natural language properties of code with
+                   programming language-level information. To validate predicted types,
+                   TypeWriter invokes a gradual type checker with different combinations
+                   of the predicted types, while navigating the space of possible type
+                   combinations in a feedback-directed manner. We implement the TypeWriter
+                   approach for Python and evaluate it on two code corpora: a
+                   multi-million line code base at Facebook and a collection of 1,137
+                   popular open-source projects. We show that TypeWriter's type predictor
+                   achieves an F1 score of 0.64 (0.79) in the top-1 (top-5) predictions
+                   for return types, and 0.57 (0.80) for argument types, which clearly
+                   outperforms prior type prediction models. By combining predictions with
+                   search-based validation, TypeWriter can fully annotate between 14% to
+                   44% of the files in a randomly selected corpus, while ensuring type
+                   correctness. A comparison with a static type inference tool shows that
+                   TypeWriter adds many more non-trivial types. TypeWriter currently
+                   suggests types to developers at Facebook and several thousands of types
+                   have already been accepted with minimal changes.
+                   }
 }
 
 @article{BGZ16,
@@ -289,22 +370,22 @@
   month    = apr,
   keywords = {Travis CI, GitHub, TravisTorrent, GHTorrent, Testing, JUnit, Ruby, Java, IDE, Continuous Integration},
   abstract = {
-	  Continuous Integration (CI) has become a best practice of modern
-	  software development. At present, we have a shortfall of insight into
-	  the testing practices that are common in CI-based software development.
-	  In particular, we seek quantifiable evidence on how central testing
-	  really is in CI, how strongly the project language nfluences testing,
-	  whether different integration environments are valuable and if testing
-	  on the CI can serve as a surrogate to local testing in the IDE. In an
-	  analysis of 2,640,825 Java and Ruby builds on Travis CI, we find that
-	  testing is the single most important reason why builds fail. Moreover,
-	  the programming language has a strong influence on both the number of
-	  executed tests, their test run time and proneness to fail. The use of
-	  multiple integration environments leads to 10% more failures being
-	  caught at build time. However, testing in the CI does not seem to be a
-	  good surrogate for running tests in the IDE. To facilitate further
-	  research on Travis CI with GitHub, we introduce TravisTorrent.
-  },
+              Continuous Integration (CI) has become a best practice of modern
+              software development. At present, we have a shortfall of insight into
+              the testing practices that are common in CI-based software development.
+              In particular, we seek quantifiable evidence on how central testing
+              really is in CI, how strongly the project language nfluences testing,
+              whether different integration environments are valuable and if testing
+              on the CI can serve as a surrogate to local testing in the IDE. In an
+              analysis of 2,640,825 Java and Ruby builds on Travis CI, we find that
+              testing is the single most important reason why builds fail. Moreover,
+              the programming language has a strong influence on both the number of
+              executed tests, their test run time and proneness to fail. The use of
+              multiple integration environments leads to 10% more failures being
+              caught at build time. However, testing in the CI does not seem to be a
+              good surrogate for running tests in the IDE. To facilitate further
+              research on Travis CI with GitHub, we introduce TravisTorrent.
+              },
   volume   = 4,
   pages    = {e1984v1},
   journal  = {PeerJ Preprints},
@@ -349,24 +430,24 @@
 
 @techreport{Gousi07,
   abstract    = {
-    The purpose of the jvm is to abstract the Java language from the hardware
-    and software platforms it runs on. Currently, there is an obvious
-    duplication of effort in service provision and resource management
-    between the JVM and the operating system that has a measurable cost on
-    the performance of Java programs. The emergence of efficient hardware
-    resource virtualisation mechanisms presents implementers with new
-    opportunities for optimising the Java software execution stack.
-
-    In this paper, we examine the sources of the runtime overhead imposed on
-    the Java programming language by the native execution environment. We use
-    both synthetic and real world applications as benchmarks along with
-    modern instrumentation tools to measure this overhead. We base our
-    measurements on the assumption that the jvm can be directly hosted on
-    virtualised hardware. Based on our findings, we also propose a cost
-    estimation heuristic, which allows us to estimate the minimal gain to be
-    expected when applications will be moved to hypervisor-hosted virtual
-    machines.
-  },
+                 The purpose of the jvm is to abstract the Java language from the hardware
+                 and software platforms it runs on. Currently, there is an obvious
+                 duplication of effort in service provision and resource management
+                 between the JVM and the operating system that has a measurable cost on
+                 the performance of Java programs. The emergence of efficient hardware
+                 resource virtualisation mechanisms presents implementers with new
+                 opportunities for optimising the Java software execution stack.
+                 
+                 In this paper, we examine the sources of the runtime overhead imposed on
+                 the Java programming language by the native execution environment. We use
+                 both synthetic and real world applications as benchmarks along with
+                 modern instrumentation tools to measure this overhead. We base our
+                 measurements on the assumption that the jvm can be directly hosted on
+                 virtualised hardware. Based on our findings, we also propose a cost
+                 estimation heuristic, which allows us to estimate the minimal gain to be
+                 expected when applications will be moved to hypervisor-hosted virtual
+                 machines.
+                 },
   author      = {Georgios Gousios},
   institution = {Athens University of Economics and Business},
   month       = {Jan},
@@ -378,19 +459,19 @@
 
 @techreport{Gousi11,
   abstract    = {
-    A new trend in programming languages and system design is the use of
-    constructs derived from the functional language field. Startups requiring
-    fast product turnover and large corporations looking for increased
-    maintainability are exploring the use of new, purely functional (such as
-    Erlang or Haskell) or functionally-enabled (such as Scala and Ruby)
-    languages, on the basis of decreased complexity and higher productivity.
-    Despite the apparent increase in their use, the software engineering
-    properties, including the alleged advantages, of such languages are
-    largely underexplored. In this paper, we discuss the issues that prohibit
-    the use of classic complexity and productivity metrics and present the
-    rationale behind a new set of metrics that targets this increasingly
-    important set of languages.
-  },
+                 A new trend in programming languages and system design is the use of
+                 constructs derived from the functional language field. Startups requiring
+                 fast product turnover and large corporations looking for increased
+                 maintainability are exploring the use of new, purely functional (such as
+                 Erlang or Haskell) or functionally-enabled (such as Scala and Ruby)
+                 languages, on the basis of decreased complexity and higher productivity.
+                 Despite the apparent increase in their use, the software engineering
+                 properties, including the alleged advantages, of such languages are
+                 largely underexplored. In this paper, we discuss the issues that prohibit
+                 the use of classic complexity and productivity metrics and present the
+                 rationale behind a new set of metrics that targets this increasingly
+                 important set of languages.
+                 },
   author      = {Georgios Gousios},
   institution = {Athens University of Economics and Business},
   month       = {Jan},
