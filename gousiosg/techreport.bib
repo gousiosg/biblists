@@ -1,4 +1,38 @@
-@misc{YDG21,
+@misc{IGG22pp,
+  title         = {CodeFill: Multi-token Code Completion by Jointly Learning from Structure and Naming Sequences},
+  author        = {Maliheh Izadi, Roberta Gismondi, Georgios Gousios},
+  year          = {2022},
+  eprint        = {2202.06689},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.SE},
+  url           = {https://arxiv.org/pdf/2202.06689.pdf},
+  doi           = {10.48550/arXiv.2202.06689},
+  abstract      = {
+                   Code completion is an essential feature of IDEs, yet current autocompleters are
+                   restricted to either grammar-based or NLP-based single token completions. Both
+                   approaches have significant drawbacks: grammar-based autocompletion is
+                   restricted in dynamically-typed language environments, whereas NLP-based
+                   autocompleters struggle to understand the semantics of the programming language
+                   and the developer's code context.
+
+                  In this work, we present CodeFill, a language model for autocompletion that
+                  combines learned structure and naming information. Using a parallel Transformer
+                  architecture and multi-task learning, CodeFill consumes sequences of source code
+                  token names and their equivalent AST token types. Uniquely, CodeFill is trained
+                  both for single-token and multi-token (statement) prediction, which enables it
+                  to learn long-range dependencies among grammatical and naming elements. We
+                  train CodeFill on two datasets, consisting of 29M and 425M lines of code,
+                  respectively. To make the evaluation more realistic, we develop a method to
+                  automatically infer points in the source code at which completion matters.
+                  We compare CodeFill against four baselines and two state-of-the-art models,
+                  GPT-C and TravTrans+.CodeFill surpasses all baselines in single token
+                  prediction (MRR: 70.9% vs. 66.2% and 67.8%) and outperforms the state of the
+                  art for multi-token prediction (ROUGE-L: 63.7% vs. 52.4% and 59.2%, for n=4
+                  tokens). We publicly release our source code and datasets.
+                  }
+}
+
+@misc{YDG21pp,
   title         = {KabOOM: Unsupervised Crash Categorization through Timeseries Fingerprinting},
   author        = {Edward Yao and Wes Dyer and Georgios Gousios},
   year          = {2021},
@@ -20,11 +54,11 @@
                    timeseries based crash reports. We demonstrate the effectiveness of KabOOM on
                    both reducing the dimensionality of the incoming crash reports and producing
                    crash categories that are intuitive to developers.
-                   
+
                    }
 }
 
-@misc{RG21,
+@misc{RG21pp,
   title         = {How does Software Change?},
   author        = {Ayushi Rastogi and Georgios Gousios},
   year          = {2021},
@@ -32,7 +66,6 @@
   archiveprefix = {arXiv},
   primaryclass  = {cs.SE},
   abstract      = {
-                   
                    Software evolves with changes to its codebase over time. Internally,
                    software changes in response to decisions to include some code change into
                    the codebase and discard others. Explaining the mechanism of software
@@ -78,7 +111,7 @@
                    integration is used.  },
   url           = {https://arxiv.org/pdf/2105.13970.pdf}
 }
-                   
+
 @misc{SPGA21pp,
   title         = {Learning Off-By-One Mistakes: An Empirical Study},
   author        = {Hendrig Sellik and Onno van Paridon and Georgios Gousios and Maurício Aniche},
@@ -215,18 +248,18 @@
   primaryclass  = {cs.SE},
   url           = {https://arxiv.org/pdf/2012.04760.pdf},
   abstract      = {
-                   Modern software development is increasingly dependent on components, 
-                   libraries and frameworks coming from third-party vendors or open-source 
-                   suppliers and made available through a number of platforms (or forges). 
-                   This way of writing software puts an emphasis on reuse and on composition, 
-                   commoditizing the services which modern applications require. On the other 
-                   hand, bugs and vulnerabilities in a single library living in one such 
-                   ecosystem can affect, directly or by transitivity, a huge number of other 
-                   libraries and applications. Currently, only product-level information on 
-                   library dependencies is used to contain this kind of danger, but this 
-                   knowledge often reveals itself too imprecise to lead to effective (and 
-                   possibly automated) handling policies. We will discuss how fine-grained 
-                   function-level dependencies can greatly improve reliability and reduce 
+                   Modern software development is increasingly dependent on components,
+                   libraries and frameworks coming from third-party vendors or open-source
+                   suppliers and made available through a number of platforms (or forges).
+                   This way of writing software puts an emphasis on reuse and on composition,
+                   commoditizing the services which modern applications require. On the other
+                   hand, bugs and vulnerabilities in a single library living in one such
+                   ecosystem can affect, directly or by transitivity, a huge number of other
+                   libraries and applications. Currently, only product-level information on
+                   library dependencies is used to contain this kind of danger, but this
+                   knowledge often reveals itself too imprecise to lead to effective (and
+                   possibly automated) handling policies. We will discuss how fine-grained
+                   function-level dependencies can greatly improve reliability and reduce
                    the impact of vulnerabilities on the whole software ecosystem.
                    }
 }
@@ -240,25 +273,25 @@
   primaryclass  = {cs.SE},
   url           = {https://arxiv.org/pdf/2011.12468.pdf},
   abstract      = {
-                   Pull requests are a key part of the collaborative software development and 
-                   code review process today. However, pull requests can also slow down the 
-                   software development process when the reviewer(s) or the author do not 
-                   actively engage with the pull request. In this work, we design an end-to-end 
-                   service, Nudge, for accelerating overdue pull requests towards completion 
-                   by reminding the author or the reviewer(s) to engage with their overdue 
+                   Pull requests are a key part of the collaborative software development and
+                   code review process today. However, pull requests can also slow down the
+                   software development process when the reviewer(s) or the author do not
+                   actively engage with the pull request. In this work, we design an end-to-end
+                   service, Nudge, for accelerating overdue pull requests towards completion
+                   by reminding the author or the reviewer(s) to engage with their overdue
                    pull requests. First, we use models based on effort estimation and machine
-                   learning to predict the completion time for a given pull request. Second, 
-                   we use activity detection to reduce false positives. Lastly, we use 
+                   learning to predict the completion time for a given pull request. Second,
+                   we use activity detection to reduce false positives. Lastly, we use
                    dependency determination to understand the blocker of the pull request and
-                   nudge the appropriate actor(author or reviewer(s)). We also do a 
+                   nudge the appropriate actor(author or reviewer(s)). We also do a
                    correlation analysis to understand the statistical relationship between the
-                   pull request completion times and various pull request and developer 
-                   related attributes. Nudge has been deployed on 147 repositories at 
-                   Microsoft since 2019. We do a large scale evaluation based on the implicit 
-                   and explicit feedback we received from sending the Nudge notifications on 
-                   8,500 pull requests. We observe significant reduction in completion time, 
-                   by over 60%, for pull requests which were nudged thus increasing the 
-                   efficiency of the code review process and accelerating the pull request 
+                   pull request completion times and various pull request and developer
+                   related attributes. Nudge has been deployed on 147 repositories at
+                   Microsoft since 2019. We do a large scale evaluation based on the implicit
+                   and explicit feedback we received from sending the Nudge notifications on
+                   8,500 pull requests. We observe significant reduction in completion time,
+                   by over 60%, for pull requests which were nudged thus increasing the
+                   efficiency of the code review process and accelerating the pull request
                    progression.
                    }
 }
@@ -437,7 +470,7 @@
                  the performance of Java programs. The emergence of efficient hardware
                  resource virtualisation mechanisms presents implementers with new
                  opportunities for optimising the Java software execution stack.
-                 
+
                  In this paper, we examine the sources of the runtime overhead imposed on
                  the Java programming language by the native execution environment. We use
                  both synthetic and real world applications as benchmarks along with

@@ -1,31 +1,33 @@
-@inproceedings{SPGA21,
-  author    = {Elvan Kula and Arie van Deursen and Georgios Gousios},
+@inproceedings{KDG21,
+  author    = {Kula, Elvan and Deursen, Arie van and Gousios, Georgios},
   title     = {Modeling Team Dynamics for the Characterization and Prediction of Delays in User Stories},
-  booktitle = {Proceedings of 36th IEEE/ACM International Conference on Automated Software Engineering (ASE)},
+  booktitle = {2021 36th IEEE/ACM International Conference on Automated Software Engineering (ASE)},
   year      = 2021,
+  pages     = {991-1002},
+  doi       = {10.1109/ASE51524.2021.9678939},
   abstract  = {
-    In agile software development, proper team structures and effort estimates
-    are crucial to ensure the on-time delivery of software projects. Delivery
-    performance can vary due to the influence of changes in teams, resulting in
-    team dynamics that remain largely unexplored. In this paper, we explore the
-    effects of various aspects of teamwork on delays in software deliveries. We
-    conducted a case study at ING and analyzed historical log data from 765,200
-    user stories and 571 teams to identify team factors characterizing delayed
-    user stories. Based on these factors, we built models to predict the
-    likelihood and duration of delays in user stories. The evaluation results
-    show that the use of team-related features leads to a significant
-    improvement in the predictions of delay, achieving on average 74\%-82\%
-    precision, 78\%-86\% recall and 76\%-84\% F-measure. Moreover, our results
-    show that team-related features can help improve the prediction of delay
-    likelihood, while delay duration can be explained exclusively using them.
-    Finally, training on recent user stories using a sliding window setting
-    improves the predictive performance; our predictive models perform
-    significantly better for teams that have been stable. Overall, our results
-    indicate that planning in agile development settings can be significantly
-    improved by incorporating team-related information and incremental learning
-    methods into analysis/predictive models.
-    },
-    note={to appear}
+               In agile software development, proper team structures and effort estimates
+               are crucial to ensure the on-time delivery of software projects. Delivery
+               performance can vary due to the influence of changes in teams, resulting in
+               team dynamics that remain largely unexplored. In this paper, we explore the
+               effects of various aspects of teamwork on delays in software deliveries. We
+               conducted a case study at ING and analyzed historical log data from 765,200
+               user stories and 571 teams to identify team factors characterizing delayed
+               user stories. Based on these factors, we built models to predict the
+               likelihood and duration of delays in user stories. The evaluation results
+               show that the use of team-related features leads to a significant
+               improvement in the predictions of delay, achieving on average 74\%-82\%
+               precision, 78\%-86\% recall and 76\%-84\% F-measure. Moreover, our results
+               show that team-related features can help improve the prediction of delay
+               likelihood, while delay duration can be explained exclusively using them.
+               Finally, training on recent user stories using a sliding window setting
+               improves the predictive performance; our predictive models perform
+               significantly better for teams that have been stable. Overall, our results
+               indicate that planning in agile development settings can be significantly
+               improved by incorporating team-related information and incremental learning
+               methods into analysis/predictive models.
+               },
+  url       = {http://pure.tudelft.nl/ws/portalfiles/portal/100911778/main.pdf}
 }
 
 @inproceedings{SPGA21,
@@ -36,22 +38,22 @@
   pages     = {58-67},
   doi       = {10.1109/MSR52588.2021.00019},
   abstract  = {
-    Mistakes in binary conditions are a source of error in many software
-    systems. They happen when developers use, e.g., < or > instead of <= or
-    >=. These boundary mistakes are hard to find and impose manual,
-    labor-intensive work for software developers. While previous research has
-    been proposing solutions to identify errors in boundary conditions, the
-    problem remains open. In this paper, we explore the effectiveness of deep
-    learning models in learning and predicting mistakes in boundary
-    conditions. We train different models on approximately 1.6M examples with
-    faults in different boundary conditions. We achieve a precision of 85%
-    and a recall of 84% on a balanced dataset, but lower numbers in an
-    imbalanced dataset. We also perform tests on 41 real-world boundary
-    condition bugs found from GitHub, where the model shows only a modest
-    performance. Finally, we test the model on a large-scale Java code base
-    from Adyen, our industrial partner. The model reported 36 buggy methods,
-    but none of them were confirmed by developers.
-    },
+               Mistakes in binary conditions are a source of error in many software
+               systems. They happen when developers use, e.g., < or > instead of <= or
+               >=. These boundary mistakes are hard to find and impose manual,
+               labor-intensive work for software developers. While previous research has
+               been proposing solutions to identify errors in boundary conditions, the
+               problem remains open. In this paper, we explore the effectiveness of deep
+               learning models in learning and predicting mistakes in boundary
+               conditions. We train different models on approximately 1.6M examples with
+               faults in different boundary conditions. We achieve a precision of 85%
+               and a recall of 84% on a balanced dataset, but lower numbers in an
+               imbalanced dataset. We also perform tests on 41 real-world boundary
+               condition bugs found from GitHub, where the model shows only a modest
+               performance. Finally, we test the model on a large-scale Java code base
+               from Adyen, our industrial partner. The model reported 36 buggy methods,
+               but none of them were confirmed by developers.
+               },
   url       = {https://arxiv.org/pdf/2102.12429.pdf}
 }
 
@@ -71,34 +73,34 @@
   location  = {Virtual Event, USA},
   series    = {ESEC/FSE 2020},
   abstract  = {
-    Maintaining large code bases written in dynamically typed languages, such
-    as JavaScript or Python, can be challenging due to the absence of type
-    annotations: simple data compatibility errors proliferate, IDE support is
-    limited, and APIs are hard to comprehend. Recent work attempts to address
-    those issues through either static type inference or probabilistic type
-    prediction. Unfortunately, static type inference for dynamic languages is
-    inherently limited, while probabilistic approaches suffer from
-    imprecision. This paper presents TypeWriter, the first combination of
-    probabilistic type prediction with search-based refinement of predicted
-    types. TypeWriter’s predictor learns to infer the return and argument
-    types for functions from partially annotated code bases by combining the
-    natural language properties of code with programming language-level
-    information. To validate predicted types, TypeWriter invokes a gradual
-    type checker with different combinations of the predicted types, while
-    navigating the space of possible type combinations in a feedback-directed
-    manner. We implement the TypeWriter approach for Python and evaluate it
-    on two code corpora: a multi-million line code base at Facebook and a
-    collection of 1,137 popular open-source projects. We show that
-    TypeWriter’s type predictor achieves an F1 score of 0.64 (0.79) in the
-    top-1 (top-5) predictions for return types, and 0.57 (0.80) for argument
-    types, which clearly outperforms prior type prediction models. By
-    combining predictions with search-based validation, TypeWriter can fully
-    annotate between 14% to 44% of the files in a randomly selected corpus,
-    while ensuring type correctness. A comparison with a static type
-    inference tool shows that TypeWriter adds many more non-trivial types.
-    TypeWriter currently suggests types to developers at Facebook and several
-    thousands of types have already been accepted with minimal changes.
-  },
+               Maintaining large code bases written in dynamically typed languages, such
+               as JavaScript or Python, can be challenging due to the absence of type
+               annotations: simple data compatibility errors proliferate, IDE support is
+               limited, and APIs are hard to comprehend. Recent work attempts to address
+               those issues through either static type inference or probabilistic type
+               prediction. Unfortunately, static type inference for dynamic languages is
+               inherently limited, while probabilistic approaches suffer from
+               imprecision. This paper presents TypeWriter, the first combination of
+               probabilistic type prediction with search-based refinement of predicted
+               types. TypeWriter’s predictor learns to infer the return and argument
+               types for functions from partially annotated code bases by combining the
+               natural language properties of code with programming language-level
+               information. To validate predicted types, TypeWriter invokes a gradual
+               type checker with different combinations of the predicted types, while
+               navigating the space of possible type combinations in a feedback-directed
+               manner. We implement the TypeWriter approach for Python and evaluate it
+               on two code corpora: a multi-million line code base at Facebook and a
+               collection of 1,137 popular open-source projects. We show that
+               TypeWriter’s type predictor achieves an F1 score of 0.64 (0.79) in the
+               top-1 (top-5) predictions for return types, and 0.57 (0.80) for argument
+               types, which clearly outperforms prior type prediction models. By
+               combining predictions with search-based validation, TypeWriter can fully
+               annotate between 14% to 44% of the files in a randomly selected corpus,
+               while ensuring type correctness. A comparison with a static type
+               inference tool shows that TypeWriter adds many more non-trivial types.
+               TypeWriter currently suggests types to developers at Facebook and several
+               thousands of types have already been accepted with minimal changes.
+               },
   url       = {https://arxiv.org/pdf/1912.03768}
 }
 
@@ -117,28 +119,28 @@
   location  = {Virtual Event, USA},
   series    = {ESEC/FSE 2020},
   abstract  = {
-    The selection of third-party libraries is an essential element of
-    virtually any software development project. However, deciding which
-    libraries to choose is a challenging practical problem. Selecting the
-    wrong library can severely impact a software project in terms of cost,
-    time, and development effort, with the severity of the impact depending
-    on the role of the library in the software architecture, among others.
-    Despite the importance of following a careful library selection process,
-    in practice, the selection of third-party libraries is still conducted in
-    an ad-hoc manner, where dozens of factors play an influential role in the
-    decision. In this paper, we study the factors that influence the
-    selection process of libraries, as perceived by industry developers. To
-    that aim, we perform a cross-sectional interview study with 16 developers
-    from 11 different businesses and survey 115 developers that are involved
-    in the selection of libraries. We systematically devised a comprehensive
-    set of 26 technical, human, and economic factors that developers take
-    into consideration when selecting a software library. Eight of these
-    factors are new to the literature. We explain each of these factors and
-    how they play a role in the decision. Finally, we discuss the
-    implications of our work to library maintainers, potential library users,
-    package manager developers, and empirical software engineering
-    researchers.
-  },
+               The selection of third-party libraries is an essential element of
+               virtually any software development project. However, deciding which
+               libraries to choose is a challenging practical problem. Selecting the
+               wrong library can severely impact a software project in terms of cost,
+               time, and development effort, with the severity of the impact depending
+               on the role of the library in the software architecture, among others.
+               Despite the importance of following a careful library selection process,
+               in practice, the selection of third-party libraries is still conducted in
+               an ad-hoc manner, where dozens of factors play an influential role in the
+               decision. In this paper, we study the factors that influence the
+               selection process of libraries, as perceived by industry developers. To
+               that aim, we perform a cross-sectional interview study with 16 developers
+               from 11 different businesses and survey 115 developers that are involved
+               in the selection of libraries. We systematically devised a comprehensive
+               set of 26 technical, human, and economic factors that developers take
+               into consideration when selecting a software library. Eight of these
+               factors are new to the literature. We explain each of these factors and
+               how they play a role in the decision. Finally, we discuss the
+               implications of our work to library maintainers, potential library users,
+               package manager developers, and empirical software engineering
+               researchers.
+               },
   url       = {https://arxiv.org/pdf/2005.12574.pdf}
 }
 
@@ -158,31 +160,31 @@
   location  = {Virtual Event, USA},
   series    = {ESEC/FSE 2020},
   abstract  = {
-    In 2014, a Microsoft study investigated the sort of questions that data
-    science applied to software engineering should answer. This resulted in
-    145 questions that developers considered relevant for data scientists to
-    answer, thus providing a research agenda to the community. Fast forward
-    to five years, no further studies investigated whether the questions from
-    the software engineers at Microsoft hold for other software companies,
-    including software-intensive companies with different primary focus (to
-    which we refer as software-defined enterprises). Furthermore, it is not
-    evident that the problems identified five years ago are still applicable,
-    given the technological advances in software engineering. This paper
-    presents a study at ING, a software-defined enterprise in banking in
-    which over 15,000 IT staff provides in-house software solutions. This
-    paper presents a comprehensive guide of questions for data scientists
-    selected from the previous study at Microsoft along with our current work
-    at ING. We replicated the original Microsoft study at ING, looking for
-    questions that impact both software companies and software-defined
-    enterprises and continue to impact software engineering. We also add new
-    questions that emerged from differences in the context of the two
-    companies and the five years gap in between. Our results show that
-    software engineering questions for data scientists in the
-    software-defined enterprise are largely similar to the software company,
-    albeit with exceptions. We hope that the software engineering research
-    community builds on the new list of questions to create a useful body of
-    knowledge.
-  },
+               In 2014, a Microsoft study investigated the sort of questions that data
+               science applied to software engineering should answer. This resulted in
+               145 questions that developers considered relevant for data scientists to
+               answer, thus providing a research agenda to the community. Fast forward
+               to five years, no further studies investigated whether the questions from
+               the software engineers at Microsoft hold for other software companies,
+               including software-intensive companies with different primary focus (to
+               which we refer as software-defined enterprises). Furthermore, it is not
+               evident that the problems identified five years ago are still applicable,
+               given the technological advances in software engineering. This paper
+               presents a study at ING, a software-defined enterprise in banking in
+               which over 15,000 IT staff provides in-house software solutions. This
+               paper presents a comprehensive guide of questions for data scientists
+               selected from the previous study at Microsoft along with our current work
+               at ING. We replicated the original Microsoft study at ING, looking for
+               questions that impact both software companies and software-defined
+               enterprises and continue to impact software engineering. We also add new
+               questions that emerged from differences in the context of the two
+               companies and the five years gap in between. Our results show that
+               software engineering questions for data scientists in the
+               software-defined enterprise are largely similar to the software company,
+               albeit with exceptions. We hope that the software engineering research
+               community builds on the new list of questions to create a useful body of
+               knowledge.
+               },
   url       = {https://arxiv.org/pdf/2010.03165.pdf}
 }
 
@@ -195,32 +197,32 @@
   doi       = {10.1145/3338906.3338978},
   abstract  = {
 
-    The appeal of delivering new features faster has led many software
-    projects to adopt rapid releases. However, it is not well understood what
-    the effects of this practice are. This paper presents an exploratory case
-    study of rapid releases at ING, a large banking company that develops
-    software solutions in-house, to characterize rapid releases. Since 2011,
-    ING has shifted to a rapid release model. This switch has resulted in a
-    mixed environment of 611 teams releasing relatively fast and slow. We
-    followed a mixed-methods approach in which we conducted a survey with 461
-    participants and corroborated their perceptions with 2 years of code
-    quality data and 1 year of release delay data. Our research shows that:
-    rapid releases are more commonly delayed than their non-rapid
-    counterparts, however, rapid releases have shorter delays; rapid releases
-    can be beneficial in terms of reviewing and user-perceived quality;
-    rapidly released software tends to have a higher code churn, a higher
-    test coverage and a lower average complexity; challenges in rapid
-    releases are related to managing dependencies and certain code aspects,
-    e.g. design debt. 
+               The appeal of delivering new features faster has led many software
+               projects to adopt rapid releases. However, it is not well understood what
+               the effects of this practice are. This paper presents an exploratory case
+               study of rapid releases at ING, a large banking company that develops
+               software solutions in-house, to characterize rapid releases. Since 2011,
+               ING has shifted to a rapid release model. This switch has resulted in a
+               mixed environment of 611 teams releasing relatively fast and slow. We
+               followed a mixed-methods approach in which we conducted a survey with 461
+               participants and corroborated their perceptions with 2 years of code
+               quality data and 1 year of release delay data. Our research shows that:
+               rapid releases are more commonly delayed than their non-rapid
+               counterparts, however, rapid releases have shorter delays; rapid releases
+               can be beneficial in terms of reviewing and user-perceived quality;
+               rapidly released software tends to have a higher code churn, a higher
+               test coverage and a lower average complexity; challenges in rapid
+               releases are related to managing dependencies and certain code aspects,
+               e.g. design debt.
 
-  },
+               },
   url       = {/pub/releasing-fast-and-slow.pdf}
 }
 
 
 @inproceedings{KDPGD19,
   title     = {Effective and Efficient API Misuse Detection via Exception Propagation
-  and Search-Based Testing},
+               and Search-Based Testing},
   author    = {Maria Kechagia and Xavier Devroey and Annibale Panichella and Georgios Gousios and {van Deursen}, Arie},
   year      = {2019},
   month     = {7},
@@ -231,26 +233,26 @@
   publisher = {ACM DL},
   abstract  = {
 
-    Application Programming Interfaces (APIs) typically come with (implicit)
-    usage constraints. The violations of these constraints (API misuses) can
-    lead to software crashes. Even though there are several tools that can
-    detect API misuses, most of them suffer from a very high rate of false
-    positives. We introduce Catcher, a novel API misuse detection approach
-    that combines static exception propagation analysis with automatic
-    search-based test case generation to effectively and efficiently pinpoint
-    crash-prone API misuses in client applications. We validate Catcher
-    against 21 Java applications, targeting misuses of the Java platform’s
-    API. Our results indicate that Catcher is able to generate test cases
-    that uncover 243 (unique) API misuses that result in crashes. Our
-    empirical evaluation shows that Catcher can detect a large number of
-    misuses (77 cases) that would remain undetected by the traditional
-    coverage-based test case generator EvoSuite. Additionally, on average,
-    Catcher is eight times faster than EvoSuite in generating test cases for
-    the identified misuses. Finally, we find that the majority of the
-    exceptions triggered by Catcher are unexpected to developers, i.e., not
-    only unhandled in the source code but also not listed in the
-    documentation of the client applications.
-  },
+               Application Programming Interfaces (APIs) typically come with (implicit)
+               usage constraints. The violations of these constraints (API misuses) can
+               lead to software crashes. Even though there are several tools that can
+               detect API misuses, most of them suffer from a very high rate of false
+               positives. We introduce Catcher, a novel API misuse detection approach
+               that combines static exception propagation analysis with automatic
+               search-based test case generation to effectively and efficiently pinpoint
+               crash-prone API misuses in client applications. We validate Catcher
+               against 21 Java applications, targeting misuses of the Java platform’s
+               API. Our results indicate that Catcher is able to generate test cases
+               that uncover 243 (unique) API misuses that result in crashes. Our
+               empirical evaluation shows that Catcher can detect a large number of
+               misuses (77 cases) that would remain undetected by the traditional
+               coverage-based test case generator EvoSuite. Additionally, on average,
+               Catcher is eight times faster than EvoSuite in generating test cases for
+               the identified misuses. Finally, we find that the majority of the
+               exceptions triggered by Catcher are unexpected to developers, i.e., not
+               only unhandled in the source code but also not listed in the
+               documentation of the client applications.
+               },
   url       = {/pub/api-misuse-detection-exception-propagation-sbst.pdf}
 }
 
@@ -271,21 +273,21 @@
   keywords  = {debugging, program comprehension, reactive programming, visualization},
   abstract  = {
 
-    Reactive Programming is a style of programming that provides developers with a
-    set of abstractions that facilitate event handling and stream processing.
-    Traditional debug tools lack support for Reactive Programming, leading
-    developers to fallback to the most rudimentary debug tool available: logging
-    to the console.
+               Reactive Programming is a style of programming that provides developers with a
+               set of abstractions that facilitate event handling and stream processing.
+               Traditional debug tools lack support for Reactive Programming, leading
+               developers to fallback to the most rudimentary debug tool available: logging
+               to the console.
 
-    In this paper, we present the design and implementation of RxFiddle, a
-    visualization and debugging tool targeted to Rx, the most popular form of
-    Reactive Programming. RxFiddle visualizes the dependencies and structure of
-    the data flow, as well as the data inside the flow. We evaluate RxFiddle with
-    an experiment involving 111 developers. The results show that RxFiddle can
-    help developers finish debugging tasks faster than with traditional debugging
-    tools.
+               In this paper, we present the design and implementation of RxFiddle, a
+               visualization and debugging tool targeted to Rx, the most popular form of
+               Reactive Programming. RxFiddle visualizes the dependencies and structure of
+               the data flow, as well as the data inside the flow. We evaluate RxFiddle with
+               an experiment involving 111 developers. The results show that RxFiddle can
+               help developers finish debugging tasks faster than with traditional debugging
+               tools.
 
-  },
+               },
   url       = {/pub/debugging-dataflows-in-reactive-programs.pdf},
   github    = {hermanbanken/RxFiddle}
 }
@@ -307,25 +309,25 @@
   keywords  = {geographical location, github, open source, pull requests},
   abstract  = {
 
-  Background: Open source software projects show gender bias sug-
-    gesting that other demographic characteristics of developers, like
-    geographical location, can negatively influence evaluation of con-
-    tributions too. Aim: This study contributes to this emerging body
-    of knowledge in software development by presenting a quantitative
-    analysis of the relationship between the geographical location of
-    developers and evaluation of their contributions on GitHub. Method:
-    We present an analysis of 70,000+ pull requests selected from 17
-    most actively participating countries to model the relationship
-    between the geographical location of developers and pull request acceptance
-    decision. Results and Conclusion: We observed structural differences in
-    pull request acceptance rates across 17 countries. Countries with no
-    apparent similarities such as Switzerland and Japan had one of the
-    highest pull request acceptance rates while countries like China and
-    Germany had one of the lowest pull request acceptance rates. Notably,
-    higher acceptance rates were observed for all but one country when pull
-    requests were evaluated by developers from the same country.
+               Background: Open source software projects show gender bias sug-
+               gesting that other demographic characteristics of developers, like
+               geographical location, can negatively influence evaluation of con-
+               tributions too. Aim: This study contributes to this emerging body
+               of knowledge in software development by presenting a quantitative
+               analysis of the relationship between the geographical location of
+               developers and evaluation of their contributions on GitHub. Method:
+               We present an analysis of 70,000+ pull requests selected from 17
+               most actively participating countries to model the relationship
+               between the geographical location of developers and pull request acceptance
+               decision. Results and Conclusion: We observed structural differences in
+               pull request acceptance rates across 17 countries. Countries with no
+               apparent similarities such as Switzerland and Japan had one of the
+               highest pull request acceptance rates while countries like China and
+               Germany had one of the lowest pull request acceptance rates. Notably,
+               higher acceptance rates were observed for all but one country when pull
+               requests were evaluated by developers from the same country.
 
-   },
+               },
   url       = {/pub/relationship-between-geographical-location-evaluation-of-developer-contributions.pdf},
   award     = {Open Data Recognition}
 }
@@ -334,7 +336,7 @@
   author    = {Edward van der Bent and Juriaan Hage and Joost Visser and Georgios Gousios},
   booktitle = {2018 IEEE 25th International Conference on Software Analysis, Evolution and Reengineering (SANER)},
   title     = {How good is your {P}uppet? An empirically defined and validated quality
-    model for {P}uppet},
+               model for {P}uppet},
   series    = {SANER 2018},
   doi       = {10.1109/SANER.2018.8330206},
   pages     = {164-174},
@@ -343,26 +345,26 @@
   year      = {2018},
   abstract  = {
 
-  Puppet is a declarative language for configuration management that has rapidly
-  gained popularity in recent years. Numerous organizations now rely on Puppet
-  code for deploying their software systems onto cloud infrastructures. In this
-  paper we provide a definition of code quality for Puppet code and an automated
-  technique for measuring and rating Puppet code quality. To this end, we first
-  explore the notion of code quality as it applies to Puppet code by performing
-  a survey among Puppet developers. Second, we develop a measurement model for
-  the maintainability aspect of Puppet code quality. To arrive at this
-  measurement model, we derive appropriate quality metrics from our survey
-  results and from existing software quality models. We implemented the Puppet
-  code quality model in a software analysis tool. We validate our definition of
-  Puppet code quality and the measurement model by a structured interview with
-  Puppet experts and by comparing the tool results with quality judgments of
-  those experts. The validation shows that the measurement model and tool
-  provide quality judgments of Puppet code that closely match the judgments of
-  experts. Also, the experts deem the model appropriate and usable in practice.
-  The Software Improvement Group (SIG) has started using the model in its
-  consultancy practice.
+               Puppet is a declarative language for configuration management that has rapidly
+               gained popularity in recent years. Numerous organizations now rely on Puppet
+               code for deploying their software systems onto cloud infrastructures. In this
+               paper we provide a definition of code quality for Puppet code and an automated
+               technique for measuring and rating Puppet code quality. To this end, we first
+               explore the notion of code quality as it applies to Puppet code by performing
+               a survey among Puppet developers. Second, we develop a measurement model for
+               the maintainability aspect of Puppet code quality. To arrive at this
+               measurement model, we derive appropriate quality metrics from our survey
+               results and from existing software quality models. We implemented the Puppet
+               code quality model in a software analysis tool. We validate our definition of
+               Puppet code quality and the measurement model by a structured interview with
+               Puppet experts and by comparing the tool results with quality judgments of
+               those experts. The validation shows that the measurement model and tool
+               provide quality judgments of Puppet code that closely match the judgments of
+               experts. Also, the experts deem the model appropriate and usable in practice.
+               The Software Improvement Group (SIG) has started using the model in its
+               consultancy practice.
 
-  },
+               },
   title     = {How good is your puppet? An empirically defined and validated quality model for puppet}
 }
 
@@ -379,23 +381,23 @@
   doi         = {10.1109/MSR.2017.55},
   abstract    = {
 
-  Software developers often include available open-source software packages into
-    their projects to minimize redundant effort. However, adding a package to a
-    project can also introduce risks, which can propagate through multiple
-    levels of dependencies. Currently, not much is known about the structure of
-    open-source package ecosystems of popular programming languages and the
-    extent to which transitive bug propagation is possible. This paper analyzes
-    the dependency network structure and evolution of the JavaScript, Ruby, and
-    Rust ecosystems. The reported results reveal significant differences across
-    language ecosystems. The results indicate that the number of transitive
-    dependencies for JavaScript has grown 60\% over the last year, suggesting
-    that developers should look more carefully into their dependencies to
-    understand what exactly is included. The study also reveals that
-    vulnerability to a removal of the most popular package is increasing, yet
-    most other packages have a decreasing impact on vulnerability. The findings
-    of this study can inform the development of dependency management tools.
+                 Software developers often include available open-source software packages into
+                 their projects to minimize redundant effort. However, adding a package to a
+                 project can also introduce risks, which can propagate through multiple
+                 levels of dependencies. Currently, not much is known about the structure of
+                 open-source package ecosystems of popular programming languages and the
+                 extent to which transitive bug propagation is possible. This paper analyzes
+                 the dependency network structure and evolution of the JavaScript, Ruby, and
+                 Rust ecosystems. The reported results reveal significant differences across
+                 language ecosystems. The results indicate that the number of transitive
+                 dependencies for JavaScript has grown 60\% over the last year, suggesting
+                 that developers should look more carefully into their dependencies to
+                 understand what exactly is included. The study also reveals that
+                 vulnerability to a removal of the most popular package is increasing, yet
+                 most other packages have a decreasing impact on vulnerability. The findings
+                 of this study can inform the development of dependency management tools.
 
-  },
+                 },
   github      = {riivo/package-dependency-networks},
   url         = {/pub/ecosystems-evolution.pdf},
   speakerdeck = {a0d2f40f871941c6b1cf993b71e5af09}
@@ -414,28 +416,28 @@
   url       = {/pub/tests-broke-build-explorative-analysis-travis-ci-github.pdf},
   abstract  = {
 
-   Continuous Integration (CI) has become a best practice of modern software
-   development. Yet, at present, we have a shortfall of insight into the
-   testing practices that are common in CI-based software development. In
-   particular, we seek quantifiable evidence on how central testing is to the
-   CI process, how strongly the project language influences testing, whether
-   different integration environ- ments are valuable and if testing on the CI
-   can serve as a surrogate to local testing in the IDE. In an analysis of
-   2,640,825 Java and Ruby builds on Travis CI, we find that testing is the
-   single most important reason why builds fail. Moreover, the programming
-   lan- guage has a strong influence on both the number of executed tests,
-   their run time, and proneness to fail. The use of multiple integra- tion
-   environments leads to 10\% more failures being caught at build time.
-   However, testing on Travis CI does not seem an adequate surrogate for
-   running tests locally in the IDE. To further research on Travis CI with
-   GitHub, we introduce Travistorrent.
- }
+               Continuous Integration (CI) has become a best practice of modern software
+               development. Yet, at present, we have a shortfall of insight into the
+               testing practices that are common in CI-based software development. In
+               particular, we seek quantifiable evidence on how central testing is to the
+               CI process, how strongly the project language influences testing, whether
+               different integration environ- ments are valuable and if testing on the CI
+               can serve as a surrogate to local testing in the IDE. In an analysis of
+               2,640,825 Java and Ruby builds on Travis CI, we find that testing is the
+               single most important reason why builds fail. Moreover, the programming
+               lan- guage has a strong influence on both the number of executed tests,
+               their run time, and proneness to fail. The use of multiple integra- tion
+               environments leads to 10\% more failures being caught at build time.
+               However, testing on Travis CI does not seem an adequate surrogate for
+               running tests locally in the IDE. To further research on Travis CI with
+               GitHub, we introduce Travistorrent.
+               }
 }
 
 
 @inproceedings{GSB16,
   author      = {Georgios Gousios and Margaret-Anne Storey and
-  Alberto Bacchelli},
+                 Alberto Bacchelli},
   title       = {Work Practices and Challenges in Pull-Based Development: The Contributor's Perspective},
   booktitle   = {Proceedings of the 38th International Conference on Software Engineering},
   year        = {2016},
@@ -446,27 +448,27 @@
   publisher   = {ACM},
   pages       = {285--296},
   abstract    = {
-  The pull-based development model is an emerging way of contributing to
-  distributed software projects that is gaining enormous popularity within the
-  open source software (OSS) world. Previous work has examined this model by
-  focusing on projects and their owners---we complement it by examining the
-  work practices of project contributors and the challenges they face.
+                 The pull-based development model is an emerging way of contributing to
+                 distributed software projects that is gaining enormous popularity within the
+                 open source software (OSS) world. Previous work has examined this model by
+                 focusing on projects and their owners---we complement it by examining the
+                 work practices of project contributors and the challenges they face.
 
-  We conducted a survey with 645 top contributors to active OSS projects using
-  the pull-based model on GitHub, the prevalent social coding site. We also
-  analyzed traces extracted from corresponding GitHub repositories.
+                 We conducted a survey with 645 top contributors to active OSS projects using
+                 the pull-based model on GitHub, the prevalent social coding site. We also
+                 analyzed traces extracted from corresponding GitHub repositories.
 
- Our research shows that: contributors have a strong interest in maintaining
- awareness of project status to get inspiration and avoid duplicating work, but
- they do not actively propagate information; communication within pull requests
- is reportedly limited to low-level concerns and contributors often use
- communication channels external to pull requests; challenges are mostly social
- in nature, with most reporting poor responsiveness from integrators; and the
- increased transparency of this setting is a confirmed motivation to contribute.
+                 Our research shows that: contributors have a strong interest in maintaining
+                 awareness of project status to get inspiration and avoid duplicating work, but
+                 they do not actively propagate information; communication within pull requests
+                 is reportedly limited to low-level concerns and contributors often use
+                 communication channels external to pull requests; challenges are mostly social
+                 in nature, with most reporting poor responsiveness from integrators; and the
+                 increased transparency of this setting is a confirmed motivation to contribute.
 
- Based on these findings, we present recommendations for practitioners to
- streamline the contribution process and discuss potential future research
- directions.},
+                 Based on these findings, we present recommendations for practitioners to
+                 streamline the contribution process and discuss potential future research
+                 directions.},
   doi         = {10.1145/2884781.2884826},
   award       = {ACM SIGSOFT Distinguished paper},
   speakerdeck = {b24994c612524f0e959565281bf9cd8f},
@@ -488,34 +490,34 @@
   publisher = {ACM},
   address   = {New York, NY, USA},
   abstract  = {
-    The research community in Software Engineering and Software Testing in
-    particular builds many of its contributions on a set of mutually shared
-    expectations. These expectations often form the motivation for research on
-    the creation of new testing tools and the refinement of existing test
-    processes in an attempt to support practitioners. Despite the fact that they
-    are the basis for many publications as well as open-source and commercial
-    testing applications, the common expectations and beliefs are rarely ever
-    questioned.  For example, Frederic Brooks' statement that testing takes half
-    of the development time seems to have manifested itself within the community
-    since he first made it in the ``Mythical Man Month'' in 1975. With this
-    paper, we report on the surprising results of a large-scale field study with
-    416 software engineers whose development activity we closely monitored over
-    the course of five months, resulting in over 13 years of recorded work time.
-    Our findings question several commonly shared assumptions and beliefs about
-    testing and might be contributing factors to the observed bug proneness of
-    software in practice: the majority of developers in our study does not test;
-    developers rarely run their tests in the IDE; Test-driven Development is not
-    widely practiced; and, last but not least, software developers only spend a
-    quarter of their work time engineering tests, whereas they think they test
-    half of their time.
-  },
+               The research community in Software Engineering and Software Testing in
+               particular builds many of its contributions on a set of mutually shared
+               expectations. These expectations often form the motivation for research on
+               the creation of new testing tools and the refinement of existing test
+               processes in an attempt to support practitioners. Despite the fact that they
+               are the basis for many publications as well as open-source and commercial
+               testing applications, the common expectations and beliefs are rarely ever
+               questioned.  For example, Frederic Brooks' statement that testing takes half
+               of the development time seems to have manifested itself within the community
+               since he first made it in the ``Mythical Man Month'' in 1975. With this
+               paper, we report on the surprising results of a large-scale field study with
+               416 software engineers whose development activity we closely monitored over
+               the course of five months, resulting in over 13 years of recorded work time.
+               Our findings question several commonly shared assumptions and beliefs about
+               testing and might be contributing factors to the observed bug proneness of
+               software in practice: the majority of developers in our study does not test;
+               developers rarely run their tests in the IDE; Test-driven Development is not
+               widely practiced; and, last but not least, software developers only spend a
+               quarter of their work time engineering tests, whereas they think they test
+               half of their time.
+               },
   url       = {/pub/when-how-why-developers-do-not-test.pdf}
 }
 
 @inproceedings{GZSD15,
   author      = {Georgios Gousios and Andy Zaidman and Margaret-Anne Storey and Arie van Deursen},
   title       = {Work Practices and Challenges in Pull-Based Development: The
-    Integrator's Perspective},
+                 Integrator's Perspective},
   booktitle   = {Proceedings of the 37th International Conference on Software Engineering},
   series      = {ICSE},
   year        = {2015},
@@ -525,19 +527,19 @@
   location    = {Florence, Italy},
   doi         = {10.1109/ICSE.2015.55},
   abstract    = {
-    In the pull-based development model, the integrator has the crucial role of
-    managing and integrating contributions. This work focuses on the role of
-    the integrator and investigates working habits and challenges alike. We set
-    up an exploratory qualitative study involving a large-scale survey of 749
-    integrators, to which we add quantitative data from the integrator's
-    project.  Our results provide insights into the factors they consider in
-    their decision making process to accept or reject a contribution. Our key
-    findings are that integrators struggle to maintain the quality of their
-    projects and have difficulties with prioritizing contributions that are to
-    be merged.  Our insights have implications for practitioners who wish to
-    use or improve their pull-based development process, as well as for
-    researchers striving to understand the theoretical implications of the
-    pull-based model in software development.},
+                 In the pull-based development model, the integrator has the crucial role of
+                 managing and integrating contributions. This work focuses on the role of
+                 the integrator and investigates working habits and challenges alike. We set
+                 up an exploratory qualitative study involving a large-scale survey of 749
+                 integrators, to which we add quantitative data from the integrator's
+                 project.  Our results provide insights into the factors they consider in
+                 their decision making process to accept or reject a contribution. Our key
+                 findings are that integrators struggle to maintain the quality of their
+                 projects and have difficulties with prioritizing contributions that are to
+                 be merged.  Our insights have implications for practitioners who wish to
+                 use or improve their pull-based development process, as well as for
+                 researchers striving to understand the theoretical implications of the
+                 pull-based model in software development.},
   url         = {/pub/pullreqs-integrators.pdf},
   github      = {gousiosg/pullreqs-integrators},
   speakerdeck = {e340d9f98bd0426abada24888cf6f32d}
@@ -545,32 +547,32 @@
 
 @inproceedings{CAGD15,
   author      = {Roberta Coelho and Lucas Almeida and Georgios Gousios and Arie van
-  Deursen},
+                 Deursen},
   title       = {Unveiling Exception Handling Bug Hazards in Android based on GitHub and Google Code Issues},
   booktitle   = {Proceedings of the 2015 IEEE/ACM 12th Working Conference on Mining Software Repositories (MSR)},
   year        = {2015},
   month       = {May},
   location    = {Florence, Italy},
   abstract    = {
-    This paper reports on a study mining the exception stack traces included in
-    159,048 issues reported on Android projects hosted in GitHub (482 projects)
-    and Google Code (157 projects). The goal of this study is to investigate
-    whether stack trace information can reveal bug hazards related to exception
-    handling code that may lead to a decrease in application robustness. Overall
-    6,005 exception stack traces were extracted, and subjected to source code
-    and bytecode analysis. The outcomes of this study include the identification
-    of the following bug hazards: (i) unexpected cross-type exception wrappings
-    (for instance, trying to handle an instance of OutOfMemoryError ``hidden''
-    in a checked exception) which can make the exception-related code more
-    complex and negatively impact the application robustness; (ii) undocumented
-    runtime exceptions thrown by both the Android platform and third party
-    libraries; and (iii) undoc- umented checked exceptions thrown by the Android
-    Platform. Such undocumented exceptions make difficult, and most of the times
-    infeasible for the client code to protect against unforeseen situations that
-    may happen while calling third-party code. This study provides further
-    insights on such bug hazards and the robustness threats they impose to
-    Android apps as well as to other systems based on the Java exception model.
-   },
+                 This paper reports on a study mining the exception stack traces included in
+                 159,048 issues reported on Android projects hosted in GitHub (482 projects)
+                 and Google Code (157 projects). The goal of this study is to investigate
+                 whether stack trace information can reveal bug hazards related to exception
+                 handling code that may lead to a decrease in application robustness. Overall
+                 6,005 exception stack traces were extracted, and subjected to source code
+                 and bytecode analysis. The outcomes of this study include the identification
+                 of the following bug hazards: (i) unexpected cross-type exception wrappings
+                 (for instance, trying to handle an instance of OutOfMemoryError ``hidden''
+                 in a checked exception) which can make the exception-related code more
+                 complex and negatively impact the application robustness; (ii) undocumented
+                 runtime exceptions thrown by both the Android platform and third party
+                 libraries; and (iii) undoc- umented checked exceptions thrown by the Android
+                 Platform. Such undocumented exceptions make difficult, and most of the times
+                 infeasible for the client code to protect against unforeseen situations that
+                 may happen while calling third-party code. This study provides further
+                 insights on such bug hazards and the robustness threats they impose to
+                 Android apps as well as to other systems based on the Java exception model.
+                 },
   pages       = {134-145},
   doi         = {10.1109/MSR.2015.20},
   url         = {/pub/android-stacks.pdf},
@@ -588,18 +590,18 @@
   doi       = {10.1109/ESEM.2015.7321211},
   month     = {Oct},
   abstract  = {
-  A medium-sized west-European telecom company experienced a worsening trend in
-  performance, indicating that the organization did not learn from history, in
-  combination with much time and energy spent on preparation and review of
-  project proposals. In order to create more transparency in the supplier
-  proposal process a pilot was started on Functional Size Measurement pricing
-  (FSM-pricing). In this paper, we evaluate the implementation of FSM-pricing
-  in the software engineering domain of the company, as an instrument useful in
-  the context of software man- agement and supplier proposal pricing. We found
-  that a statistical, evidence-based pricing approach for software engineering,
-  as a single instrument (without a connection with expert judgment), can be
-  used in the subject companies to create cost transparency and performance
-  management of software project portfolios.},
+               A medium-sized west-European telecom company experienced a worsening trend in
+               performance, indicating that the organization did not learn from history, in
+               combination with much time and energy spent on preparation and review of
+               project proposals. In order to create more transparency in the supplier
+               proposal process a pilot was started on Functional Size Measurement pricing
+               (FSM-pricing). In this paper, we evaluate the implementation of FSM-pricing
+               in the software engineering domain of the company, as an instrument useful in
+               the context of software man- agement and supplier proposal pricing. We found
+               that a statistical, evidence-based pricing approach for software engineering,
+               as a single instrument (without a connection with expert judgment), can be
+               used in the subject companies to create cost transparency and performance
+               management of software project portfolios.},
   url       = {/pub/pricing-via-functional-size.pdf}
 }
 
@@ -613,24 +615,24 @@
   pages      = {341--350},
   doi        = {10.1109/SANER.2015.7081844},
   abstract   = {
-    After working for some time, developers commit their code changes to a
-    version control system. When doing so, research shows that they often bundle
-    unrelated changes (e.g., bug fix and refactoring) in a single commit, thus
-    creating a so-called tangled commit. Sharing tangled commits is problematic
-    because it makes review, reversion, and integration of these commits harder
-    and historical analyses of the project less reliable.  Researchers have
-    worked at untangling existing commits, i.e., finding which part of a commit
-    relates to which task. In this paper, we contribute to this line of work in
-    two ways: (1) A publicly available dataset of untangled code changes,
-    created with the help of two developers who accurately split their code
-    changes into self contained tasks over a period of four months; (2) based on
-    this dataset we devise and assess EpiceaUntangler, an approach to help
-    developers share untangled commits (aka. atomic commits) by using
-    fine-grained code change information. We further evaluate EpiceaUntangler by
-    deploying it to 7 developers, who used it for 2 weeks. We recorded a median
-    success rate of 91\% and average one of 75\%, in automatically creating
-    clusters of untangled fine-grained code changes.
-  },
+                After working for some time, developers commit their code changes to a
+                version control system. When doing so, research shows that they often bundle
+                unrelated changes (e.g., bug fix and refactoring) in a single commit, thus
+                creating a so-called tangled commit. Sharing tangled commits is problematic
+                because it makes review, reversion, and integration of these commits harder
+                and historical analyses of the project less reliable.  Researchers have
+                worked at untangling existing commits, i.e., finding which part of a commit
+                relates to which task. In this paper, we contribute to this line of work in
+                two ways: (1) A publicly available dataset of untangled code changes,
+                created with the help of two developers who accurately split their code
+                changes into self contained tasks over a period of four months; (2) based on
+                this dataset we devise and assess EpiceaUntangler, an approach to help
+                developers share untangled commits (aka. atomic commits) by using
+                fine-grained code change information. We further evaluate EpiceaUntangler by
+                deploying it to 7 developers, who used it for 2 weeks. We recorded a median
+                success rate of 91\% and average one of 75\%, in automatically creating
+                clusters of untangled fine-grained code changes.
+                },
   url        = {/pub/fine-untangling.pdf},
   nomination = {SANER best paper}
 }
@@ -651,21 +653,21 @@
   address     = {New York, NY, USA},
   keywords    = {Pull-based development, distributed software development, empirical software engineering, pull request},
   abstract    = {
-    The advent of distributed version control systems has led to the development
-    of a new paradigm for distributed software development; instead of pushing
-    changes to a central repository, developers pull them from other
-    repositories and merge them locally. Various code hosting sites, notably
-    Github, have tapped on the opportunity to facilitate pull-based development
-    by offering workflow support tools, such as code reviewing systems and
-    integrated issue trackers. In this work, we explore how pull-based software
-    development works, first on the GHTorrent corpus and then on a carefully
-    selected sample of 291 projects. We find that the pull request model offers
-    fast turnaround, increased opportunities for community engagement and
-    decreased time to incorporate contributions. We show that a relatively small
-    number of factors affect both the decision to merge a pull request and the
-    time to process it.  We also examine the reasons for pull request rejection
-    and find that technical ones are only a small minority.
-  },
+                 The advent of distributed version control systems has led to the development
+                 of a new paradigm for distributed software development; instead of pushing
+                 changes to a central repository, developers pull them from other
+                 repositories and merge them locally. Various code hosting sites, notably
+                 Github, have tapped on the opportunity to facilitate pull-based development
+                 by offering workflow support tools, such as code reviewing systems and
+                 integrated issue trackers. In this work, we explore how pull-based software
+                 development works, first on the GHTorrent corpus and then on a carefully
+                 selected sample of 291 projects. We find that the pull request model offers
+                 fast turnaround, increased opportunities for community engagement and
+                 decreased time to incorporate contributions. We show that a relatively small
+                 number of factors affect both the decision to merge a pull request and the
+                 time to process it.  We also examine the reasons for pull request rejection
+                 and find that technical ones are only a small minority.
+                 },
   speakerdeck = {2c6de050ce430131e1db2aa9d004a740},
   url         = {/pub/exploration-pullreqs.pdf},
   nomination  = {ACM SIGSOFT distinguished paper},
@@ -688,22 +690,22 @@
   address   = {New York, NY, USA},
   keywords  = {Mining software repositories, bias, code reviews, git, github},
   abstract  = {
-    With over 10 million Git repositories, GitHub is becoming one of the most
-    important source of software artifacts on the Internet. Researchers are
-    starting to mine the information stored in GitHub's event logs, trying to
-    understand how its users employ the site to collaborate on software.
-    However, so far there have been no studies describing the quality and
-    properties of the data available from GitHub. We document the results of an
-    empirical study aimed at understanding the characteristics of the
-    repositories in GitHub and how users take advantage of GitHub's main
-    features---namely commits, pull requests, and issues. Our results indicate
-    that, while GitHub is a rich source of data on software development, mining
-    GitHub for research purposes should take various potential perils into
-    consideration. We show, for example, that the majority of the projects are
-    personal and inactive; that GitHub is also being used for free storage and
-    as a Web hosting service; and that almost 40\% of all pull requests do not
-    appear as merged, even though they were. We provide a set of recommendations
-    for software engineering researchers on how to approach the data in GitHub.},
+               With over 10 million Git repositories, GitHub is becoming one of the most
+               important source of software artifacts on the Internet. Researchers are
+               starting to mine the information stored in GitHub's event logs, trying to
+               understand how its users employ the site to collaborate on software.
+               However, so far there have been no studies describing the quality and
+               properties of the data available from GitHub. We document the results of an
+               empirical study aimed at understanding the characteristics of the
+               repositories in GitHub and how users take advantage of GitHub's main
+               features---namely commits, pull requests, and issues. Our results indicate
+               that, while GitHub is a rich source of data on software development, mining
+               GitHub for research purposes should take various potential perils into
+               consideration. We show, for example, that the majority of the projects are
+               personal and inactive; that GitHub is also being used for free storage and
+               as a Web hosting service; and that almost 40\% of all pull requests do not
+               appear as merged, even though they were. We provide a set of recommendations
+               for software engineering researchers on how to approach the data in GitHub.},
   url       = {/pub/promises-perils-github.pdf}
 }
 
@@ -719,17 +721,17 @@
   isbn        = {978-1-4673-2936-1},
   location    = {San Francisco, CA, USA},
   abstract    = {
-    A common requirement of many empirical software engineering studies is the
-    acquisition and curation of data from software repositories. During the last
-    few years, GitHub has emerged as a popular project hosting, mirroring and
-    collaboration platform. GitHub provides an extensive REST API, which enables
-    researchers to retrieve both the commits to the projects’ repositories and
-    events generated through user actions on project resources. GHTorrent aims
-    to create a scalable off line mirror of GitHub’s event streams and
-    persistent data, and offer it to the research community as a service. In
-    this paper, we present the project’s design and initial implementation and
-    demonstrate how the provided datasets can be queried and processed.
-  },
+                 A common requirement of many empirical software engineering studies is the
+                 acquisition and curation of data from software repositories. During the last
+                 few years, GitHub has emerged as a popular project hosting, mirroring and
+                 collaboration platform. GitHub provides an extensive REST API, which enables
+                 researchers to retrieve both the commits to the projects’ repositories and
+                 events generated through user actions on project resources. GHTorrent aims
+                 to create a scalable off line mirror of GitHub’s event streams and
+                 persistent data, and offer it to the research community as a service. In
+                 this paper, we present the project’s design and initial implementation and
+                 demonstrate how the provided datasets can be queried and processed.
+                 },
   url         = {/pub/ghtorrent-dataset-toolsuite.pdf},
   github      = {gousiosg/github-mirror},
   speakerdeck = {75bea5909fbb0130f0eb364613f6f036},
@@ -751,17 +753,17 @@
   issn            = {2160-1852},
   slideshareembed = {13184524},
   abstract        = {
-    A common requirement of many empirical software engineering studies is the
-    acquisition and curation of data from software repositories. During the last
-    few years, GitHub has emerged as a popular project hosting, mirroring and
-    collaboration platform. GitHub provides an extensive REST API, which enables
-    researchers to retrieve both the commits to the projects’ repositories and
-    events generated through user actions on project resources. GHTorrent aims
-    to create a scalable off line mirror of GitHub’s event streams and
-    persistent data, and offer it to the research community as a service. In
-    this paper, we present the project’s design and initial implementation and
-    demonstrate how the provided datasets can be queried and processed.
-    },
+                     A common requirement of many empirical software engineering studies is the
+                     acquisition and curation of data from software repositories. During the last
+                     few years, GitHub has emerged as a popular project hosting, mirroring and
+                     collaboration platform. GitHub provides an extensive REST API, which enables
+                     researchers to retrieve both the commits to the projects’ repositories and
+                     events generated through user actions on project resources. GHTorrent aims
+                     to create a scalable off line mirror of GitHub’s event streams and
+                     persistent data, and offer it to the research community as a service. In
+                     this paper, we present the project’s design and initial implementation and
+                     demonstrate how the provided datasets can be queried and processed.
+                     },
   url             = {/pub/ghtorrent-githubs-data-from-a-firehose.pdf},
   github          = {gousiosg/github-mirror}
 }
@@ -780,25 +782,25 @@
   doi       = {10.1109/MSR.2009.5069478},
   year      = 2009,
   abstract  = {
-    Research in the fields of software quality, maintainabil- ity and evolution
-    requires the analysis of large quantities of data, which often originate
-    from open source software projects. Collecting and preprocessing data,
-    calculating metrics, and synthesizing composite results from a large corpus
-    of project artifacts is a tedious and error prone task lacking direct
-    scientific value. The Alitheia Core tool is an extensible platform for
-    software quality analysis that is designed specifically to facilitate
-    software engineering research on large and diverse data sources, by
-    integrating data collection and preprocessing phases with an array of
-    analysis services, and presenting the researcher with an easy to use
-    extension mechanism. Alitheia Core aims to be the basis of an ecosystem of
-    shared tools and research data that will enable researchers to focus on
-    their research questions at hand, rather than spend time on re-implementing
-    analysis tools.
+               Research in the fields of software quality, maintainabil- ity and evolution
+               requires the analysis of large quantities of data, which often originate
+               from open source software projects. Collecting and preprocessing data,
+               calculating metrics, and synthesizing composite results from a large corpus
+               of project artifacts is a tedious and error prone task lacking direct
+               scientific value. The Alitheia Core tool is an extensible platform for
+               software quality analysis that is designed specifically to facilitate
+               software engineering research on large and diverse data sources, by
+               integrating data collection and preprocessing phases with an array of
+               analysis services, and presenting the researcher with an easy to use
+               extension mechanism. Alitheia Core aims to be the basis of an ecosystem of
+               shared tools and research data that will enable researchers to focus on
+               their research questions at hand, rather than spend time on re-implementing
+               analysis tools.
 
-    In this paper, we present the Alitheia Core platform in detail and
-    demonstrate its usefulness in mining software repositories by guiding the
-    reader through the steps required to execute a simple experiment.
-  },
+               In this paper, we present the Alitheia Core platform in detail and
+               demonstrate its usefulness in mining software repositories by guiding the
+               reader through the steps required to execute a simple experiment.
+               },
   url       = {/pub/a-platform-for-software-engineering-research.pdf},
   github    = {istlab/Alitheia-Core}
 }
@@ -819,16 +821,16 @@
   doi          = {10.1007/978-0-387-09684-1_19},
   year         = {2008},
   abstract     = {
-    Software quality evaluation has always been an important part of software
-    business. The quality evaluation process is usually based on hierarchical
-    quality models that measure various aspects of software quality and deduce a
-    characterization of the product quality being evaluated. The particular
-    nature of open source software has rendered existing models unsuitable for
-    detailed quality evaluations. In this paper, we present a hierarchical
-    quality model that evaluates source code and community processes, based on
-    automatic calculation of metric values and correlation of those to a set of
-    predefined quality profiles.
-  },
+                  Software quality evaluation has always been an important part of software
+                  business. The quality evaluation process is usually based on hierarchical
+                  quality models that measure various aspects of software quality and deduce a
+                  characterization of the product quality being evaluated. The particular
+                  nature of open source software has rendered existing models unsuitable for
+                  detailed quality evaluations. In this paper, we present a hierarchical
+                  quality model that evaluates source code and community processes, based on
+                  automatic calculation of metric values and correlation of those to a set of
+                  predefined quality profiles.
+                  },
   url          = {/pub/sqo-oss-quality-model-measurement-based-open-source-software-evaluation.pdf}
 }
 
@@ -843,15 +845,15 @@
   year      = {2007},
   url       = {/pub/jikesxen.pdf},
   abstract  = {
-    The purpose of the JVM is to abstract the Java language from the hardware
-    and software platforms it runs on. For this rea- son, the JVM uses services
-    offered by the host operating sys- tem in order to implement identical
-    services for the Java lan- guage. The obvious duplication of effort in
-    service provision and resource management between the JVM and the operat-
-    ing system has a measurable cost on the performance of Java programs. In my
-    PhD research, I try to find ways of min- imizing the cost of sharing
-    resources between the OS and the JVM, by identifying and removing
-    unnecessary software layers.}
+               The purpose of the JVM is to abstract the Java language from the hardware
+               and software platforms it runs on. For this rea- son, the JVM uses services
+               offered by the host operating sys- tem in order to implement identical
+               services for the Java lan- guage. The obvious duplication of effort in
+               service provision and resource management between the JVM and the operat-
+               ing system has a measurable cost on the performance of Java programs. In my
+               PhD research, I try to find ways of min- imizing the cost of sharing
+               resources between the OS and the JVM, by identifying and removing
+               unnecessary software layers.}
 }
 
 @inproceedings{GKS06,
@@ -868,20 +870,20 @@
   year         = {2006},
   url          = {/pub/paper.pdf},
   abstract     = {
-    Java is a strong player in the application server market and thus the
-    performance of its virtual machine is an important aspect of a server's
-    performance. One of the components that affect the performance of a {\sc
-    jvm} is the memory manager, which also includes the garbage collector.
-    Modern virtual machines offer a multitude of options for tuning the memory
-    manager, which can have a significant impact on server application
-    performance.
+                  Java is a strong player in the application server market and thus the
+                  performance of its virtual machine is an important aspect of a server's
+                  performance. One of the components that affect the performance of a {\sc
+                  jvm} is the memory manager, which also includes the garbage collector.
+                  Modern virtual machines offer a multitude of options for tuning the memory
+                  manager, which can have a significant impact on server application
+                  performance.
 
-    In this paper, we examine the effect of tuning the garbage collection in an
-    application server environment. By employing both synthetic and real world
-    application benchmarks, we assess the various garbage collection strategies
-    offered by two popular virtual machines. Finally, we present a comprehensive
-    list of generally applicable garbage collection guidelines.
-  }
+                  In this paper, we examine the effect of tuning the garbage collection in an
+                  application server environment. By employing both synthetic and real world
+                  application benchmarks, we assess the various garbage collection strategies
+                  offered by two popular virtual machines. Finally, we present a comprehensive
+                  list of generally applicable garbage collection guidelines.
+                  }
 }
 
 @inproceedings{GS02,
