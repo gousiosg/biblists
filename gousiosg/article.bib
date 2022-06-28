@@ -1,3 +1,72 @@
+@article{MUBNGD22,
+  author    = {Maddila, Chandra and Upadrasta, Sai Surya and Bansal, Chetan and Nagappan, Nachiappan and Gousios, Georgios and Deursen, Arie van},
+  title     = {Nudge: Accelerating Overdue Pull Requests Towards Completion},
+  year      = {2022},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  issn      = {1049-331X},
+  url       = {https://doi.org/10.1145/3544791},
+  doi       = {10.1145/3544791},
+  journal   = {ACM Trans. Softw. Eng. Methodol.},
+  month     = {may},
+  keywords  = {distributed software development, Pull-based software development, merge conflict, pull request},
+  abstract  = {
+               Pull requests are a key part of the collaborative software development and code review
+               process today. However, pull requests can also slow down the software development
+               process when the reviewer(s) or the author do not actively engage with the pull
+               request. In this work, we design an end-to-end service, Nudge, for accelerating overdue
+               pull requests towards completion by reminding the author or the reviewer(s) to engage
+               with their overdue pull requests. First, we use models based on effort estimation and
+               machine learning to predict the completion time for a given pull request. Second, we
+               use activity detection to filter out pull requests that may be overdue, but for which
+               sufficient action is taking place nonetheless. Lastly, we use actor identification to
+               understand who the blocker of the pull request is and nudge the appropriate actor
+               (author or reviewer(s)). The key novelty of Nudge is that it succeeds in reducing
+               pull request resolution time, while ensuring that developers perceive the notifications
+               sent as useful, at the scale of thousands of repositories. In a randomized trial on
+               147 repositories in use at Microsoft, Nudge was able to reduce pull request resolution
+               time by 60% for 8,500 pull requests, when compared to overdue pull requests for which
+               Nudge did not send a notification. Furthermore, developers receiving Nudge notifications
+               resolved 73% of these notifications as positive. We observed similar results when scaling
+               up the deployment of Nudge to 8,000 repositories at Microsoft, for which Nudge sent
+               210,000 notifications during a full year. This demonstrates Nudge's ability to scale
+               to thousands of repositories. Lastly, our qualitative analysis of a selection of
+               Nudge notifications indicates areas for future research, such as taking dependencies
+               among pull requests and developer availability into account.
+               },
+  url       = {https://arxiv.org/pdf/2011.12468.pdf}
+}
+
+@article{ZTGR22,
+  author={Zhang, Xunhui and Yu, Yue and Georgios, Gousios and Rastogi, Ayushi},
+  journal={IEEE Transactions on Software Engineering},
+  title={Pull Request Decisions Explained: An Empirical Overview},
+  year={2022},
+  volume={},
+  number={},
+  pages={1-1},
+  doi={10.1109/TSE.2022.3165056},
+  abstract = {
+            Context: Pull-based development model is widely used in open source, leading the trends
+            in distributed software development. One aspect which has garnered significant attention
+            is studies on pull request decision - identifying factors for explanation. Objective:
+            This study builds on a decade long research on pull request decision to explain it.
+            We empirically investigate how factors influence pull request decision and scenarios
+            that change the influence of factors. Method: We identify factors influencing pull request
+            decision on GitHub through a systematic literature review and infer it by mining
+            archival data. We collect a total of 3,347,937 pull requests with 95 features from
+            11,230 diverse projects on GitHub. Using this data, we explore the relations of the
+            factors to each other and build mixed-effect logistic regression models to empirically
+            explain pull request decision. Results: Our study shows that a small number of factors
+            explain pull request decision with the integrator same or different from the submitter
+            as the most important factor. We also noted that some factors are important only in special
+            cases e.g., the percentage of failed builds is important for pull request decision when
+            continuous integration is used.
+  },
+  url = {https://arxiv.org/pdf/2105.13970.pdf}
+
+  }
+
 @article{HG22,
   title    = {Can we trust tests to automate dependency updates? A case study of Java Projects},
   journal  = {Journal of Systems and Software},
@@ -30,28 +99,27 @@
               dynamic analysis should be a requirement for future dependency updating
               systems.
               },
-  url      = {http://pure.tudelft.nl/ws/portalfiles/portal/100980924/1_s2.0_S0164121221001941_main.pdf},
+  url      = {https://arxiv.org/pdf/2109.11921.pdf},
   github   = {jhejderup/uppdatera}
 }
 
 @misc{HBTG22,
-  title    = {Pr\"azi: From Package-based to Call-based Dependency
-              Networks},
-  author   = {Joseph Hejderup and Moritz Beller and Konstantinos
-              Triantafyllou and Georgios Gousios},
-  journal  = {Empirical Software
-              Engineering},
-  volume   = {},
-  number   = {},
+  title    = {Pr\"azi: From Package-based to Call-based Dependency Networks},
+  author   = {Joseph Hejderup and Moritz Beller and Konstantinos Triantafyllou and Georgios Gousios},
+  journal  = {Empirical Software Engineering},
+  volume   = {27},
+  number   = {102},
   pages    = {},
   year     = {2022},
-  abstract = { Modern programming languages such as Java, JavaScript, and Rust
+  doi      = {10.1007/s10664-021-10071-9},
+  abstract = {
+              Modern programming languages such as Java, JavaScript, and Rust
               encourage software reuse by hosting diverse and fast-growing repositories of
               highly interdependent packages (i.e., reusable libraries) for their users. The
               standard way to study the interdependence between software packages is to infer
               a package dependency network by parsing manifest data. Such networks help answer
-              questions such as “How many packages have dependencies to packages with known
-              security issues?” or “What are the most used packages?”. However, an overlooked
+              questions such as "How many packages have dependencies to packages with known
+              security issues?” or “What are the most used packages?". However, an overlooked
               aspect in existing studies is that manifest-inferred relationships do not
               necessarily examine the actual usage of these dependencies in source code. To
               better model dependencies between packages, we developed Präzi, an approach
@@ -61,20 +129,20 @@
               popular system programming language Rust. We use Präzi to characterize Rust’s
               package repository, Crates.io, at the function level and perform a comparative
               study with metadata-based networks. Our results show that metadata-based
-              networks generalize how packages use their dependencies. 
-              
-              Using Using Präzi, we find packages call only 40% of their resolved dependencies, 
+              networks generalize how packages use their dependencies.
+
+              Using Using Präzi, we find packages call only 40% of their resolved dependencies,
               and that manual analysis of 34 cases reveals that not all packages use a dependency
-              the same way. We argue that researchers and practitioners interested in understanding 
-              how developers or programs use dependencies should account for its context—not the 
-              sum of all resolved dependencies., we find packages call only 40% of their resolved 
-              dependencies, and that manual analysis of 34 cases reveals that not all packages 
-              use a dependency the same way. We argue that researchers and practitioners interested 
-              in understanding how developers or programs use dependencies should account for its 
+              the same way. We argue that researchers and practitioners interested in understanding
+              how developers or programs use dependencies should account for its context—not the
+              sum of all resolved dependencies., we find packages call only 40% of their resolved
+              dependencies, and that manual analysis of 34 cases reveals that not all packages
+              use a dependency the same way. We argue that researchers and practitioners interested
+              in understanding how developers or programs use dependencies should account for its
               context—not the sum of all resolved dependencies.
               },
-  note     = {To appear},
-  github   = {jhejderup/prazi}
+  github   = {jhejderup/prazi},
+  url      = {https://arxiv.org/pdf/2101.09563.pdf}
 }
 
 @article{KGDG21,
@@ -115,45 +183,48 @@
 }
 
 @article{MNBGD21,
-  author   = {Maddila, Chandra and Nagappan, Nachiappan and Bird, Christian and Gousios, Georgios and van Deursen, Arie},
-  journal  = {ACM Transactions on Software Engineering and Methodology},
-  title    = {ConE: A Concurrent Edit Detection Tool for Large Scale Software Development},
-  year     = {2021},
-  volume   = {},
-  number   = {},
-  pages    = {1-1},
-  doi      = {},
-  abstract = {
-              
-              Modern, complex software systems are being continuously extended and
-              adjusted. The developers responsible for this may come from different teams
-              or organizations, and may be distributed over the world. This may make it
-              difficult to keep track of what other developers are doing, which may result
-              in multiple developers concurrently editing the same code areas. This, in
-              turn, may lead to hard-to-merge changes or even merge conflicts, logical
-              bugs that are difficult to detect, duplication of work, and wasted developer
-              productivity. To address this, we explore the extent of this problem in the
-              pull request based software development model. We study half a year of
-              changes made to six large repositories in Microsoft in which at least 1,000
-              pull requests are created each month. We find that files concurrently edited
-              in different pull requests are more likely to introduce bugs. Motivated by
-              these findings, we design, implement, and deploy a service named ConE
-              (Concurrent Edit Detector) that proactively detects pull requests containing
-              concurrent edits, to help mitigate the problems caused by them. ConE has
-              been designed to scale, and to minimize false alarms while still flagging
-              relevant concurrently edited files. Key concepts of ConE include the
-              detection of the Extent of Overlap between pull requests, and the
-              identification of Rarely Concurrently Edited Files. To evaluate ConE, we
-              report on its operational deployment on 234 repositories inside Microsoft.
-              ConE assessed 26,000 pull requests and made 775 recommendations about
-              conflicting changes, which were rated as useful in over 70% (554) of the
-              cases. From interviews with 48 users we learned that they believed cone
-              would save time in conflict resolution and avoiding duplicate work, and that
-              over 90% intend to keep using the service on a daily basis.
-              
-              },
-  url      = {},
-  note     = {To appear}
+  author     = {Maddila, Chandra and Nagappan, Nachiappan and Bird, Christian and Gousios, Georgios and van Deursen, Arie},
+  title      = {ConE: A Concurrent Edit Detection Tool for Large-Scale Software Development},
+  year       = {2021},
+  issue_date = {April 2022},
+  publisher  = {Association for Computing Machinery},
+  address    = {New York, NY, USA},
+  volume     = {31},
+  number     = {2},
+  issn       = {1049-331X},
+  doi        = {10.1145/3478019},
+  journal    = {ACM Trans. Softw. Eng. Methodol.},
+  month      = {dec},
+  articleno  = {22},
+  numpages   = {26},
+  abstract   = {
+                Modern, complex software systems are being continuously extended and
+                adjusted. The developers responsible for this may come from different teams
+                or organizations, and may be distributed over the world. This may make it
+                difficult to keep track of what other developers are doing, which may result
+                in multiple developers concurrently editing the same code areas. This, in
+                turn, may lead to hard-to-merge changes or even merge conflicts, logical
+                bugs that are difficult to detect, duplication of work, and wasted developer
+                productivity. To address this, we explore the extent of this problem in the
+                pull request based software development model. We study half a year of
+                changes made to six large repositories in Microsoft in which at least 1,000
+                pull requests are created each month. We find that files concurrently edited
+                in different pull requests are more likely to introduce bugs. Motivated by
+                these findings, we design, implement, and deploy a service named ConE
+                (Concurrent Edit Detector) that proactively detects pull requests containing
+                concurrent edits, to help mitigate the problems caused by them. ConE has
+                been designed to scale, and to minimize false alarms while still flagging
+                relevant concurrently edited files. Key concepts of ConE include the
+                detection of the Extent of Overlap between pull requests, and the
+                identification of Rarely Concurrently Edited Files. To evaluate ConE, we
+                report on its operational deployment on 234 repositories inside Microsoft.
+                ConE assessed 26,000 pull requests and made 775 recommendations about
+                conflicting changes, which were rated as useful in over 70% (554) of the
+                cases. From interviews with 48 users we learned that they believed cone
+                would save time in conflict resolution and avoiding duplicate work, and that
+                over 90% intend to keep using the service on a daily basis.
+                },
+  url        = {https://arxiv.org/pdf/2101.06542.pdf}
 }
 
 @article{IHG21,
@@ -177,15 +248,15 @@
               seed of topics to automatically annotate all remaining repositories, by
               training models that recommend high-quality topic tags to developers. In
               this work, we study the application of multi-label classification techniques
-              to predict software repositories’ topics. First, we map the large-space of
+              to predict software repositories' topics. First, we map the large-space of
               user-defined topics to those featured by GitHub. The core idea is to derive
-              more information from projects’ available documentation. Our data contains
+              more information from projects' available documentation. Our data contains
               about 152K GitHub repositories and 228 featured topics. Then, we apply
-              supervised models on repositories’ textual information such as descriptions,
+              supervised models on repositories' textual information such as descriptions,
               README files, wiki pages, and file names. We assess the performance of our
               approach both quantitatively and qualitatively. Our proposed model achieves
               Recall\@5 and LRAP scores of 0.890 and 0.805, respectively. Moreover, based
-              on users’ assessment, our approach is highly capable of recommending correct
+              on users' assessment, our approach is highly capable of recommending correct
               and complete set of topics. Finally, we use our models to develop an online
               tool named Repository Catalogue, that automatically predicts topics for
               GitHub repositories and is publicly available.
@@ -228,17 +299,38 @@
 }
 
 @article{BGPPAZ17,
-  author  = {M. {Beller} and G. {Gousios} and A. {Panichella} and S. {Proksch} and S. {Amann} and A. {Zaidman}},
-  journal = {IEEE Transactions on Software Engineering},
-  title   = {Developer testing in the {ide}: patterns, beliefs, and behavior},
-  year    = {2019},
-  volume  = {45},
-  number  = {3},
-  pages   = {261-284},
-  doi     = {10.1109/TSE.2017.2776152},
-  issn    = {0098-5589},
-  month   = mar,
-  url     = {/pub/developer-testing-in-IDE.pdf}
+  author   = {M. {Beller} and G. {Gousios} and A. {Panichella} and S. {Proksch} and S. {Amann} and A. {Zaidman}},
+  journal  = {IEEE Transactions on Software Engineering},
+  title    = {Developer Testing in the IDE: Patterns, Beliefs, and Behavior},
+  year     = {2019},
+  volume   = {45},
+  number   = {3},
+  pages    = {261-284},
+  doi      = {10.1109/TSE.2017.2776152},
+  issn     = {0098-5589},
+  month    = mar,
+  abstract = {
+              Software testing is one of the key activities to achieve software quality
+              in practice. Despite its importance, however, we have a remarkable lack of
+              knowledge on how developers test in real-world projects. In this paper, we
+              report on a large-scale field study with 2,443 software engineers whose
+              development activities we closely monitored over 2.5 years in four integrated
+              development environments (IDEs). Our findings, which largely generalized
+              across the studied IDEs and programming languages Java and C#, question
+              several commonly shared assumptions and beliefs about developer testing:
+              half of the developers in our study do not test; developers rarely run
+              their tests in the IDE; most programming sessions end without any test
+              execution; only once they start testing, do they do it extensively; a quarter
+              of test cases is responsible for three quarters of all test failures; 12
+              percent of tests show flaky behavior; Test-Driven Development (TDD) is
+              not widely practiced; and software developers only spend a quarter of
+              their time engineering tests, whereas they think they test half of their
+              time. We summarize these practices of loosely guiding one's development
+              efforts with the help of testing in an initial summary on Test-Guided
+              Development (TGD), a behavior we argue to be closer to the development
+              reality of most developers than TDD.
+              },
+  url      = {/pub/developer-testing-in-IDE.pdf}
 }
 
 @article{CAGDT17,
@@ -289,12 +381,12 @@
   abstract  = {
                With over 10 million git repositories, GitHub is becoming one of the most
                important sources of software artifacts on the Internet. Researchers mine
-               the information stored in GitHub’s event logs to understand how its users
+               the information stored in GitHub's event logs to understand how its users
                employ the site to collaborate on software, but so far there have been no
                studies describing the quality and properties of the available GitHub
                data. We document the results of an empirical study aimed at
                understanding the characteristics of the repositories and users in
-               GitHub; we see how users take advantage of GitHub’s main features and how
+               GitHub; we see how users take advantage of GitHub's main features and how
                their activity is tracked on GitHub and related datasets to point out
                misalignment between the real and mined data. Our results indicate that
                while GitHub is a rich source of data on software development, mining
@@ -302,7 +394,7 @@
                consideration. For example, we show that the majority of the projects are
                personal and inactive, and that almost 40\% of all pull requests do not
                appear as merged even though they were. Also, approximately half of
-               GitHub’s registered users do not have public activity, while the activity
+               GitHub's registered users do not have public activity, while the activity
                of GitHub users in repositories is not always easy to pinpoint. We use
                our identified perils to see if they can pose validity threats; we review
                selected papers from the MSR 2014 Mining Challenge and see if there are
@@ -450,6 +542,6 @@
               solutions proposed by the major existing component architectures. A
               comparative evaluation of both security features and implementation
               issues is carried out to determine each architecture’s strong points and
-              drawbacks. 
+              drawbacks.
               }
 }

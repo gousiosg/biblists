@@ -1,9 +1,81 @@
+@inproceedings{MLPG22,
+  author    = {Mir, Amir M. and Latoskinas, Evaldas and Proksch, Sebastian and Gousios, Georgios},
+  booktitle = {2022 IEEE/ACM 44th International Conference on Software Engineering (ICSE)},
+  title     = {Type4Py: Practical Deep Similarity Learning-Based Type Inference for Python},
+  year      = {2022},
+  volume    = {},
+  number    = {},
+  pages     = {2241-2252},
+  doi       = {10.1145/3510003.3510124},
+  abstract  = {
+               Dynamic languages, such as Python and Javascript, trade static typing for developer
+               flexibility and productivity. Lack of static typing can cause run-time exceptions
+               and is a major factor for weak IDE support. To alleviate these issues, PEP 484
+               introduced optional type annotations for Python. As retrofitting types to existing
+               codebases is error-prone and laborious, machine learning (ML)-based approaches have
+               been proposed to enable automatic type inference based on existing, partially
+               annotated codebases. However, previous ML-based approaches are trained and evaluated
+               on human-provided type annotations, which might not always be sound, and hence this
+               may limit the practicality for real-world usage. In this paper, we present Type4Py,
+               a deep similarity learning-based hierarchical neural network model. It learns to
+               discriminate between similar and dissimilar types in a high-dimensional space, which
+               results in clusters of types. Likely types for arguments, variables, and return values
+               can then be inferred through the nearest neighbor search. Unlike previous work, we
+               trained and evaluated our model on a type-checked dataset and used mean reciprocal
+               rank (MRR) to reflect the performance perceived by users. The obtained results show
+               that Type4Py achieves an MRR of 77.1%, which is a substantial improvement of 8.1%
+               and 16.7% over the state-of-the-art approaches Typilus and TypeWriter, respectively.
+               Finally, to aid developers with retrofitting types, we released a Visual Studio Code
+               extension, which uses Type4Py to provide ML-based type auto-completion for Python.
+               },
+  url       = {https://arxiv.org/pdf/2101.04470.pdf}
+}
+
+@inproceedings{IGG22,
+  author    = {Izadi, Maliheh and Gismondi, Roberta and Gousios, Georgios},
+  booktitle = {2022 IEEE/ACM 44th International Conference on Software Engineering (ICSE)},
+  title     = {CodeFill: Multi-token Code Completion by Jointly learning from Structure and Naming Sequences},
+  year      = {2022},
+  volume    = {},
+  number    = {},
+  pages     = {401-412},
+  doi       = {10.1145/3510003.3510172},
+  abstract  = {
+               Code completion is an essential feature of IDEs, yet current auto-completers are
+               restricted to either grammar-based or NLP-based single token completions. Both
+               approaches have significant draw-backs: grammar-based autocompletion is restricted
+               in dynamically-typed language environments, whereas NLP-based autocompleters
+               struggle to understand the semantics of the programming language and the developer's
+               code context. In this work, we present CodeFill, a language model for autocompletion
+               that combines learned structure and naming information. Using a parallel
+               Transformer architecture and multi-task learning, CodeFill consumes sequences of
+               source code token names and their equivalent AST token types. Uniquely, CodeFill
+               is trained both for single-token and multi-token (statement) prediction, which
+               enables it to learn long-range dependencies among grammatical and naming elements.
+               We train CodeFill on two datasets, consisting of 29M and 425M lines of code,
+               respectively. To make the evaluation more realistic, we develop a method to
+               automatically infer points in the source code at which completion matters. We
+               compare CodeFill against four baselines and two state-of-the-art models, GPT-C
+               and TravTrans+. CodeFill surpasses all baselines in single token prediction
+               (MRR: 70.9% vs. 66.2% and 67.8%) and outperforms the state of the art for multi-token
+               prediction (ROUGE-L: 63.7% vs. 52.4% and 59.2%, for n=4 tokens). We publicly
+               release our source code and datasets.
+               },
+  url       = {https://arxiv.org/pdf/2202.06689.pdf}
+}
+
+
 @inproceedings{KDG21,
   author    = {Kula, Elvan and Deursen, Arie van and Gousios, Georgios},
   title     = {Modeling Team Dynamics for the Characterization and Prediction of Delays in User Stories},
-  booktitle = {2021 36th IEEE/ACM International Conference on Automated Software Engineering (ASE)},
+  booktitle = {Proceedings of the 36th IEEE/ACM International Conference on Automated Software Engineering},
   year      = 2021,
   pages     = {991-1002},
+  doi       = {10.1109/ASE51524.2021.9678939},
+  location  = {Melbourne, Australia},
+  series    = {ASE '21},
+  isbn      = {9781665403375},
+  publisher = {IEEE Press},
   doi       = {10.1109/ASE51524.2021.9678939},
   abstract  = {
                In agile software development, proper team structures and effort estimates
