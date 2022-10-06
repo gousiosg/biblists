@@ -1,3 +1,36 @@
+@article{KGS22,
+  author   = {Kotti, Zoe and Gousios, Georgios and Spinellis, Diomidis},
+  journal  = {IEEE Transactions on Software Engineering},
+  title    = {Impact of Software Engineering Research in Practice: A Patent and Author Survey Analysis},
+  year     = {2022},
+  volume   = {},
+  number   = {},
+  pages    = {1-19},
+  doi      = {10.1109/TSE.2022.3208210},
+  abstract = {
+              Existing work on the practical impact of software engineering (SE) research examines
+              industrial relevance rather than adoption of study results, hence the question of
+              how results have been practically applied remains open. To answer this and
+              investigate the outcomes of impactful research, we performed a quantitative and
+              qualitative analysis of 4,354 SE patents citing 1,690 SE papers published in four
+              leading SE venues between 1975–2017. Moreover, we conducted a survey on 475 authors
+              of 593 top-cited and awarded publications, achieving 26% response rate. Overall,
+              researchers have equipped practitioners with various tools, processes, and methods,
+              and improved many existing products. SE practice values knowledge-seeking research
+              and is impacted by diverse cross-disciplinary SE areas. Practitioner-oriented
+              publication venues appear more impactful than researcher-oriented ones, while
+              industry-related tracks in conferences could enhance their impact. Some research
+              works did not reach a wide footprint due to limited funding resources or unfavorable
+              cost-benefit trade-off of the proposed solutions. The need for higher SE research
+              funding could be corroborated through a dedicated empirical study. In general, the
+              assessment of impact is subject to its definition. Therefore, academia and industry
+              could jointly agree on a formal description to set a common ground for subsequent
+              research on the topic.
+  },
+  url       = {https://arxiv.org/pdf/2204.03366.pdf}
+}
+
+
 @article{MUBNGD22,
   author    = {Maddila, Chandra and Upadrasta, Sai Surya and Bansal, Chetan and Nagappan, Nachiappan and Gousios, Georgios and Deursen, Arie van},
   title     = {Nudge: Accelerating Overdue Pull Requests Towards Completion},
@@ -11,61 +44,60 @@
   month     = {may},
   keywords  = {distributed software development, Pull-based software development, merge conflict, pull request},
   abstract  = {
-               Pull requests are a key part of the collaborative software development and code review
-               process today. However, pull requests can also slow down the software development
-               process when the reviewer(s) or the author do not actively engage with the pull
-               request. In this work, we design an end-to-end service, Nudge, for accelerating overdue
-               pull requests towards completion by reminding the author or the reviewer(s) to engage
-               with their overdue pull requests. First, we use models based on effort estimation and
-               machine learning to predict the completion time for a given pull request. Second, we
-               use activity detection to filter out pull requests that may be overdue, but for which
-               sufficient action is taking place nonetheless. Lastly, we use actor identification to
-               understand who the blocker of the pull request is and nudge the appropriate actor
-               (author or reviewer(s)). The key novelty of Nudge is that it succeeds in reducing
-               pull request resolution time, while ensuring that developers perceive the notifications
-               sent as useful, at the scale of thousands of repositories. In a randomized trial on
-               147 repositories in use at Microsoft, Nudge was able to reduce pull request resolution
-               time by 60% for 8,500 pull requests, when compared to overdue pull requests for which
-               Nudge did not send a notification. Furthermore, developers receiving Nudge notifications
-               resolved 73% of these notifications as positive. We observed similar results when scaling
-               up the deployment of Nudge to 8,000 repositories at Microsoft, for which Nudge sent
-               210,000 notifications during a full year. This demonstrates Nudge's ability to scale
-               to thousands of repositories. Lastly, our qualitative analysis of a selection of
-               Nudge notifications indicates areas for future research, such as taking dependencies
-               among pull requests and developer availability into account.
+              Pull requests are a key part of the collaborative software development and code review
+              process today. However, pull requests can also slow down the software development
+              process when the reviewer(s) or the author do not actively engage with the pull
+              request. In this work, we design an end-to-end service, Nudge, for accelerating overdue
+              pull requests towards completion by reminding the author or the reviewer(s) to engage
+              with their overdue pull requests. First, we use models based on effort estimation and
+              machine learning to predict the completion time for a given pull request. Second, we
+              use activity detection to filter out pull requests that may be overdue, but for which
+              sufficient action is taking place nonetheless. Lastly, we use actor identification to
+              understand who the blocker of the pull request is and nudge the appropriate actor
+              (author or reviewer(s)). The key novelty of Nudge is that it succeeds in reducing
+              pull request resolution time, while ensuring that developers perceive the notifications
+              sent as useful, at the scale of thousands of repositories. In a randomized trial on
+              147 repositories in use at Microsoft, Nudge was able to reduce pull request resolution
+              time by 60% for 8,500 pull requests, when compared to overdue pull requests for which
+              Nudge did not send a notification. Furthermore, developers receiving Nudge notifications
+              resolved 73% of these notifications as positive. We observed similar results when scaling
+              up the deployment of Nudge to 8,000 repositories at Microsoft, for which Nudge sent
+              210,000 notifications during a full year. This demonstrates Nudge's ability to scale
+              to thousands of repositories. Lastly, our qualitative analysis of a selection of
+              Nudge notifications indicates areas for future research, such as taking dependencies
+              among pull requests and developer availability into account.
                },
   url       = {https://arxiv.org/pdf/2011.12468.pdf}
 }
 
 @article{ZTGR22,
-  author={Zhang, Xunhui and Yu, Yue and Georgios, Gousios and Rastogi, Ayushi},
-  journal={IEEE Transactions on Software Engineering},
-  title={Pull Request Decisions Explained: An Empirical Overview},
-  year={2022},
-  volume={},
-  number={},
-  pages={1-1},
-  doi={10.1109/TSE.2022.3165056},
+  author   = {Zhang, Xunhui and Yu, Yue and Georgios, Gousios and Rastogi, Ayushi},
+  journal  = {IEEE Transactions on Software Engineering},
+  title    = {Pull Request Decisions Explained: An Empirical Overview},
+  year     = {2022},
+  volume   = {},
+  number   = {},
+  pages    = {1-1},
+  doi      = {10.1109/TSE.2022.3165056},
   abstract = {
-            Context: Pull-based development model is widely used in open source, leading the trends
-            in distributed software development. One aspect which has garnered significant attention
-            is studies on pull request decision - identifying factors for explanation. Objective:
-            This study builds on a decade long research on pull request decision to explain it.
-            We empirically investigate how factors influence pull request decision and scenarios
-            that change the influence of factors. Method: We identify factors influencing pull request
-            decision on GitHub through a systematic literature review and infer it by mining
-            archival data. We collect a total of 3,347,937 pull requests with 95 features from
-            11,230 diverse projects on GitHub. Using this data, we explore the relations of the
-            factors to each other and build mixed-effect logistic regression models to empirically
-            explain pull request decision. Results: Our study shows that a small number of factors
-            explain pull request decision with the integrator same or different from the submitter
-            as the most important factor. We also noted that some factors are important only in special
-            cases e.g., the percentage of failed builds is important for pull request decision when
-            continuous integration is used.
-  },
-  url = {https://arxiv.org/pdf/2105.13970.pdf}
-
-  }
+              Context: Pull-based development model is widely used in open source, leading the trends
+              in distributed software development. One aspect which has garnered significant attention
+              is studies on pull request decision - identifying factors for explanation. Objective:
+              This study builds on a decade long research on pull request decision to explain it.
+              We empirically investigate how factors influence pull request decision and scenarios
+              that change the influence of factors. Method: We identify factors influencing pull request
+              decision on GitHub through a systematic literature review and infer it by mining
+              archival data. We collect a total of 3,347,937 pull requests with 95 features from
+              11,230 diverse projects on GitHub. Using this data, we explore the relations of the
+              factors to each other and build mixed-effect logistic regression models to empirically
+              explain pull request decision. Results: Our study shows that a small number of factors
+              explain pull request decision with the integrator same or different from the submitter
+              as the most important factor. We also noted that some factors are important only in special
+              cases e.g., the percentage of failed builds is important for pull request decision when
+              continuous integration is used.
+              },
+  url      = {https://arxiv.org/pdf/2105.13970.pdf}
+}
 
 @article{HG22,
   title    = {Can we trust tests to automate dependency updates? A case study of Java Projects},
@@ -108,8 +140,8 @@
   author   = {Joseph Hejderup and Moritz Beller and Konstantinos Triantafyllou and Georgios Gousios},
   journal  = {Empirical Software Engineering},
   volume   = {27},
-  number   = {102},
-  pages    = {},
+  number   = {5},
+  pages    = {1--42},
   year     = {2022},
   doi      = {10.1007/s10664-021-10071-9},
   abstract = {
@@ -150,9 +182,9 @@
   journal  = {IEEE Transactions on Software Engineering},
   title    = {Factors Affecting On-Time Delivery in Large-Scale Agile Software Development},
   year     = {2021},
-  volume   = {},
-  number   = {},
-  pages    = {1-1},
+  volume   = {48},
+  number   = {9},
+  pages    = {3573-3592},
   doi      = {10.1109/TSE.2021.3101192},
   abstract = {
               Late delivery of software projects and cost overruns have been common
