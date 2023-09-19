@@ -17,8 +17,8 @@ def bib_open(file):
     bibname = os.path.splitext (file) [0] + '.bib'
     try:
         bibf = open (bibname, 'r')
-    except IOError, err:
-        raise BibError, "File does not exist"
+    except IOError as err:
+        raise BibError("File does not exist")
     return bibf
 
 # Parsing/scanning bib file and keeping track of current char, line number
@@ -42,7 +42,7 @@ def initch(file):
     cur = 0
     lineno = 1
 
-# get the current character on the input, None of EOF    
+# get the current character on the input, None of EOF
 def curch():
     global buffer, cur
     if cur < len(buffer):
@@ -50,23 +50,27 @@ def curch():
     else:
         return None
 
-# advance to the next character on the input    
+# advance to the next character on the input
 def nextch():
     global cur, lineno
     if curch() == "\n":
-        lineno = lineno + 1 
+        lineno = lineno + 1
     cur = cur + 1
-    
+
 # skip a comment: all characters upto the next end of line
 def skip_comment():
-    while curch() <> '\n':
+    while curch() != '\n':
         nextch()
 
 # skip whitespace; this includes comments (but not EOF).
 # curch() returns the first nonwhitespace char, or None if at EOF
 def skip_whitespace():
-    while (curch() <> None) and ((curch() == "%") or (curch() in string.whitespace)):
-        if curch() == '%':
+    cur = curch()
+    if cur is None:
+        return
+
+    while cur == "%" or cur.isspace():
+        if cur == '%':
             skip_comment()
         nextch()
 
@@ -93,7 +97,7 @@ def required(s):
     c = curch()
 
     if c not in s:
-        raise BibError, "Expecting %s (after entry %s)" % (s, lastsuccessfulkey)
+        raise BibError("Expecting %s (after entry %s)" % (s, lastsuccessfulkey))
     nextch()
     return c
 
@@ -107,8 +111,12 @@ def bib_getname():
     if ret == None:
         return None
     name = ret
-    while curch() in name_letters:
-        name = name + curch()
+
+    while True:
+        cur = curch()
+        if cur is None:
+            break
+        name = name + cur
         nextch()
     return name
 
@@ -122,22 +130,28 @@ def bib_getvalue():
     lastch = ""
     s = ""
     symstack = []
-    while ( not curch() is None) and ( symstack <> [] or ( curch() not in [",", "}"] )) :
-        s = s + curch()
-        if lastch <> "\\":
+
+    while symstack != [] or ( curch() not in [",", "}"] ) :
+        cur = curch()
+        if cur is None:
+            break
+
+
+        s = s + cur
+        if lastch != "\\":
             if curch() == "{":
                 symstack.append("{")
             elif curch() == "\"":
-                if (symstack <> []) and (symstack[-1] == "\""):
+                if (symstack != []) and (symstack[-1] == "\""):
                     symstack.pop()
                 else:
                     symstack.append("\"")
-            elif curch() == "}" and symstack <> [] and symstack[-1] == "{":
+            elif curch() == "}" and symstack != [] and symstack[-1] == "{":
                 symstack.pop()
         lastch = curch()
         nextch()
     return s
-    
+
 # return the next (fieldname,value) pair, or None if not at a fieldname
 def bib_getfield():
     fieldname = bib_getname()
@@ -168,7 +182,7 @@ def bib_getentry():
     entry["mykey"] = key
     lastsuccessfulkey = key
     nextfield = bib_getfield()
-    while nextfield <> None:
+    while nextfield != None:
         (fieldname,value) = nextfield
         entry[fieldname] = value
         expect(",")
@@ -178,31 +192,31 @@ def bib_getentry():
 # Load bib file and return a dictionary with for each key a dictionary
 # of all the fields for that record;
 #
-# note: the key "mytype" holds the type of entry, the key "mykey" 
+# note: the key "mytype" holds the type of entry, the key "mykey"
 def bib_parse(file,log):
     global lastsuccessfulkey
     log.write("Processing %s: " % file)
-    entries = {} 
+    entries = {}
     try:
         initch( file )
     except BibError:
         log.write(" does not exist. Skipped.\n")
         return entries
     nextentry = bib_getentry()
-    while nextentry <> None:
+    while nextentry != None:
         (key,entry) = nextentry
         #log.write("%s\n"%key)
         entries[key] = entry
         expect("}")
         try:
             nextentry = bib_getentry()
-        except BibError, err:
+        except BibError as err:
             log.write(str(err))
             return entries
-    if nextentry <> None:
+    if nextentry != None:
         log.write(" %s" % lastsuccessfulkey)
     else:
-	log.write(" %d\n" % len(entries))
+        log.write(" %d\n" % len(entries))
     return entries
 
 def bib_write(f,record):

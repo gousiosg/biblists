@@ -21,18 +21,18 @@ def aux_open(file):
     auxname = os.path.splitext (file) [0] + '.aux'
     try:
         auxf = open (auxname, 'r')
-    except IOError, err:
-        raise AuxError, '%s: %s' % (auxname, err)
+    except IOError as err:
+        raise AuxError('%s: %s' % (auxname, err))
     return auxf
 
 # Readin and expand .aux file, returning a list of all lines in the auxfile and
 # all .aux files it references
 def aux_lines(file):
     auxf = aux_open(file)
-    lines = [] 
+    lines = []
     # parse the whole file
     for line in auxf.readlines():
-        line = string.strip (line)
+        line = line.strip()
         lines.append(line)
         # we have to enter an additional .aux file
         match = include_re.search (line)

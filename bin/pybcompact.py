@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#! /usr/bin/env python3
 #
 # $Id: pybcompact,v 1.5 2004/11/12 11:49:46 adridg Exp $
 #
@@ -11,7 +11,7 @@ import sys, string, os, fnmatch
 import pybaux,pybbib
 
 def usage ():
-    print "usage: pybcompact <latexfile> <bibtoplevel>"
+    print ("usage: pybcompact <latexfile> <bibtoplevel>")
     return
 
 def error (msg):
@@ -52,8 +52,8 @@ bibdir = sys.argv [2]
 # obtain citation keys from latex aux file
 try:
     citations = pybaux.aux_citations(latexfile)
-except pybaux.AuxError, err:
-    error ('%s' % err)
+except pybaux.AuxError as err:
+    error (f"{err}")
 
 # ensure citation keys unicity
 tmp = {}
@@ -87,7 +87,7 @@ found = []
 (found,crossref) = collate(merged_bibs,citations)
 if len(crossref) > 0:
     sys.stderr.write("\nadding cross-references: ")
-    sys.stderr.write(string.join(crossref,","))
+    sys.stderr.write(",".join(crossref))
     # collate(merged_bibs,crossref)
 
 # Print crossrefs only at the end
@@ -100,7 +100,7 @@ for c in crossref:
 for c in found:
     pybbib.bib_write(sys.stdout,merged_bibs[c])
     sys.stdout.write("\n")
-    citations.remove(c)
+    del citations[c]
 for c in crossref:
     pybbib.bib_write(sys.stdout,merged_bibs[c])
     sys.stdout.write("\n")

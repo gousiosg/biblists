@@ -1,12 +1,41 @@
+@inproceedings{KGDG23,
+  author    = {Elvan Kula and Eric Greuter and Arie van Deursen and Georgios Gousios},
+  title     = {Dynamic Prediction of Delays in Software Projects Using Delay Patterns and Bayesian Modeling},
+  booktitle = {Proceedings of the 36th IEEE/ACM International Conference on Automated Software Engineering},
+  year      = 2023,
+  pages     = {991-1002},
+  location  = {San Francisco, CA},
+  series    = {FSE '23},
+  abstract  = {
+               Modern agile software projects are subject to constant change, making it essential to
+               re-asses overall delay risk throughout the project life cycle. Existing effort
+               estimation models are static and not able to incorporate changes occurring during
+               project execution. In this paper, we propose a dynamic model for continuously
+               predicting overall delay using delay patterns and Bayesian modeling. The model
+               incorporates the context of the project phase and learns from changes in team
+               performance over time. We apply the approach to real-world data from 4,040 epics and
+               270 teams at \ING. An empirical evaluation of our approach and comparison to the
+               state-of-the-art demonstrate significant improvements in predictive accuracy.
+               The dynamic model consistently outperforms static approaches and the
+               state-of-the-art, even during early project phases.
+               },
+  note      = {Accepted for publication}
+}
+
 @inproceedings{MLPG22,
-  author    = {Mir, Amir M. and Latoskinas, Evaldas and Proksch, Sebastian and Gousios, Georgios},
-  booktitle = {2022 IEEE/ACM 44th International Conference on Software Engineering (ICSE)},
+  author    = {Mir, Amir M. and Lato\v{s}kinas, Evaldas and Proksch, Sebastian and Gousios, Georgios},
   title     = {Type4Py: Practical Deep Similarity Learning-Based Type Inference for Python},
   year      = {2022},
-  volume    = {},
-  number    = {},
-  pages     = {2241-2252},
+  isbn      = {9781450392211},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
   doi       = {10.1145/3510003.3510124},
+  booktitle = {Proceedings of the 44th International Conference on Software Engineering},
+  pages     = {2241–2252},
+  numpages  = {12},
+  keywords  = {similarity learning, type inference, machine learning, python, mean reciprocal rank},
+  location  = {Pittsburgh, Pennsylvania},
+  series    = {ICSE '22},
   abstract  = {
                Dynamic languages, such as Python and Javascript, trade static typing for developer
                flexibility and productivity. Lack of static typing can cause run-time exceptions
@@ -23,8 +52,8 @@
                can then be inferred through the nearest neighbor search. Unlike previous work, we
                trained and evaluated our model on a type-checked dataset and used mean reciprocal
                rank (MRR) to reflect the performance perceived by users. The obtained results show
-               that Type4Py achieves an MRR of 77.1%, which is a substantial improvement of 8.1%
-               and 16.7% over the state-of-the-art approaches Typilus and TypeWriter, respectively.
+               that Type4Py achieves an MRR of 77.1\%, which is a substantial improvement of 8.1%
+               and 16.7\% over the state-of-the-art approaches Typilus and TypeWriter, respectively.
                Finally, to aid developers with retrofitting types, we released a Visual Studio Code
                extension, which uses Type4Py to provide ML-based type auto-completion for Python.
                },
@@ -33,13 +62,18 @@
 
 @inproceedings{IGG22,
   author    = {Izadi, Maliheh and Gismondi, Roberta and Gousios, Georgios},
-  booktitle = {2022 IEEE/ACM 44th International Conference on Software Engineering (ICSE)},
-  title     = {CodeFill: Multi-token Code Completion by Jointly learning from Structure and Naming Sequences},
+  title     = {CodeFill: Multi-Token Code Completion by Jointly Learning from Structure and Naming Sequences},
   year      = {2022},
-  volume    = {},
-  number    = {},
-  pages     = {401-412},
+  isbn      = {9781450392211},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
   doi       = {10.1145/3510003.3510172},
+  booktitle = {Proceedings of the 44th International Conference on Software Engineering},
+  pages     = {401–412},
+  numpages  = {12},
+  keywords  = {transformers, multi-task learning, dynamically-typed languages, automatic code completion, types},
+  location  = {Pittsburgh, Pennsylvania},
+  series    = {ICSE '22},
   abstract  = {
                Code completion is an essential feature of IDEs, yet current auto-completers are
                restricted to either grammar-based or NLP-based single token completions. Both
@@ -64,7 +98,6 @@
   url       = {https://arxiv.org/pdf/2202.06689.pdf}
 }
 
-
 @inproceedings{KDG21,
   author    = {Kula, Elvan and Deursen, Arie van and Gousios, Georgios},
   title     = {Modeling Team Dynamics for the Characterization and Prediction of Delays in User Stories},
@@ -76,7 +109,6 @@
   series    = {ASE '21},
   isbn      = {9781665403375},
   publisher = {IEEE Press},
-  doi       = {10.1109/ASE51524.2021.9678939},
   abstract  = {
                In agile software development, proper team structures and effort estimates
                are crucial to ensure the on-time delivery of software projects. Delivery
