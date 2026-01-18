@@ -1,3 +1,80 @@
+@inproceedings{GHOMHMD26,
+  title     = {{Foiegras}: Source Code Based Software Composition Analysis For {C}/{C++} Applications},
+  author    = {Gousios, Georgios and Hamer, Philip and Odlund, Camilla and Melo, Leandro and Hejderup, Joseph and Muniraju, Sridhara and Durieux, Thomas},
+  booktitle = {Proceedings of the 2026 IEEE/ACM 48th International Conference on Software Engineering: Software Engineering in Practice},
+  series    = {ICSE-SEIP '26},
+  year      = {2026},
+  month     = apr,
+  pages     = {12--18},
+  address   = {Rio de Janeiro, Brazil},
+  publisher = {ACM},
+  doi       = {10.1145/3786583.3786878},
+  isbn      = {979-8-4007-2426-8},
+  url       = {https://doi.org/10.1145/3786583.3786878},
+  abstract  = {
+               Software Composition Analysis (SCA) identifies third-party components in applications
+               for vulnerability management and license compliance. C and C++ applications often
+               rely on copy-based code reuse without maintaining origin information, rendering
+               precise SCA generation challenging. We present Foiegras, a production SCA system
+               addressing this challenge through advanced code clone detection. The system segments
+               source files into functions, types, and licenses, maintaining cryptographic
+               signatures for exact matching and embeddings for similarity-based detection.
+               Uniquely, we curate an index of 1,700 authoritative open-source projects,
+               constructed through manual annotation by 13 domain experts. This curation addresses
+               the fundamental challenge of distinguishing original sources from copies. We
+               evaluate Foiegras on a file-based synthetic dataset and 28 high-profile open-source
+               C/C++ applications with manually verified ground truth. At the file level, Foiegras
+               identifies exact file versions with 78\% average precision. In real-world
+               applications, it achieves mean precision of 0.7 and recall of 0.5 for exact version
+               matching (0.79/0.71 for library name matching), approaching state-of-the-art
+               performance and significantly outperforming a commercial SCA platform. Foiegras is
+               deployed at Endor Labs, processing thousands of SCA requests daily, demonstrating
+               both the feasibility and the necessity of combining automated analysis with expert
+               curation for accurate software composition analysis in ecosystems lacking modern
+               dependency management.
+              },
+}
+@inproceedings{ASGZM26,
+  title     = {{PyXray}: Practical Cross-Language Call Graph Construction through Object Layout Analysis},
+  author    = {Alexopoulos, Georgios and Sotiropoulos, Thodoris and Gousios, Georgios and Su, Zhendong and Mitropoulos, Dimitris},
+  booktitle = {Proceedings of the 2026 IEEE/ACM 48th International Conference on Software Engineering},
+  series    = {ICSE '26},
+  year      = {2026},
+  month     = apr,
+  pages     = {12--18},
+  address   = {Rio de Janeiro, Brazil},
+  publisher = {ACM},
+  doi       = {10.1145/3744916.3764555},
+  isbn      = {979-8-4007-2025-3},
+  url       = {https://doi.org/10.1145/3744916.3764555},
+  keywords  = {call graph, cross-language analysis, multi-language, native code, Python, reachability, dynamic analysis},
+  abstract  = {
+               A great number of software packages combine code in high-level languages, such as
+               Python, with binary extensions compiled from low-level languages such as C, C++ or
+               Rust to either boost efficiency or enable specific functionalities. In this context,
+               high-level function calls can trigger native (binary) code execution. This setup
+               introduces challenges for call graph generation. Accurate call graphs are essential
+               for various applications, including vulnerability management and software
+               maintenance, as they help track execution paths, assess security risks, and identify
+               unused or redundant code. This work tackles the problem of cross-language call graph
+               construction in Python. Instead of relying on static analysis, which struggles with
+               identifying Python-native interactions, we propose a dynamic analysis technique which
+               does not require inputs to execute code. Our approach is based on two key insights:
+               (1) when a binary extension is imported from Python code, all its objects
+               (e.g., functions) are loaded into memory, and (2) the layout of callable Python
+               objects contains pointers to the native functions they invoke. By analyzing these
+               memory layouts for every loaded object, we identify corresponding graph edges, which
+               link Python functions to the native functions they eventually invoke. This is an
+               essential element for constructing call graphs across language boundaries. We
+               implement this approach in PyXray, a tool that efficiently analyzes massive
+               Python packages such as NumPy and PyTorch in minutes, while significantly
+               outpeforming existing static analysis methods in terms of precision and recall.
+               PyXray enables two key applications: (1) cross-language vulnerability management,
+               by identifying whether a Python package potentially calls a vulnerable native
+               function and (2) cross-language bloat analysis, by quantifying unnecessary code
+               across Python and native components.},
+}
+
 @inproceedings{KDG24,
   author    = {Kula, Elvan and van Deursen, Arie and Gousios, Georgios},
   title     = {Context-Aware Automated Sprint Plan Generation for Agile Software Development},
